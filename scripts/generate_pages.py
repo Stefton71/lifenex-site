@@ -12,6 +12,8 @@ SHOTS = {
         ("Carico di allenamento", "Vedi se il carico recente è sopra o sotto il tuo ritmo abituale, per sport e finestra temporale."),
         ("Trend e analisi AI", "Lettura su 15–90 giorni di allenamento, cuore, HRV e peso, con lettura intelligente opzionale."),
         ("Mix della settimana", "Riepilogo 7 giorni: volume, costanza e quota di tempo per tipo di sessione (forza, corsa, bici…)."),
+        ("Confronto 3D con pallini", "Due sessioni sulla stessa mappa 3D: i pallini colorati si muovono insieme nel replay, con tempo, passo, FC e pendenza a confronto."),
+        ("Volo Satellite 3D", "Rivedi il percorso in Satellite 3D con play e velocità (fino a 10×): zone FC e metriche sync mentre ‘voli’ sul tracciato."),
     ],
     "en": [
         ("Metrics & Spotlight", "Health and sport dashboard: recovery, HRV, activity, VO₂ max and resting HR, filterable by Sport, Body and Movement."),
@@ -20,6 +22,8 @@ SHOTS = {
         ("Training load", "See whether recent load sits above or below your habitual rhythm, by sport and time window."),
         ("Trends & AI analysis", "15–90 day readouts on training, heart, HRV and weight, plus optional smart readings."),
         ("Weekly mix", "7-day summary: volume, consistency and time share by session type (strength, run, bike…)."),
+        ("3D compare with moving dots", "Two sessions on the same 3D map: colored dots move together in replay, with time, pace, HR and grade side by side."),
+        ("3D Satellite flight", "Replay the route in Satellite 3D with play and speed (up to 10×): HR zones and metrics stay in sync as you fly the track."),
     ],
     "fr": [
         ("Métriques et Spotlight", "Tableau de bord santé et sport : récupération, VFC, activité, VO₂ max et FC au repos, filtrable par Sport, Corps et Mouvement."),
@@ -28,6 +32,8 @@ SHOTS = {
         ("Charge d’entraînement", "Voyez si la charge récente est au-dessus ou en dessous de votre rythme habituel, par sport et période."),
         ("Tendances et analyse IA", "Lecture sur 15–90 jours (entraînement, cœur, VFC, poids), avec lectures intelligentes optionnelles."),
         ("Mix de la semaine", "Résumé 7 jours : volume, constance et part du temps par type de séance (force, course, vélo…)."),
+        ("Comparaison 3D avec pastilles", "Deux séances sur la même carte 3D : les pastilles colorées avancent ensemble en replay, avec temps, allure, FC et pente en face."),
+        ("Vol Satellite 3D", "Revivez le parcours en Satellite 3D avec lecture et vitesse (jusqu’à 10×) : zones FC et métriques synchronisées pendant le vol."),
     ],
     "de": [
         ("Metriken & Spotlight", "Dashboard für Gesundheit und Sport: Erholung, HRV, Aktivität, VO₂ max und Ruhepuls — filterbar nach Sport, Körper und Bewegung."),
@@ -36,6 +42,8 @@ SHOTS = {
         ("Trainingslast", "Siehst du, ob die aktuelle Last über oder unter deinem gewohnten Rhythmus liegt — nach Sport und Zeitraum."),
         ("Trends & KI-Analyse", "Auswertung über 15–90 Tage zu Training, Herz, HRV und Gewicht, plus optionale intelligente Lesungen."),
         ("Wochen-Mix", "7-Tage-Übersicht: Volumen, Beständigkeit und Zeitanteil nach Einheitstyp (Kraft, Lauf, Rad…)."),
+        ("3D-Vergleich mit Punkten", "Zwei Einheiten auf derselben 3D-Karte: farbige Punkte bewegen sich gemeinsam im Replay — Zeit, Tempo, HF und Steigung im Vergleich."),
+        ("3D-Satellitenflug", "Route im Satelliten-3D mit Play und Tempo (bis 10×) nochmal erleben: HF-Zonen und Kennzahlen synchron zum Flug."),
     ],
 }
 
@@ -61,7 +69,7 @@ COPY = {
         "c3_t": "IA opzionale",
         "c3_b": "Letture intelligenti solo con consenso, su riassunti già calcolati sul tuo iPhone.",
         "show_h2": "Dentro l’app",
-        "show_sub": "Sei schermate chiave: cosa vedi e a cosa servono.",
+        "show_sub": "Otto schermate chiave: cosa vedi e a cosa servono.",
         "band_h2": "Pronto a leggere i tuoi dati?",
         "band_p": "LifeNex osserva, spiega e motiva. Non è un’app medica.",
         "band_cta": "Vai su App Store",
@@ -72,6 +80,8 @@ COPY = {
             "Schermata Carico",
             "Schermata Trend con AI",
             "Mix sessioni settimanale",
+            "Confronto 3D con pallini",
+            "Volo Satellite 3D",
         ],
     },
     "en": {
@@ -95,7 +105,7 @@ COPY = {
         "c3_t": "Optional AI",
         "c3_b": "Smart readings only with consent, based on summaries already computed on your iPhone.",
         "show_h2": "Inside the app",
-        "show_sub": "Six key screens: what you see and what you can do.",
+        "show_sub": "Eight key screens: what you see and what you can do.",
         "band_h2": "Ready to read your data?",
         "band_p": "LifeNex observes, explains, and motivates. Not a medical app.",
         "band_cta": "Go to the App Store",
@@ -106,6 +116,8 @@ COPY = {
             "Training load screen",
             "Trend screen with AI",
             "Weekly session mix",
+            "3D compare with moving dots",
+            "3D Satellite flight",
         ],
     },
     "fr": {
@@ -129,7 +141,7 @@ COPY = {
         "c3_t": "IA optionnelle",
         "c3_b": "Lectures intelligentes uniquement avec consentement, à partir de résumés déjà calculés sur l’iPhone.",
         "show_h2": "Dans l’app",
-        "show_sub": "Six écrans clés : ce que vous voyez et ce que vous pouvez faire.",
+        "show_sub": "Huit écrans clés : ce que vous voyez et ce que vous pouvez faire.",
         "band_h2": "Prêt à lire vos données ?",
         "band_p": "LifeNex observe, explique et motive. Ce n’est pas une app médicale.",
         "band_cta": "Aller sur l’App Store",
@@ -140,6 +152,8 @@ COPY = {
             "Écran Charge",
             "Écran Tendances avec IA",
             "Mix des séances de la semaine",
+            "Comparaison 3D avec pastilles",
+            "Vol Satellite 3D",
         ],
     },
     "de": {
@@ -163,7 +177,7 @@ COPY = {
         "c3_t": "Optionale KI",
         "c3_b": "Intelligente Lesungen nur mit Einwilligung, basierend auf Zusammenfassungen auf dem iPhone.",
         "show_h2": "In der App",
-        "show_sub": "Sechs zentrale Screens: was du siehst und wozu sie dienen.",
+        "show_sub": "Acht zentrale Screens: was du siehst und wozu sie dienen.",
         "band_h2": "Bereit, deine Daten zu lesen?",
         "band_p": "LifeNex beobachtet, erklärt und motiviert. Keine Medizin-App.",
         "band_cta": "Zum App Store",
@@ -174,6 +188,8 @@ COPY = {
             "Trainingslast",
             "Trend mit KI",
             "Wochen-Mix der Einheiten",
+            "3D-Vergleich mit Punkten",
+            "3D-Satellitenflug",
         ],
     },
 }
@@ -280,9 +296,9 @@ def home_html(lang: str) -> str:
         </div>
       </div>
       <div class="hero-phones" aria-hidden="true">
-        <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-2.png" alt=""></div>
-        <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-1.png" alt=""></div>
-        <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-3.png" alt=""></div>
+        <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-7.png" alt=""></div>
+        <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-8.png" alt=""></div>
+        <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-1.png" alt=""></div>
       </div>
     </div>
   </section>
