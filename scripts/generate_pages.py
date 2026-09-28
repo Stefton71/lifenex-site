@@ -199,7 +199,6 @@ PREFIX = {"it": "", "en": "../", "fr": "../", "de": "../"}
 SHOT_PREFIX = {"it": "it", "en": "en", "fr": "fr", "de": "de"}
 ASSET = {"it": "assets/", "en": "../assets/", "fr": "../assets/", "de": "../assets/"}
 CSS = {"it": "styles.css", "en": "../styles.css", "fr": "../styles.css", "de": "../styles.css"}
-JS = {"it": "lightbox.js", "en": "../lightbox.js", "fr": "../lightbox.js", "de": "../lightbox.js"}
 HOME_HREF = {"it": "./", "en": "./", "fr": "./", "de": "./"}
 PRIVACY_HREF = {"it": "privacy/", "en": "privacy/", "fr": "privacy/", "de": "privacy/"}
 ROOT_HOME = {"it": "./", "en": "../", "fr": "../", "de": "../"}
@@ -350,7 +349,6 @@ def home_html(lang: str) -> str:
       </span>
     </div>
   </footer>
-  <script src="{JS[lang]}" defer></script>
 </body>
 </html>
 """
