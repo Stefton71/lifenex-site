@@ -295,9 +295,28 @@ a:hover { text-decoration: underline; }
   height: auto;
 }
 .shot figcaption {
+  text-align: left;
+  max-width: 240px;
+  margin: 0 auto;
+}
+.shot figcaption strong {
+  display: block;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.shot figcaption span {
+  display: block;
   color: var(--muted);
-  font-size: 0.92rem;
-  font-weight: 600;
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+.lang-switch {
+  flex-wrap: wrap;
+  max-width: 11rem;
+  justify-content: flex-end;
 }
 
 .cta-band {
