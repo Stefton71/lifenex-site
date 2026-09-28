@@ -297,8 +297,8 @@ def home_html(lang: str) -> str:
       </div>
       <div class="hero-phones" aria-hidden="true">
         <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-7.png" alt=""></div>
-        <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-8.png" alt=""></div>
-        <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-1.png" alt=""></div>
+        <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-1.png" alt=""></div>
+        <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-8.png" alt=""></div>
       </div>
     </div>
   </section>

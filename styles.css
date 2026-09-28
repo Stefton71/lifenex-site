@@ -197,19 +197,19 @@ a:hover { text-decoration: underline; }
 }
 .phone-main {
   z-index: 3;
-  transform: translateY(8px);
+  transform: translateY(-12px);
   animation: rise 0.9s ease-out both;
 }
 .phone-left {
   z-index: 2;
-  transform: translate(-42%, 28px) rotate(-8deg) scale(0.9);
-  animation: rise 0.9s 0.08s ease-out both;
+  transform: translate(-42%, 72px) rotate(-8deg) scale(0.88);
+  animation: rise-left 0.9s 0.08s ease-out both;
 }
 .phone-right {
   z-index: 1;
-  transform: translate(42%, 36px) rotate(8deg) scale(0.88);
+  transform: translate(42%, 80px) rotate(8deg) scale(0.86);
   opacity: 0.96;
-  animation: rise 0.9s 0.16s ease-out both;
+  animation: rise-right 0.9s 0.16s ease-out both;
 }
 @keyframes rise {
   from { opacity: 0; transform: translateY(28px); }
@@ -218,12 +218,12 @@ a:hover { text-decoration: underline; }
 .phone-left { animation-name: rise-left; }
 .phone-right { animation-name: rise-right; }
 @keyframes rise-left {
-  from { opacity: 0; transform: translate(-42%, 50px) rotate(-8deg) scale(0.9); }
-  to { opacity: 1; transform: translate(-42%, 28px) rotate(-8deg) scale(0.9); }
+  from { opacity: 0; transform: translate(-42%, 100px) rotate(-8deg) scale(0.88); }
+  to { opacity: 1; transform: translate(-42%, 72px) rotate(-8deg) scale(0.88); }
 }
 @keyframes rise-right {
-  from { opacity: 0; transform: translate(42%, 58px) rotate(8deg) scale(0.88); }
-  to { opacity: 0.96; transform: translate(42%, 36px) rotate(8deg) scale(0.88); }
+  from { opacity: 0; transform: translate(42%, 108px) rotate(8deg) scale(0.86); }
+  to { opacity: 0.96; transform: translate(42%, 80px) rotate(8deg) scale(0.86); }
 }
 
 .section {
