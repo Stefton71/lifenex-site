@@ -13,34 +13,27 @@
   root.hidden = true;
   root.setAttribute("role", "dialog");
   root.setAttribute("aria-modal", "true");
-  root.setAttribute("aria-label", label);
   root.innerHTML = `
-    <button type="button" class="lightbox-close" aria-label="${label}">
-      <span aria-hidden="true">×</span>
-    </button>
-    <img class="lightbox-img" alt="">
+    <div class="lightbox-stage">
+      <button type="button" class="lightbox-close" aria-label="${label}">×</button>
+      <img class="lightbox-img" alt="">
+    </div>
   `;
   document.body.appendChild(root);
 
   const img = root.querySelector(".lightbox-img");
   const closeBtn = root.querySelector(".lightbox-close");
-  let lastFocus = null;
 
   function open(src, alt) {
-    lastFocus = document.activeElement;
     img.src = src;
     img.alt = alt || "";
     root.hidden = false;
-    document.body.classList.add("lightbox-open");
-    closeBtn.focus();
   }
 
   function close() {
     if (root.hidden) return;
     root.hidden = true;
     img.removeAttribute("src");
-    document.body.classList.remove("lightbox-open");
-    if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
   }
 
   document.addEventListener("click", (event) => {
@@ -54,6 +47,7 @@
   });
 
   closeBtn.addEventListener("click", (event) => {
+    event.preventDefault();
     event.stopPropagation();
     close();
   });
