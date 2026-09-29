@@ -249,6 +249,13 @@ a:hover { text-decoration: underline; }
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+.grid-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.grid-features .card h3 { font-size: 1.05rem; }
+.hero h1 { max-width: 18ch; }
 .card {
   padding: 1.35rem 1.25rem;
   border-radius: var(--radius);
@@ -382,7 +389,7 @@ a:hover { text-decoration: underline; }
   .hero h1, .lead { margin-left: auto; margin-right: auto; max-width: none; }
   .cta-row { justify-content: center; }
   .hero-phones { height: 420px; margin-top: 0.5rem; }
-  .grid-3, .shot-grid { grid-template-columns: 1fr; }
+  .grid-3, .grid-features, .shot-grid { grid-template-columns: 1fr; }
   .shot-grid { grid-template-columns: repeat(2, 1fr); }
   .nav-links { display: none; }
 }

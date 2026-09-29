@@ -6,72 +6,74 @@ ROOT = Path("/Users/stefano/Documents/lifenex-site")
 
 SHOTS = {
     "it": [
-        ("Metriche e Spotlight", "Dashboard salute e sport: recupero, HRV, attività, VO₂ max e FC a riposo, filtrabili per Sport, Corpo e Movimento."),
-        ("Cronologia sessioni", "Tutte le uscite da Salute: cerca, filtra, ordina e apri ogni allenamento con durata, km e kcal."),
-        ("Confronta 2 sessioni", "Scegli due uscite (stesso percorso o simili) e confronta prestazioni, mappa e metriche affiancate."),
-        ("Carico di allenamento", "Vedi se il carico recente è sopra o sotto il tuo ritmo abituale, per sport e finestra temporale."),
-        ("Trend e analisi AI", "Lettura su 15–90 giorni di allenamento, cuore, HRV e peso, con lettura intelligente opzionale."),
-        ("Mix della settimana", "Riepilogo 7 giorni: volume, costanza e quota di tempo per tipo di sessione (forza, corsa, bici…)."),
-        ("Confronto sessioni live", "Due sessioni sulla stessa mappa 3D: i pallini colorati si muovono insieme nel replay, con tempo, passo, FC e pendenza a confronto."),
-        ("Volo Satellite 3D", "Rivedi il percorso in Satellite 3D con play e velocità (fino a 10×): zone FC e metriche sync mentre ‘voli’ sul tracciato."),
+        ("Metriche e Spotlight", "Una sola visione su recupero, HRV, attività, VO₂ max e FC a riposo — filtrabile per Sport, Corpo e Movimento."),
+        ("Analizza ogni allenamento", "Durata, distanza, passo, FC, zone, kcal, dislivello e mappa GPS: tutto ciò che serve per capire la sessione."),
+        ("Confronta le prestazioni", "Due uscite affiancate: durata, distanza, passo, FC, energia, dislivello e carico — vedi cosa è cambiato."),
+        ("Carico di allenamento", "Durata, intensità, volume e carico nel tempo: una lettura più completa del tuo allenamento."),
+        ("Analisi intelligente", "Gli ultimi 30 giorni in relazione: allenamento, carico, corpo, cuore, movimento, recupero e obiettivi."),
+        ("Mix della settimana", "Volume, costanza e quota di tempo per tipo di sessione — la settimana in un colpo d’occhio."),
+        ("Confronto live", "Due sessioni sulla stessa mappa 3D: i pallini avanzano insieme con tempo, passo, FC e pendenza."),
+        ("Volo Satellite 3D", "Rivedi il percorso in Satellite 3D con play e velocità: zone FC e metriche sync mentre voli sul tracciato."),
     ],
     "en": [
-        ("Metrics & Spotlight", "Health and sport dashboard: recovery, HRV, activity, VO₂ max and resting HR, filterable by Sport, Body and Movement."),
-        ("Workout history", "Every session from Health: search, filter, sort and open each workout with duration, distance and calories."),
-        ("Compare 2 sessions", "Pick two workouts (same or similar route) and compare performance, map and metrics side by side."),
-        ("Training load", "See whether recent load sits above or below your habitual rhythm, by sport and time window."),
-        ("Trends & AI analysis", "15–90 day readouts on training, heart, HRV and weight, plus optional smart readings."),
-        ("Weekly mix", "7-day summary: volume, consistency and time share by session type (strength, run, bike…)."),
-        ("Live session compare", "Two sessions on the same 3D map: colored dots move together in replay, with time, pace, HR and grade side by side."),
-        ("3D Satellite flight", "Replay the route in Satellite 3D with play and speed (up to 10×): HR zones and metrics stay in sync as you fly the track."),
+        ("Metrics & Spotlight", "One view of recovery, HRV, activity, VO₂ max and resting HR — filter by Sport, Body and Movement."),
+        ("Analyze every workout", "Duration, distance, pace, HR, zones, calories, elevation and GPS map — everything to understand the session."),
+        ("Compare performance", "Two workouts side by side: duration, distance, pace, HR, energy, elevation and load — see what changed."),
+        ("Training load", "Duration, intensity, volume and load over time: a fuller read of how you train."),
+        ("Smart analysis", "The last 30 days connected: training, load, body, heart, movement, recovery and goals."),
+        ("Weekly mix", "Volume, consistency and time share by session type — your week at a glance."),
+        ("Live compare", "Two sessions on the same 3D map: dots move together with time, pace, HR and grade."),
+        ("3D Satellite flight", "Replay the route in Satellite 3D with play and speed: HR zones and metrics stay in sync as you fly."),
     ],
     "fr": [
-        ("Métriques et Spotlight", "Tableau de bord santé et sport : récupération, VFC, activité, VO₂ max et FC au repos, filtrable par Sport, Corps et Mouvement."),
-        ("Historique des séances", "Toutes les sorties depuis Santé : recherchez, filtrez, triez et ouvrez chaque entraînement avec durée, km et kcal."),
-        ("Comparer 2 séances", "Choisissez deux sorties (même parcours ou similaires) et comparez perfos, carte et métriques côte à côte."),
-        ("Charge d’entraînement", "Voyez si la charge récente est au-dessus ou en dessous de votre rythme habituel, par sport et période."),
-        ("Tendances et analyse IA", "Lecture sur 15–90 jours (entraînement, cœur, VFC, poids), avec lectures intelligentes optionnelles."),
-        ("Mix de la semaine", "Résumé 7 jours : volume, constance et part du temps par type de séance (force, course, vélo…)."),
-        ("Comparaison séances live", "Deux séances sur la même carte 3D : les pastilles colorées avancent ensemble en replay, avec temps, allure, FC et pente en face."),
-        ("Vol Satellite 3D", "Revivez le parcours en Satellite 3D avec lecture et vitesse (jusqu’à 10×) : zones FC et métriques synchronisées pendant le vol."),
+        ("Métriques et Spotlight", "Une seule vue sur récupération, VFC, activité, VO₂ max et FC au repos — filtrable par Sport, Corps et Mouvement."),
+        ("Analysez chaque séance", "Durée, distance, allure, FC, zones, kcal, dénivelé et carte GPS : tout pour comprendre la séance."),
+        ("Comparez vos perfs", "Deux sorties côte à côte : durée, distance, allure, FC, énergie, dénivelé et charge — voyez ce qui a changé."),
+        ("Charge d’entraînement", "Durée, intensité, volume et charge dans le temps : une lecture plus complète de votre entraînement."),
+        ("Analyse intelligente", "Les 30 derniers jours reliés : entraînement, charge, corps, cœur, mouvement, récupération et objectifs."),
+        ("Mix de la semaine", "Volume, constance et part du temps par type de séance — la semaine d’un coup d’œil."),
+        ("Comparaison live", "Deux séances sur la même carte 3D : les pastilles avancent ensemble avec temps, allure, FC et pente."),
+        ("Vol Satellite 3D", "Revivez le parcours en Satellite 3D avec lecture et vitesse : zones FC et métriques synchronisées pendant le vol."),
     ],
     "de": [
-        ("Metriken & Spotlight", "Dashboard für Gesundheit und Sport: Erholung, HRV, Aktivität, VO₂ max und Ruhepuls — filterbar nach Sport, Körper und Bewegung."),
-        ("Trainingshistorie", "Alle Einheiten aus Gesundheit: suchen, filtern, sortieren und jede Einheit mit Dauer, km und kcal öffnen."),
-        ("2 Einheiten vergleichen", "Zwei Einheiten wählen (gleiche oder ähnliche Route) und Leistung, Karte und Kennzahlen vergleichen."),
-        ("Trainingslast", "Siehst du, ob die aktuelle Last über oder unter deinem gewohnten Rhythmus liegt — nach Sport und Zeitraum."),
-        ("Trends & KI-Analyse", "Auswertung über 15–90 Tage zu Training, Herz, HRV und Gewicht, plus optionale intelligente Lesungen."),
-        ("Wochen-Mix", "7-Tage-Übersicht: Volumen, Beständigkeit und Zeitanteil nach Einheitstyp (Kraft, Lauf, Rad…)."),
-        ("Live-Einheitenvergleich", "Zwei Einheiten auf derselben 3D-Karte: farbige Punkte bewegen sich gemeinsam im Replay — Zeit, Tempo, HF und Steigung im Vergleich."),
-        ("3D-Satellitenflug", "Route im Satelliten-3D mit Play und Tempo (bis 10×) nochmal erleben: HF-Zonen und Kennzahlen synchron zum Flug."),
+        ("Metriken & Spotlight", "Ein Blick auf Erholung, HRV, Aktivität, VO₂ max und Ruhepuls — filterbar nach Sport, Körper und Bewegung."),
+        ("Jede Einheit analysieren", "Dauer, Distanz, Tempo, HF, Zonen, kcal, Höhenmeter und GPS-Karte — alles, um die Einheit zu verstehen."),
+        ("Leistungen vergleichen", "Zwei Einheiten nebeneinander: Dauer, Distanz, Tempo, HF, Energie, Höhenmeter und Last — sieh, was sich geändert hat."),
+        ("Trainingslast", "Dauer, Intensität, Volumen und Last über die Zeit: ein vollständigeres Bild deines Trainings."),
+        ("Intelligente Analyse", "Die letzten 30 Tage verbunden: Training, Last, Körper, Herz, Bewegung, Erholung und Ziele."),
+        ("Wochen-Mix", "Volumen, Beständigkeit und Zeitanteil nach Einheitstyp — die Woche auf einen Blick."),
+        ("Live-Vergleich", "Zwei Einheiten auf derselben 3D-Karte: Punkte laufen gemeinsam mit Zeit, Tempo, HF und Steigung."),
+        ("3D-Satellitenflug", "Route im Satelliten-3D mit Play und Tempo nochmals erleben: HF-Zonen und Kennzahlen synchron zum Flug."),
     ],
 }
 
 COPY = {
     "it": {
         "lang": "it",
-        "title": "LifeNex — Analisi Fitness, Salute e IA",
-        "desc": "LifeNex — analisi fitness, salute e IA dai dati Apple Salute. Trend, sessioni, carico e obiettivi.",
+        "title": "LifeNex — Tutti i tuoi dati. Una sola visione.",
+        "desc": "LifeNex trasforma i dati di Apple Salute in informazioni utili: allenamenti, prestazioni, carico, recupero, composizione corporea e salute — in un’unica app.",
         "nav_app": "App",
         "nav_privacy": "Privacy",
         "nav_contact": "Contatti",
         "eyebrow": "iOS · Apple Salute · HealthKit",
-        "h1": "Analisi Fitness, Salute e IA",
-        "lead": "Trasforma i dati già in Apple Salute in trend chiari: sessioni, carico, composizione e obiettivi — senza diagnosi e senza piani clinici.",
+        "h1": "Tutti i tuoi dati. Una sola visione.",
+        "lead": "Trasforma i dati di Apple Salute in informazioni utili. Allenamenti, prestazioni, carico, recupero, composizione corporea e principali dati di salute — riuniti in un’unica app.",
         "cta_store": "Scarica su App Store",
         "cta_see": "Vedi l’app",
-        "what_h2": "Cosa fa LifeNex",
-        "what_sub": "Osserva i tuoi dati, spiega i trend e ti motiva verso obiettivi che scegli tu.",
-        "c1_t": "Trend e analisi",
-        "c1_b": "Periodi 15–90 giorni su attività, cardio, sonno e composizione — in linguaggio semplice.",
-        "c2_t": "Sessioni e carico",
-        "c2_b": "Cronologia allenamenti, zone FC, mappe e andamento del carico nel tempo.",
-        "c3_t": "IA opzionale",
-        "c3_b": "Letture intelligenti solo con consenso, su riassunti già calcolati sul tuo iPhone.",
-        "show_h2": "Dentro l’app",
-        "show_sub": "Otto schermate chiave: cosa vedi e a cosa servono.",
-        "band_h2": "Pronto a leggere i tuoi dati?",
-        "band_p": "LifeNex osserva, spiega e motiva. Non è un’app medica.",
+        "what_h2": "Dal dato all’interpretazione",
+        "what_sub": "Non è solo un diario degli allenamenti. È lo strumento per osservare nel tempo come cambiano prestazioni, corpo e indicatori principali.",
+        "features": [
+            ("Analizza ogni allenamento", "Durata, distanza, passo, velocità, calorie, dislivello, frequenza cardiaca, zone di intensità e mappa GPS: capisci come hai svolto ogni sessione."),
+            ("Confronta le tue prestazioni", "Metti a confronto due allenamenti e verifica cosa è cambiato: durata, distanza, passo, FC, energia, dislivello e carico."),
+            ("Vedi l’evoluzione nel tempo", "Grafici e serie temporali mostrano andamenti e cambiamenti che un singolo dato non rivela."),
+            ("Una visione completa", "FC, FC a riposo, HRV, VO₂ max, pressione, ossigenazione, sonno, peso, BMI, massa grassa e magra, passi e attività — organizzati in un unico spazio."),
+            ("Carico e corpo", "Monitora durata, intensità, volume e carico nel tempo. Segui peso, massa grassa e magra sullo storico."),
+            ("Obiettivi e analisi intelligente", "Imposta obiettivi e segui i progressi. L’analisi mette in relazione gli ultimi 30 giorni di allenamento, carico, corpo, cuore, movimento e recupero."),
+        ],
+        "show_h2": "Tutto in un’unica app",
+        "show_sub": "Riepilogo, Allenamenti, Carico, Obiettivi e Analisi: un’esperienza pensata per passare dal dato alla sua interpretazione.",
+        "band_h2": "Vedi i dati. Confrontali. Analizzali. Segui la tua evoluzione.",
+        "band_p": "LifeNex riunisce ciò che Apple Salute raccoglie — e te lo fa leggere.",
         "band_cta": "Vai su App Store",
         "alt": [
             "Schermata Metriche LifeNex",
@@ -86,28 +88,30 @@ COPY = {
     },
     "en": {
         "lang": "en",
-        "title": "LifeNex — Fitness, Health & AI Analysis",
-        "desc": "LifeNex — fitness, health and AI analysis from Apple Health. Trends, workouts, training load and goals.",
+        "title": "LifeNex — All your data. One clear view.",
+        "desc": "LifeNex turns Apple Health data into useful insight: workouts, performance, training load, recovery, body composition and health — in one app.",
         "nav_app": "App",
         "nav_privacy": "Privacy",
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Health · HealthKit",
-        "h1": "Fitness, Health &amp; AI Analysis",
-        "lead": "Turn the data already in Apple Health into clear trends: workouts, training load, body composition and goals — without diagnosis or clinical plans.",
+        "h1": "All your data. One clear view.",
+        "lead": "Turn Apple Health data into useful information. Workouts, performance, training load, recovery, body composition and key health metrics — together in one app.",
         "cta_store": "Download on the App Store",
         "cta_see": "See the app",
-        "what_h2": "What LifeNex does",
-        "what_sub": "It observes your data, explains trends, and motivates you toward goals you choose.",
-        "c1_t": "Trends &amp; analysis",
-        "c1_b": "15–90 day windows on activity, cardio, sleep and composition — in plain language.",
-        "c2_t": "Workouts &amp; load",
-        "c2_b": "Workout history, heart-rate zones, maps and how your training load evolves.",
-        "c3_t": "Optional AI",
-        "c3_b": "Smart readings only with consent, based on summaries already computed on your iPhone.",
-        "show_h2": "Inside the app",
-        "show_sub": "Eight key screens: what you see and what you can do.",
-        "band_h2": "Ready to read your data?",
-        "band_p": "LifeNex observes, explains, and motivates. Not a medical app.",
+        "what_h2": "From data to insight",
+        "what_sub": "Not just a workout diary. A tool to watch how your performance, body and key indicators change over time.",
+        "features": [
+            ("Analyze every workout", "Duration, distance, pace, speed, calories, elevation, heart rate, intensity zones and GPS map — understand how you did each session."),
+            ("Compare your performance", "Put two workouts side by side and see what changed: duration, distance, pace, HR, energy, elevation and load."),
+            ("See evolution over time", "Charts and time series reveal trends and shifts a single number never shows."),
+            ("A complete health view", "HR, resting HR, HRV, VO₂ max, blood pressure, oxygen, sleep, weight, BMI, fat and lean mass, steps and activity — organized in one place."),
+            ("Load and body", "Track duration, intensity, volume and load over time. Follow weight, fat and lean mass on your history."),
+            ("Goals and smart analysis", "Set goals and follow progress. Analysis connects the last 30 days of training, load, body, heart, movement and recovery."),
+        ],
+        "show_h2": "Everything in one app",
+        "show_sub": "Summary, Workouts, Load, Goals and Analysis — designed to move from the number to what it means.",
+        "band_h2": "See the data. Compare it. Analyze it. Follow your evolution.",
+        "band_p": "LifeNex brings together what Apple Health collects — and helps you read it.",
         "band_cta": "Go to the App Store",
         "alt": [
             "LifeNex Metrics screen",
@@ -122,28 +126,30 @@ COPY = {
     },
     "fr": {
         "lang": "fr",
-        "title": "LifeNex — Analyse Fitness, Santé et IA",
-        "desc": "LifeNex — analyse fitness, santé et IA à partir d’Apple Santé. Tendances, séances, charge et objectifs.",
+        "title": "LifeNex — Toutes vos données. Une seule vision.",
+        "desc": "LifeNex transforme les données Apple Santé en informations utiles : séances, perfs, charge, récupération, composition corporelle et santé — dans une seule app.",
         "nav_app": "App",
         "nav_privacy": "Confidentialité",
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Santé · HealthKit",
-        "h1": "Analyse Fitness, Santé et IA",
-        "lead": "Transformez les données déjà dans Apple Santé en tendances claires : séances, charge, composition et objectifs — sans diagnostic ni plan clinique.",
+        "h1": "Toutes vos données. Une seule vision.",
+        "lead": "Transformez les données Apple Santé en informations utiles. Séances, performances, charge, récupération, composition corporelle et indicateurs de santé — réunis dans une seule app.",
         "cta_store": "Télécharger sur l’App Store",
         "cta_see": "Voir l’app",
-        "what_h2": "Ce que fait LifeNex",
-        "what_sub": "Il observe vos données, explique les tendances et vous motive vers les objectifs que vous choisissez.",
-        "c1_t": "Tendances et analyse",
-        "c1_b": "Fenêtres de 15–90 jours sur activité, cardio, sommeil et composition — en langage simple.",
-        "c2_t": "Séances et charge",
-        "c2_b": "Historique d’entraînement, zones FC, cartes et évolution de la charge dans le temps.",
-        "c3_t": "IA optionnelle",
-        "c3_b": "Lectures intelligentes uniquement avec consentement, à partir de résumés déjà calculés sur l’iPhone.",
-        "show_h2": "Dans l’app",
-        "show_sub": "Huit écrans clés : ce que vous voyez et ce que vous pouvez faire.",
-        "band_h2": "Prêt à lire vos données ?",
-        "band_p": "LifeNex observe, explique et motive. Ce n’est pas une app médicale.",
+        "what_h2": "De la donnée à l’interprétation",
+        "what_sub": "Pas seulement un journal d’entraînement. Un outil pour observer comment évoluent vos performances, votre corps et vos indicateurs clés.",
+        "features": [
+            ("Analysez chaque séance", "Durée, distance, allure, vitesse, calories, dénivelé, fréquence cardiaque, zones d’intensité et carte GPS : comprenez chaque sortie."),
+            ("Comparez vos performances", "Mettez deux séances face à face et voyez ce qui a changé : durée, distance, allure, FC, énergie, dénivelé et charge."),
+            ("Voyez l’évolution dans le temps", "Graphiques et séries temporelles révèlent des tendances qu’un chiffre isolé ne montre jamais."),
+            ("Une vision santé complète", "FC, FC au repos, VFC, VO₂ max, tension, oxygénation, sommeil, poids, IMC, masse grasse et maigre, pas et activité — organisés au même endroit."),
+            ("Charge et corps", "Suivez durée, intensité, volume et charge dans le temps. Contrôlez poids, masse grasse et maigre sur l’historique."),
+            ("Objectifs et analyse intelligente", "Fixez vos objectifs et suivez les progrès. L’analyse relie les 30 derniers jours d’entraînement, charge, corps, cœur, mouvement et récupération."),
+        ],
+        "show_h2": "Tout dans une seule app",
+        "show_sub": "Résumé, Séances, Charge, Objectifs et Analyse : une expérience conçue pour passer de la donnée à son sens.",
+        "band_h2": "Voyez les données. Comparez-les. Analysez-les. Suivez votre évolution.",
+        "band_p": "LifeNex rassemble ce qu’Apple Santé collecte — et vous aide à le lire.",
         "band_cta": "Aller sur l’App Store",
         "alt": [
             "Écran Métriques LifeNex",
@@ -158,28 +164,30 @@ COPY = {
     },
     "de": {
         "lang": "de",
-        "title": "LifeNex — Fitness-, Gesundheits- &amp; KI-Analyse",
-        "desc": "LifeNex — Fitness-, Gesundheits- und KI-Analyse aus Apple Gesundheit. Trends, Einheiten, Last und Ziele.",
+        "title": "LifeNex — Alle deine Daten. Ein klarer Blick.",
+        "desc": "LifeNex macht aus Apple-Gesundheit nützliche Informationen: Training, Leistung, Last, Erholung, Körperzusammensetzung und Gesundheit — in einer App.",
         "nav_app": "App",
         "nav_privacy": "Datenschutz",
         "nav_contact": "Kontakt",
         "eyebrow": "iOS · Apple Gesundheit · HealthKit",
-        "h1": "Fitness, Gesundheit &amp; KI-Analyse",
-        "lead": "Mach aus den Daten in Apple Gesundheit klare Trends: Einheiten, Trainingslast, Körperzusammensetzung und Ziele — ohne Diagnose und ohne klinische Pläne.",
+        "h1": "Alle deine Daten. Ein klarer Blick.",
+        "lead": "Mach aus Apple-Gesundheit nützliche Informationen. Training, Leistung, Last, Erholung, Körperzusammensetzung und wichtige Gesundheitswerte — zusammen in einer App.",
         "cta_store": "Im App Store laden",
         "cta_see": "App ansehen",
-        "what_h2": "Was LifeNex macht",
-        "what_sub": "Beobachtet deine Daten, erklärt Trends und motiviert dich zu Zielen, die du selbst wählst.",
-        "c1_t": "Trends &amp; Analyse",
-        "c1_b": "Fenster von 15–90 Tagen zu Aktivität, Cardio, Schlaf und Zusammensetzung — in klarer Sprache.",
-        "c2_t": "Einheiten &amp; Last",
-        "c2_b": "Trainingshistorie, HF-Zonen, Karten und wie sich deine Trainingslast entwickelt.",
-        "c3_t": "Optionale KI",
-        "c3_b": "Intelligente Lesungen nur mit Einwilligung, basierend auf Zusammenfassungen auf dem iPhone.",
-        "show_h2": "In der App",
-        "show_sub": "Acht zentrale Screens: was du siehst und wozu sie dienen.",
-        "band_h2": "Bereit, deine Daten zu lesen?",
-        "band_p": "LifeNex beobachtet, erklärt und motiviert. Keine Medizin-App.",
+        "what_h2": "Vom Wert zur Einsicht",
+        "what_sub": "Nicht nur ein Trainingstagebuch. Ein Werkzeug, um zu sehen, wie sich Leistung, Körper und zentrale Indikatoren verändern.",
+        "features": [
+            ("Jede Einheit analysieren", "Dauer, Distanz, Tempo, Geschwindigkeit, Kalorien, Höhenmeter, Herzfrequenz, Intensitätszonen und GPS-Karte — verstehe jede Einheit."),
+            ("Leistungen vergleichen", "Zwei Einheiten nebeneinander: Dauer, Distanz, Tempo, HF, Energie, Höhenmeter und Last — sieh, was sich geändert hat."),
+            ("Entwicklung über die Zeit", "Diagramme und Zeitreihen zeigen Trends und Veränderungen, die eine einzelne Zahl nie verrät."),
+            ("Ein vollständiger Gesundheitsblick", "HF, Ruhepuls, HRV, VO₂ max, Blutdruck, Sauerstoff, Schlaf, Gewicht, BMI, Fett- und Magermasse, Schritte und Aktivität — an einem Ort."),
+            ("Last und Körper", "Verfolge Dauer, Intensität, Volumen und Last über die Zeit. Behalte Gewicht, Fett- und Magermasse im Blick."),
+            ("Ziele und intelligente Analyse", "Setze Ziele und folge dem Fortschritt. Die Analyse verbindet die letzten 30 Tage aus Training, Last, Körper, Herz, Bewegung und Erholung."),
+        ],
+        "show_h2": "Alles in einer App",
+        "show_sub": "Übersicht, Einheiten, Last, Ziele und Analyse — gemacht, um vom Wert zur Bedeutung zu kommen.",
+        "band_h2": "Sieh die Daten. Vergleiche sie. Analysiere sie. Folge deiner Entwicklung.",
+        "band_p": "LifeNex bündelt, was Apple Gesundheit sammelt — und hilft dir, es zu lesen.",
         "band_cta": "Zum App Store",
         "alt": [
             "LifeNex-Metriken",
@@ -237,6 +245,19 @@ def shots_html(lang: str) -> str:
           <a class="shot-frame" href="{src}"><img src="{src}" alt="{alt}" loading="lazy"></a>
           <figcaption><strong>{title}</strong><span>{body}</span></figcaption>
         </figure>"""
+        )
+    return "\n".join(blocks)
+
+
+
+def features_html(lang: str) -> str:
+    blocks = []
+    for title, body in COPY[lang]["features"]:
+        blocks.append(
+            f"""        <article class="card">
+          <h3>{title}</h3>
+          <p>{body}</p>
+        </article>"""
         )
     return "\n".join(blocks)
 
@@ -307,19 +328,8 @@ def home_html(lang: str) -> str:
     <div class="section-inner">
       <h2>{c['what_h2']}</h2>
       <p class="sub">{c['what_sub']}</p>
-      <div class="grid-3">
-        <article class="card">
-          <h3>{c['c1_t']}</h3>
-          <p>{c['c1_b']}</p>
-        </article>
-        <article class="card">
-          <h3>{c['c2_t']}</h3>
-          <p>{c['c2_b']}</p>
-        </article>
-        <article class="card">
-          <h3>{c['c3_t']}</h3>
-          <p>{c['c3_b']}</p>
-        </article>
+      <div class="grid-features">
+{features_html(lang)}
       </div>
     </div>
   </section>
