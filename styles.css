@@ -254,8 +254,6 @@ a:hover { text-decoration: underline; }
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
-.grid-features .card h3 { font-size: 1.05rem; }
-.hero h1 { max-width: 18ch; }
 .card {
   padding: 1.35rem 1.25rem;
   border-radius: var(--radius);
