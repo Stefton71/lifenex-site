@@ -180,6 +180,7 @@ a:hover { text-decoration: underline; }
   height: min(560px, 72vw);
   display: grid;
   place-items: center;
+  perspective: 1200px;
 }
 .phone {
   position: absolute;
@@ -189,6 +190,8 @@ a:hover { text-decoration: underline; }
   background: #0b0a12;
   border: 2px solid rgba(255, 255, 255, 0.55);
   box-shadow: var(--shadow);
+  will-change: transform, opacity;
+  transform-origin: center bottom;
 }
 .phone img {
   display: block;
@@ -197,33 +200,55 @@ a:hover { text-decoration: underline; }
 }
 .phone-main {
   z-index: 3;
-  transform: translateY(-12px);
-  animation: rise 0.9s ease-out both;
+  animation: phone-enter-main 1s cubic-bezier(0.22, 1, 0.36, 1) 0.05s both;
 }
 .phone-left {
   z-index: 2;
-  transform: translate(-42%, 72px) rotate(-8deg) scale(0.88);
-  animation: rise-left 0.9s 0.08s ease-out both;
+  animation: phone-enter-left 1.05s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
 }
 .phone-right {
   z-index: 1;
-  transform: translate(42%, 80px) rotate(8deg) scale(0.86);
-  opacity: 0.96;
-  animation: rise-right 0.9s 0.16s ease-out both;
+  animation: phone-enter-right 1.05s cubic-bezier(0.22, 1, 0.36, 1) 0.34s both;
 }
-@keyframes rise {
-  from { opacity: 0; transform: translateY(28px); }
-  to { opacity: 1; }
+@keyframes phone-enter-main {
+  from {
+    opacity: 0;
+    transform: translateY(48px) scale(0.86);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-12px) scale(1);
+  }
 }
-.phone-left { animation-name: rise-left; }
-.phone-right { animation-name: rise-right; }
-@keyframes rise-left {
-  from { opacity: 0; transform: translate(-42%, 100px) rotate(-8deg) scale(0.88); }
-  to { opacity: 1; transform: translate(-42%, 72px) rotate(-8deg) scale(0.88); }
+@keyframes phone-enter-left {
+  from {
+    opacity: 0;
+    transform: translate(-8%, 36px) rotate(0deg) scale(0.78);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-42%, 72px) rotate(-8deg) scale(0.88);
+  }
 }
-@keyframes rise-right {
-  from { opacity: 0; transform: translate(42%, 108px) rotate(8deg) scale(0.86); }
-  to { opacity: 0.96; transform: translate(42%, 80px) rotate(8deg) scale(0.86); }
+@keyframes phone-enter-right {
+  from {
+    opacity: 0;
+    transform: translate(8%, 42px) rotate(0deg) scale(0.76);
+  }
+  to {
+    opacity: 0.96;
+    transform: translate(42%, 80px) rotate(8deg) scale(0.86);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .phone-main,
+  .phone-left,
+  .phone-right {
+    animation: none;
+  }
+  .phone-main { transform: translateY(-12px); opacity: 1; }
+  .phone-left { transform: translate(-42%, 72px) rotate(-8deg) scale(0.88); opacity: 1; }
+  .phone-right { transform: translate(42%, 80px) rotate(8deg) scale(0.86); opacity: 0.96; }
 }
 
 .section {
