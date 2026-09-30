@@ -402,24 +402,20 @@ a:hover { text-decoration: underline; }
 
 /* Screenshot lightbox */
 .lightbox {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  display: flex;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 10000 !important;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 1.25rem;
-  background: rgba(12, 10, 24, 0.78);
+  margin: 0;
+  background: rgba(12, 10, 24, 0.82);
   backdrop-filter: blur(8px);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  -webkit-backdrop-filter: blur(8px);
 }
 .lightbox.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  display: flex;
 }
 .lightbox-dialog {
   position: relative;

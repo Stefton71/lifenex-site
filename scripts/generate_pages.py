@@ -286,7 +286,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}">
+  <link rel="stylesheet" href="{CSS[lang]}?v=2">
 </head>
 <body>
   <header class="site-header">
@@ -362,13 +362,13 @@ def home_html(lang: str) -> str:
     </div>
   </footer>
 
-  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Screenshot">
+  <div id="lightbox" class="lightbox" style="display:none" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Screenshot">
     <div class="lightbox-dialog">
       <button type="button" class="lightbox-close" aria-label="{close_label}">&times;</button>
       <img class="lightbox-img" alt="">
     </div>
   </div>
-  <script src="{lightbox_js}" defer></script>
+  <script src="{lightbox_js}?v=2" defer></script>
 </body>
 </html>
 """
