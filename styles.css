@@ -142,7 +142,7 @@ a:hover { text-decoration: underline; }
   letter-spacing: -0.03em;
   line-height: 1.2;
   color: var(--ink);
-  max-width: 16ch;
+  max-width: 18ch;
 }
 .lead {
   margin: 0 0 1.6rem;
@@ -254,6 +254,8 @@ a:hover { text-decoration: underline; }
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+.grid-features .card h3 { font-size: 1.05rem; }
+.hero h1 { max-width: 18ch; }
 .card {
   padding: 1.35rem 1.25rem;
   border-radius: var(--radius);
@@ -396,4 +398,72 @@ a:hover { text-decoration: underline; }
   .phone-main { position: relative; width: min(230px, 70vw); }
   .hero-phones { height: auto; }
   .shot-grid { grid-template-columns: 1fr 1fr; gap: 1rem 0.75rem; }
+}
+
+/* Screenshot lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: rgba(12, 10, 24, 0.78);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.lightbox-dialog {
+  position: relative;
+  max-width: min(420px, 92vw);
+  max-height: 90vh;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+.lightbox-dialog img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 28px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: var(--shadow);
+  background: #0b0a12;
+}
+.lightbox-close {
+  position: absolute;
+  top: -0.35rem;
+  right: -0.35rem;
+  z-index: 2;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.45rem;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  box-shadow: 0 10px 24px rgba(99, 87, 250, 0.45);
+}
+.lightbox-close:hover {
+  transform: scale(1.06);
+}
+.lightbox-close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+body.lightbox-open {
+  overflow: hidden;
 }

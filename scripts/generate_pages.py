@@ -272,6 +272,8 @@ def home_html(lang: str) -> str:
     else:
         switch = lang_switch(lang, "../")
     a = ASSET[lang]
+    lightbox_js = "lightbox.js" if lang == "it" else "../lightbox.js"
+    close_label = {"it": "Chiudi", "en": "Close", "fr": "Fermer", "de": "Schließen"}[lang]
     return f"""<!DOCTYPE html>
 <html lang="{c['lang']}">
 <head>
@@ -359,6 +361,14 @@ def home_html(lang: str) -> str:
       </span>
     </div>
   </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Screenshot">
+    <div class="lightbox-dialog">
+      <button type="button" class="lightbox-close" aria-label="{close_label}">&times;</button>
+      <img class="lightbox-img" alt="">
+    </div>
+  </div>
+  <script src="{lightbox_js}" defer></script>
 </body>
 </html>
 """
