@@ -286,7 +286,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=3">
+  <link rel="stylesheet" href="{CSS[lang]}?v=4">
 </head>
 <body>
   <header class="site-header">
@@ -314,7 +314,9 @@ def home_html(lang: str) -> str:
         <h1>{c['h1']}</h1>
         <p class="lead">{c['lead']}</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://apps.apple.com/" rel="noopener noreferrer">{c['cta_store']}</a>
+          <a class="store-badge" href="https://apps.apple.com/it/app/lifenex-salute-e-fitness/id6804388724" rel="noopener noreferrer">
+            <img src="{a}badges/app-store-{lang}.svg" alt="{c['cta_store']}" height="40" width="120">
+          </a>
           <a class="btn btn-ghost" href="#app">{c['cta_see']}</a>
         </div>
       </div>
@@ -349,7 +351,9 @@ def home_html(lang: str) -> str:
   <div class="cta-band">
     <h2>{c['band_h2']}</h2>
     <p>{c['band_p']}</p>
-    <a class="btn btn-primary" href="https://apps.apple.com/" rel="noopener noreferrer">{c['band_cta']}</a>
+    <a class="store-badge" href="https://apps.apple.com/it/app/lifenex-salute-e-fitness/id6804388724" rel="noopener noreferrer">
+      <img src="{a}badges/app-store-{lang}.svg" alt="{c['band_cta']}" height="40" width="120">
+    </a>
   </div>
 
   <footer class="site-footer">
