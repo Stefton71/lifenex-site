@@ -60,7 +60,7 @@ COPY = {
         "h1": "Tutti i tuoi dati. Una sola visione.",
         "lead": "Trasforma i dati di Apple Salute in informazioni utili. Allenamenti, prestazioni, carico, recupero, composizione corporea e principali dati di salute — riuniti in un’unica app.",
         "cta_store": "Scarica su App Store",
-        "cta_see": "Vedi l’app",
+        "cta_see": "Esplora l’app",
         "what_h2": "Dal dato all’interpretazione",
         "what_sub": "Non è solo un diario degli allenamenti. È lo strumento per osservare nel tempo come cambiano prestazioni, corpo e indicatori principali.",
         "features": [
@@ -99,7 +99,7 @@ COPY = {
         "h1": "All your data. One clear view.",
         "lead": "Turn Apple Health data into useful information. Workouts, performance, training load, recovery, body composition and key health metrics — together in one app.",
         "cta_store": "Download on the App Store",
-        "cta_see": "See the app",
+        "cta_see": "Explore the app",
         "what_h2": "From data to insight",
         "what_sub": "Not just a workout diary. A tool to watch how your performance, body and key indicators change over time.",
         "features": [
@@ -138,7 +138,7 @@ COPY = {
         "h1": "Toutes vos données. Une seule vision.",
         "lead": "Transformez les données Apple Santé en informations utiles. Séances, performances, charge, récupération, composition corporelle et indicateurs de santé — réunis dans une seule app.",
         "cta_store": "Télécharger sur l’App Store",
-        "cta_see": "Voir l’app",
+        "cta_see": "Explorer l’app",
         "what_h2": "De la donnée à l’interprétation",
         "what_sub": "Pas seulement un journal d’entraînement. Un outil pour observer comment évoluent vos performances, votre corps et vos indicateurs clés.",
         "features": [
@@ -177,7 +177,7 @@ COPY = {
         "h1": "Alle deine Daten. Ein klarer Blick.",
         "lead": "Mach aus Apple-Gesundheit nützliche Informationen. Training, Leistung, Last, Erholung, Körperzusammensetzung und wichtige Gesundheitswerte — zusammen in einer App.",
         "cta_store": "Im App Store laden",
-        "cta_see": "App ansehen",
+        "cta_see": "App entdecken",
         "what_h2": "Vom Wert zur Einsicht",
         "what_sub": "Nicht nur ein Trainingstagebuch. Ein Werkzeug, um zu sehen, wie sich Leistung, Körper und zentrale Indikatoren verändern.",
         "features": [
