@@ -52,6 +52,7 @@ COPY = {
         "lang": "it",
         "title": "LifeNex — Tutti i tuoi dati. Una sola visione.",
         "desc": "LifeNex trasforma i dati di Apple Salute in informazioni utili: allenamenti, prestazioni, carico, recupero, composizione corporea e salute — in un’unica app.",
+        "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Privacy",
         "nav_contact": "Contatti",
@@ -90,6 +91,7 @@ COPY = {
         "lang": "en",
         "title": "LifeNex — All your data. One clear view.",
         "desc": "LifeNex turns Apple Health data into useful insight: workouts, performance, training load, recovery, body composition and health — in one app.",
+        "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Privacy",
         "nav_contact": "Contact",
@@ -128,6 +130,7 @@ COPY = {
         "lang": "fr",
         "title": "LifeNex — Toutes vos données. Une seule vision.",
         "desc": "LifeNex transforme les données Apple Santé en informations utiles : séances, perfs, charge, récupération, composition corporelle et santé — dans une seule app.",
+        "nav_home": "Accueil",
         "nav_app": "App",
         "nav_privacy": "Confidentialité",
         "nav_contact": "Contact",
@@ -166,6 +169,7 @@ COPY = {
         "lang": "de",
         "title": "LifeNex — Alle deine Daten. Ein klarer Blick.",
         "desc": "LifeNex macht aus Apple-Gesundheit nützliche Informationen: Training, Leistung, Last, Erholung, Körperzusammensetzung und Gesundheit — in einer App.",
+        "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Datenschutz",
         "nav_contact": "Kontakt",
@@ -297,6 +301,7 @@ def home_html(lang: str) -> str:
       </a>
       <div class="header-right">
         <nav class="nav-links" aria-label="Main">
+          <a href="{HOME_HREF[lang]}">{c['nav_home']}</a>
           <a href="#app">{c['nav_app']}</a>
           <a href="{PRIVACY_HREF[lang]}">{c['nav_privacy']}</a>
           <a href="mailto:support@lifenex.it">{c['nav_contact']}</a>
@@ -584,6 +589,7 @@ def privacy_html(lang: str) -> str:
       </a>
       <div class="header-right">
         <nav class="nav-links" aria-label="Main">
+          <a href="{home}">{COPY[lang]['nav_home']}</a>
           <a class="active" href="./">{p['nav']}</a>
           <a href="mailto:support@lifenex.it">{p['contact']}</a>
         </nav>
