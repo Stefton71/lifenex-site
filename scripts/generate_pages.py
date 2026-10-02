@@ -206,6 +206,54 @@ COPY = {
     },
 }
 
+# Immagini App Store (pubblicazione/Marketing/build.py, ordine galleria): titolo, sottotitolo.
+STORE_SHOTS = {
+    "it": [
+        ("La tua forma, a colpo d'occhio", "Anni di dati Salute trasformati in segnali chiari, ogni giorno."),
+        ("Tutta la tua storia sportiva, a confronto", "Ritrova ogni sessione e confronta le tue prestazioni."),
+        ("Sfida il te stesso di ieri", "Confronta due sessioni sullo stesso percorso."),
+        ("Due sessioni, una sfida", "Rivedi come hai corso, fianco a fianco in 3D."),
+        ("Rivivi ogni percorso in 3D", "Il tuo allenamento, sul paesaggio dove l'hai fatto."),
+        ("Allenati con equilibrio", "Il carico di ogni settimana, confrontato con il tuo ritmo."),
+        ("Obiettivi che ti motivano", "Scegli il risultato, LifeNex ti mostra i progressi."),
+        ("Capisci cosa sta cambiando", "Trend chiari su allenamento, cuore e corpo."),
+        ("La tua evoluzione, spiegata", "L'analisi AI legge i tuoi dati e racconta i tuoi progressi."),
+    ],
+    "en": [
+        ("Your fitness, at a glance", "Years of Health data turned into clear signals, every day."),
+        ("Your whole sports history, compared", "Find every session and compare your performance."),
+        ("Beat yesterday's you", "Compare two sessions on the same route."),
+        ("Two sessions, one race", "See how you ran, side by side in 3D."),
+        ("Relive every route in 3D", "Your workout, on the landscape where it happened."),
+        ("Train with balance", "Every week's load, compared with your usual rhythm."),
+        ("Goals that keep you going", "Pick the result, LifeNex shows your progress."),
+        ("See what's changing", "Clear trends on training, heart and body."),
+        ("Your progress, explained", "AI reads your data and tells your story."),
+    ],
+    "fr": [
+        ("Votre forme, en un coup d'œil", "Des années de données Santé en signaux clairs, chaque jour."),
+        ("Toute votre histoire sportive, comparée", "Retrouvez chaque séance et comparez vos performances."),
+        ("Défiez celui que vous étiez hier", "Comparez deux séances sur le même parcours."),
+        ("Deux séances, un défi", "Revoyez votre course, côte à côte en 3D."),
+        ("Revivez chaque parcours en 3D", "Votre entraînement, sur le paysage où vous l'avez fait."),
+        ("Entraînez-vous avec équilibre", "La charge de chaque semaine, comparée à votre rythme."),
+        ("Des objectifs qui motivent", "Choisissez le résultat, LifeNex montre vos progrès."),
+        ("Comprenez ce qui change", "Des tendances claires sur l'entraînement, le cœur et le corps."),
+        ("Votre évolution, expliquée", "L'IA lit vos données et raconte vos progrès."),
+    ],
+    "de": [
+        ("Deine Form auf einen Blick", "Jahre an Health-Daten, jeden Tag klar erklärt."),
+        ("Alle Einheiten im Vergleich", "Finde jede Einheit und vergleiche deine Leistung."),
+        ("Fordere dein Ich von gestern", "Vergleiche zwei Einheiten auf derselben Strecke."),
+        ("Zwei Einheiten, ein Duell", "Sieh, wie du gelaufen bist – Seite an Seite in 3D."),
+        ("Erlebe jede Strecke in 3D", "Dein Training auf der Landschaft, in der es stattfand."),
+        ("Trainiere ausgewogen", "Die Belastung jeder Woche, verglichen mit deinem Rhythmus."),
+        ("Ziele, die motivieren", "Wähle dein Ziel, LifeNex zeigt deinen Fortschritt."),
+        ("Verstehe, was sich ändert", "Klare Trends zu Training, Herz und Körper."),
+        ("Deine Entwicklung, erklärt", "Die KI liest deine Daten und erzählt deine Fortschritte."),
+    ],
+}
+
 HOME_PATH = {"it": ".", "en": "en", "fr": "fr", "de": "de"}
 PREFIX = {"it": "", "en": "../", "fr": "../", "de": "../"}
 SHOT_PREFIX = {"it": "it", "en": "en", "fr": "fr", "de": "de"}
@@ -240,13 +288,12 @@ def lang_switch(active: str, base: str) -> str:
 def shots_html(lang: str) -> str:
     a = ASSET[lang]
     prefix = SHOT_PREFIX[lang]
-    alts = COPY[lang]["alt"]
     blocks = []
-    for i, ((title, body), alt) in enumerate(zip(SHOTS[lang], alts), start=1):
-        src = f"{a}screenshots/{prefix}-{i}.png"
+    for i, (title, body) in enumerate(STORE_SHOTS[lang], start=1):
+        src = f"{a}store/{prefix}-{i}.jpg"
         blocks.append(
             f"""        <figure class="shot">
-          <a class="shot-frame" href="{src}"><img src="{src}" alt="{alt}" loading="lazy"></a>
+          <a class="shot-frame" href="{src}"><img src="{src}" alt="{title}" loading="lazy"></a>
           <figcaption><strong>{title}</strong><span>{body}</span></figcaption>
         </figure>"""
         )
