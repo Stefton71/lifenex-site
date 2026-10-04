@@ -36,7 +36,7 @@
   </header>
   <article class="legal-page">
     <h1>Privacy policy</h1>
-    <p class="legal-meta">Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 28 September 2026</p>
+    <p class="legal-meta">Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 4 October 2026</p>
     
     <p>LifeNex is an iOS app that helps you observe how the data already in Apple Health evolves and stay motivated toward goals you choose. It is not a medical device, does not diagnose, and does not prescribe intensity or therapy.</p>
     <h2>Data the app reads</h2>
@@ -51,20 +51,27 @@
     </ul>
     <p>LifeNex does <strong>not write</strong> or <strong>modify</strong> Health data.</p>
     <h2>Where data is processed</h2>
-    <p>Health data stays <strong>on your iPhone</strong>. There is no mandatory LifeNex account.</p>
-    <p><strong>Optional smart analysis:</strong> only with consent in Settings and when you request a reading, LifeNex may use <strong>numeric summaries already computed in the app</strong> via a secure gateway. GPS tracks, photos and raw Health history are not sent.</p>
+    <p>Health data stays <strong>on your iPhone</strong> (local storage). There is no mandatory LifeNex account.</p>
+    <p><strong>Optional AI analysis:</strong> only if you turn on the «Smart reading» consent in Settings and request a reading yourself (Generate / Update), LifeNex sends <strong>numeric summaries already computed in the app</strong> (averages, counts, comparisons, workout types) to prepare the text. GPS tracks, photos and raw Health history are never sent. You can withdraw consent at any time.</p>
+    <p>These summaries are processed by:</p>
+    <ul>
+      <li><strong>our server</strong> (Google Firebase, European Union region), which forwards the request and counts the analyses used: it does not keep the summaries or the generated texts;</li>
+      <li><strong>OpenAI</strong>, the AI model provider, which generates the text on our behalf. It receives only the summary text, without subscription or device identifiers. Under its API terms, OpenAI does not use this data to train its models and may keep it for a limited time (up to 30 days) only to prevent abuse.</li>
+    </ul>
+    <p>Generated readings stay saved on your iPhone.</p>
     <h2>What we do not do</h2>
     <ul><li>we do not sell your data</li><li>we do not use Health data for advertising or cross-app tracking</li><li>we do not share health data with third parties for commercial purposes</li></ul>
     <h2>Retention and deletion</h2>
-    <p>Data stays on the device while the app is installed. Remove LifeNex and revoke access in Settings → Health.</p>
+    <p>Data stays on the device while the app is installed. To delete it, remove LifeNex and revoke access in Settings → Health → Data Access &amp; Devices.</p>
+    <p>Our server keeps only the <strong>AI analysis counters</strong> per subscription period, linked to the Apple subscription identifier and to an anonymous device identifier, together with some technical data about the last device used (iPhone model, iOS version, app version and App Store country) that we need for support and to see which versions are in use: no health data. To have them deleted, write to the contact below.</p>
     <h2>Permissions</h2>
-    <p>You can refuse or revoke Health permissions at any time.</p>
+    <p>You can refuse or revoke Health permissions at any time. Without permissions the app works in a limited way.</p>
     <h2>Children</h2>
-    <p>LifeNex is not intended for children.</p>
+    <p>LifeNex is not intended for children. We do not knowingly collect data from minors.</p>
     <h2>Subscriptions</h2>
-    <p>Plus and Max are managed by Apple through the App Store.</p>
+    <p>Plus and Max subscriptions are managed by Apple through the App Store. LifeNex reads the subscription status to unlock features and smart analysis quotas, and sends our server the purchase proof signed by Apple (transaction identifier, product, dates) to verify the subscription and count analyses. LifeNex does not receive or store payment data.</p>
     <h2>Changes</h2>
-    <p>If some data ever leaves the phone (only with explicit consent), this page will be updated <strong>first</strong>.</p>
+    <p>If the way we process data changes, we will update this page <strong>before</strong> the change reaches the app.</p>
     <p>Questions: <a href="mailto:support@lifenex.it">support@lifenex.it</a></p>
 
   </article>
