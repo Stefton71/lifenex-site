@@ -55,12 +55,17 @@ COPY = {
         "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Privacy",
+        "nav_terms": "Termini",
         "nav_contact": "Contatti",
         "eyebrow": "iOS · Apple Salute · HealthKit",
         "h1": "Tutti i tuoi dati. Una sola visione.",
         "lead": "Trasforma i dati di Apple Salute in informazioni utili. Allenamenti, prestazioni, carico, recupero, composizione corporea e principali dati di salute — riuniti in un’unica app.",
         "cta_store": "Scarica su App Store",
         "cta_see": "Esplora l’app",
+        "video_id": "mnVdDF1LOpA",
+        "video_h2": "Guarda LifeNex in azione",
+        "video_sub": "Scopri in breve come LifeNex trasforma i dati di Apple Watch e Salute in una visione chiara.",
+        "video_title": "LifeNex – La tua forma e i tuoi allenamenti con Apple Watch",
         "what_h2": "Dal dato all’interpretazione",
         "what_sub": "Non è solo un diario degli allenamenti. È lo strumento per osservare nel tempo come cambiano prestazioni, corpo e indicatori principali.",
         "features": [
@@ -94,12 +99,17 @@ COPY = {
         "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Privacy",
+        "nav_terms": "Terms",
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Health · HealthKit",
         "h1": "All your data. One clear view.",
         "lead": "Turn Apple Health data into useful information. Workouts, performance, training load, recovery, body composition and key health metrics — together in one app.",
         "cta_store": "Download on the App Store",
         "cta_see": "Explore the app",
+        "video_id": "H0bXt7V_j98",
+        "video_h2": "See LifeNex in action",
+        "video_sub": "A quick look at how LifeNex turns Apple Watch and Health data into one clear view.",
+        "video_title": "LifeNex – Your fitness and workouts with Apple Watch",
         "what_h2": "From data to insight",
         "what_sub": "Not just a workout diary. A tool to watch how your performance, body and key indicators change over time.",
         "features": [
@@ -133,12 +143,17 @@ COPY = {
         "nav_home": "Accueil",
         "nav_app": "App",
         "nav_privacy": "Confidentialité",
+        "nav_terms": "Conditions",
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Santé · HealthKit",
         "h1": "Toutes vos données. Une seule vision.",
         "lead": "Transformez les données Apple Santé en informations utiles. Séances, performances, charge, récupération, composition corporelle et indicateurs de santé — réunis dans une seule app.",
         "cta_store": "Télécharger sur l’App Store",
         "cta_see": "Explorer l’app",
+        "video_id": "KuZ9XnwG6dg",
+        "video_h2": "Découvrez LifeNex en action",
+        "video_sub": "Un aperçu rapide de la façon dont LifeNex transforme les données Apple Watch et Santé en une vision claire.",
+        "video_title": "LifeNex – Votre forme et vos entraînements avec l’Apple Watch",
         "what_h2": "De la donnée à l’interprétation",
         "what_sub": "Pas seulement un journal d’entraînement. Un outil pour observer comment évoluent vos performances, votre corps et vos indicateurs clés.",
         "features": [
@@ -172,12 +187,17 @@ COPY = {
         "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Datenschutz",
+        "nav_terms": "Nutzung",
         "nav_contact": "Kontakt",
         "eyebrow": "iOS · Apple Gesundheit · HealthKit",
         "h1": "Alle deine Daten. Ein klarer Blick.",
         "lead": "Mach aus Apple-Gesundheit nützliche Informationen. Training, Leistung, Last, Erholung, Körperzusammensetzung und wichtige Gesundheitswerte — zusammen in einer App.",
         "cta_store": "Im App Store laden",
         "cta_see": "App entdecken",
+        "video_id": "3nGrcsxqma8",
+        "video_h2": "LifeNex in Aktion",
+        "video_sub": "Ein kurzer Blick darauf, wie LifeNex Daten von Apple Watch und Apple Gesundheit in einen klaren Überblick verwandelt.",
+        "video_title": "LifeNex – Deine Form und dein Training mit der Apple Watch",
         "what_h2": "Vom Wert zur Einsicht",
         "what_sub": "Nicht nur ein Trainingstagebuch. Ein Werkzeug, um zu sehen, wie sich Leistung, Körper und zentrale Indikatoren verändern.",
         "features": [
@@ -337,7 +357,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=4">
+  <link rel="stylesheet" href="{CSS[lang]}?v=5">
 </head>
 <body>
   <header class="site-header">
@@ -351,6 +371,7 @@ def home_html(lang: str) -> str:
           <a href="{HOME_HREF[lang]}">{c['nav_home']}</a>
           <a href="#app">{c['nav_app']}</a>
           <a href="{PRIVACY_HREF[lang]}">{c['nav_privacy']}</a>
+          <a href="terms/">{c['nav_terms']}</a>
           <a href="mailto:support@lifenex.it">{c['nav_contact']}</a>
         </nav>
         {switch}
@@ -376,6 +397,16 @@ def home_html(lang: str) -> str:
         <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-7.png" alt=""></div>
         <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-1.png" alt=""></div>
         <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-8.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section video-section" id="video">
+    <div class="section-inner">
+      <h2>{c['video_h2']}</h2>
+      <p class="sub">{c['video_sub']}</p>
+      <div class="video-frame">
+        <iframe src="https://www.youtube-nocookie.com/embed/{c['video_id']}?rel=0" title="{c['video_title']}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -413,6 +444,7 @@ def home_html(lang: str) -> str:
       <span>© 2026 LifeNex</span>
       <span>
         <a href="{PRIVACY_HREF[lang]}">{c['nav_privacy']}</a> ·
+        <a href="terms/">{c['nav_terms']}</a> ·
         <a href="mailto:support@lifenex.it">support@lifenex.it</a>
       </span>
     </div>
@@ -434,7 +466,7 @@ PRIVACY = {
     "it": {
         "title": "Privacy — LifeNex",
         "h1": "Informativa sulla privacy",
-        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 28 settembre 2026',
+        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 5 ottobre 2026',
         "nav": "Privacy",
         "contact": "Contatti",
         "back": "Torna alla home",
@@ -453,26 +485,34 @@ PRIVACY = {
     <p>LifeNex <strong>non scrive</strong> e <strong>non modifica</strong> i dati in Salute.</p>
     <h2>Dove vengono trattati</h2>
     <p>I dati di Salute restano <strong>sul tuo iPhone</strong> (archivio locale). Non c’è un account LifeNex obbligatorio.</p>
-    <p><strong>Analisi intelligente (opzionale):</strong> solo se attivi il consenso in Preferenze e chiedi tu una lettura (Genera / Aggiorna), LifeNex può usare <strong>riassunti numerici già calcolati in app</strong> per preparare il testo tramite un gateway sicuro. Non partono tracciati GPS, foto né la cronologia grezza di Salute.</p>
+    <p><strong>Analisi intelligente con AI (opzionale):</strong> solo se attivi il consenso «Lettura intelligente» in Preferenze e chiedi tu una lettura (Genera / Aggiorna), LifeNex invia <strong>riassunti numerici già calcolati in app</strong> (medie, conteggi, confronti, tipi di allenamento) per preparare il testo. Non partono tracciati GPS, foto né la cronologia grezza di Salute. Puoi revocare il consenso in qualsiasi momento.</p>
+    <p>Questi riassunti sono trattati da:</p>
+    <ul>
+      <li><strong>il nostro server</strong> (Google Firebase, regione Unione Europea), che inoltra la richiesta e conta le analisi usate: non conserva i riassunti né i testi generati;</li>
+      <li><strong>OpenAI</strong>, fornitore del modello di intelligenza artificiale, che genera il testo per nostro conto. Riceve solo il testo dei riassunti, senza identificativi dell’abbonamento o del dispositivo. Secondo le condizioni del suo servizio API, OpenAI non usa questi dati per addestrare i propri modelli e può conservarli per un periodo limitato (fino a 30 giorni) solo per prevenire abusi.</li>
+    </ul>
+    <p>Le letture generate restano salvate sul tuo iPhone.</p>
+    <p><strong>Mappe e rilievo:</strong> per mostrare i percorsi l’app scarica le immagini della mappa da Apple Mappe e, nelle viste 3D, le quote del terreno della zona dal servizio pubblico Terrain Tiles (Amazon Web Services, AWS Open Data). Queste richieste indicano solo l’area di mappa da scaricare (riquadri di alcuni chilometri), non il tracciato GPS, i tempi o altri dati di Salute, e non sono collegate a te; come per qualsiasi sito web, il fornitore vede l’indirizzo IP della connessione. Le quote scaricate restano in cache sul tuo iPhone.</p>
     <h2>Cosa non facciamo</h2>
     <ul><li>non vendiamo i tuoi dati</li><li>non usiamo i dati Salute per pubblicità o tracking tra app</li><li>non condividiamo dati sanitari con terze parti a scopo commerciale</li></ul>
     <h2>Conservazione e cancellazione</h2>
     <p>I dati restano sul dispositivo finché l’app è installata. Per cancellarli: elimina LifeNex e, in Impostazioni → Salute → Accesso app e dati, revoca l’accesso.</p>
+    <p>Sul nostro server restano solo i <strong>contatori delle analisi AI</strong> per periodo di abbonamento, legati all’identificativo dell’abbonamento Apple e a un identificativo anonimo del dispositivo, insieme ad alcuni dati tecnici dell’ultimo dispositivo usato (modello di iPhone, versione di iOS, versione dell’app e paese dello store App Store) che ci servono per l’assistenza e per capire quali versioni sono in uso: nessun dato di salute. Per farli cancellare scrivi al contatto qui sotto.</p>
     <h2>Permessi</h2>
-    <p>Puoi rifiutare o revocare i permessi Salute in qualsiasi momento.</p>
+    <p>Puoi rifiutare o revocare i permessi Salute in qualsiasi momento. Senza permessi l’app funziona in modo limitato.</p>
     <h2>Minori</h2>
-    <p>LifeNex non è destinata a bambini.</p>
+    <p>LifeNex non è destinata a bambini. Non raccogliamo consapevolmente dati di minori.</p>
     <h2>Abbonamenti</h2>
-    <p>Plus e Max sono gestiti da Apple tramite l’App Store.</p>
+    <p>Gli abbonamenti Plus e Max sono gestiti da Apple tramite l’App Store. LifeNex legge lo stato dell’abbonamento per sbloccare funzioni e quote di analisi intelligente e invia al nostro server la prova d’acquisto firmata da Apple (identificativo della transazione, prodotto, date) per verificare l’abbonamento e contare le analisi. LifeNex non riceve né conserva dati di pagamento.</p>
     <h2>Modifiche</h2>
-    <p>Se in futuro alcuni dati usciranno dal telefono (solo con consenso), questa pagina verrà aggiornata <strong>prima</strong>.</p>
+    <p>Se cambierà il modo in cui trattiamo i dati, aggiorneremo questa pagina <strong>prima</strong> che la modifica arrivi nell’app.</p>
     <p>Per domande: <a href="mailto:support@lifenex.it">support@lifenex.it</a></p>
 """,
     },
     "en": {
         "title": "Privacy — LifeNex",
         "h1": "Privacy policy",
-        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 28 September 2026',
+        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 5 October 2026',
         "nav": "Privacy",
         "contact": "Contact",
         "back": "Back to home",
@@ -490,27 +530,35 @@ PRIVACY = {
     </ul>
     <p>LifeNex does <strong>not write</strong> or <strong>modify</strong> Health data.</p>
     <h2>Where data is processed</h2>
-    <p>Health data stays <strong>on your iPhone</strong>. There is no mandatory LifeNex account.</p>
-    <p><strong>Optional smart analysis:</strong> only with consent in Settings and when you request a reading, LifeNex may use <strong>numeric summaries already computed in the app</strong> via a secure gateway. GPS tracks, photos and raw Health history are not sent.</p>
+    <p>Health data stays <strong>on your iPhone</strong> (local storage). There is no mandatory LifeNex account.</p>
+    <p><strong>Optional AI analysis:</strong> only if you turn on the «Smart reading» consent in Settings and request a reading yourself (Generate / Update), LifeNex sends <strong>numeric summaries already computed in the app</strong> (averages, counts, comparisons, workout types) to prepare the text. GPS tracks, photos and raw Health history are never sent. You can withdraw consent at any time.</p>
+    <p>These summaries are processed by:</p>
+    <ul>
+      <li><strong>our server</strong> (Google Firebase, European Union region), which forwards the request and counts the analyses used: it does not keep the summaries or the generated texts;</li>
+      <li><strong>OpenAI</strong>, the AI model provider, which generates the text on our behalf. It receives only the summary text, without subscription or device identifiers. Under its API terms, OpenAI does not use this data to train its models and may keep it for a limited time (up to 30 days) only to prevent abuse.</li>
+    </ul>
+    <p>Generated readings stay saved on your iPhone.</p>
+    <p><strong>Maps and terrain:</strong> to show your routes the app downloads map imagery from Apple Maps and, in 3D views, terrain elevation for the area from the public Terrain Tiles service (Amazon Web Services, AWS Open Data). These requests only specify the map area to download (tiles a few kilometres wide), not your GPS track, times or any other Health data, and they are not linked to you; as with any website, the provider sees the IP address of the connection. Downloaded elevation data stays cached on your iPhone.</p>
     <h2>What we do not do</h2>
     <ul><li>we do not sell your data</li><li>we do not use Health data for advertising or cross-app tracking</li><li>we do not share health data with third parties for commercial purposes</li></ul>
     <h2>Retention and deletion</h2>
-    <p>Data stays on the device while the app is installed. Remove LifeNex and revoke access in Settings → Health.</p>
+    <p>Data stays on the device while the app is installed. To delete it, remove LifeNex and revoke access in Settings → Health → Data Access &amp; Devices.</p>
+    <p>Our server keeps only the <strong>AI analysis counters</strong> per subscription period, linked to the Apple subscription identifier and to an anonymous device identifier, together with some technical data about the last device used (iPhone model, iOS version, app version and App Store country) that we need for support and to see which versions are in use: no health data. To have them deleted, write to the contact below.</p>
     <h2>Permissions</h2>
-    <p>You can refuse or revoke Health permissions at any time.</p>
+    <p>You can refuse or revoke Health permissions at any time. Without permissions the app works in a limited way.</p>
     <h2>Children</h2>
-    <p>LifeNex is not intended for children.</p>
+    <p>LifeNex is not intended for children. We do not knowingly collect data from minors.</p>
     <h2>Subscriptions</h2>
-    <p>Plus and Max are managed by Apple through the App Store.</p>
+    <p>Plus and Max subscriptions are managed by Apple through the App Store. LifeNex reads the subscription status to unlock features and smart analysis quotas, and sends our server the purchase proof signed by Apple (transaction identifier, product, dates) to verify the subscription and count analyses. LifeNex does not receive or store payment data.</p>
     <h2>Changes</h2>
-    <p>If some data ever leaves the phone (only with explicit consent), this page will be updated <strong>first</strong>.</p>
+    <p>If the way we process data changes, we will update this page <strong>before</strong> the change reaches the app.</p>
     <p>Questions: <a href="mailto:support@lifenex.it">support@lifenex.it</a></p>
 """,
     },
     "fr": {
         "title": "Confidentialité — LifeNex",
         "h1": "Politique de confidentialité",
-        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 28 septembre 2026',
+        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 5 octobre 2026',
         "nav": "Confidentialité",
         "contact": "Contact",
         "back": "Retour à l’accueil",
@@ -528,27 +576,35 @@ PRIVACY = {
     </ul>
     <p>LifeNex <strong>n’écrit</strong> ni <strong>ne modifie</strong> les données Santé.</p>
     <h2>Où les données sont traitées</h2>
-    <p>Les données Santé restent <strong>sur votre iPhone</strong>. Aucun compte LifeNex obligatoire.</p>
-    <p><strong>Analyse intelligente (optionnelle) :</strong> uniquement avec consentement et sur demande, LifeNex peut utiliser des <strong>résumés numériques déjà calculés dans l’app</strong> via une passerelle sécurisée. Pas de traces GPS, photos ni historique brut.</p>
+    <p>Les données Santé restent <strong>sur votre iPhone</strong> (stockage local). Aucun compte LifeNex n’est obligatoire.</p>
+    <p><strong>Analyse par IA (facultative) :</strong> uniquement si vous activez le consentement « Lecture intelligente » dans Préférences et demandez vous-même une lecture (Générer / Mettre à jour), LifeNex envoie des <strong>résumés chiffrés déjà calculés dans l’app</strong> (moyennes, comptages, comparaisons, types de séances) pour préparer le texte. Aucun tracé GPS, aucune photo ni l’historique brut de Santé ne sont envoyés. Vous pouvez retirer votre consentement à tout moment.</p>
+    <p>Ces résumés sont traités par :</p>
+    <ul>
+      <li><strong>notre serveur</strong> (Google Firebase, région Union européenne), qui transmet la demande et compte les analyses utilisées : il ne conserve ni les résumés ni les textes générés ;</li>
+      <li><strong>OpenAI</strong>, fournisseur du modèle d’intelligence artificielle, qui génère le texte pour notre compte. Il reçoit uniquement le texte des résumés, sans identifiant d’abonnement ni d’appareil. Selon les conditions de son service API, OpenAI n’utilise pas ces données pour entraîner ses modèles et peut les conserver pendant une durée limitée (jusqu’à 30 jours) uniquement pour prévenir les abus.</li>
+    </ul>
+    <p>Les lectures générées restent enregistrées sur votre iPhone.</p>
+    <p><strong>Cartes et relief :</strong> pour afficher vos parcours, l’app télécharge les images de carte depuis Plans d’Apple et, dans les vues 3D, l’altitude du terrain de la zone depuis le service public Terrain Tiles (Amazon Web Services, AWS Open Data). Ces requêtes indiquent uniquement la zone de carte à télécharger (des tuiles de quelques kilomètres), pas votre tracé GPS, vos horaires ni d’autres données Santé, et ne sont pas liées à vous ; comme pour tout site web, le fournisseur voit l’adresse IP de la connexion. Les altitudes téléchargées restent en cache sur votre iPhone.</p>
     <h2>Ce que nous ne faisons pas</h2>
-    <ul><li>nous ne vendons pas vos données</li><li>pas de pub ni de tracking croisé avec les données Santé</li><li>pas de partage commercial de données de santé</li></ul>
+    <ul><li>nous ne vendons pas vos données</li><li>nous n’utilisons pas les données Santé pour la publicité ou le suivi entre apps</li><li>nous ne partageons pas de données de santé avec des tiers à des fins commerciales</li></ul>
     <h2>Conservation et suppression</h2>
-    <p>Les données restent sur l’appareil tant que l’app est installée. Supprimez LifeNex et révoquez l’accès dans Réglages → Santé.</p>
+    <p>Les données restent sur l’appareil tant que l’app est installée. Pour les supprimer, supprimez LifeNex et révoquez l’accès dans Réglages → Santé → Accès aux données et appareils.</p>
+    <p>Notre serveur conserve uniquement les <strong>compteurs d’analyses IA</strong> par période d’abonnement, liés à l’identifiant de l’abonnement Apple et à un identifiant anonyme de l’appareil, ainsi que quelques données techniques du dernier appareil utilisé (modèle d’iPhone, version d’iOS, version de l’app et pays de l’App Store) dont nous avons besoin pour l’assistance et pour savoir quelles versions sont utilisées : aucune donnée de santé. Pour les faire supprimer, écrivez au contact ci-dessous.</p>
     <h2>Autorisations</h2>
-    <p>Vous pouvez refuser ou révoquer les autorisations Santé à tout moment.</p>
+    <p>Vous pouvez refuser ou révoquer les autorisations Santé à tout moment. Sans autorisations, l’app fonctionne de façon limitée.</p>
     <h2>Mineurs</h2>
-    <p>LifeNex n’est pas destinée aux enfants.</p>
+    <p>LifeNex n’est pas destinée aux enfants. Nous ne collectons pas sciemment de données de mineurs.</p>
     <h2>Abonnements</h2>
-    <p>Plus et Max sont gérés par Apple via l’App Store.</p>
+    <p>Les abonnements Plus et Max sont gérés par Apple via l’App Store. LifeNex lit l’état de l’abonnement pour débloquer des fonctions et des quotas d’analyse intelligente, et envoie à notre serveur la preuve d’achat signée par Apple (identifiant de transaction, produit, dates) pour vérifier l’abonnement et compter les analyses. LifeNex ne reçoit ni ne conserve de données de paiement.</p>
     <h2>Modifications</h2>
-    <p>Si des données quittaient un jour le téléphone (seulement avec consentement), cette page serait mise à jour <strong>avant</strong>.</p>
+    <p>Si notre façon de traiter les données change, nous mettrons cette page à jour <strong>avant</strong> que la modification arrive dans l’app.</p>
     <p>Questions : <a href="mailto:support@lifenex.it">support@lifenex.it</a></p>
 """,
     },
     "de": {
         "title": "Datenschutz — LifeNex",
         "h1": "Datenschutzerklärung",
-        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 28. September 2026',
+        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 5. Oktober 2026',
         "nav": "Datenschutz",
         "contact": "Kontakt",
         "back": "Zur Startseite",
@@ -566,20 +622,28 @@ PRIVACY = {
     </ul>
     <p>LifeNex <strong>schreibt</strong> und <strong>ändert</strong> keine Gesundheitsdaten.</p>
     <h2>Wo Daten verarbeitet werden</h2>
-    <p>Gesundheitsdaten bleiben <strong>auf dem iPhone</strong>. Kein Pflicht-Account.</p>
-    <p><strong>Optionale intelligente Analyse:</strong> nur mit Einwilligung und auf Anfrage kann LifeNex <strong>bereits in der App berechnete Zahlenzusammenfassungen</strong> über ein sicheres Gateway nutzen. Keine GPS-Spuren, Fotos oder Rohhistorie.</p>
+    <p>Health-Daten bleiben <strong>auf deinem iPhone</strong> (lokaler Speicher). Ein LifeNex-Konto ist nicht nötig.</p>
+    <p><strong>KI-Analyse (optional):</strong> nur wenn du in den Einstellungen die Einwilligung «Intelligente Lesung» aktivierst und selbst eine Auswertung anforderst (Erstellen / Aktualisieren), sendet LifeNex <strong>bereits in der App berechnete Zahlenzusammenfassungen</strong> (Mittelwerte, Zählungen, Vergleiche, Trainingsarten), um den Text zu erstellen. GPS-Routen, Fotos und der Health-Rohverlauf werden nie gesendet. Du kannst die Einwilligung jederzeit widerrufen.</p>
+    <p>Diese Zusammenfassungen werden verarbeitet von:</p>
+    <ul>
+      <li><strong>unserem Server</strong> (Google Firebase, Region Europäische Union), der die Anfrage weiterleitet und die genutzten Analysen zählt: Er speichert weder die Zusammenfassungen noch die erzeugten Texte;</li>
+      <li><strong>OpenAI</strong>, dem Anbieter des KI-Modells, der den Text in unserem Auftrag erzeugt. OpenAI erhält nur den Text der Zusammenfassungen, ohne Abo- oder Gerätekennungen. Laut den Bedingungen seines API-Dienstes nutzt OpenAI diese Daten nicht zum Training seiner Modelle und kann sie für begrenzte Zeit (bis zu 30 Tage) ausschließlich zur Missbrauchsverhinderung aufbewahren.</li>
+    </ul>
+    <p>Erzeugte Auswertungen bleiben auf deinem iPhone gespeichert.</p>
+    <p><strong>Karten und Gelände:</strong> Um deine Routen anzuzeigen, lädt die App Kartenbilder von Apple Karten und in den 3D-Ansichten Geländehöhen der Umgebung vom öffentlichen Dienst Terrain Tiles (Amazon Web Services, AWS Open Data). Diese Anfragen enthalten nur den zu ladenden Kartenbereich (Kacheln von einigen Kilometern), nicht deine GPS-Route, Zeiten oder andere Health-Daten, und sind nicht mit dir verknüpft; wie bei jeder Website sieht der Anbieter die IP-Adresse der Verbindung. Die geladenen Höhendaten bleiben im Cache auf deinem iPhone.</p>
     <h2>Was wir nicht tun</h2>
-    <ul><li>wir verkaufen deine Daten nicht</li><li>keine Werbung oder Cross-App-Tracking mit Gesundheitsdaten</li><li>keine kommerzielle Weitergabe von Gesundheitsdaten</li></ul>
+    <ul><li>wir verkaufen deine Daten nicht</li><li>wir nutzen Health-Daten nicht für Werbung oder App-übergreifendes Tracking</li><li>wir geben Gesundheitsdaten nicht zu kommerziellen Zwecken an Dritte weiter</li></ul>
     <h2>Speicherung und Löschung</h2>
-    <p>Daten bleiben auf dem Gerät, solange die App installiert ist. LifeNex löschen und den Zugriff unter Einstellungen → Gesundheit widerrufen.</p>
+    <p>Die Daten bleiben auf dem Gerät, solange die App installiert ist. Zum Löschen entferne LifeNex und widerrufe den Zugriff unter Einstellungen → Health → Datenzugriff &amp; Geräte.</p>
+    <p>Auf unserem Server bleiben nur die <strong>Zähler der KI-Analysen</strong> pro Abo-Zeitraum, verknüpft mit der Kennung des Apple-Abos und einer anonymen Gerätekennung, zusammen mit einigen technischen Daten des zuletzt genutzten Geräts (iPhone-Modell, iOS-Version, App-Version und App-Store-Land), die wir für den Support und zur Übersicht der genutzten Versionen brauchen: keine Gesundheitsdaten. Zum Löschen schreib an den Kontakt unten.</p>
     <h2>Berechtigungen</h2>
-    <p>Du kannst Gesundheitsberechtigungen jederzeit ablehnen oder widerrufen.</p>
+    <p>Du kannst Health-Berechtigungen jederzeit verweigern oder widerrufen. Ohne Berechtigungen funktioniert die App nur eingeschränkt.</p>
     <h2>Kinder</h2>
-    <p>LifeNex ist nicht für Kinder bestimmt.</p>
+    <p>LifeNex ist nicht für Kinder bestimmt. Wir erheben nicht wissentlich Daten von Minderjährigen.</p>
     <h2>Abonnements</h2>
-    <p>Plus und Max werden von Apple über den App Store verwaltet.</p>
+    <p>Die Abos Plus und Max werden von Apple über den App Store verwaltet. LifeNex liest den Abo-Status, um Funktionen und Kontingente für die intelligente Auswertung freizuschalten, und sendet unserem Server den von Apple signierten Kaufnachweis (Transaktionskennung, Produkt, Daten), um das Abo zu prüfen und Analysen zu zählen. LifeNex erhält und speichert keine Zahlungsdaten.</p>
     <h2>Änderungen</h2>
-    <p>Sollten Daten künftig das Telefon verlassen (nur mit ausdrücklicher Einwilligung), wird diese Seite <strong>zuerst</strong> aktualisiert.</p>
+    <p>Wenn sich die Art der Datenverarbeitung ändert, aktualisieren wir diese Seite, <strong>bevor</strong> die Änderung in die App kommt.</p>
     <p>Fragen: <a href="mailto:support@lifenex.it">support@lifenex.it</a></p>
 """,
     },
@@ -638,6 +702,7 @@ def privacy_html(lang: str) -> str:
         <nav class="nav-links" aria-label="Main">
           <a href="{home}">{COPY[lang]['nav_home']}</a>
           <a class="active" href="./">{p['nav']}</a>
+          <a href="../terms/">{COPY[lang]['nav_terms']}</a>
           <a href="mailto:support@lifenex.it">{p['contact']}</a>
         </nav>
         {switch}
@@ -653,6 +718,231 @@ def privacy_html(lang: str) -> str:
     <div class="footer-inner">
       <span>© 2026 LifeNex</span>
       <a href="{home}">{p['back']}</a>
+    </div>
+  </footer>
+</body>
+</html>
+"""
+
+
+TERMS = {
+    "it": {
+        "title": "Termini di utilizzo — LifeNex",
+        "h1": "Termini di utilizzo",
+        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 29 settembre 2026',
+        "body": """
+    <p>Usando LifeNex accetti questi termini. Se non sei d’accordo, non usare l’app.</p>
+
+    <h2>Cos’è LifeNex</h2>
+    <p>LifeNex è un’app iOS di benessere e fitness che <strong>osserva</strong> i dati già presenti in Apple Salute e può <strong>motivarti</strong> rispetto a obiettivi che scegli tu. <strong>Non è un dispositivo medico</strong>: non diagnostica, non cura, non prescrive terapie, farmaci, intensità di allenamento o piani clinici.</p>
+
+    <h2>Licenza d’uso</h2>
+    <p>Ti concediamo una licenza personale, non esclusiva e non trasferibile per usare LifeNex sul tuo dispositivo Apple. Non puoi copiare, modificare, distribuire o fare reverse engineering dell’app oltre quanto consentito dalla legge.</p>
+
+    <h2>Apple Salute (HealthKit)</h2>
+    <p>L’app legge i dati di Salute solo con il tuo consenso. I dati restano sul dispositivo, salvo le funzioni opzionali che richiedono un’ulteriore autorizzazione (vedi <a href="../privacy/">Informativa privacy</a>).</p>
+
+    <h2>Analisi intelligente (opzionale)</h2>
+    <p>Se attivi il consenso in Preferenze e chiedi una lettura, LifeNex può inviare riassunti numerici già calcolati in app a un gateway per produrre un testo. Il servizio ha un tetto di letture per periodo di abbonamento. Non sostituisce un parere professionale.</p>
+
+    <h2>Abbonamenti Plus e Max</h2>
+    <ul>
+      <li>Acquisti e rinnovi sono gestiti da Apple tramite l’App Store.</li>
+      <li>Prezzi e prove gratuite, se presenti, sono quelli mostrati in App Store al momento dell’acquisto.</li>
+      <li>Puoi gestire o disdire l’abbonamento in Impostazioni iPhone → Apple ID → Abbonamenti.</li>
+      <li>I rimborsi seguono le regole Apple.</li>
+      <li>Plus e Max (mensile o annuale) sbloccano funzioni e quote di analisi intelligente come descritto in app.</li>
+    </ul>
+    <p>Per gli abbonamenti auto-rinnovabili vale anche il <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">Contratto di licenza standard per applicazioni (EULA) di Apple</a>, oltre a questi termini.</p>
+
+    <h2>Responsabilità</h2>
+    <p>Non è obbligatorio un account LifeNex. Sei responsabile dell’uso dell’app e delle decisioni che prendi. LifeNex non è responsabile di danni derivanti da un uso non conforme o da dati Salute incompleti o errati.</p>
+
+    <h2>Limitazione di garanzia</h2>
+    <p>L’app è fornita «così com’è», nei limiti consentiti dalla legge. Non garantiamo assenza di interruzioni o errori, né risultati di fitness o salute.</p>
+
+    <h2>Modifiche</h2>
+    <p>Possiamo aggiornare questi termini. La data in alto indica l’ultima revisione.</p>
+
+    <p>Domande: <a href="mailto:support@lifenex.it">support@lifenex.it</a> · <a href="../privacy/">Privacy</a></p>
+""",
+    },
+    "en": {
+        "title": "Terms of use — LifeNex",
+        "h1": "Terms of use",
+        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 29 September 2026',
+        "body": """
+    <p>By using LifeNex you agree to these terms. If you do not agree, do not use the app.</p>
+
+    <h2>What LifeNex is</h2>
+    <p>LifeNex is an iOS wellness and fitness app that <strong>observes</strong> data already in Apple Health and can <strong>motivate</strong> you toward goals you choose. <strong>It is not a medical device</strong>: it does not diagnose, treat, or prescribe therapy, medication, training intensity, or clinical plans.</p>
+
+    <h2>License</h2>
+    <p>We grant you a personal, non-exclusive, non-transferable license to use LifeNex on your Apple device. You may not copy, modify, distribute, or reverse-engineer the app beyond what applicable law allows.</p>
+
+    <h2>Apple Health (HealthKit)</h2>
+    <p>The app reads Health data only with your consent. Data stays on device except for optional features that need further explicit permission (see the <a href="../privacy/">Privacy policy</a>).</p>
+
+    <h2>Optional smart analysis</h2>
+    <p>If you enable consent in Settings and request a reading, LifeNex may send numeric summaries already computed in the app to a gateway to produce text. Usage is capped per subscription period. It does not replace professional advice.</p>
+
+    <h2>Plus and Max subscriptions</h2>
+    <ul>
+      <li>Purchases and renewals are handled by Apple via the App Store.</li>
+      <li>Prices and free trials, if any, are those shown in the App Store at purchase time.</li>
+      <li>Manage or cancel in iPhone Settings → Apple ID → Subscriptions.</li>
+      <li>Refunds follow Apple’s rules.</li>
+      <li>Plus and Max (monthly or yearly) unlock features and AI reading quotas as described in the app.</li>
+    </ul>
+    <p>Auto-renewable subscriptions are also subject to Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">Standard Licensed Application End User License Agreement (EULA)</a>, in addition to these terms.</p>
+
+    <h2>Responsibility</h2>
+    <p>No LifeNex account is required. You are responsible for how you use the app and the decisions you make. LifeNex is not liable for damages from non-compliant use or incomplete or inaccurate Health data.</p>
+
+    <h2>Disclaimer</h2>
+    <p>The app is provided “as is,” to the extent permitted by law. We do not warrant uninterrupted or error-free operation, or any fitness or health outcomes.</p>
+
+    <h2>Changes</h2>
+    <p>We may update these terms. The date above shows the latest revision.</p>
+
+    <p>Questions: <a href="mailto:support@lifenex.it">support@lifenex.it</a> · <a href="../privacy/">Privacy</a></p>
+""",
+    },
+    "fr": {
+        "title": "Conditions d’utilisation — LifeNex",
+        "h1": "Conditions d’utilisation",
+        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 29 septembre 2026',
+        "body": """
+    <p>En utilisant LifeNex, vous acceptez ces conditions. Sinon, n’utilisez pas l’app.</p>
+
+    <h2>Qu’est-ce que LifeNex</h2>
+    <p>LifeNex est une app iOS de bien-être et de fitness qui <strong>observe</strong> les données déjà présentes dans Apple Santé et peut vous <strong>motiver</strong> vers des objectifs que vous choisissez. <strong>Ce n’est pas un dispositif médical</strong> : elle ne diagnostique pas, ne soigne pas et ne prescrit ni thérapies, ni médicaments, ni intensité d’entraînement.</p>
+
+    <h2>Licence</h2>
+    <p>Nous vous accordons une licence personnelle, non exclusive et non transférable pour utiliser LifeNex sur votre appareil Apple.</p>
+
+    <h2>Apple Santé (HealthKit)</h2>
+    <p>L’app lit les données Santé uniquement avec votre consentement. Les données restent sur l’appareil, sauf fonctions optionnelles avec autorisation supplémentaire (voir la <a href="../privacy/">politique de confidentialité</a>).</p>
+
+    <h2>Analyse intelligente (optionnelle)</h2>
+    <p>Si vous activez le consentement et demandez une lecture, LifeNex peut envoyer des résumés numériques déjà calculés dans l’app à une passerelle pour produire un texte. Le service a un plafond par période d’abonnement. Cela ne remplace pas un avis professionnel.</p>
+
+    <h2>Abonnements Plus et Max</h2>
+    <ul>
+      <li>Achats et renouvellements gérés par Apple via l’App Store.</li>
+      <li>Prix et essais affichés dans l’App Store au moment de l’achat.</li>
+      <li>Gestion / résiliation : Réglages iPhone → Apple ID → Abonnements.</li>
+      <li>Remboursements selon les règles Apple.</li>
+    </ul>
+    <p>Les abonnements à renouvellement automatique sont aussi soumis à l’<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">EULA standard Apple</a>.</p>
+
+    <h2>Responsabilité</h2>
+    <p>Aucun compte LifeNex n’est obligatoire. Vous êtes responsable de l’usage de l’app et de vos décisions.</p>
+
+    <h2>Modifications</h2>
+    <p>Nous pouvons mettre à jour ces conditions. La date ci-dessus indique la dernière révision.</p>
+
+    <p>Questions : <a href="mailto:support@lifenex.it">support@lifenex.it</a> · <a href="../privacy/">Confidentialité</a></p>
+""",
+    },
+    "de": {
+        "title": "Nutzungsbedingungen — LifeNex",
+        "h1": "Nutzungsbedingungen",
+        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 29. September 2026',
+        "body": """
+    <p>Mit der Nutzung von LifeNex akzeptierst du diese Bedingungen. Wenn nicht, verwende die App nicht.</p>
+
+    <h2>Was LifeNex ist</h2>
+    <p>LifeNex ist eine iOS-App für Wellness und Fitness, die Daten in Apple Gesundheit <strong>beobachtet</strong> und dich zu selbst gewählten Zielen <strong>motivieren</strong> kann. <strong>Kein Medizinprodukt</strong>: keine Diagnose, Therapie, Medikamente oder Vorgaben zur Trainingsintensität.</p>
+
+    <h2>Lizenz</h2>
+    <p>Du erhältst eine persönliche, nicht ausschließliche, nicht übertragbare Lizenz zur Nutzung auf deinem Apple-Gerät.</p>
+
+    <h2>Apple Gesundheit (HealthKit)</h2>
+    <p>Die App liest Gesundheitsdaten nur mit deiner Zustimmung. Daten bleiben auf dem Gerät, außer optionale Funktionen mit zusätzlicher Erlaubnis (siehe <a href="../privacy/">Datenschutzerklärung</a>).</p>
+
+    <h2>Optionale intelligente Analyse</h2>
+    <p>Mit Zustimmung in den Einstellungen und auf Anfrage kann LifeNex bereits berechnete Zahlenzusammenfassungen an ein Gateway senden. Es gibt ein Kontingent pro Abo-Zeitraum. Kein Ersatz für fachlichen Rat.</p>
+
+    <h2>Abos Plus und Max</h2>
+    <ul>
+      <li>Käufe und Verlängerungen über den App Store von Apple.</li>
+      <li>Preise und Testphasen wie im App Store zum Kaufzeitpunkt angezeigt.</li>
+      <li>Verwalten/kündigen: iPhone-Einstellungen → Apple-ID → Abonnements.</li>
+      <li>Erstattungen nach Apple-Regeln.</li>
+    </ul>
+    <p>Für Auto-Renew-Abos gilt zusätzlich Apples <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">Standard-EULA</a>.</p>
+
+    <h2>Verantwortung</h2>
+    <p>Kein LifeNex-Konto erforderlich. Du bist für die Nutzung der App und deine Entscheidungen verantwortlich.</p>
+
+    <h2>Änderungen</h2>
+    <p>Wir können diese Bedingungen aktualisieren. Das Datum oben zeigt die letzte Fassung.</p>
+
+    <p>Fragen: <a href="mailto:support@lifenex.it">support@lifenex.it</a> · <a href="../privacy/">Datenschutz</a></p>
+""",
+    },
+}
+
+
+def terms_html(lang: str) -> str:
+    t = TERMS[lang]
+    p = PRIVACY[lang]
+    codes = ("it", "en", "fr", "de")
+    if lang == "it":
+        asset = "../assets/"
+        css = "../styles.css"
+        hrefs = {code: "./" if code == "it" else f"../{code}/terms/" for code in codes}
+    else:
+        asset = "../../assets/"
+        css = "../../styles.css"
+        hrefs = {code: "./" if code == lang else ("../../terms/" if code == "it" else f"../../{code}/terms/") for code in codes}
+    active = ' class="active"'
+    links = "\n".join(
+        f'          <a href="{hrefs[code]}"{active if code == lang else ""}>{code.upper()}</a>'
+        for code in codes
+    )
+    return f"""<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{t['title']}</title>
+  <link rel="icon" href="{asset}app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="{asset}apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{css}">
+</head>
+<body class="page-shell">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../">
+        <img src="{asset}app-icon.png" alt="" width="36" height="36">
+        LifeNex
+      </a>
+      <div class="header-right">
+        <nav class="nav-links" aria-label="Main">
+          <a href="../">{COPY[lang]['nav_home']}</a>
+          <a href="../privacy/">{p['nav']}</a>
+          <a class="active" href="./">{COPY[lang]['nav_terms']}</a>
+          <a href="mailto:support@lifenex.it">{p['contact']}</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language">
+{links}
+        </div>
+      </div>
+    </div>
+  </header>
+  <article class="legal-page">
+    <h1>{t['h1']}</h1>
+    <p class="legal-meta">{t['meta']}</p>
+{t['body']}  </article>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 LifeNex</span>
+      <a href="../">{p['back']}</a>
     </div>
   </footer>
 </body>
@@ -677,6 +967,11 @@ def main():
             ppath.parent.mkdir(parents=True, exist_ok=True)
         ppath.write_text(privacy_html(lang))
         print("wrote", ppath)
+
+        tpath = (ROOT if lang == "it" else ROOT / lang) / "terms" / "index.html"
+        tpath.parent.mkdir(parents=True, exist_ok=True)
+        tpath.write_text(terms_html(lang))
+        print("wrote", tpath)
 
 
 if __name__ == "__main__":
