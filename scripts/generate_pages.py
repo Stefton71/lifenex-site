@@ -2,7 +2,7 @@
 """Generate LifeNex site pages IT/EN/FR/DE with screenshot captions."""
 from pathlib import Path
 
-ROOT = Path("/Users/stefano/Documents/lifenex-site")
+ROOT = Path(__file__).resolve().parents[1]
 
 SHOTS = {
     "it": [
@@ -305,6 +305,56 @@ def lang_switch(active: str, base: str) -> str:
     return '<div class="lang-switch" aria-label="Language">' + "".join(parts) + "</div>"
 
 
+SITE_URL = "https://lifenex.it"
+LANGS = ("it", "en", "fr", "de")
+PAGE_SUFFIX = {"home": "", "privacy": "privacy/", "terms": "terms/"}
+
+
+def lang_head(lang: str, page: str) -> str:
+    """hreflang links + automatic language detection.
+
+    Only the Italian pages (site root) redirect: a visitor whose browser is
+    in English, French or German is sent to that version; any other browser
+    language gets English. A choice made with the IT/EN/FR/DE switch is
+    remembered and wins over the browser language. The /en/, /fr/ and /de/
+    pages never redirect, so links to them always open as shared.
+    """
+    suffix = PAGE_SUFFIX[page]
+    links = []
+    for code in LANGS:
+        path = "/" + ("" if code == "it" else f"{code}/") + suffix
+        links.append(f'  <link rel="alternate" hreflang="{code}" href="{SITE_URL}{path}">')
+    links.append(f'  <link rel="alternate" hreflang="x-default" href="{SITE_URL}/{suffix}">')
+    up = "" if page == "home" else "../"
+    targets = ",".join(f'{code}:"{up}{code}/{suffix}"' for code in LANGS if code != "it")
+    script = (
+        "  <script>\n"
+        "  (function () {\n"
+        '    var K = "lifenex-lang", L = ["it", "en", "fr", "de"];\n'
+        '    document.addEventListener("click", function (e) {\n'
+        '      var a = e.target.closest && e.target.closest(".lang-switch a");\n'
+        "      if (a) { try { localStorage.setItem(K, a.textContent.trim().toLowerCase()); } catch (x) {} }\n"
+        "    });\n"
+        + ("    return;\n" if lang != "it" else
+           f"    var T = {{{targets}}};\n"
+           "    if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)) return;\n"
+           "    var p = null;\n"
+           "    try { p = localStorage.getItem(K); } catch (x) {}\n"
+           "    if (L.indexOf(p) < 0) {\n"
+           '      p = "en";\n'
+           '      var ls = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];\n'
+           "      for (var i = 0; i < ls.length; i++) {\n"
+           '        var c = String(ls[i] || "").slice(0, 2).toLowerCase();\n'
+           "        if (L.indexOf(c) >= 0) { p = c; break; }\n"
+           "      }\n"
+           "    }\n"
+           "    if (T[p]) location.replace(T[p] + location.search + location.hash);\n")
+        + "  })();\n"
+        "  </script>"
+    )
+    return "\n".join(links) + "\n" + script
+
+
 def shots_html(lang: str) -> str:
     a = ASSET[lang]
     prefix = SHOT_PREFIX[lang]
@@ -358,6 +408,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{CSS[lang]}?v=5">
+{lang_head(lang, "home")}
 </head>
 <body>
   <header class="site-header">
@@ -690,6 +741,7 @@ def privacy_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{css}">
+{lang_head(lang, "privacy")}
 </head>
 <body class="page-shell">
   <header class="site-header">
@@ -914,6 +966,7 @@ def terms_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{css}">
+{lang_head(lang, "terms")}
 </head>
 <body class="page-shell">
   <header class="site-header">

@@ -11,6 +11,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css?v=5">
+  <link rel="alternate" hreflang="it" href="https://lifenex.it/">
+  <link rel="alternate" hreflang="en" href="https://lifenex.it/en/">
+  <link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/">
+  <link rel="alternate" hreflang="de" href="https://lifenex.it/de/">
+  <link rel="alternate" hreflang="x-default" href="https://lifenex.it/">
+  <script>
+  (function () {
+    var K = "lifenex-lang", L = ["it", "en", "fr", "de"];
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest(".lang-switch a");
+      if (a) { try { localStorage.setItem(K, a.textContent.trim().toLowerCase()); } catch (x) {} }
+    });
+    return;
+  })();
+  </script>
 </head>
 <body>
   <header class="site-header">
