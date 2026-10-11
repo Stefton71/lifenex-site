@@ -227,30 +227,6 @@ a:hover { text-decoration: underline; }
   z-index: 1;
   animation: phone-enter-right 1.05s cubic-bezier(0.22, 1, 0.36, 1) 0.34s both;
 }
-/* Video dei momenti salienti: cornice 9:16, davanti in basso a destra. */
-.phone-video {
-  z-index: 4;
-  width: min(150px, 28vw);
-  aspect-ratio: 9 / 16;
-  border-radius: 22px;
-  animation: phone-enter-video 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
-}
-.phone-video video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@keyframes phone-enter-video {
-  from {
-    opacity: 0;
-    transform: translate(75%, 190px) rotate(0deg) scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: translate(100%, 150px) rotate(5deg) scale(1);
-  }
-}
 @keyframes phone-enter-main {
   from {
     opacity: 0;
@@ -284,14 +260,12 @@ a:hover { text-decoration: underline; }
 @media (prefers-reduced-motion: reduce) {
   .phone-main,
   .phone-left,
-  .phone-right,
-  .phone-video {
+  .phone-right {
     animation: none;
   }
   .phone-main { transform: translateY(-12px); opacity: 1; }
   .phone-left { transform: translate(-42%, 72px) rotate(-8deg) scale(0.88); opacity: 1; }
   .phone-right { transform: translate(42%, 80px) rotate(8deg) scale(0.86); opacity: 0.96; }
-  .phone-video { animation: none; transform: translate(100%, 150px) rotate(5deg); opacity: 1; }
 }
 
 .section {
@@ -340,6 +314,37 @@ a:hover { text-decoration: underline; }
 .card p { margin: 0; color: var(--muted); }
 
 .video-section { padding-bottom: 1rem; }
+
+/* Video 3D dei momenti salienti: sezione sua, testo a sinistra e video a destra. */
+.share3d-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 3rem;
+}
+.share3d-note {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.share3d-video {
+  width: min(300px, 70vw);
+  aspect-ratio: 9 / 16;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #0b0a12;
+  box-shadow: var(--shadow);
+}
+.share3d-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .share3d-inner { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+  .share3d-video { margin: 0 auto; width: min(260px, 70vw); }
+}
 .video-frame {
   position: relative;
   max-width: 960px;

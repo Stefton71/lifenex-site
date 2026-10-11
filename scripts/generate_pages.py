@@ -63,6 +63,9 @@ COPY = {
         "cta_store": "Scarica su App Store",
         "cta_see": "Esplora l’app",
         "video_id": "mnVdDF1LOpA",
+        "v3d_h2": "Rivivi ogni percorso in 3D",
+        "v3d_p": "Crea il video 3D della tua sessione e condividilo: il volo su tutto il percorso o i momenti salienti, con salite, discese e i punti più spettacolari.",
+        "v3d_note": "Salvalo nelle Foto o condividilo con un tocco.",
         "video_h2": "Guarda LifeNex in azione",
         "video_sub": "Scopri in breve come LifeNex trasforma i dati di Apple Watch e Salute in una visione chiara.",
         "video_title": "LifeNex – La tua forma e i tuoi allenamenti con Apple Watch",
@@ -107,6 +110,9 @@ COPY = {
         "cta_store": "Download on the App Store",
         "cta_see": "Explore the app",
         "video_id": "H0bXt7V_j98",
+        "v3d_h2": "Relive every route in 3D",
+        "v3d_p": "Create a 3D video of your session and share it: a flight over the whole route or the highlights, with climbs, descents and the most spectacular spots.",
+        "v3d_note": "Save it to Photos or share it in one tap.",
         "video_h2": "See LifeNex in action",
         "video_sub": "A quick look at how LifeNex turns Apple Watch and Health data into one clear view.",
         "video_title": "LifeNex – Your fitness and workouts with Apple Watch",
@@ -151,6 +157,9 @@ COPY = {
         "cta_store": "Télécharger sur l’App Store",
         "cta_see": "Explorer l’app",
         "video_id": "KuZ9XnwG6dg",
+        "v3d_h2": "Revivez chaque parcours en 3D",
+        "v3d_p": "Créez la vidéo 3D de votre séance et partagez-la : le survol de tout le parcours ou les moments forts, avec montées, descentes et points les plus spectaculaires.",
+        "v3d_note": "Enregistrez-la dans Photos ou partagez-la d’un geste.",
         "video_h2": "Découvrez LifeNex en action",
         "video_sub": "Un aperçu rapide de la façon dont LifeNex transforme les données Apple Watch et Santé en une vision claire.",
         "video_title": "LifeNex – Votre forme et vos entraînements avec l’Apple Watch",
@@ -195,6 +204,9 @@ COPY = {
         "cta_store": "Im App Store laden",
         "cta_see": "App entdecken",
         "video_id": "3nGrcsxqma8",
+        "v3d_h2": "Erlebe jede Route in 3D",
+        "v3d_p": "Erstelle ein 3D-Video deiner Einheit und teile es: der Flug über die ganze Route oder die Highlights, mit Anstiegen, Abfahrten und den spektakulärsten Stellen.",
+        "v3d_note": "Speichere es in Fotos oder teile es mit einem Tippen.",
         "video_h2": "LifeNex in Aktion",
         "video_sub": "Ein kurzer Blick darauf, wie LifeNex Daten von Apple Watch und Apple Gesundheit in einen klaren Überblick verwandelt.",
         "video_title": "LifeNex – Deine Form und dein Training mit der Apple Watch",
@@ -407,7 +419,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=6">
+  <link rel="stylesheet" href="{CSS[lang]}?v=7">
 {lang_head(lang, "home")}
 </head>
 <body>
@@ -448,7 +460,19 @@ def home_html(lang: str) -> str:
         <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-7.png" alt=""></div>
         <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-1.png" alt=""></div>
         <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-8.png" alt=""></div>
-        <div class="phone phone-video"><video src="{a}video/highlights-{SHOT_PREFIX[lang]}.mp4" poster="{a}video/highlights-{SHOT_PREFIX[lang]}.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section share3d" id="video3d">
+    <div class="section-inner share3d-inner">
+      <div class="share3d-copy">
+        <h2>{c['v3d_h2']}</h2>
+        <p class="sub">{c['v3d_p']}</p>
+        <p class="share3d-note">{c['v3d_note']}</p>
+      </div>
+      <div class="share3d-video">
+        <video src="{a}video/highlights-{SHOT_PREFIX[lang]}.mp4" poster="{a}video/highlights-{SHOT_PREFIX[lang]}.jpg" autoplay muted loop playsinline preload="metadata" aria-label="{c['v3d_h2']}"></video>
       </div>
     </div>
   </section>
