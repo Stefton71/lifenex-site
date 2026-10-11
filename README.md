@@ -1,27 +1,32 @@
 # LifeNex website
 
-Sito ufficiale LifeNex (IT + EN) per App Store Connect.
+Sito ufficiale di LifeNex in quattro lingue (IT, EN, FR, DE), pubblicato con GitHub Pages su **https://lifenex.it**.
 
-## URL attivi (GitHub Pages)
+## Pagine
 
-| | IT | EN |
-|--|----|----|
-| Home | https://stefton71.github.io/lifenex-site/ | https://stefton71.github.io/lifenex-site/en/ |
-| Privacy | https://stefton71.github.io/lifenex-site/privacy/ | https://stefton71.github.io/lifenex-site/en/privacy/ |
+| | IT | EN | FR | DE |
+|--|----|----|----|----|
+| Home | [/](https://lifenex.it/) | [/en/](https://lifenex.it/en/) | [/fr/](https://lifenex.it/fr/) | [/de/](https://lifenex.it/de/) |
+| Privacy | [/privacy/](https://lifenex.it/privacy/) | [/en/privacy/](https://lifenex.it/en/privacy/) | [/fr/privacy/](https://lifenex.it/fr/privacy/) | [/de/privacy/](https://lifenex.it/de/privacy/) |
+| Termini | [/terms/](https://lifenex.it/terms/) | [/en/terms/](https://lifenex.it/en/terms/) | [/fr/terms/](https://lifenex.it/fr/terms/) | [/de/terms/](https://lifenex.it/de/terms/) |
 
-## Dominio lifenex.it
+Le pagine italiane alla radice reindirizzano a `/en/`, `/fr/` o `/de/` in base alla lingua del browser; la scelta fatta con il selettore lingua viene ricordata.
 
-Oggi il DNS punta ad **Aruba** (parcheggio IIS). Per usare `https://lifenex.it/privacy`:
+## Modificare i testi
 
-1. Pannello Aruba → DNS del dominio `lifenex.it`
-2. Rimuovi/sostituisci il record **A** su `62.149.128.40`
-3. Imposta record **A** apex verso GitHub Pages:
-   - `185.199.108.153`
-   - `185.199.109.153`
-   - `185.199.110.153`
-   - `185.199.111.153`
-4. (Opzionale) `www` → CNAME `stefton71.github.io`
-5. In questo repo riaggiungi file `CNAME` con contenuto `lifenex.it`
-6. GitHub → Settings → Pages → Custom domain → verifica HTTPS
+Le pagine HTML sono generate: non modificarle a mano.
 
-Finché il DNS non è cambiato, in App Store Connect usa gli URL **github.io** sopra.
+1. Cambia i testi in `scripts/generate_pages.py` (`COPY` per i testi delle pagine, `SHOTS` per le didascalie delle schermate).
+2. Rigenera: `python3 scripts/generate_pages.py`
+3. Controlla `git diff`, poi commit e push su `main`: GitHub Pages pubblica in circa un minuto.
+
+## Struttura
+
+- `index.html`, `en/`, `fr/`, `de/`: home, privacy e termini per lingua (generati)
+- `styles.css`, `lightbox.js`: stile e visualizzazione delle schermate
+- `assets/`: icona, badge App Store, schermate (`screenshots/`, `store/`)
+- `CNAME`: dominio personalizzato `lifenex.it`
+
+## Dominio
+
+Il DNS di `lifenex.it` (gestito su Aruba) punta a GitHub Pages con i record **A** `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`. HTTPS è gestito da GitHub (Settings → Pages).
