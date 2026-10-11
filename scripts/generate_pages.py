@@ -419,7 +419,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=7">
+  <link rel="stylesheet" href="{CSS[lang]}?v=8">
 {lang_head(lang, "home")}
 </head>
 <body>
@@ -464,19 +464,6 @@ def home_html(lang: str) -> str:
     </div>
   </section>
 
-  <section class="section share3d" id="video3d">
-    <div class="section-inner share3d-inner">
-      <div class="share3d-copy">
-        <h2>{c['v3d_h2']}</h2>
-        <p class="sub">{c['v3d_p']}</p>
-        <p class="share3d-note">{c['v3d_note']}</p>
-      </div>
-      <div class="share3d-video">
-        <video src="{a}video/highlights-{SHOT_PREFIX[lang]}.mp4" poster="{a}video/highlights-{SHOT_PREFIX[lang]}.jpg" autoplay muted loop playsinline preload="metadata" aria-label="{c['v3d_h2']}"></video>
-      </div>
-    </div>
-  </section>
-
   <section class="section video-section" id="video">
     <div class="section-inner">
       <h2>{c['video_h2']}</h2>
@@ -508,11 +495,17 @@ def home_html(lang: str) -> str:
   </section>
 
   <div class="cta-band">
-    <h2>{c['band_h2']}</h2>
-    <p>{c['band_p']}</p>
-    <a class="store-badge" href="https://apps.apple.com/it/app/lifenex-salute-e-fitness/id6804388724" rel="noopener noreferrer">
-      <img src="{a}badges/app-store-{lang}.svg" alt="{c['band_cta']}" height="40" width="120">
-    </a>
+    <div class="cta-band-copy">
+      <h2>{c['band_h2']}</h2>
+      <p>{c['band_p']}</p>
+      <a class="store-badge" href="https://apps.apple.com/it/app/lifenex-salute-e-fitness/id6804388724" rel="noopener noreferrer">
+        <img src="{a}badges/app-store-{lang}.svg" alt="{c['band_cta']}" height="40" width="120">
+      </a>
+    </div>
+    <figure class="cta-band-video">
+      <video src="{a}video/highlights-{SHOT_PREFIX[lang]}.mp4" poster="{a}video/highlights-{SHOT_PREFIX[lang]}.jpg" autoplay muted loop playsinline preload="metadata" aria-label="{c['v3d_h2']}"></video>
+      <figcaption>{c['v3d_h2']}</figcaption>
+    </figure>
   </div>
 
   <footer class="site-footer">
