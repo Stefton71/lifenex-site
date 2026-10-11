@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://lifenex.it/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/en/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/fr/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/de/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/privacy/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/privacy/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/en/privacy/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/privacy/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/fr/privacy/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/privacy/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/de/privacy/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/privacy/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/terms/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/terms/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/en/terms/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/terms/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/fr/terms/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/terms/"/>
+  </url>
+  <url>
+    <loc>https://lifenex.it/de/terms/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://lifenex.it/de/terms/"/>
+  </url>
+</urlset>

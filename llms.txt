@@ -1,0 +1,26 @@
+# LifeNex
+
+> LifeNex is an iOS app for health and fitness. Record your workouts with the device you prefer (best with Apple Watch): everything flows into Apple Health, and LifeNex turns it into goals, session comparisons and AI analysis of your progress. Available in Italian, English, French and German.
+
+- App Store: https://apps.apple.com/app/id6804388724
+- Price: free to download; Plus and Max subscriptions unlock 3D maps and videos, goals and AI analysis.
+- Platform: iPhone and iPad (iOS), works with Apple Watch and any device or app that writes to Apple Health.
+- Privacy: LifeNex reads Health data read-only; data stays on the user's iPhone. AI analysis is optional and sends only numeric summaries, with consent.
+- Developer: Stefano Toncelli (Italy). Support: support@lifenex.it
+
+## Main features
+
+- Workout analysis: duration, distance, pace, heart rate, zones, elevation and GPS map for every session.
+- Compare two sessions on the same route, side by side on a 3D map.
+- Relive any route in Satellite 3D and create a shareable 3D video (route flight or highlights).
+- Training load over time compared with your usual rhythm; recovery, HRV (including Recovery HRV on Apple Watch Series 12 and Ultra 4), resting heart rate, VO2 max, sleep, weight and body composition.
+- Goals and AI analysis of the last 30 days, written in plain words, with suggestions (not medical advice).
+
+## Pages
+
+- [Home (Italian)](https://lifenex.it/)
+- [Home (English)](https://lifenex.it/en/)
+- [Accueil (français)](https://lifenex.it/fr/)
+- [Startseite (Deutsch)](https://lifenex.it/de/)
+- [Privacy policy](https://lifenex.it/en/privacy/)
+- [Terms of use](https://lifenex.it/en/terms/)

@@ -330,6 +330,56 @@ LANGS = ("it", "en", "fr", "de")
 PAGE_SUFFIX = {"home": "", "privacy": "privacy/", "terms": "terms/"}
 
 
+APP_STORE_ID = "6804388724"
+APP_STORE_URL = "https://apps.apple.com/app/id6804388724"
+OG_LOCALE = {"it": "it_IT", "en": "en_US", "fr": "fr_FR", "de": "de_DE"}
+
+
+def page_url(lang: str, page: str) -> str:
+    """URL assoluto di una pagina, es. https://lifenex.it/en/privacy/."""
+    return SITE_URL + "/" + ("" if lang == "it" else f"{lang}/") + PAGE_SUFFIX[page]
+
+
+def seo_home_head(lang: str, c: dict) -> str:
+    """Anteprime di condivisione, banner App Store di Safari e dati strutturati dell'app."""
+    import json
+    url = page_url(lang, "home")
+    image = f"{SITE_URL}/assets/og/lifenex-{lang}.jpg"
+    data = {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "LifeNex",
+        "url": url,
+        "description": c["desc"],
+        "inLanguage": lang,
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "image": image,
+        "installUrl": APP_STORE_URL,
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+        "author": {"@type": "Person", "name": "Stefano Toncelli"},
+    }
+    alternates = "\n".join(
+        f'  <meta property="og:locale:alternate" content="{OG_LOCALE[code]}">' for code in LANGS if code != lang
+    )
+    return f"""  <meta name="apple-itunes-app" content="app-id={APP_STORE_ID}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LifeNex">
+  <meta property="og:url" content="{url}">
+  <meta property="og:title" content="{c['title']}">
+  <meta property="og:description" content="{c['desc']}">
+  <meta property="og:image" content="{image}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="{OG_LOCALE[lang]}">
+{alternates}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{c['title']}">
+  <meta name="twitter:description" content="{c['desc']}">
+  <meta name="twitter:image" content="{image}">
+  <script type="application/ld+json">{json.dumps(data, ensure_ascii=False)}</script>"""
+
+
 def lang_head(lang: str, page: str) -> str:
     """hreflang links + automatic language detection.
 
@@ -345,6 +395,7 @@ def lang_head(lang: str, page: str) -> str:
         path = "/" + ("" if code == "it" else f"{code}/") + suffix
         links.append(f'  <link rel="alternate" hreflang="{code}" href="{SITE_URL}{path}">')
     links.append(f'  <link rel="alternate" hreflang="x-default" href="{SITE_URL}/{suffix}">')
+    links.insert(0, f'  <link rel="canonical" href="{page_url(lang, page)}">')
     up = "" if page == "home" else "../"
     targets = ",".join(f'{code}:"{up}{code}/{suffix}"' for code in LANGS if code != "it")
     script = (
@@ -428,6 +479,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{CSS[lang]}?v=10">
+{seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
 <body>
@@ -1062,5 +1114,57 @@ def main():
         print("wrote", tpath)
 
 
+def write_seo_files():
+    """sitemap.xml con le alternative di lingua, robots.txt e llms.txt."""
+    import datetime
+    today = datetime.date.today().isoformat()
+    entries = []
+    for page in ("home", "privacy", "terms"):
+        for lang in LANGS:
+            alts = "".join(
+                f'\n    <xhtml:link rel="alternate" hreflang="{code}" href="{page_url(code, page)}"/>' for code in LANGS
+            )
+            priority = "1.0" if page == "home" else "0.3"
+            entries.append(
+                f"  <url>\n    <loc>{page_url(lang, page)}</loc>\n    <lastmod>{today}</lastmod>\n"
+                f"    <priority>{priority}</priority>{alts}\n  </url>"
+            )
+    (ROOT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+        + "\n".join(entries) + "\n</urlset>\n"
+    )
+    (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
+    (ROOT / "llms.txt").write_text(f"""# LifeNex
+
+> LifeNex is an iOS app for health and fitness. Record your workouts with the device you prefer (best with Apple Watch): everything flows into Apple Health, and LifeNex turns it into goals, session comparisons and AI analysis of your progress. Available in Italian, English, French and German.
+
+- App Store: {APP_STORE_URL}
+- Price: free to download; Plus and Max subscriptions unlock 3D maps and videos, goals and AI analysis.
+- Platform: iPhone and iPad (iOS), works with Apple Watch and any device or app that writes to Apple Health.
+- Privacy: LifeNex reads Health data read-only; data stays on the user's iPhone. AI analysis is optional and sends only numeric summaries, with consent.
+- Developer: Stefano Toncelli (Italy). Support: support@lifenex.it
+
+## Main features
+
+- Workout analysis: duration, distance, pace, heart rate, zones, elevation and GPS map for every session.
+- Compare two sessions on the same route, side by side on a 3D map.
+- Relive any route in Satellite 3D and create a shareable 3D video (route flight or highlights).
+- Training load over time compared with your usual rhythm; recovery, HRV (including Recovery HRV on Apple Watch Series 12 and Ultra 4), resting heart rate, VO2 max, sleep, weight and body composition.
+- Goals and AI analysis of the last 30 days, written in plain words, with suggestions (not medical advice).
+
+## Pages
+
+- [Home (Italian)]({page_url("it", "home")})
+- [Home (English)]({page_url("en", "home")})
+- [Accueil (français)]({page_url("fr", "home")})
+- [Startseite (Deutsch)]({page_url("de", "home")})
+- [Privacy policy]({page_url("en", "privacy")})
+- [Terms of use]({page_url("en", "terms")})
+""")
+    print("wrote sitemap.xml, robots.txt, llms.txt")
+
+
 if __name__ == "__main__":
     main()
+    write_seo_files()
