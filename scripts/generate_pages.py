@@ -407,7 +407,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=5">
+  <link rel="stylesheet" href="{CSS[lang]}?v=6">
 {lang_head(lang, "home")}
 </head>
 <body>
@@ -448,6 +448,7 @@ def home_html(lang: str) -> str:
         <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-7.png" alt=""></div>
         <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-1.png" alt=""></div>
         <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-8.png" alt=""></div>
+        <div class="phone phone-video"><video src="{a}video/highlights-{SHOT_PREFIX[lang]}.mp4" poster="{a}video/highlights-{SHOT_PREFIX[lang]}.jpg" autoplay muted loop playsinline preload="metadata"></video></div>
       </div>
     </div>
   </section>
