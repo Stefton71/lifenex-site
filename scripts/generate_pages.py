@@ -84,6 +84,8 @@ COPY = {
         "band_h2": "Vedi i dati. Confrontali. Analizzali. Segui la tua evoluzione.",
         "band_p": "LifeNex riunisce ciò che Apple Salute raccoglie — e te lo fa leggere.",
         "band_cta": "Vai su App Store",
+        "band_points": ["Gratis da scaricare", "Funziona con il dispositivo che preferisci", "I tuoi dati restano al sicuro in Salute"],
+        "band_qr": "Inquadra con l’iPhone",
         "alt": [
             "Schermata Metriche LifeNex",
             "Schermata Sessioni",
@@ -131,6 +133,8 @@ COPY = {
         "band_h2": "See the data. Compare it. Analyze it. Follow your evolution.",
         "band_p": "LifeNex brings together what Apple Health collects — and helps you read it.",
         "band_cta": "Go to the App Store",
+        "band_points": ["Free to download", "Works with the device you prefer", "Your data stays safe in Apple Health"],
+        "band_qr": "Scan with your iPhone",
         "alt": [
             "LifeNex Metrics screen",
             "Sessions screen",
@@ -178,6 +182,8 @@ COPY = {
         "band_h2": "Voyez les données. Comparez-les. Analysez-les. Suivez votre évolution.",
         "band_p": "LifeNex rassemble ce qu’Apple Santé collecte — et vous aide à le lire.",
         "band_cta": "Aller sur l’App Store",
+        "band_points": ["Téléchargement gratuit", "Fonctionne avec l’appareil de votre choix", "Vos données restent en sécurité dans Santé"],
+        "band_qr": "Scannez avec votre iPhone",
         "alt": [
             "Écran Métriques LifeNex",
             "Écran Séances",
@@ -225,6 +231,8 @@ COPY = {
         "band_h2": "Sieh die Daten. Vergleiche sie. Analysiere sie. Folge deiner Entwicklung.",
         "band_p": "LifeNex bündelt, was Apple Gesundheit sammelt — und hilft dir, es zu lesen.",
         "band_cta": "Zum App Store",
+        "band_points": ["Kostenlos laden", "Funktioniert mit dem Gerät deiner Wahl", "Deine Daten bleiben sicher in Apple Health"],
+        "band_qr": "Mit dem iPhone scannen",
         "alt": [
             "LifeNex-Metriken",
             "Einheiten-Übersicht",
@@ -419,7 +427,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=9">
+  <link rel="stylesheet" href="{CSS[lang]}?v=10">
 {lang_head(lang, "home")}
 </head>
 <body>
@@ -498,9 +506,18 @@ def home_html(lang: str) -> str:
     <div class="cta-band-copy">
       <h2>{c['band_h2']}</h2>
       <p>{c['band_p']}</p>
-      <a class="store-badge" href="https://apps.apple.com/it/app/lifenex-salute-e-fitness/id6804388724" rel="noopener noreferrer">
-        <img src="{a}badges/app-store-{lang}.svg" alt="{c['band_cta']}" height="40" width="120">
-      </a>
+      <ul class="cta-band-points">
+        {"".join(f"<li>{point}</li>" for point in c['band_points'])}
+      </ul>
+      <div class="cta-band-get">
+        <a class="store-badge" href="https://apps.apple.com/it/app/lifenex-salute-e-fitness/id6804388724" rel="noopener noreferrer">
+          <img src="{a}badges/app-store-{lang}.svg" alt="{c['band_cta']}" height="56" width="168">
+        </a>
+        <figure class="cta-band-qr">
+          <img src="{a}app-store-qr.svg" alt="" width="92" height="92">
+          <figcaption>{c['band_qr']}</figcaption>
+        </figure>
+      </div>
     </div>
     <figure class="cta-band-video">
       <video src="{a}video/highlights-{SHOT_PREFIX[lang]}.mp4" poster="{a}video/highlights-{SHOT_PREFIX[lang]}.jpg" autoplay muted loop playsinline preload="metadata" aria-label="{c['v3d_h2']}"></video>

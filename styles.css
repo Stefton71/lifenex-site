@@ -418,6 +418,51 @@ a:hover { text-decoration: underline; }
   padding: 2.5rem 3rem;
   text-align: left;
 }
+.cta-band h2 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); }
+.cta-band p { font-size: 1.1rem; }
+.cta-band-points {
+  list-style: none;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.cta-band-points li::before {
+  content: "✓";
+  display: inline-grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.65rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 0.85rem;
+}
+.cta-band-get {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+.cta-band-get .store-badge img { height: 56px; width: auto; }
+.cta-band-qr {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.95;
+}
+.cta-band-qr img {
+  width: 92px;
+  height: 92px;
+  padding: 6px;
+  border-radius: 12px;
+  background: #fff;
+}
+.cta-band-qr figcaption { max-width: 7rem; }
 .cta-band-video {
   margin: 0;
   width: 200px;
@@ -442,6 +487,9 @@ a:hover { text-decoration: underline; }
 @media (max-width: 760px) {
   .cta-band { grid-template-columns: 1fr; text-align: center; padding: 2.25rem 1.5rem; gap: 1.75rem; }
   .cta-band-video { margin: 0 auto; width: min(220px, 62vw); }
+  .cta-band-points { justify-items: center; }
+  .cta-band-get { justify-content: center; }
+  .cta-band-qr { display: none; }
 }
 
 .site-footer {
