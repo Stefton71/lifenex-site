@@ -478,7 +478,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=10">
+  <link rel="stylesheet" href="{CSS[lang]}?v=11">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -604,7 +604,7 @@ PRIVACY = {
     "it": {
         "title": "Privacy — LifeNex",
         "h1": "Informativa sulla privacy",
-        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 5 ottobre 2026',
+        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 12 ottobre 2026',
         "nav": "Privacy",
         "contact": "Contatti",
         "back": "Torna alla home",
@@ -629,12 +629,13 @@ PRIVACY = {
       <li><strong>il nostro server</strong> (Google Firebase, regione Unione Europea), che inoltra la richiesta e conta le analisi usate: non conserva i riassunti né i testi generati;</li>
       <li><strong>OpenAI</strong>, fornitore del modello di intelligenza artificiale, che genera il testo per nostro conto. Riceve solo il testo dei riassunti, senza identificativi dell’abbonamento o del dispositivo. Secondo le condizioni del suo servizio API, OpenAI non usa questi dati per addestrare i propri modelli e può conservarli per un periodo limitato (fino a 30 giorni) solo per prevenire abusi.</li>
     </ul>
-    <p>Le letture generate restano salvate sul tuo iPhone.</p>
+    <p>Le letture generate restano salvate sul tuo iPhone e, se iCloud è attivo, nel tuo iCloud privato (vedi sotto).</p>
     <p><strong>Mappe e rilievo:</strong> per mostrare i percorsi l’app scarica le immagini della mappa da Apple Mappe e, nelle viste 3D, le quote del terreno della zona dal servizio pubblico Terrain Tiles (Amazon Web Services, AWS Open Data). Queste richieste indicano solo l’area di mappa da scaricare (riquadri di alcuni chilometri), non il tracciato GPS, i tempi o altri dati di Salute, e non sono collegate a te; come per qualsiasi sito web, il fornitore vede l’indirizzo IP della connessione. Le quote scaricate restano in cache sul tuo iPhone.</p>
+    <p><strong>iCloud (sincronizzazione tra i tuoi dispositivi):</strong> se iCloud è attivo, le letture AI salvate, i tuoi obiettivi e alcune preferenze (zone cardiache, disposizione della dashboard, lingua, consenso alla lettura intelligente) vengono copiati nel <strong>tuo iCloud privato</strong>, così li ritrovi su iPhone e iPad con lo stesso Apple ID. Sono conservati da Apple nel tuo account: noi non possiamo leggerli. I dati di Salute non passano da qui: li sincronizza Apple Salute.</p>
     <h2>Cosa non facciamo</h2>
     <ul><li>non vendiamo i tuoi dati</li><li>non usiamo i dati Salute per pubblicità o tracking tra app</li><li>non condividiamo dati sanitari con terze parti a scopo commerciale</li></ul>
     <h2>Conservazione e cancellazione</h2>
-    <p>I dati restano sul dispositivo finché l’app è installata. Per cancellarli: elimina LifeNex e, in Impostazioni → Salute → Accesso app e dati, revoca l’accesso.</p>
+    <p>I dati restano sul dispositivo finché l’app è installata. Per cancellarli: elimina LifeNex e, in Impostazioni → Salute → Accesso app e dati, revoca l’accesso. La copia in iCloud si elimina da Impostazioni → [il tuo nome] → iCloud → Gestisci spazio → LifeNex.</p>
     <p>Sul nostro server restano solo i <strong>contatori delle analisi AI</strong> per periodo di abbonamento, legati all’identificativo dell’abbonamento Apple e a un identificativo anonimo del dispositivo, insieme ad alcuni dati tecnici dell’ultimo dispositivo usato (modello di iPhone, versione di iOS, versione dell’app e paese dello store App Store) che ci servono per l’assistenza e per capire quali versioni sono in uso: nessun dato di salute. Per farli cancellare scrivi al contatto qui sotto.</p>
     <h2>Permessi</h2>
     <p>Puoi rifiutare o revocare i permessi Salute in qualsiasi momento. Senza permessi l’app funziona in modo limitato.</p>
@@ -650,7 +651,7 @@ PRIVACY = {
     "en": {
         "title": "Privacy — LifeNex",
         "h1": "Privacy policy",
-        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 5 October 2026',
+        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 12 October 2026',
         "nav": "Privacy",
         "contact": "Contact",
         "back": "Back to home",
@@ -675,12 +676,13 @@ PRIVACY = {
       <li><strong>our server</strong> (Google Firebase, European Union region), which forwards the request and counts the analyses used: it does not keep the summaries or the generated texts;</li>
       <li><strong>OpenAI</strong>, the AI model provider, which generates the text on our behalf. It receives only the summary text, without subscription or device identifiers. Under its API terms, OpenAI does not use this data to train its models and may keep it for a limited time (up to 30 days) only to prevent abuse.</li>
     </ul>
-    <p>Generated readings stay saved on your iPhone.</p>
+    <p>Generated readings stay saved on your iPhone and, if iCloud is on, in your private iCloud (see below).</p>
     <p><strong>Maps and terrain:</strong> to show your routes the app downloads map imagery from Apple Maps and, in 3D views, terrain elevation for the area from the public Terrain Tiles service (Amazon Web Services, AWS Open Data). These requests only specify the map area to download (tiles a few kilometres wide), not your GPS track, times or any other Health data, and they are not linked to you; as with any website, the provider sees the IP address of the connection. Downloaded elevation data stays cached on your iPhone.</p>
+    <p><strong>iCloud (sync across your devices):</strong> if iCloud is on, saved AI readings, your goals and some preferences (heart rate zones, dashboard layout, language, smart reading consent) are copied to <strong>your private iCloud</strong>, so you find them on iPhone and iPad with the same Apple ID. They are stored by Apple in your account: we cannot read them. Health data does not go through here: Apple Health syncs it.</p>
     <h2>What we do not do</h2>
     <ul><li>we do not sell your data</li><li>we do not use Health data for advertising or cross-app tracking</li><li>we do not share health data with third parties for commercial purposes</li></ul>
     <h2>Retention and deletion</h2>
-    <p>Data stays on the device while the app is installed. To delete it, remove LifeNex and revoke access in Settings → Health → Data Access &amp; Devices.</p>
+    <p>Data stays on the device while the app is installed. To delete it, remove LifeNex and revoke access in Settings → Health → Data Access &amp; Devices. The iCloud copy can be deleted in Settings → [your name] → iCloud → Manage Account Storage → LifeNex.</p>
     <p>Our server keeps only the <strong>AI analysis counters</strong> per subscription period, linked to the Apple subscription identifier and to an anonymous device identifier, together with some technical data about the last device used (iPhone model, iOS version, app version and App Store country) that we need for support and to see which versions are in use: no health data. To have them deleted, write to the contact below.</p>
     <h2>Permissions</h2>
     <p>You can refuse or revoke Health permissions at any time. Without permissions the app works in a limited way.</p>
@@ -696,7 +698,7 @@ PRIVACY = {
     "fr": {
         "title": "Confidentialité — LifeNex",
         "h1": "Politique de confidentialité",
-        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 5 octobre 2026',
+        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 12 octobre 2026',
         "nav": "Confidentialité",
         "contact": "Contact",
         "back": "Retour à l’accueil",
@@ -721,12 +723,13 @@ PRIVACY = {
       <li><strong>notre serveur</strong> (Google Firebase, région Union européenne), qui transmet la demande et compte les analyses utilisées : il ne conserve ni les résumés ni les textes générés ;</li>
       <li><strong>OpenAI</strong>, fournisseur du modèle d’intelligence artificielle, qui génère le texte pour notre compte. Il reçoit uniquement le texte des résumés, sans identifiant d’abonnement ni d’appareil. Selon les conditions de son service API, OpenAI n’utilise pas ces données pour entraîner ses modèles et peut les conserver pendant une durée limitée (jusqu’à 30 jours) uniquement pour prévenir les abus.</li>
     </ul>
-    <p>Les lectures générées restent enregistrées sur votre iPhone.</p>
+    <p>Les lectures générées restent enregistrées sur votre iPhone et, si iCloud est activé, dans votre iCloud privé (voir ci-dessous).</p>
     <p><strong>Cartes et relief :</strong> pour afficher vos parcours, l’app télécharge les images de carte depuis Plans d’Apple et, dans les vues 3D, l’altitude du terrain de la zone depuis le service public Terrain Tiles (Amazon Web Services, AWS Open Data). Ces requêtes indiquent uniquement la zone de carte à télécharger (des tuiles de quelques kilomètres), pas votre tracé GPS, vos horaires ni d’autres données Santé, et ne sont pas liées à vous ; comme pour tout site web, le fournisseur voit l’adresse IP de la connexion. Les altitudes téléchargées restent en cache sur votre iPhone.</p>
+    <p><strong>iCloud (synchronisation entre vos appareils) :</strong> si iCloud est activé, les lectures IA enregistrées, vos objectifs et certaines préférences (zones cardiaques, disposition du tableau de bord, langue, consentement à la lecture intelligente) sont copiés dans <strong>votre iCloud privé</strong>, pour les retrouver sur iPhone et iPad avec le même identifiant Apple. Ils sont conservés par Apple dans votre compte : nous ne pouvons pas les lire. Les données Santé ne passent pas par ici : Apple Santé les synchronise.</p>
     <h2>Ce que nous ne faisons pas</h2>
     <ul><li>nous ne vendons pas vos données</li><li>nous n’utilisons pas les données Santé pour la publicité ou le suivi entre apps</li><li>nous ne partageons pas de données de santé avec des tiers à des fins commerciales</li></ul>
     <h2>Conservation et suppression</h2>
-    <p>Les données restent sur l’appareil tant que l’app est installée. Pour les supprimer, supprimez LifeNex et révoquez l’accès dans Réglages → Santé → Accès aux données et appareils.</p>
+    <p>Les données restent sur l’appareil tant que l’app est installée. Pour les supprimer, supprimez LifeNex et révoquez l’accès dans Réglages → Santé → Accès aux données et appareils. La copie iCloud se supprime dans Réglages → [votre nom] → iCloud → Gérer le stockage du compte → LifeNex.</p>
     <p>Notre serveur conserve uniquement les <strong>compteurs d’analyses IA</strong> par période d’abonnement, liés à l’identifiant de l’abonnement Apple et à un identifiant anonyme de l’appareil, ainsi que quelques données techniques du dernier appareil utilisé (modèle d’iPhone, version d’iOS, version de l’app et pays de l’App Store) dont nous avons besoin pour l’assistance et pour savoir quelles versions sont utilisées : aucune donnée de santé. Pour les faire supprimer, écrivez au contact ci-dessous.</p>
     <h2>Autorisations</h2>
     <p>Vous pouvez refuser ou révoquer les autorisations Santé à tout moment. Sans autorisations, l’app fonctionne de façon limitée.</p>
@@ -742,7 +745,7 @@ PRIVACY = {
     "de": {
         "title": "Datenschutz — LifeNex",
         "h1": "Datenschutzerklärung",
-        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 5. Oktober 2026',
+        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 12. Oktober 2026',
         "nav": "Datenschutz",
         "contact": "Kontakt",
         "back": "Zur Startseite",
@@ -767,12 +770,13 @@ PRIVACY = {
       <li><strong>unserem Server</strong> (Google Firebase, Region Europäische Union), der die Anfrage weiterleitet und die genutzten Analysen zählt: Er speichert weder die Zusammenfassungen noch die erzeugten Texte;</li>
       <li><strong>OpenAI</strong>, dem Anbieter des KI-Modells, der den Text in unserem Auftrag erzeugt. OpenAI erhält nur den Text der Zusammenfassungen, ohne Abo- oder Gerätekennungen. Laut den Bedingungen seines API-Dienstes nutzt OpenAI diese Daten nicht zum Training seiner Modelle und kann sie für begrenzte Zeit (bis zu 30 Tage) ausschließlich zur Missbrauchsverhinderung aufbewahren.</li>
     </ul>
-    <p>Erzeugte Auswertungen bleiben auf deinem iPhone gespeichert.</p>
+    <p>Erzeugte Auswertungen bleiben auf deinem iPhone gespeichert und, wenn iCloud aktiv ist, in deiner privaten iCloud (siehe unten).</p>
     <p><strong>Karten und Gelände:</strong> Um deine Routen anzuzeigen, lädt die App Kartenbilder von Apple Karten und in den 3D-Ansichten Geländehöhen der Umgebung vom öffentlichen Dienst Terrain Tiles (Amazon Web Services, AWS Open Data). Diese Anfragen enthalten nur den zu ladenden Kartenbereich (Kacheln von einigen Kilometern), nicht deine GPS-Route, Zeiten oder andere Health-Daten, und sind nicht mit dir verknüpft; wie bei jeder Website sieht der Anbieter die IP-Adresse der Verbindung. Die geladenen Höhendaten bleiben im Cache auf deinem iPhone.</p>
+    <p><strong>iCloud (Synchronisierung zwischen deinen Geräten):</strong> Wenn iCloud aktiv ist, werden gespeicherte KI-Auswertungen, deine Ziele und einige Einstellungen (Herzfrequenzzonen, Dashboard-Anordnung, Sprache, Einwilligung zur intelligenten Lesung) in <strong>deine private iCloud</strong> kopiert, damit du sie auf iPhone und iPad mit derselben Apple-ID wiederfindest. Apple speichert sie in deinem Konto: Wir können sie nicht lesen. Health-Daten laufen nicht darüber: Die synchronisiert Apple Health.</p>
     <h2>Was wir nicht tun</h2>
     <ul><li>wir verkaufen deine Daten nicht</li><li>wir nutzen Health-Daten nicht für Werbung oder App-übergreifendes Tracking</li><li>wir geben Gesundheitsdaten nicht zu kommerziellen Zwecken an Dritte weiter</li></ul>
     <h2>Speicherung und Löschung</h2>
-    <p>Die Daten bleiben auf dem Gerät, solange die App installiert ist. Zum Löschen entferne LifeNex und widerrufe den Zugriff unter Einstellungen → Health → Datenzugriff &amp; Geräte.</p>
+    <p>Die Daten bleiben auf dem Gerät, solange die App installiert ist. Zum Löschen entferne LifeNex und widerrufe den Zugriff unter Einstellungen → Health → Datenzugriff &amp; Geräte. Die iCloud-Kopie löschst du unter Einstellungen → [dein Name] → iCloud → Accountspeicher verwalten → LifeNex.</p>
     <p>Auf unserem Server bleiben nur die <strong>Zähler der KI-Analysen</strong> pro Abo-Zeitraum, verknüpft mit der Kennung des Apple-Abos und einer anonymen Gerätekennung, zusammen mit einigen technischen Daten des zuletzt genutzten Geräts (iPhone-Modell, iOS-Version, App-Version und App-Store-Land), die wir für den Support und zur Übersicht der genutzten Versionen brauchen: keine Gesundheitsdaten. Zum Löschen schreib an den Kontakt unten.</p>
     <h2>Berechtigungen</h2>
     <p>Du kannst Health-Berechtigungen jederzeit verweigern oder widerrufen. Ohne Berechtigungen funktioniert die App nur eingeschränkt.</p>
