@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://lifenex.it/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/"/>
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/en/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/"/>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/fr/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/"/>
@@ -29,7 +29,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/de/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/"/>
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/privacy/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/privacy/"/>
@@ -47,7 +47,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/en/privacy/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/privacy/"/>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/fr/privacy/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/privacy/"/>
@@ -65,7 +65,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/de/privacy/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/privacy/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/privacy/"/>
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/terms/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/terms/"/>
@@ -83,7 +83,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/en/terms/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/terms/"/>
@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/fr/terms/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/terms/"/>
@@ -101,7 +101,7 @@
   </url>
   <url>
     <loc>https://lifenex.it/de/terms/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://lifenex.it/terms/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://lifenex.it/en/terms/"/>

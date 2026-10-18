@@ -59,7 +59,7 @@ COPY = {
         "nav_contact": "Contatti",
         "eyebrow": "iOS · Apple Salute · HealthKit",
         "h1": "Registra il meglio di te, ogni giorno.",
-        "lead": "Registra le tue sessioni con il dispositivo che preferisci: tutto confluisce in Apple Salute, al sicuro sul tuo iPhone. LifeNex lo trasforma in obiettivi, confronti tra sessioni e analisi dei tuoi progressi. Il compagno ideale per Apple Watch.",
+        "lead": "Registra le tue sessioni con il dispositivo che preferisci: tutto confluisce in Apple Salute, al sicuro sul tuo iPhone. LifeNex ti mostra ogni mattina come stai e cosa potresti fare, e lo trasforma in obiettivi, confronti tra sessioni e analisi dei tuoi progressi. Il compagno ideale per Apple Watch.",
         "cta_store": "Scarica su App Store",
         "cta_see": "Esplora l’app",
         "video_id": "mnVdDF1LOpA",
@@ -72,15 +72,15 @@ COPY = {
         "what_h2": "Dal dato all’interpretazione",
         "what_sub": "Non è solo un diario degli allenamenti. È lo strumento per osservare nel tempo come cambiano prestazioni, corpo e indicatori principali.",
         "features": [
+            ("Oggi, a colpo d’occhio", "Ogni mattina l’energia del momento, la previsione per stasera e cosa potresti fare oggi, con l’energia per ciascuno dei tuoi sport."),
             ("Analizza ogni allenamento", "Durata, distanza, passo, velocità, calorie, dislivello, frequenza cardiaca, zone di intensità e mappa GPS: capisci come hai svolto ogni sessione."),
             ("Confronta le tue prestazioni", "Metti a confronto due allenamenti e verifica cosa è cambiato: durata, distanza, passo, FC, energia, dislivello e carico."),
-            ("Vedi l’evoluzione nel tempo", "Grafici e serie temporali mostrano andamenti e cambiamenti che un singolo dato non rivela."),
             ("Una visione completa", "FC, FC a riposo, HRV, VO₂ max, pressione, ossigenazione, sonno, peso, BMI, massa grassa e magra, passi e attività — organizzati in un unico spazio."),
             ("Carico e corpo", "Monitora durata, intensità, volume e carico nel tempo. Segui peso, massa grassa e magra sullo storico."),
             ("Obiettivi e analisi intelligente", "Imposta obiettivi e segui i progressi. L’analisi mette in relazione gli ultimi 30 giorni di allenamento, carico, corpo, cuore, movimento e recupero."),
         ],
         "show_h2": "Tutto in un’unica app",
-        "show_sub": "Riepilogo, Allenamenti, Carico, Obiettivi e Analisi: un’esperienza pensata per passare dal dato alla sua interpretazione.",
+        "show_sub": "Oggi, Metriche, Sessioni, Carico, Obiettivi e Trend: un’esperienza pensata per passare dal dato alla sua interpretazione.",
         "band_h2": "Vedi i dati. Confrontali. Analizzali. Segui la tua evoluzione.",
         "band_p": "LifeNex riunisce ciò che Apple Salute raccoglie — e te lo fa leggere.",
         "band_cta": "Vai su App Store",
@@ -108,7 +108,7 @@ COPY = {
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Health · HealthKit",
         "h1": "Record the best of you, every day.",
-        "lead": "Record your sessions with the device you prefer: everything flows into Apple Health, safe on your iPhone. LifeNex turns it into goals, session comparisons and analysis of your progress. The ideal companion for Apple Watch.",
+        "lead": "Record your sessions with the device you prefer: everything flows into Apple Health, safe on your iPhone. Every morning LifeNex shows how you are and what you could do, and turns it into goals, session comparisons and analysis of your progress. The ideal companion for Apple Watch.",
         "cta_store": "Download on the App Store",
         "cta_see": "Explore the app",
         "video_id": "H0bXt7V_j98",
@@ -121,15 +121,15 @@ COPY = {
         "what_h2": "From data to insight",
         "what_sub": "Not just a workout diary. A tool to watch how your performance, body and key indicators change over time.",
         "features": [
+            ("Today, at a glance", "Every morning your energy right now, tonight's forecast and what you could do today, with energy for each of your sports."),
             ("Analyze every workout", "Duration, distance, pace, speed, calories, elevation, heart rate, intensity zones and GPS map — understand how you did each session."),
             ("Compare your performance", "Put two workouts side by side and see what changed: duration, distance, pace, HR, energy, elevation and load."),
-            ("See evolution over time", "Charts and time series reveal trends and shifts a single number never shows."),
             ("A complete health view", "HR, resting HR, HRV, VO₂ max, blood pressure, oxygen, sleep, weight, BMI, fat and lean mass, steps and activity — organized in one place."),
             ("Load and body", "Track duration, intensity, volume and load over time. Follow weight, fat and lean mass on your history."),
             ("Goals and smart analysis", "Set goals and follow progress. Analysis connects the last 30 days of training, load, body, heart, movement and recovery."),
         ],
         "show_h2": "Everything in one app",
-        "show_sub": "Summary, Workouts, Load, Goals and Analysis — designed to move from the number to what it means.",
+        "show_sub": "Today, Metrics, Sessions, Load, Goals and Trends — designed to move from the number to what it means.",
         "band_h2": "See the data. Compare it. Analyze it. Follow your evolution.",
         "band_p": "LifeNex brings together what Apple Health collects — and helps you read it.",
         "band_cta": "Go to the App Store",
@@ -157,7 +157,7 @@ COPY = {
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Santé · HealthKit",
         "h1": "Enregistrez le meilleur de vous, chaque jour.",
-        "lead": "Enregistrez vos séances avec l’appareil de votre choix : tout arrive dans Apple Santé, en sécurité sur votre iPhone. LifeNex le transforme en objectifs, comparaisons de séances et analyse de vos progrès. Le compagnon idéal de l’Apple Watch.",
+        "lead": "Enregistrez vos séances avec l’appareil de votre choix : tout arrive dans Apple Santé, en sécurité sur votre iPhone. Chaque matin, LifeNex vous montre votre forme et ce que vous pourriez faire, et le transforme en objectifs, comparaisons de séances et analyse de vos progrès. Le compagnon idéal de l’Apple Watch.",
         "cta_store": "Télécharger sur l’App Store",
         "cta_see": "Explorer l’app",
         "video_id": "KuZ9XnwG6dg",
@@ -170,15 +170,15 @@ COPY = {
         "what_h2": "De la donnée à l’interprétation",
         "what_sub": "Pas seulement un journal d’entraînement. Un outil pour observer comment évoluent vos performances, votre corps et vos indicateurs clés.",
         "features": [
+            ("Aujourd’hui, en un coup d’œil", "Chaque matin votre énergie du moment, la prévision pour ce soir et ce que vous pourriez faire, avec l’énergie pour chacun de vos sports."),
             ("Analysez chaque séance", "Durée, distance, allure, vitesse, calories, dénivelé, fréquence cardiaque, zones d’intensité et carte GPS : comprenez chaque sortie."),
             ("Comparez vos performances", "Mettez deux séances face à face et voyez ce qui a changé : durée, distance, allure, FC, énergie, dénivelé et charge."),
-            ("Voyez l’évolution dans le temps", "Graphiques et séries temporelles révèlent des tendances qu’un chiffre isolé ne montre jamais."),
             ("Une vision santé complète", "FC, FC au repos, VFC, VO₂ max, tension, oxygénation, sommeil, poids, IMC, masse grasse et maigre, pas et activité — organisés au même endroit."),
             ("Charge et corps", "Suivez durée, intensité, volume et charge dans le temps. Contrôlez poids, masse grasse et maigre sur l’historique."),
             ("Objectifs et analyse intelligente", "Fixez vos objectifs et suivez les progrès. L’analyse relie les 30 derniers jours d’entraînement, charge, corps, cœur, mouvement et récupération."),
         ],
         "show_h2": "Tout dans une seule app",
-        "show_sub": "Résumé, Séances, Charge, Objectifs et Analyse : une expérience conçue pour passer de la donnée à son sens.",
+        "show_sub": "Aujourd’hui, Métriques, Séances, Charge, Objectifs et Tendances : une expérience conçue pour passer de la donnée à son sens.",
         "band_h2": "Voyez les données. Comparez-les. Analysez-les. Suivez votre évolution.",
         "band_p": "LifeNex rassemble ce qu’Apple Santé collecte — et vous aide à le lire.",
         "band_cta": "Aller sur l’App Store",
@@ -206,7 +206,7 @@ COPY = {
         "nav_contact": "Kontakt",
         "eyebrow": "iOS · Apple Gesundheit · HealthKit",
         "h1": "Zeichne das Beste von dir auf, jeden Tag.",
-        "lead": "Zeichne deine Einheiten mit dem Gerät deiner Wahl auf: Alles fließt in Apple-Gesundheit, sicher auf deinem iPhone. LifeNex macht daraus Ziele, Einheiten im Vergleich und eine Analyse deiner Fortschritte. Der ideale Begleiter für die Apple Watch.",
+        "lead": "Zeichne deine Einheiten mit dem Gerät deiner Wahl auf: Alles fließt in Apple-Gesundheit, sicher auf deinem iPhone. LifeNex zeigt dir jeden Morgen, wie es dir geht und was du tun könntest, und macht daraus Ziele, Einheiten im Vergleich und eine Analyse deiner Fortschritte. Der ideale Begleiter für die Apple Watch.",
         "cta_store": "Im App Store laden",
         "cta_see": "App entdecken",
         "video_id": "3nGrcsxqma8",
@@ -219,15 +219,15 @@ COPY = {
         "what_h2": "Vom Wert zur Einsicht",
         "what_sub": "Nicht nur ein Trainingstagebuch. Ein Werkzeug, um zu sehen, wie sich Leistung, Körper und zentrale Indikatoren verändern.",
         "features": [
+            ("Heute auf einen Blick", "Jeden Morgen deine Energie im Moment, die Prognose für heute Abend und was du heute tun könntest, mit Energie für jede deiner Sportarten."),
             ("Jede Einheit analysieren", "Dauer, Distanz, Tempo, Geschwindigkeit, Kalorien, Höhenmeter, Herzfrequenz, Intensitätszonen und GPS-Karte — verstehe jede Einheit."),
             ("Leistungen vergleichen", "Zwei Einheiten nebeneinander: Dauer, Distanz, Tempo, HF, Energie, Höhenmeter und Last — sieh, was sich geändert hat."),
-            ("Entwicklung über die Zeit", "Diagramme und Zeitreihen zeigen Trends und Veränderungen, die eine einzelne Zahl nie verrät."),
             ("Ein vollständiger Gesundheitsblick", "HF, Ruhepuls, HRV, VO₂ max, Blutdruck, Sauerstoff, Schlaf, Gewicht, BMI, Fett- und Magermasse, Schritte und Aktivität — an einem Ort."),
             ("Last und Körper", "Verfolge Dauer, Intensität, Volumen und Last über die Zeit. Behalte Gewicht, Fett- und Magermasse im Blick."),
             ("Ziele und intelligente Analyse", "Setze Ziele und folge dem Fortschritt. Die Analyse verbindet die letzten 30 Tage aus Training, Last, Körper, Herz, Bewegung und Erholung."),
         ],
         "show_h2": "Alles in einer App",
-        "show_sub": "Übersicht, Einheiten, Last, Ziele und Analyse — gemacht, um vom Wert zur Bedeutung zu kommen.",
+        "show_sub": "Heute, Metriken, Einheiten, Last, Ziele und Trends — gemacht, um vom Wert zur Bedeutung zu kommen.",
         "band_h2": "Sieh die Daten. Vergleiche sie. Analysiere sie. Folge deiner Entwicklung.",
         "band_p": "LifeNex bündelt, was Apple Gesundheit sammelt — und hilft dir, es zu lesen.",
         "band_cta": "Zum App Store",
@@ -249,10 +249,11 @@ COPY = {
 # Immagini App Store (pubblicazione/Marketing/build.py, ordine galleria): titolo, sottotitolo.
 STORE_SHOTS = {
     "it": [
-        ("La tua forma, a colpo d'occhio", "Anni di dati Salute trasformati in segnali chiari, ogni giorno."),
+        ("Come stai oggi, a colpo d'occhio", "Energia, previsione e cosa potresti fare, ogni mattina."),
+        ("Ti stai muovendo abbastanza?", "Il movimento di oggi e i progressi dell'ultimo mese."),
+        ("Tutta la tua salute, in un posto", "Anni di dati Salute trasformati in segnali chiari, ogni giorno."),
         ("Tutta la tua storia sportiva, a confronto", "Ritrova ogni sessione e confronta le tue prestazioni."),
         ("Sfida il te stesso di ieri", "Confronta due sessioni sullo stesso percorso."),
-        ("Due sessioni, una sfida", "Rivedi come hai corso, fianco a fianco in 3D."),
         ("Rivivi ogni percorso in 3D", "Il tuo allenamento, sul paesaggio dove l'hai fatto."),
         ("Allenati con equilibrio", "Il carico di ogni settimana, confrontato con il tuo ritmo."),
         ("Obiettivi che ti motivano", "Scegli il risultato, LifeNex ti mostra i progressi."),
@@ -260,10 +261,11 @@ STORE_SHOTS = {
         ("La tua evoluzione, spiegata", "L'analisi AI legge i tuoi dati e racconta i tuoi progressi."),
     ],
     "en": [
-        ("Your fitness, at a glance", "Years of Health data turned into clear signals, every day."),
+        ("How you are today, at a glance", "Energy, forecast and what you could do, every morning."),
+        ("Are you moving enough?", "Today's movement and your progress over the last month."),
+        ("All your health, in one place", "Years of Health data turned into clear signals, every day."),
         ("Your whole sports history, compared", "Find every session and compare your performance."),
         ("Beat yesterday's you", "Compare two sessions on the same route."),
-        ("Two sessions, one race", "See how you ran, side by side in 3D."),
         ("Relive every route in 3D", "Your workout, on the landscape where it happened."),
         ("Train with balance", "Every week's load, compared with your usual rhythm."),
         ("Goals that keep you going", "Pick the result, LifeNex shows your progress."),
@@ -271,10 +273,11 @@ STORE_SHOTS = {
         ("Your progress, explained", "AI reads your data and tells your story."),
     ],
     "fr": [
-        ("Votre forme, en un coup d'œil", "Des années de données Santé en signaux clairs, chaque jour."),
+        ("Votre forme du jour, en un coup d'œil", "Énergie, prévision et ce que vous pourriez faire, chaque matin."),
+        ("Bougez-vous assez ?", "Le mouvement du jour et vos progrès du dernier mois."),
+        ("Toute votre santé, au même endroit", "Des années de données Santé en signaux clairs, chaque jour."),
         ("Toute votre histoire sportive, comparée", "Retrouvez chaque séance et comparez vos performances."),
         ("Défiez celui que vous étiez hier", "Comparez deux séances sur le même parcours."),
-        ("Deux séances, un défi", "Revoyez votre course, côte à côte en 3D."),
         ("Revivez chaque parcours en 3D", "Votre entraînement, sur le paysage où vous l'avez fait."),
         ("Entraînez-vous avec équilibre", "La charge de chaque semaine, comparée à votre rythme."),
         ("Des objectifs qui motivent", "Choisissez le résultat, LifeNex montre vos progrès."),
@@ -282,10 +285,11 @@ STORE_SHOTS = {
         ("Votre évolution, expliquée", "L'IA lit vos données et raconte vos progrès."),
     ],
     "de": [
-        ("Deine Form auf einen Blick", "Jahre an Health-Daten, jeden Tag klar erklärt."),
+        ("Wie es dir heute geht, auf einen Blick", "Energie, Prognose und was du tun könntest, jeden Morgen."),
+        ("Bewegst du dich genug?", "Deine Bewegung heute und dein Fortschritt im letzten Monat."),
+        ("Deine ganze Gesundheit an einem Ort", "Jahre an Health-Daten, jeden Tag klar erklärt."),
         ("Alle Einheiten im Vergleich", "Finde jede Einheit und vergleiche deine Leistung."),
         ("Fordere dein Ich von gestern", "Vergleiche zwei Einheiten auf derselben Strecke."),
-        ("Zwei Einheiten, ein Duell", "Sieh, wie du gelaufen bist – Seite an Seite in 3D."),
         ("Erlebe jede Strecke in 3D", "Dein Training auf der Landschaft, in der es stattfand."),
         ("Trainiere ausgewogen", "Die Belastung jeder Woche, verglichen mit deinem Rhythmus."),
         ("Ziele, die motivieren", "Wähle dein Ziel, LifeNex zeigt deinen Fortschritt."),
@@ -431,7 +435,7 @@ def shots_html(lang: str) -> str:
     prefix = SHOT_PREFIX[lang]
     blocks = []
     for i, (title, body) in enumerate(STORE_SHOTS[lang], start=1):
-        src = f"{a}store/{prefix}-{i}.jpg"
+        src = f"{a}store/{prefix}-{i}.jpg?v=2"
         blocks.append(
             f"""        <figure class="shot">
           <a class="shot-frame" href="{src}"><img src="{src}" alt="{title}" loading="lazy"></a>
@@ -478,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=11">
+  <link rel="stylesheet" href="{CSS[lang]}?v=12">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -517,8 +521,8 @@ def home_html(lang: str) -> str:
         </div>
       </div>
       <div class="hero-phones" aria-hidden="true">
-        <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-7.png" alt=""></div>
-        <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-1.png" alt=""></div>
+        <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-movimento.png?v=2" alt=""></div>
+        <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-oggi.png?v=2" alt=""></div>
         <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-8.png" alt=""></div>
       </div>
     </div>
