@@ -50,16 +50,16 @@ SHOTS = {
 COPY = {
     "it": {
         "lang": "it",
-        "title": "LifeNex — Registra il meglio di te, ogni giorno.",
-        "desc": "Registra le tue sessioni con il dispositivo che preferisci: LifeNex trasforma i dati di Apple Salute in obiettivi, confronti tra sessioni e analisi dei tuoi progressi. Il compagno ideale per Apple Watch.",
+        "title": "LifeNex — Il tuo coach personale.",
+        "desc": "Impara come ti muovi, capisce quanta energia hai e ti motiva a fare un passo in più ogni giorno. Il compagno ideale per Apple Watch.",
         "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Privacy",
         "nav_terms": "Termini",
         "nav_contact": "Contatti",
         "eyebrow": "iOS · Apple Salute · HealthKit",
-        "h1": "Registra il meglio di te, ogni giorno.",
-        "lead": "Registra le tue sessioni con il dispositivo che preferisci: tutto confluisce in Apple Salute, al sicuro sul tuo iPhone. LifeNex ti mostra ogni mattina come stai e cosa potresti fare, e lo trasforma in obiettivi, confronti tra sessioni e analisi dei tuoi progressi. Il compagno ideale per Apple Watch.",
+        "h1": "Il tuo coach personale.",
+        "lead": "Impara come ti muovi, capisce quanta energia hai e ti motiva a fare un passo in più ogni giorno. Corsa, palestra, bici, nuoto o camminata: LifeNex legge i tuoi allenamenti da Salute. Il compagno ideale per Apple Watch.",
         "cta_store": "Scarica su App Store",
         "cta_see": "Esplora l’app",
         "video_id": "mnVdDF1LOpA",
@@ -99,16 +99,16 @@ COPY = {
     },
     "en": {
         "lang": "en",
-        "title": "LifeNex — Record the best of you, every day.",
-        "desc": "Record your sessions with the device you prefer: LifeNex turns Apple Health data into goals, session comparisons and analysis of your progress. The ideal companion for Apple Watch.",
+        "title": "LifeNex — Your personal coach.",
+        "desc": "Learns how you move, understands your energy and motivates you to go one step further every day. The ideal companion for Apple Watch.",
         "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Privacy",
         "nav_terms": "Terms",
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Health · HealthKit",
-        "h1": "Record the best of you, every day.",
-        "lead": "Record your sessions with the device you prefer: everything flows into Apple Health, safe on your iPhone. Every morning LifeNex shows how you are and what you could do, and turns it into goals, session comparisons and analysis of your progress. The ideal companion for Apple Watch.",
+        "h1": "Your personal coach.",
+        "lead": "Learns how you move, understands your energy and motivates you to go one step further every day. Running, gym, cycling, swimming or walking: LifeNex reads your workouts from Apple Health. The ideal companion for Apple Watch.",
         "cta_store": "Download on the App Store",
         "cta_see": "Explore the app",
         "video_id": "H0bXt7V_j98",
@@ -148,16 +148,16 @@ COPY = {
     },
     "fr": {
         "lang": "fr",
-        "title": "LifeNex — Enregistrez le meilleur de vous, chaque jour.",
-        "desc": "Enregistrez vos séances avec l’appareil de votre choix : LifeNex transforme les données Apple Santé en objectifs, comparaisons de séances et analyse de vos progrès. Le compagnon idéal de l’Apple Watch.",
+        "title": "LifeNex — Votre coach personnel.",
+        "desc": "Il apprend vos mouvements, comprend votre énergie et vous motive à faire un pas de plus chaque jour. Le compagnon idéal de l’Apple Watch.",
         "nav_home": "Accueil",
         "nav_app": "App",
         "nav_privacy": "Confidentialité",
         "nav_terms": "Conditions",
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Santé · HealthKit",
-        "h1": "Enregistrez le meilleur de vous, chaque jour.",
-        "lead": "Enregistrez vos séances avec l’appareil de votre choix : tout arrive dans Apple Santé, en sécurité sur votre iPhone. Chaque matin, LifeNex vous montre votre forme et ce que vous pourriez faire, et le transforme en objectifs, comparaisons de séances et analyse de vos progrès. Le compagnon idéal de l’Apple Watch.",
+        "h1": "Votre coach personnel.",
+        "lead": "Il apprend vos mouvements, comprend votre énergie et vous motive à faire un pas de plus chaque jour. Course, muscu, vélo, natation ou marche : LifeNex lit vos entraînements depuis Santé. Le compagnon idéal de l’Apple Watch.",
         "cta_store": "Télécharger sur l’App Store",
         "cta_see": "Explorer l’app",
         "video_id": "KuZ9XnwG6dg",
@@ -197,16 +197,16 @@ COPY = {
     },
     "de": {
         "lang": "de",
-        "title": "LifeNex — Zeichne das Beste von dir auf, jeden Tag.",
-        "desc": "Zeichne deine Einheiten mit dem Gerät deiner Wahl auf: LifeNex macht aus Apple-Gesundheit Ziele, Einheiten im Vergleich und eine Analyse deiner Fortschritte. Der ideale Begleiter für die Apple Watch.",
+        "title": "LifeNex — Dein persönlicher Coach.",
+        "desc": "Lernt, wie du dich bewegst, versteht deine Energie und motiviert dich, jeden Tag einen Schritt weiterzugehen. Der ideale Begleiter für die Apple Watch.",
         "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Datenschutz",
         "nav_terms": "Nutzung",
         "nav_contact": "Kontakt",
         "eyebrow": "iOS · Apple Gesundheit · HealthKit",
-        "h1": "Zeichne das Beste von dir auf, jeden Tag.",
-        "lead": "Zeichne deine Einheiten mit dem Gerät deiner Wahl auf: Alles fließt in Apple-Gesundheit, sicher auf deinem iPhone. LifeNex zeigt dir jeden Morgen, wie es dir geht und was du tun könntest, und macht daraus Ziele, Einheiten im Vergleich und eine Analyse deiner Fortschritte. Der ideale Begleiter für die Apple Watch.",
+        "h1": "Dein persönlicher Coach.",
+        "lead": "Lernt, wie du dich bewegst, versteht deine Energie und motiviert dich, jeden Tag einen Schritt weiterzugehen. Laufen, Fitnessstudio, Radfahren, Schwimmen oder Gehen: LifeNex liest deine Trainings aus Health. Der ideale Begleiter für die Apple Watch.",
         "cta_store": "Im App Store laden",
         "cta_see": "App entdecken",
         "video_id": "3nGrcsxqma8",
@@ -348,7 +348,7 @@ def seo_home_head(lang: str, c: dict) -> str:
     """Anteprime di condivisione, banner App Store di Safari e dati strutturati dell'app."""
     import json
     url = page_url(lang, "home")
-    image = f"{SITE_URL}/assets/og/lifenex-{lang}.jpg"
+    image = f"{SITE_URL}/assets/og/lifenex-{lang}.jpg?v=2"
     data = {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=12">
+  <link rel="stylesheet" href="{CSS[lang]}?v=13">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
