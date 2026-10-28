@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=14">
+  <link rel="stylesheet" href="{CSS[lang]}?v=15">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -522,8 +522,8 @@ def home_html(lang: str) -> str:
       </div>
       <div class="hero-phones" aria-hidden="true">
         <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-movimento.png?v=2" alt=""></div>
-        <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-oggi.png?v=2" alt=""></div>
-        <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-8.png" alt=""></div>
+        <div class="phone phone-main"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-oggi.png?v=3" alt=""></div>
+        <div class="phone phone-right"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-muscoli.png?v=1" alt=""></div>
       </div>
     </div>
   </section>
