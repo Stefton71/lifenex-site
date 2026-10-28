@@ -249,10 +249,10 @@ COPY = {
 # Immagini App Store (pubblicazione/Marketing/build.py, ordine galleria): titolo, sottotitolo.
 STORE_SHOTS = {
     "it": [
-        ("Come stai oggi, a colpo d'occhio", "Energia, previsione e cosa potresti fare, ogni mattina."),
+        ("La tua energia, a colpo d'occhio", "Quanto hai recuperato e cosa potresti fare, ogni mattina."),
+        ("Allenati quando sei pronto", "Ogni muscolo e il sistema nervoso, con i tempi per tornare in forma."),
         ("Ti stai muovendo abbastanza?", "Il movimento di oggi e i progressi dell'ultimo mese."),
         ("Tutta la tua salute, in un posto", "Anni di dati Salute trasformati in segnali chiari, ogni giorno."),
-        ("Tutta la tua storia sportiva, a confronto", "Ritrova ogni sessione e confronta le tue prestazioni."),
         ("Sfida il te stesso di ieri", "Confronta due sessioni sullo stesso percorso."),
         ("Rivivi ogni percorso in 3D", "Il tuo allenamento, sul paesaggio dove l'hai fatto."),
         ("Allenati con equilibrio", "Il carico di ogni settimana, confrontato con il tuo ritmo."),
@@ -261,10 +261,10 @@ STORE_SHOTS = {
         ("La tua evoluzione, spiegata", "L'analisi AI legge i tuoi dati e racconta i tuoi progressi."),
     ],
     "en": [
-        ("How you are today, at a glance", "Energy, forecast and what you could do, every morning."),
+        ("Your energy, at a glance", "How recovered you are and what you could do, every morning."),
+        ("Train when you're ready", "Every muscle and your nervous system, with the time to get back in shape."),
         ("Are you moving enough?", "Today's movement and your progress over the last month."),
         ("All your health, in one place", "Years of Health data turned into clear signals, every day."),
-        ("Your whole sports history, compared", "Find every session and compare your performance."),
         ("Beat yesterday's you", "Compare two sessions on the same route."),
         ("Relive every route in 3D", "Your workout, on the landscape where it happened."),
         ("Train with balance", "Every week's load, compared with your usual rhythm."),
@@ -273,10 +273,10 @@ STORE_SHOTS = {
         ("Your progress, explained", "AI reads your data and tells your story."),
     ],
     "fr": [
-        ("Votre forme du jour, en un coup d'œil", "Énergie, prévision et ce que vous pourriez faire, chaque matin."),
+        ("Votre énergie, en un coup d'œil", "Votre récupération et ce que vous pourriez faire, chaque matin."),
+        ("Entraînez-vous au bon moment", "Chaque muscle et le système nerveux, avec le temps pour retrouver la forme."),
         ("Bougez-vous assez ?", "Le mouvement du jour et vos progrès du dernier mois."),
         ("Toute votre santé, au même endroit", "Des années de données Santé en signaux clairs, chaque jour."),
-        ("Toute votre histoire sportive, comparée", "Retrouvez chaque séance et comparez vos performances."),
         ("Défiez celui que vous étiez hier", "Comparez deux séances sur le même parcours."),
         ("Revivez chaque parcours en 3D", "Votre entraînement, sur le paysage où vous l'avez fait."),
         ("Entraînez-vous avec équilibre", "La charge de chaque semaine, comparée à votre rythme."),
@@ -285,10 +285,10 @@ STORE_SHOTS = {
         ("Votre évolution, expliquée", "L'IA lit vos données et raconte vos progrès."),
     ],
     "de": [
-        ("Wie es dir heute geht, auf einen Blick", "Energie, Prognose und was du tun könntest, jeden Morgen."),
+        ("Deine Energie auf einen Blick", "Wie erholt du bist und was du tun könntest, jeden Morgen."),
+        ("Trainiere, wenn du bereit bist", "Jeder Muskel und dein Nervensystem, mit der Zeit bis zur Topform."),
         ("Bewegst du dich genug?", "Deine Bewegung heute und dein Fortschritt im letzten Monat."),
         ("Deine ganze Gesundheit an einem Ort", "Jahre an Health-Daten, jeden Tag klar erklärt."),
-        ("Alle Einheiten im Vergleich", "Finde jede Einheit und vergleiche deine Leistung."),
         ("Fordere dein Ich von gestern", "Vergleiche zwei Einheiten auf derselben Strecke."),
         ("Erlebe jede Strecke in 3D", "Dein Training auf der Landschaft, in der es stattfand."),
         ("Trainiere ausgewogen", "Die Belastung jeder Woche, verglichen mit deinem Rhythmus."),
@@ -435,7 +435,7 @@ def shots_html(lang: str) -> str:
     prefix = SHOT_PREFIX[lang]
     blocks = []
     for i, (title, body) in enumerate(STORE_SHOTS[lang], start=1):
-        src = f"{a}store/{prefix}-{i}.jpg?v=2"
+        src = f"{a}store/{prefix}-{i}.jpg?v=3"
         blocks.append(
             f"""        <figure class="shot">
           <a class="shot-frame" href="{src}"><img src="{src}" alt="{title}" loading="lazy"></a>
@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=13">
+  <link rel="stylesheet" href="{CSS[lang]}?v=14">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
