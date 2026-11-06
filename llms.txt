@@ -5,7 +5,7 @@
 - App Store: https://apps.apple.com/app/id6804388724
 - Price: free to download; Plus and Max subscriptions unlock 3D maps and videos, goals and AI analysis.
 - Platform: iPhone and iPad (iOS), works with Apple Watch and any device or app that writes to Apple Health.
-- Privacy: LifeNex reads Health data read-only; data stays on the user's iPhone. AI analysis is optional and sends only numeric summaries, with consent.
+- Privacy: LifeNex reads Health data read-only; data stays on the user's iPhone. AI analysis is optional and, with consent, sends only numeric summaries and the muscle status the user reported.
 - Developer: Stefano Toncelli (Italy). Support: support@lifenex.it
 
 ## Main features

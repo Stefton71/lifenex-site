@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=15">
+  <link rel="stylesheet" href="{CSS[lang]}?v=16">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -608,7 +608,7 @@ PRIVACY = {
     "it": {
         "title": "Privacy — LifeNex",
         "h1": "Informativa sulla privacy",
-        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 1 novembre 2026',
+        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 6 novembre 2026',
         "nav": "Privacy",
         "contact": "Contatti",
         "back": "Torna alla home",
@@ -627,7 +627,7 @@ PRIVACY = {
     <p>LifeNex <strong>non scrive</strong> e <strong>non modifica</strong> i dati in Salute.</p>
     <h2>Dove vengono trattati</h2>
     <p>I dati di Salute restano <strong>sul tuo iPhone</strong> (archivio locale). Non c’è un account LifeNex obbligatorio.</p>
-    <p><strong>Analisi intelligente con AI (opzionale):</strong> solo se attivi il consenso «Lettura intelligente» in Preferenze e chiedi tu una lettura (Genera / Aggiorna), LifeNex invia <strong>riassunti numerici già calcolati in app</strong> (medie, conteggi, confronti, tipi di allenamento) per preparare il testo. Non partono tracciati GPS, foto né la cronologia grezza di Salute. Puoi revocare il consenso in qualsiasi momento.</p>
+    <p><strong>Analisi intelligente con AI (opzionale):</strong> solo se attivi il consenso «Lettura intelligente» in Preferenze e chiedi tu una lettura (Genera / Aggiorna), LifeNex invia <strong>riassunti numerici già calcolati in app</strong> (medie, conteggi, confronti, tipi di allenamento) e, se li hai indicati, lo stato dei tuoi muscoli sulla mappa (fatica, indolenzimento, infortunio) per preparare il testo. Non partono tracciati GPS, foto né la cronologia grezza di Salute. Puoi revocare il consenso in qualsiasi momento.</p>
     <p>Questi riassunti sono trattati da:</p>
     <ul>
       <li><strong>il nostro server</strong> (Google Firebase, regione Unione Europea), che inoltra la richiesta e conta le analisi usate: non conserva i riassunti né i testi generati;</li>
@@ -635,7 +635,7 @@ PRIVACY = {
     </ul>
     <p>Le letture generate restano salvate sul tuo iPhone e, se iCloud è attivo, nel tuo iCloud privato (vedi sotto).</p>
     <p><strong>Mappe e rilievo:</strong> per mostrare i percorsi l’app scarica le immagini della mappa da Apple Mappe e, nelle viste 3D, le quote del terreno della zona dal servizio pubblico Terrain Tiles (Amazon Web Services, AWS Open Data). Queste richieste indicano solo l’area di mappa da scaricare (riquadri di alcuni chilometri), non il tracciato GPS, i tempi o altri dati di Salute, e non sono collegate a te; come per qualsiasi sito web, il fornitore vede l’indirizzo IP della connessione. Le quote scaricate restano in cache sul tuo iPhone.</p>
-    <p><strong>iCloud (sincronizzazione tra i tuoi dispositivi):</strong> se iCloud è attivo, le letture AI salvate, i tuoi obiettivi e alcune preferenze (zone cardiache, disposizione della dashboard, lingua, consenso alla lettura intelligente) vengono copiati nel <strong>tuo iCloud privato</strong>, così li ritrovi su iPhone e iPad con lo stesso Apple ID. Sono conservati da Apple nel tuo account: noi non possiamo leggerli. I dati di Salute non passano da qui: li sincronizza Apple Salute.</p>
+    <p><strong>iCloud (sincronizzazione tra i tuoi dispositivi):</strong> se iCloud è attivo, le letture AI salvate, i tuoi obiettivi, i valori che indichi sulla mappa dei muscoli (fatica, indolenzimento, infortunio) e alcune preferenze (zone cardiache, disposizione della dashboard, lingua, consenso alla lettura intelligente) vengono copiati nel <strong>tuo iCloud privato</strong>, così li ritrovi su iPhone e iPad con lo stesso Apple ID. Sono conservati da Apple nel tuo account: noi non possiamo leggerli. I dati di Salute non passano da qui: li sincronizza Apple Salute.</p>
     <h2>Cosa non facciamo</h2>
     <ul><li>non vendiamo i tuoi dati</li><li>non usiamo i dati Salute per pubblicità o tracking tra app</li><li>non condividiamo dati sanitari con terze parti a scopo commerciale</li></ul>
     <h2>Conservazione e cancellazione</h2>
@@ -655,7 +655,7 @@ PRIVACY = {
     "en": {
         "title": "Privacy — LifeNex",
         "h1": "Privacy policy",
-        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 1 November 2026',
+        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 6 November 2026',
         "nav": "Privacy",
         "contact": "Contact",
         "back": "Back to home",
@@ -674,7 +674,7 @@ PRIVACY = {
     <p>LifeNex does <strong>not write</strong> or <strong>modify</strong> Health data.</p>
     <h2>Where data is processed</h2>
     <p>Health data stays <strong>on your iPhone</strong> (local storage). There is no mandatory LifeNex account.</p>
-    <p><strong>Optional AI analysis:</strong> only if you turn on the «Smart reading» consent in Settings and request a reading yourself (Generate / Update), LifeNex sends <strong>numeric summaries already computed in the app</strong> (averages, counts, comparisons, workout types) to prepare the text. GPS tracks, photos and raw Health history are never sent. You can withdraw consent at any time.</p>
+    <p><strong>Optional AI analysis:</strong> only if you turn on the «Smart reading» consent in Settings and request a reading yourself (Generate / Update), LifeNex sends <strong>numeric summaries already computed in the app</strong> (averages, counts, comparisons, workout types) and, if you reported them, the state of your muscles on the map (fatigue, soreness, injury) to prepare the text. GPS tracks, photos and raw Health history are never sent. You can withdraw consent at any time.</p>
     <p>These summaries are processed by:</p>
     <ul>
       <li><strong>our server</strong> (Google Firebase, European Union region), which forwards the request and counts the analyses used: it does not keep the summaries or the generated texts;</li>
@@ -682,7 +682,7 @@ PRIVACY = {
     </ul>
     <p>Generated readings stay saved on your iPhone and, if iCloud is on, in your private iCloud (see below).</p>
     <p><strong>Maps and terrain:</strong> to show your routes the app downloads map imagery from Apple Maps and, in 3D views, terrain elevation for the area from the public Terrain Tiles service (Amazon Web Services, AWS Open Data). These requests only specify the map area to download (tiles a few kilometres wide), not your GPS track, times or any other Health data, and they are not linked to you; as with any website, the provider sees the IP address of the connection. Downloaded elevation data stays cached on your iPhone.</p>
-    <p><strong>iCloud (sync across your devices):</strong> if iCloud is on, saved AI readings, your goals and some preferences (heart rate zones, dashboard layout, language, smart reading consent) are copied to <strong>your private iCloud</strong>, so you find them on iPhone and iPad with the same Apple ID. They are stored by Apple in your account: we cannot read them. Health data does not go through here: Apple Health syncs it.</p>
+    <p><strong>iCloud (sync across your devices):</strong> if iCloud is on, saved AI readings, your goals, the values you report on the muscle map (fatigue, soreness, injury) and some preferences (heart rate zones, dashboard layout, language, smart reading consent) are copied to <strong>your private iCloud</strong>, so you find them on iPhone and iPad with the same Apple ID. They are stored by Apple in your account: we cannot read them. Health data does not go through here: Apple Health syncs it.</p>
     <h2>What we do not do</h2>
     <ul><li>we do not sell your data</li><li>we do not use Health data for advertising or cross-app tracking</li><li>we do not share health data with third parties for commercial purposes</li></ul>
     <h2>Retention and deletion</h2>
@@ -702,7 +702,7 @@ PRIVACY = {
     "fr": {
         "title": "Confidentialité — LifeNex",
         "h1": "Politique de confidentialité",
-        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 1er novembre 2026',
+        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 6 novembre 2026',
         "nav": "Confidentialité",
         "contact": "Contact",
         "back": "Retour à l’accueil",
@@ -721,7 +721,7 @@ PRIVACY = {
     <p>LifeNex <strong>n’écrit</strong> ni <strong>ne modifie</strong> les données Santé.</p>
     <h2>Où les données sont traitées</h2>
     <p>Les données Santé restent <strong>sur votre iPhone</strong> (stockage local). Aucun compte LifeNex n’est obligatoire.</p>
-    <p><strong>Analyse par IA (facultative) :</strong> uniquement si vous activez le consentement « Lecture intelligente » dans Préférences et demandez vous-même une lecture (Générer / Mettre à jour), LifeNex envoie des <strong>résumés chiffrés déjà calculés dans l’app</strong> (moyennes, comptages, comparaisons, types de séances) pour préparer le texte. Aucun tracé GPS, aucune photo ni l’historique brut de Santé ne sont envoyés. Vous pouvez retirer votre consentement à tout moment.</p>
+    <p><strong>Analyse par IA (facultative) :</strong> uniquement si vous activez le consentement « Lecture intelligente » dans Préférences et demandez vous-même une lecture (Générer / Mettre à jour), LifeNex envoie des <strong>résumés chiffrés déjà calculés dans l’app</strong> (moyennes, comptages, comparaisons, types de séances) et, si vous les avez indiqués, l’état de vos muscles sur la carte (fatigue, courbatures, blessure) pour préparer le texte. Aucun tracé GPS, aucune photo ni l’historique brut de Santé ne sont envoyés. Vous pouvez retirer votre consentement à tout moment.</p>
     <p>Ces résumés sont traités par :</p>
     <ul>
       <li><strong>notre serveur</strong> (Google Firebase, région Union européenne), qui transmet la demande et compte les analyses utilisées : il ne conserve ni les résumés ni les textes générés ;</li>
@@ -729,7 +729,7 @@ PRIVACY = {
     </ul>
     <p>Les lectures générées restent enregistrées sur votre iPhone et, si iCloud est activé, dans votre iCloud privé (voir ci-dessous).</p>
     <p><strong>Cartes et relief :</strong> pour afficher vos parcours, l’app télécharge les images de carte depuis Plans d’Apple et, dans les vues 3D, l’altitude du terrain de la zone depuis le service public Terrain Tiles (Amazon Web Services, AWS Open Data). Ces requêtes indiquent uniquement la zone de carte à télécharger (des tuiles de quelques kilomètres), pas votre tracé GPS, vos horaires ni d’autres données Santé, et ne sont pas liées à vous ; comme pour tout site web, le fournisseur voit l’adresse IP de la connexion. Les altitudes téléchargées restent en cache sur votre iPhone.</p>
-    <p><strong>iCloud (synchronisation entre vos appareils) :</strong> si iCloud est activé, les lectures IA enregistrées, vos objectifs et certaines préférences (zones cardiaques, disposition du tableau de bord, langue, consentement à la lecture intelligente) sont copiés dans <strong>votre iCloud privé</strong>, pour les retrouver sur iPhone et iPad avec le même identifiant Apple. Ils sont conservés par Apple dans votre compte : nous ne pouvons pas les lire. Les données Santé ne passent pas par ici : Apple Santé les synchronise.</p>
+    <p><strong>iCloud (synchronisation entre vos appareils) :</strong> si iCloud est activé, les lectures IA enregistrées, vos objectifs, les valeurs indiquées sur la carte des muscles (fatigue, courbatures, blessure) et certaines préférences (zones cardiaques, disposition du tableau de bord, langue, consentement à la lecture intelligente) sont copiés dans <strong>votre iCloud privé</strong>, pour les retrouver sur iPhone et iPad avec le même identifiant Apple. Ils sont conservés par Apple dans votre compte : nous ne pouvons pas les lire. Les données Santé ne passent pas par ici : Apple Santé les synchronise.</p>
     <h2>Ce que nous ne faisons pas</h2>
     <ul><li>nous ne vendons pas vos données</li><li>nous n’utilisons pas les données Santé pour la publicité ou le suivi entre apps</li><li>nous ne partageons pas de données de santé avec des tiers à des fins commerciales</li></ul>
     <h2>Conservation et suppression</h2>
@@ -749,7 +749,7 @@ PRIVACY = {
     "de": {
         "title": "Datenschutz — LifeNex",
         "h1": "Datenschutzerklärung",
-        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 1. November 2026',
+        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 6. November 2026',
         "nav": "Datenschutz",
         "contact": "Kontakt",
         "back": "Zur Startseite",
@@ -768,7 +768,7 @@ PRIVACY = {
     <p>LifeNex <strong>schreibt</strong> und <strong>ändert</strong> keine Gesundheitsdaten.</p>
     <h2>Wo Daten verarbeitet werden</h2>
     <p>Health-Daten bleiben <strong>auf deinem iPhone</strong> (lokaler Speicher). Ein LifeNex-Konto ist nicht nötig.</p>
-    <p><strong>KI-Analyse (optional):</strong> nur wenn du in den Einstellungen die Einwilligung «Intelligente Lesung» aktivierst und selbst eine Auswertung anforderst (Erstellen / Aktualisieren), sendet LifeNex <strong>bereits in der App berechnete Zahlenzusammenfassungen</strong> (Mittelwerte, Zählungen, Vergleiche, Trainingsarten), um den Text zu erstellen. GPS-Routen, Fotos und der Health-Rohverlauf werden nie gesendet. Du kannst die Einwilligung jederzeit widerrufen.</p>
+    <p><strong>KI-Analyse (optional):</strong> nur wenn du in den Einstellungen die Einwilligung «Intelligente Lesung» aktivierst und selbst eine Auswertung anforderst (Erstellen / Aktualisieren), sendet LifeNex <strong>bereits in der App berechnete Zahlenzusammenfassungen</strong> (Mittelwerte, Zählungen, Vergleiche, Trainingsarten) und, falls du ihn angegeben hast, den Zustand deiner Muskeln auf der Karte (Ermüdung, Muskelkater, Verletzung), um den Text zu erstellen. GPS-Routen, Fotos und der Health-Rohverlauf werden nie gesendet. Du kannst die Einwilligung jederzeit widerrufen.</p>
     <p>Diese Zusammenfassungen werden verarbeitet von:</p>
     <ul>
       <li><strong>unserem Server</strong> (Google Firebase, Region Europäische Union), der die Anfrage weiterleitet und die genutzten Analysen zählt: Er speichert weder die Zusammenfassungen noch die erzeugten Texte;</li>
@@ -776,7 +776,7 @@ PRIVACY = {
     </ul>
     <p>Erzeugte Auswertungen bleiben auf deinem iPhone gespeichert und, wenn iCloud aktiv ist, in deiner privaten iCloud (siehe unten).</p>
     <p><strong>Karten und Gelände:</strong> Um deine Routen anzuzeigen, lädt die App Kartenbilder von Apple Karten und in den 3D-Ansichten Geländehöhen der Umgebung vom öffentlichen Dienst Terrain Tiles (Amazon Web Services, AWS Open Data). Diese Anfragen enthalten nur den zu ladenden Kartenbereich (Kacheln von einigen Kilometern), nicht deine GPS-Route, Zeiten oder andere Health-Daten, und sind nicht mit dir verknüpft; wie bei jeder Website sieht der Anbieter die IP-Adresse der Verbindung. Die geladenen Höhendaten bleiben im Cache auf deinem iPhone.</p>
-    <p><strong>iCloud (Synchronisierung zwischen deinen Geräten):</strong> Wenn iCloud aktiv ist, werden gespeicherte KI-Auswertungen, deine Ziele und einige Einstellungen (Herzfrequenzzonen, Dashboard-Anordnung, Sprache, Einwilligung zur intelligenten Lesung) in <strong>deine private iCloud</strong> kopiert, damit du sie auf iPhone und iPad mit derselben Apple-ID wiederfindest. Apple speichert sie in deinem Konto: Wir können sie nicht lesen. Health-Daten laufen nicht darüber: Die synchronisiert Apple Health.</p>
+    <p><strong>iCloud (Synchronisierung zwischen deinen Geräten):</strong> Wenn iCloud aktiv ist, werden gespeicherte KI-Auswertungen, deine Ziele, die auf der Muskelkarte angegebenen Werte (Ermüdung, Muskelkater, Verletzung) und einige Einstellungen (Herzfrequenzzonen, Dashboard-Anordnung, Sprache, Einwilligung zur intelligenten Lesung) in <strong>deine private iCloud</strong> kopiert, damit du sie auf iPhone und iPad mit derselben Apple-ID wiederfindest. Apple speichert sie in deinem Konto: Wir können sie nicht lesen. Health-Daten laufen nicht darüber: Die synchronisiert Apple Health.</p>
     <h2>Was wir nicht tun</h2>
     <ul><li>wir verkaufen deine Daten nicht</li><li>wir nutzen Health-Daten nicht für Werbung oder App-übergreifendes Tracking</li><li>wir geben Gesundheitsdaten nicht zu kommerziellen Zwecken an Dritte weiter</li></ul>
     <h2>Speicherung und Löschung</h2>
@@ -876,7 +876,7 @@ TERMS = {
     "it": {
         "title": "Termini di utilizzo — LifeNex",
         "h1": "Termini di utilizzo",
-        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 29 settembre 2026',
+        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 6 novembre 2026',
         "body": """
     <p>Usando LifeNex accetti questi termini. Se non sei d’accordo, non usare l’app.</p>
 
@@ -890,7 +890,7 @@ TERMS = {
     <p>L’app legge i dati di Salute solo con il tuo consenso. I dati restano sul dispositivo, salvo le funzioni opzionali che richiedono un’ulteriore autorizzazione (vedi <a href="../privacy/">Informativa privacy</a>).</p>
 
     <h2>Analisi intelligente (opzionale)</h2>
-    <p>Se attivi il consenso in Preferenze e chiedi una lettura, LifeNex può inviare riassunti numerici già calcolati in app a un gateway per produrre un testo. Il servizio ha un tetto di letture per periodo di abbonamento. Non sostituisce un parere professionale.</p>
+    <p>Se attivi il consenso in Preferenze e chiedi una lettura, LifeNex può inviare riassunti numerici già calcolati in app e lo stato dei muscoli che hai indicato a un gateway per produrre un testo. Il servizio ha un tetto di letture per periodo di abbonamento. Non sostituisce un parere professionale.</p>
 
     <h2>Abbonamenti Plus e Max</h2>
     <ul>
@@ -917,7 +917,7 @@ TERMS = {
     "en": {
         "title": "Terms of use — LifeNex",
         "h1": "Terms of use",
-        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 29 September 2026',
+        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 6 November 2026',
         "body": """
     <p>By using LifeNex you agree to these terms. If you do not agree, do not use the app.</p>
 
@@ -931,7 +931,7 @@ TERMS = {
     <p>The app reads Health data only with your consent. Data stays on device except for optional features that need further explicit permission (see the <a href="../privacy/">Privacy policy</a>).</p>
 
     <h2>Optional smart analysis</h2>
-    <p>If you enable consent in Settings and request a reading, LifeNex may send numeric summaries already computed in the app to a gateway to produce text. Usage is capped per subscription period. It does not replace professional advice.</p>
+    <p>If you enable consent in Settings and request a reading, LifeNex may send numeric summaries already computed in the app and the muscle status you reported to a gateway to produce text. Usage is capped per subscription period. It does not replace professional advice.</p>
 
     <h2>Plus and Max subscriptions</h2>
     <ul>
@@ -958,7 +958,7 @@ TERMS = {
     "fr": {
         "title": "Conditions d’utilisation — LifeNex",
         "h1": "Conditions d’utilisation",
-        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 29 septembre 2026',
+        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 6 novembre 2026',
         "body": """
     <p>En utilisant LifeNex, vous acceptez ces conditions. Sinon, n’utilisez pas l’app.</p>
 
@@ -972,7 +972,7 @@ TERMS = {
     <p>L’app lit les données Santé uniquement avec votre consentement. Les données restent sur l’appareil, sauf fonctions optionnelles avec autorisation supplémentaire (voir la <a href="../privacy/">politique de confidentialité</a>).</p>
 
     <h2>Analyse intelligente (optionnelle)</h2>
-    <p>Si vous activez le consentement et demandez une lecture, LifeNex peut envoyer des résumés numériques déjà calculés dans l’app à une passerelle pour produire un texte. Le service a un plafond par période d’abonnement. Cela ne remplace pas un avis professionnel.</p>
+    <p>Si vous activez le consentement et demandez une lecture, LifeNex peut envoyer des résumés numériques déjà calculés dans l’app et l’état des muscles que vous avez indiqué à une passerelle pour produire un texte. Le service a un plafond par période d’abonnement. Cela ne remplace pas un avis professionnel.</p>
 
     <h2>Abonnements Plus et Max</h2>
     <ul>
@@ -995,7 +995,7 @@ TERMS = {
     "de": {
         "title": "Nutzungsbedingungen — LifeNex",
         "h1": "Nutzungsbedingungen",
-        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 29. September 2026',
+        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 6. November 2026',
         "body": """
     <p>Mit der Nutzung von LifeNex akzeptierst du diese Bedingungen. Wenn nicht, verwende die App nicht.</p>
 
@@ -1009,7 +1009,7 @@ TERMS = {
     <p>Die App liest Gesundheitsdaten nur mit deiner Zustimmung. Daten bleiben auf dem Gerät, außer optionale Funktionen mit zusätzlicher Erlaubnis (siehe <a href="../privacy/">Datenschutzerklärung</a>).</p>
 
     <h2>Optionale intelligente Analyse</h2>
-    <p>Mit Zustimmung in den Einstellungen und auf Anfrage kann LifeNex bereits berechnete Zahlenzusammenfassungen an ein Gateway senden. Es gibt ein Kontingent pro Abo-Zeitraum. Kein Ersatz für fachlichen Rat.</p>
+    <p>Mit Zustimmung in den Einstellungen und auf Anfrage kann LifeNex bereits berechnete Zahlenzusammenfassungen und den von dir angegebenen Muskelzustand an ein Gateway senden. Es gibt ein Kontingent pro Abo-Zeitraum. Kein Ersatz für fachlichen Rat.</p>
 
     <h2>Abos Plus und Max</h2>
     <ul>
@@ -1150,7 +1150,7 @@ def write_seo_files():
 - App Store: {APP_STORE_URL}
 - Price: free to download; Plus and Max subscriptions unlock 3D maps and videos, goals and AI analysis.
 - Platform: iPhone and iPad (iOS), works with Apple Watch and any device or app that writes to Apple Health.
-- Privacy: LifeNex reads Health data read-only; data stays on the user's iPhone. AI analysis is optional and sends only numeric summaries, with consent.
+- Privacy: LifeNex reads Health data read-only; data stays on the user's iPhone. AI analysis is optional and, with consent, sends only numeric summaries and the muscle status the user reported.
 - Developer: Stefano Toncelli (Italy). Support: support@lifenex.it
 
 ## Main features
