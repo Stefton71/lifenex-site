@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=21">
+  <link rel="stylesheet" href="{CSS[lang]}?v=22">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -648,6 +648,16 @@ PRIVACY = {
       <li>date di apertura, quante volte usi pagine e funzioni, solo il numero, e quali messaggi dell’app hai visto.</li>
     </ul>
     <p>Servono per l’assistenza e le statistiche d’uso, compreso sapere se l’app è ancora installata. Non contengono nome, email o Apple ID, non vengono condivisi con terzi né usati per il tracciamento. Per farli cancellare scrivi al contatto qui sotto.</p>
+    <h2>Basi legali</h2>
+    <ul>
+      <li><strong>Funzioni e abbonamento:</strong> il contratto con te.</li>
+      <li><strong>Assistenza e statistiche d’uso:</strong> il nostro legittimo interesse a far funzionare e migliorare l’app; puoi opporti.</li>
+      <li><strong>Analisi intelligente con AI:</strong> il tuo consenso esplicito, anche per i dati sulla salute, che puoi revocare in Preferenze.</li>
+    </ul>
+
+    <h2>I tuoi diritti</h2>
+    <p>Puoi chiedere l’accesso ai tuoi dati, la rettifica, la cancellazione, la limitazione e la portabilità, opporti al trattamento e revocare il consenso, scrivendo a <a href="mailto:support@lifenex.it">support@lifenex.it</a>. Puoi anche fare reclamo al Garante per la protezione dei dati personali o all’autorità del tuo paese.</p>
+
     <h2>Permessi</h2>
     <p>Puoi rifiutare o revocare i permessi Salute in qualsiasi momento. Senza permessi l’app funziona in modo limitato.</p>
     <h2>Minori</h2>
@@ -702,6 +712,16 @@ PRIVACY = {
       <li>opening dates, how many times you use pages and features, the number only, and which app messages you saw.</li>
     </ul>
     <p>They are used for support and usage statistics, including knowing whether the app is still installed. They contain no name, email or Apple ID, and are not shared with third parties or used for tracking. To have them deleted, write to the contact below.</p>
+    <h2>Legal bases</h2>
+    <ul>
+      <li><strong>Features and subscription:</strong> our contract with you.</li>
+      <li><strong>Support and usage statistics:</strong> our legitimate interest in running and improving the app; you can object.</li>
+      <li><strong>Smart analysis with AI:</strong> your explicit consent, including for health-related data, which you can withdraw in Settings.</li>
+    </ul>
+
+    <h2>Your rights</h2>
+    <p>You can request access to your data, rectification, erasure, restriction and portability, object to processing and withdraw consent, by writing to <a href="mailto:support@lifenex.it">support@lifenex.it</a>. You can also lodge a complaint with the Italian Data Protection Authority (Garante) or the authority in your country.</p>
+
     <h2>Permissions</h2>
     <p>You can refuse or revoke Health permissions at any time. Without permissions the app works in a limited way.</p>
     <h2>Children</h2>
@@ -756,6 +776,16 @@ PRIVACY = {
       <li>les dates d’ouverture, le nombre d’utilisations des pages et fonctions, uniquement le nombre, et les messages de l’app que vous avez vus.</li>
     </ul>
     <p>Elles servent à l’assistance et aux statistiques d’utilisation, y compris pour savoir si l’app est toujours installée. Elles ne contiennent ni nom, ni e-mail, ni identifiant Apple, et ne sont ni partagées avec des tiers ni utilisées pour le suivi. Pour les faire supprimer, écrivez au contact ci-dessous.</p>
+    <h2>Bases légales</h2>
+    <ul>
+      <li><strong>Fonctions et abonnement :</strong> le contrat avec vous.</li>
+      <li><strong>Assistance et statistiques d’utilisation :</strong> notre intérêt légitime à faire fonctionner et améliorer l’app ; vous pouvez vous y opposer.</li>
+      <li><strong>Analyse intelligente avec IA :</strong> votre consentement explicite, y compris pour les données de santé, que vous pouvez retirer dans les Préférences.</li>
+    </ul>
+
+    <h2>Vos droits</h2>
+    <p>Vous pouvez demander l’accès à vos données, leur rectification, leur effacement, leur limitation et leur portabilité, vous opposer au traitement et retirer votre consentement, en écrivant à <a href="mailto:support@lifenex.it">support@lifenex.it</a>. Vous pouvez aussi introduire une réclamation auprès de l’autorité italienne de protection des données (Garante) ou de celle de votre pays.</p>
+
     <h2>Autorisations</h2>
     <p>Vous pouvez refuser ou révoquer les autorisations Santé à tout moment. Sans autorisations, l’app fonctionne de façon limitée.</p>
     <h2>Mineurs</h2>
@@ -810,6 +840,16 @@ PRIVACY = {
       <li>Öffnungsdaten, wie oft du Seiten und Funktionen nutzt, nur die Anzahl, und welche App-Mitteilungen du gesehen hast.</li>
     </ul>
     <p>Sie dienen dem Support und der Nutzungsstatistik, auch um zu wissen, ob die App noch installiert ist. Sie enthalten keinen Namen, keine E-Mail und keine Apple-ID und werden weder an Dritte weitergegeben noch zum Tracking verwendet. Um sie löschen zu lassen, schreibe an den Kontakt unten.</p>
+    <h2>Rechtsgrundlagen</h2>
+    <ul>
+      <li><strong>Funktionen und Abo:</strong> der Vertrag mit dir.</li>
+      <li><strong>Support und Nutzungsstatistik:</strong> unser berechtigtes Interesse, die App zu betreiben und zu verbessern; du kannst widersprechen.</li>
+      <li><strong>Intelligente Analyse mit KI:</strong> deine ausdrückliche Einwilligung, auch für Gesundheitsdaten, die du in den Einstellungen widerrufen kannst.</li>
+    </ul>
+
+    <h2>Deine Rechte</h2>
+    <p>Du kannst Auskunft über deine Daten, Berichtigung, Löschung, Einschränkung und Übertragbarkeit verlangen, der Verarbeitung widersprechen und deine Einwilligung widerrufen, indem du an <a href="mailto:support@lifenex.it">support@lifenex.it</a> schreibst. Du kannst dich auch bei der italienischen Datenschutzbehörde (Garante) oder der Behörde deines Landes beschweren.</p>
+
     <h2>Berechtigungen</h2>
     <p>Du kannst Health-Berechtigungen jederzeit verweigern oder widerrufen. Ohne Berechtigungen funktioniert die App nur eingeschränkt.</p>
     <h2>Kinder</h2>
