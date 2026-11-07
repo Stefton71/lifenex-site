@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=25">
+  <link rel="stylesheet" href="{CSS[lang]}?v=26">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -640,7 +640,7 @@ PRIVACY = {
     <ul><li>non vendiamo i tuoi dati</li><li>non usiamo i dati Salute per pubblicità o tracking tra app</li><li>non condividiamo dati sanitari con terze parti a scopo commerciale</li></ul>
     <h2>Conservazione e cancellazione</h2>
     <p>I dati restano sul dispositivo finché l’app è installata. Per cancellarli: elimina LifeNex e, in Impostazioni → Salute → Accesso app e dati, revoca l’accesso. La copia in iCloud si elimina da Impostazioni → [il tuo nome] → iCloud → Gestisci spazio → LifeNex.</p>
-    <p>Sul nostro server non ci sono <strong>dati di salute</strong>. Restano solo:</p>
+    <p>Sul nostro server non ci sono <strong>dati di salute</strong>, a parte il numero totale di allenamenti importati da Salute (senza date, sport o misure). Restano solo:</p>
     <ul>
       <li>i contatori delle analisi AI, legati all’abbonamento Apple;</li>
       <li>un identificativo casuale del dispositivo, il suo token per le notifiche e un’impronta non reversibile del codice che Apple assegna al download;</li>
@@ -704,7 +704,7 @@ PRIVACY = {
     <ul><li>we do not sell your data</li><li>we do not use Health data for advertising or cross-app tracking</li><li>we do not share health data with third parties for commercial purposes</li></ul>
     <h2>Retention and deletion</h2>
     <p>Data stays on the device while the app is installed. To delete it, remove LifeNex and revoke access in Settings → Health → Data Access &amp; Devices. The iCloud copy can be deleted in Settings → [your name] → iCloud → Manage Account Storage → LifeNex.</p>
-    <p>Our server holds no <strong>health data</strong>. It keeps only:</p>
+    <p>Our server holds no <strong>health data</strong>, apart from the total number of workouts imported from Health (no dates, sports or measurements). It keeps only:</p>
     <ul>
       <li>AI analysis counters, linked to the Apple subscription;</li>
       <li>a random device identifier, its notification token and an irreversible fingerprint of the code Apple assigns to the download;</li>
@@ -768,7 +768,7 @@ PRIVACY = {
     <ul><li>nous ne vendons pas vos données</li><li>nous n’utilisons pas les données Santé pour la publicité ou le suivi entre apps</li><li>nous ne partageons pas de données de santé avec des tiers à des fins commerciales</li></ul>
     <h2>Conservation et suppression</h2>
     <p>Les données restent sur l’appareil tant que l’app est installée. Pour les supprimer, supprimez LifeNex et révoquez l’accès dans Réglages → Santé → Accès aux données et appareils. La copie iCloud se supprime dans Réglages → [votre nom] → iCloud → Gérer le stockage du compte → LifeNex.</p>
-    <p>Notre serveur ne contient aucune <strong>donnée de santé</strong>. Il conserve uniquement :</p>
+    <p>Notre serveur ne contient aucune <strong>donnée de santé</strong>, à part le nombre total d’entraînements importés depuis Santé (sans dates, sports ni mesures). Il conserve uniquement :</p>
     <ul>
       <li>les compteurs d’analyses IA, liés à l’abonnement Apple ;</li>
       <li>un identifiant aléatoire de l’appareil, son jeton de notifications et une empreinte irréversible du code qu’Apple attribue au téléchargement ;</li>
@@ -832,7 +832,7 @@ PRIVACY = {
     <ul><li>wir verkaufen deine Daten nicht</li><li>wir nutzen Health-Daten nicht für Werbung oder App-übergreifendes Tracking</li><li>wir geben Gesundheitsdaten nicht zu kommerziellen Zwecken an Dritte weiter</li></ul>
     <h2>Speicherung und Löschung</h2>
     <p>Die Daten bleiben auf dem Gerät, solange die App installiert ist. Zum Löschen entferne LifeNex und widerrufe den Zugriff unter Einstellungen → Health → Datenzugriff &amp; Geräte. Die iCloud-Kopie löschst du unter Einstellungen → [dein Name] → iCloud → Accountspeicher verwalten → LifeNex.</p>
-    <p>Auf unserem Server liegen keine <strong>Gesundheitsdaten</strong>. Gespeichert werden nur:</p>
+    <p>Auf unserem Server liegen keine <strong>Gesundheitsdaten</strong>, abgesehen von der Gesamtzahl der aus Health importierten Trainings (ohne Datum, Sportart oder Messwerte). Gespeichert werden nur:</p>
     <ul>
       <li>die Zähler der KI-Analysen, verknüpft mit dem Apple-Abo;</li>
       <li>eine zufällige Gerätekennung, sein Token für Mitteilungen und ein nicht umkehrbarer Fingerabdruck des Codes, den Apple dem Download zuweist;</li>
