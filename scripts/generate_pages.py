@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=24">
+  <link rel="stylesheet" href="{CSS[lang]}?v=25">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -644,7 +644,7 @@ PRIVACY = {
     <ul>
       <li>i contatori delle analisi AI, legati all’abbonamento Apple;</li>
       <li>un identificativo casuale del dispositivo, il suo token per le notifiche e un’impronta non reversibile del codice che Apple assegna al download;</li>
-      <li>dati tecnici del dispositivo: modello, versione di iOS e dell’app, paese dello store;</li>
+      <li>dati tecnici del dispositivo: modello, versione di iOS e dell’app, paese dello store, se è abbinato un Apple Watch;</li>
       <li>date di apertura, quante volte usi pagine e funzioni, solo il numero, e quali messaggi dell’app hai visto.</li>
     </ul>
     <p>Servono per l’assistenza e le statistiche d’uso, compreso sapere se l’app è ancora installata. Non contengono nome, email o Apple ID, non vengono condivisi con terzi né usati per il tracciamento. Li cancelliamo automaticamente dopo 24 mesi senza utilizzo. Per farli cancellare prima scrivi al contatto qui sotto.</p>
@@ -708,7 +708,7 @@ PRIVACY = {
     <ul>
       <li>AI analysis counters, linked to the Apple subscription;</li>
       <li>a random device identifier, its notification token and an irreversible fingerprint of the code Apple assigns to the download;</li>
-      <li>technical device data: model, iOS and app version, store country;</li>
+      <li>technical device data: model, iOS and app version, store country, whether an Apple Watch is paired;</li>
       <li>opening dates, how many times you use pages and features, the number only, and which app messages you saw.</li>
     </ul>
     <p>They are used for support and usage statistics, including knowing whether the app is still installed. They contain no name, email or Apple ID, and are not shared with third parties or used for tracking. We delete them automatically after 24 months without use. To have them deleted sooner, write to the contact below.</p>
@@ -772,7 +772,7 @@ PRIVACY = {
     <ul>
       <li>les compteurs d’analyses IA, liés à l’abonnement Apple ;</li>
       <li>un identifiant aléatoire de l’appareil, son jeton de notifications et une empreinte irréversible du code qu’Apple attribue au téléchargement ;</li>
-      <li>des données techniques de l’appareil : modèle, version d’iOS et de l’app, pays de l’App Store ;</li>
+      <li>des données techniques de l’appareil : modèle, version d’iOS et de l’app, pays de l’App Store, présence d’une Apple Watch jumelée ;</li>
       <li>les dates d’ouverture, le nombre d’utilisations des pages et fonctions, uniquement le nombre, et les messages de l’app que vous avez vus.</li>
     </ul>
     <p>Elles servent à l’assistance et aux statistiques d’utilisation, y compris pour savoir si l’app est toujours installée. Elles ne contiennent ni nom, ni e-mail, ni identifiant Apple, et ne sont ni partagées avec des tiers ni utilisées pour le suivi. Nous les supprimons automatiquement après 24 mois sans utilisation. Pour les faire supprimer plus tôt, écrivez au contact ci-dessous.</p>
@@ -836,7 +836,7 @@ PRIVACY = {
     <ul>
       <li>die Zähler der KI-Analysen, verknüpft mit dem Apple-Abo;</li>
       <li>eine zufällige Gerätekennung, sein Token für Mitteilungen und ein nicht umkehrbarer Fingerabdruck des Codes, den Apple dem Download zuweist;</li>
-      <li>technische Gerätedaten: Modell, iOS- und App-Version, App-Store-Land;</li>
+      <li>technische Gerätedaten: Modell, iOS- und App-Version, App-Store-Land, ob eine Apple Watch gekoppelt ist;</li>
       <li>Öffnungsdaten, wie oft du Seiten und Funktionen nutzt, nur die Anzahl, und welche App-Mitteilungen du gesehen hast.</li>
     </ul>
     <p>Sie dienen dem Support und der Nutzungsstatistik, auch um zu wissen, ob die App noch installiert ist. Sie enthalten keinen Namen, keine E-Mail und keine Apple-ID und werden weder an Dritte weitergegeben noch zum Tracking verwendet. Wir löschen sie automatisch nach 24 Monaten ohne Nutzung. Um sie früher löschen zu lassen, schreibe an den Kontakt unten.</p>
