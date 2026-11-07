@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=19">
+  <link rel="stylesheet" href="{CSS[lang]}?v=20">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -640,7 +640,14 @@ PRIVACY = {
     <ul><li>non vendiamo i tuoi dati</li><li>non usiamo i dati Salute per pubblicità o tracking tra app</li><li>non condividiamo dati sanitari con terze parti a scopo commerciale</li></ul>
     <h2>Conservazione e cancellazione</h2>
     <p>I dati restano sul dispositivo finché l’app è installata. Per cancellarli: elimina LifeNex e, in Impostazioni → Salute → Accesso app e dati, revoca l’accesso. La copia in iCloud si elimina da Impostazioni → [il tuo nome] → iCloud → Gestisci spazio → LifeNex.</p>
-    <p>Sul nostro server restano solo i <strong>contatori delle analisi AI</strong> per periodo di abbonamento, legati all’identificativo dell’abbonamento Apple e a un identificativo casuale del dispositivo, insieme ad alcuni dati tecnici dell’ultimo dispositivo usato (modello di iPhone, versione di iOS, versione dell’app e paese dello store App Store) che ci servono per l’assistenza e per capire quali versioni sono in uso: nessun dato di salute. Per tutti gli utenti, anche senza abbonamento, a ogni apertura l’app invia inoltre l’identificativo casuale del dispositivo (con la data della prima e dell’ultima apertura e un conteggio approssimativo delle aperture), quante volte usi ciascuna pagina e funzione dell’app (per esempio Oggi, Carico o la mappa 3D: solo il numero, nessun dato di salute) e un’<strong>impronta non reversibile</strong> dell’identificativo che Apple assegna al download dell’app, verificata con la firma di Apple: serve solo per statistiche d’uso, non contiene nome, email o Apple ID, non viene condivisa con terzi né usata per il tracciamento. Per farli cancellare scrivi al contatto qui sotto. Il server può inoltre controllare se l’app è ancora installata, per sapere quante installazioni sono attive: nessun dato di salute.</p>
+    <p>Sul nostro server non ci sono <strong>dati di salute</strong>. Restano solo:</p>
+    <ul>
+      <li>i contatori delle analisi AI, legati all’abbonamento Apple;</li>
+      <li>un identificativo casuale del dispositivo e un’impronta non reversibile del codice che Apple assegna al download;</li>
+      <li>dati tecnici del dispositivo: modello, versione di iOS e dell’app, paese dello store;</li>
+      <li>date di apertura e quante volte usi pagine e funzioni, solo il numero.</li>
+    </ul>
+    <p>Servono per l’assistenza e le statistiche d’uso, compreso sapere se l’app è ancora installata. Non contengono nome, email o Apple ID, non vengono condivisi con terzi né usati per il tracciamento. Per farli cancellare scrivi al contatto qui sotto.</p>
     <h2>Permessi</h2>
     <p>Puoi rifiutare o revocare i permessi Salute in qualsiasi momento. Senza permessi l’app funziona in modo limitato.</p>
     <h2>Minori</h2>
@@ -687,7 +694,14 @@ PRIVACY = {
     <ul><li>we do not sell your data</li><li>we do not use Health data for advertising or cross-app tracking</li><li>we do not share health data with third parties for commercial purposes</li></ul>
     <h2>Retention and deletion</h2>
     <p>Data stays on the device while the app is installed. To delete it, remove LifeNex and revoke access in Settings → Health → Data Access &amp; Devices. The iCloud copy can be deleted in Settings → [your name] → iCloud → Manage Account Storage → LifeNex.</p>
-    <p>Our server keeps only the <strong>AI analysis counters</strong> per subscription period, linked to the Apple subscription identifier and to an random device identifier, together with some technical data about the last device used (iPhone model, iOS version, app version and App Store country) that we need for support and to see which versions are in use: no health data. For all users, including those without a subscription, each time the app opens it also sends the random device identifier (with the date of the first and last opening and an approximate count of openings), how many times you use each page and feature of the app (for example Today, Load or the 3D map: only the number, no health data) and a <strong>non-reversible fingerprint</strong> of the identifier Apple assigns when the app is downloaded, verified with Apple’s signature: it is used only for usage statistics, contains no name, email or Apple ID, and is not shared with third parties or used for tracking. To have them deleted, write to the contact below. The server may also check whether the app is still installed, to know how many installations are active: no health data.</p>
+    <p>Our server holds no <strong>health data</strong>. It keeps only:</p>
+    <ul>
+      <li>AI analysis counters, linked to the Apple subscription;</li>
+      <li>a random device identifier and an irreversible fingerprint of the code Apple assigns to the download;</li>
+      <li>technical device data: model, iOS and app version, store country;</li>
+      <li>opening dates and how many times you use pages and features, the number only.</li>
+    </ul>
+    <p>They are used for support and usage statistics, including knowing whether the app is still installed. They contain no name, email or Apple ID, and are not shared with third parties or used for tracking. To have them deleted, write to the contact below.</p>
     <h2>Permissions</h2>
     <p>You can refuse or revoke Health permissions at any time. Without permissions the app works in a limited way.</p>
     <h2>Children</h2>
@@ -734,7 +748,14 @@ PRIVACY = {
     <ul><li>nous ne vendons pas vos données</li><li>nous n’utilisons pas les données Santé pour la publicité ou le suivi entre apps</li><li>nous ne partageons pas de données de santé avec des tiers à des fins commerciales</li></ul>
     <h2>Conservation et suppression</h2>
     <p>Les données restent sur l’appareil tant que l’app est installée. Pour les supprimer, supprimez LifeNex et révoquez l’accès dans Réglages → Santé → Accès aux données et appareils. La copie iCloud se supprime dans Réglages → [votre nom] → iCloud → Gérer le stockage du compte → LifeNex.</p>
-    <p>Notre serveur conserve uniquement les <strong>compteurs d’analyses IA</strong> par période d’abonnement, liés à l’identifiant de l’abonnement Apple et à un identifiant aléatoire de l’appareil, ainsi que quelques données techniques du dernier appareil utilisé (modèle d’iPhone, version d’iOS, version de l’app et pays de l’App Store) dont nous avons besoin pour l’assistance et pour savoir quelles versions sont utilisées : aucune donnée de santé. Pour tous les utilisateurs, y compris sans abonnement, à chaque ouverture l’app envoie aussi l’identifiant aléatoire de l’appareil (avec la date de la première et de la dernière ouverture et un nombre approximatif d’ouvertures), le nombre de fois où vous utilisez chaque page et fonction de l’app (par exemple Aujourd’hui, Charge ou la carte 3D : seulement le nombre, aucune donnée de santé) et une <strong>empreinte non réversible</strong> de l’identifiant qu’Apple attribue au téléchargement de l’app, vérifiée par la signature d’Apple : elle sert uniquement aux statistiques d’utilisation, ne contient ni nom, ni e-mail, ni identifiant Apple, et n’est ni partagée avec des tiers ni utilisée pour le suivi. Pour les faire supprimer, écrivez au contact ci-dessous. Le serveur peut aussi vérifier si l’app est toujours installée, pour savoir combien d’installations sont actives : aucune donnée de santé.</p>
+    <p>Notre serveur ne contient aucune <strong>donnée de santé</strong>. Il conserve uniquement :</p>
+    <ul>
+      <li>les compteurs d’analyses IA, liés à l’abonnement Apple ;</li>
+      <li>un identifiant aléatoire de l’appareil et une empreinte irréversible du code qu’Apple attribue au téléchargement ;</li>
+      <li>des données techniques de l’appareil : modèle, version d’iOS et de l’app, pays de l’App Store ;</li>
+      <li>les dates d’ouverture et le nombre d’utilisations des pages et fonctions, uniquement le nombre.</li>
+    </ul>
+    <p>Elles servent à l’assistance et aux statistiques d’utilisation, y compris pour savoir si l’app est toujours installée. Elles ne contiennent ni nom, ni e-mail, ni identifiant Apple, et ne sont ni partagées avec des tiers ni utilisées pour le suivi. Pour les faire supprimer, écrivez au contact ci-dessous.</p>
     <h2>Autorisations</h2>
     <p>Vous pouvez refuser ou révoquer les autorisations Santé à tout moment. Sans autorisations, l’app fonctionne de façon limitée.</p>
     <h2>Mineurs</h2>
@@ -781,7 +802,14 @@ PRIVACY = {
     <ul><li>wir verkaufen deine Daten nicht</li><li>wir nutzen Health-Daten nicht für Werbung oder App-übergreifendes Tracking</li><li>wir geben Gesundheitsdaten nicht zu kommerziellen Zwecken an Dritte weiter</li></ul>
     <h2>Speicherung und Löschung</h2>
     <p>Die Daten bleiben auf dem Gerät, solange die App installiert ist. Zum Löschen entferne LifeNex und widerrufe den Zugriff unter Einstellungen → Health → Datenzugriff &amp; Geräte. Die iCloud-Kopie löschst du unter Einstellungen → [dein Name] → iCloud → Accountspeicher verwalten → LifeNex.</p>
-    <p>Auf unserem Server bleiben nur die <strong>Zähler der KI-Analysen</strong> pro Abo-Zeitraum, verknüpft mit der Kennung des Apple-Abos und einer zufälligen Gerätekennung, zusammen mit einigen technischen Daten des zuletzt genutzten Geräts (iPhone-Modell, iOS-Version, App-Version und App-Store-Land), die wir für den Support und zur Übersicht der genutzten Versionen brauchen: keine Gesundheitsdaten. Für alle Nutzer, auch ohne Abo, sendet die App außerdem bei jedem Öffnen die zufällige Gerätekennung (mit dem Datum des ersten und letzten Öffnens und einer ungefähren Anzahl der Öffnungen), wie oft du jede Seite und Funktion der App nutzt (zum Beispiel Heute, Belastung oder die 3D-Karte: nur die Anzahl, keine Gesundheitsdaten) und einen <strong>nicht umkehrbaren Fingerabdruck</strong> der Kennung, die Apple beim Laden der App vergibt, geprüft mit Apples Signatur: Er dient nur der Nutzungsstatistik, enthält weder Name noch E-Mail noch Apple-ID und wird weder an Dritte weitergegeben noch zum Tracking verwendet. Zum Löschen schreib an den Kontakt unten. Der Server kann außerdem prüfen, ob die App noch installiert ist, um zu wissen, wie viele Installationen aktiv sind: keine Gesundheitsdaten.</p>
+    <p>Auf unserem Server liegen keine <strong>Gesundheitsdaten</strong>. Gespeichert werden nur:</p>
+    <ul>
+      <li>die Zähler der KI-Analysen, verknüpft mit dem Apple-Abo;</li>
+      <li>eine zufällige Gerätekennung und ein nicht umkehrbarer Fingerabdruck des Codes, den Apple dem Download zuweist;</li>
+      <li>technische Gerätedaten: Modell, iOS- und App-Version, App-Store-Land;</li>
+      <li>Öffnungsdaten und wie oft du Seiten und Funktionen nutzt, nur die Anzahl.</li>
+    </ul>
+    <p>Sie dienen dem Support und der Nutzungsstatistik, auch um zu wissen, ob die App noch installiert ist. Sie enthalten keinen Namen, keine E-Mail und keine Apple-ID und werden weder an Dritte weitergegeben noch zum Tracking verwendet. Um sie löschen zu lassen, schreibe an den Kontakt unten.</p>
     <h2>Berechtigungen</h2>
     <p>Du kannst Health-Berechtigungen jederzeit verweigern oder widerrufen. Ohne Berechtigungen funktioniert die App nur eingeschränkt.</p>
     <h2>Kinder</h2>
