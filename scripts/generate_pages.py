@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=17">
+  <link rel="stylesheet" href="{CSS[lang]}?v=18">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -635,7 +635,7 @@ PRIVACY = {
     </ul>
     <p>Le letture generate restano salvate sul tuo iPhone e, se iCloud è attivo, nel tuo iCloud privato (vedi sotto).</p>
     <p><strong>Mappe e rilievo:</strong> per mostrare i percorsi l’app scarica le immagini della mappa da Apple Mappe e, nelle viste 3D, le quote del terreno della zona dal servizio pubblico Terrain Tiles (Amazon Web Services, AWS Open Data). Queste richieste indicano solo l’area di mappa da scaricare (riquadri di alcuni chilometri), non il tracciato GPS, i tempi o altri dati di Salute, e non sono collegate a te; come per qualsiasi sito web, il fornitore vede l’indirizzo IP della connessione. Le quote scaricate restano in cache sul tuo iPhone.</p>
-    <p><strong>Controllo dell’installazione:</strong> una volta al giorno, se non apri l’app da almeno 24 ore, il nostro server invia al dispositivo una notifica silenziosa che non vedi. L’app risponde solo che è ancora installata: nessun dato di salute.</p>
+    <p><strong>Controllo dell’installazione:</strong> due volte al giorno, se non apri l’app da almeno 24 ore, il nostro server invia al dispositivo una notifica silenziosa che non vedi. L’app risponde solo che è ancora installata: nessun dato di salute.</p>
 
     <p><strong>iCloud (sincronizzazione tra i tuoi dispositivi):</strong> se iCloud è attivo, le letture AI salvate, i tuoi obiettivi, i valori che indichi sulla mappa dei muscoli (fatica, indolenzimento, infortunio) e alcune preferenze (zone cardiache, disposizione della dashboard, lingua, consenso alla lettura intelligente) vengono copiati nel <strong>tuo iCloud privato</strong>, così li ritrovi su iPhone e iPad con lo stesso Apple ID. Sono conservati da Apple nel tuo account: noi non possiamo leggerli. I dati di Salute non passano da qui: li sincronizza Apple Salute.</p>
     <h2>Cosa non facciamo</h2>
@@ -684,7 +684,7 @@ PRIVACY = {
     </ul>
     <p>Generated readings stay saved on your iPhone and, if iCloud is on, in your private iCloud (see below).</p>
     <p><strong>Maps and terrain:</strong> to show your routes the app downloads map imagery from Apple Maps and, in 3D views, terrain elevation for the area from the public Terrain Tiles service (Amazon Web Services, AWS Open Data). These requests only specify the map area to download (tiles a few kilometres wide), not your GPS track, times or any other Health data, and they are not linked to you; as with any website, the provider sees the IP address of the connection. Downloaded elevation data stays cached on your iPhone.</p>
-    <p><strong>Installation check:</strong> once a day, if you have not opened the app for at least 24 hours, our server sends your device a silent notification that you do not see. The app only replies that it is still installed: no health data.</p>
+    <p><strong>Installation check:</strong> twice a day, if you have not opened the app for at least 24 hours, our server sends your device a silent notification that you do not see. The app only replies that it is still installed: no health data.</p>
 
     <p><strong>iCloud (sync across your devices):</strong> if iCloud is on, saved AI readings, your goals, the values you report on the muscle map (fatigue, soreness, injury) and some preferences (heart rate zones, dashboard layout, language, smart reading consent) are copied to <strong>your private iCloud</strong>, so you find them on iPhone and iPad with the same Apple ID. They are stored by Apple in your account: we cannot read them. Health data does not go through here: Apple Health syncs it.</p>
     <h2>What we do not do</h2>
@@ -733,7 +733,7 @@ PRIVACY = {
     </ul>
     <p>Les lectures générées restent enregistrées sur votre iPhone et, si iCloud est activé, dans votre iCloud privé (voir ci-dessous).</p>
     <p><strong>Cartes et relief :</strong> pour afficher vos parcours, l’app télécharge les images de carte depuis Plans d’Apple et, dans les vues 3D, l’altitude du terrain de la zone depuis le service public Terrain Tiles (Amazon Web Services, AWS Open Data). Ces requêtes indiquent uniquement la zone de carte à télécharger (des tuiles de quelques kilomètres), pas votre tracé GPS, vos horaires ni d’autres données Santé, et ne sont pas liées à vous ; comme pour tout site web, le fournisseur voit l’adresse IP de la connexion. Les altitudes téléchargées restent en cache sur votre iPhone.</p>
-    <p><strong>Contrôle de l’installation :</strong> une fois par jour, si vous n’avez pas ouvert l’app depuis au moins 24 heures, notre serveur envoie à l’appareil une notification silencieuse que vous ne voyez pas. L’app répond seulement qu’elle est toujours installée : aucune donnée de santé.</p>
+    <p><strong>Contrôle de l’installation :</strong> deux fois par jour, si vous n’avez pas ouvert l’app depuis au moins 24 heures, notre serveur envoie à l’appareil une notification silencieuse que vous ne voyez pas. L’app répond seulement qu’elle est toujours installée : aucune donnée de santé.</p>
 
     <p><strong>iCloud (synchronisation entre vos appareils) :</strong> si iCloud est activé, les lectures IA enregistrées, vos objectifs, les valeurs indiquées sur la carte des muscles (fatigue, courbatures, blessure) et certaines préférences (zones cardiaques, disposition du tableau de bord, langue, consentement à la lecture intelligente) sont copiés dans <strong>votre iCloud privé</strong>, pour les retrouver sur iPhone et iPad avec le même identifiant Apple. Ils sont conservés par Apple dans votre compte : nous ne pouvons pas les lire. Les données Santé ne passent pas par ici : Apple Santé les synchronise.</p>
     <h2>Ce que nous ne faisons pas</h2>
@@ -782,7 +782,7 @@ PRIVACY = {
     </ul>
     <p>Erzeugte Auswertungen bleiben auf deinem iPhone gespeichert und, wenn iCloud aktiv ist, in deiner privaten iCloud (siehe unten).</p>
     <p><strong>Karten und Gelände:</strong> Um deine Routen anzuzeigen, lädt die App Kartenbilder von Apple Karten und in den 3D-Ansichten Geländehöhen der Umgebung vom öffentlichen Dienst Terrain Tiles (Amazon Web Services, AWS Open Data). Diese Anfragen enthalten nur den zu ladenden Kartenbereich (Kacheln von einigen Kilometern), nicht deine GPS-Route, Zeiten oder andere Health-Daten, und sind nicht mit dir verknüpft; wie bei jeder Website sieht der Anbieter die IP-Adresse der Verbindung. Die geladenen Höhendaten bleiben im Cache auf deinem iPhone.</p>
-    <p><strong>Installationsprüfung:</strong> Einmal täglich, wenn du die App seit mindestens 24 Stunden nicht geöffnet hast, sendet unser Server eine stille Mitteilung an dein Gerät, die du nicht siehst. Die App antwortet nur, dass sie noch installiert ist: keine Gesundheitsdaten.</p>
+    <p><strong>Installationsprüfung:</strong> Zweimal täglich, wenn du die App seit mindestens 24 Stunden nicht geöffnet hast, sendet unser Server eine stille Mitteilung an dein Gerät, die du nicht siehst. Die App antwortet nur, dass sie noch installiert ist: keine Gesundheitsdaten.</p>
 
     <p><strong>iCloud (Synchronisierung zwischen deinen Geräten):</strong> Wenn iCloud aktiv ist, werden gespeicherte KI-Auswertungen, deine Ziele, die auf der Muskelkarte angegebenen Werte (Ermüdung, Muskelkater, Verletzung) und einige Einstellungen (Herzfrequenzzonen, Dashboard-Anordnung, Sprache, Einwilligung zur intelligenten Lesung) in <strong>deine private iCloud</strong> kopiert, damit du sie auf iPhone und iPad mit derselben Apple-ID wiederfindest. Apple speichert sie in deinem Konto: Wir können sie nicht lesen. Health-Daten laufen nicht darüber: Die synchronisiert Apple Health.</p>
     <h2>Was wir nicht tun</h2>
