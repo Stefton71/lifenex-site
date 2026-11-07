@@ -482,7 +482,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=23">
+  <link rel="stylesheet" href="{CSS[lang]}?v=24">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -631,7 +631,7 @@ PRIVACY = {
     <p>Questi riassunti sono trattati da:</p>
     <ul>
       <li><strong>il nostro server</strong> (Google Firebase, regione Unione Europea), che inoltra la richiesta e conta le analisi usate: non conserva i riassunti né i testi generati;</li>
-      <li><strong>OpenAI</strong>, fornitore del modello di intelligenza artificiale, che genera il testo per nostro conto. Riceve solo il testo dei riassunti, senza identificativi dell’abbonamento o del dispositivo. Secondo le condizioni del suo servizio API, OpenAI non usa questi dati per addestrare i propri modelli e può conservarli per un periodo limitato (fino a 30 giorni) solo per prevenire abusi.</li>
+      <li><strong>OpenAI</strong>, fornitore del modello di intelligenza artificiale, che genera il testo per nostro conto. Riceve solo il testo dei riassunti, senza identificativi dell’abbonamento o del dispositivo. Secondo le condizioni del suo servizio API, OpenAI non usa questi dati per addestrare i propri modelli e può conservarli per un periodo limitato (fino a 30 giorni) solo per prevenire abusi. OpenAI opera come responsabile del trattamento. I dati possono essere trattati fuori dallo Spazio Economico Europeo, anche negli Stati Uniti, sulla base di clausole contrattuali standard o di una decisione di adeguatezza.</li>
     </ul>
     <p>Le letture generate restano salvate sul tuo iPhone e, se iCloud è attivo, nel tuo iCloud privato (vedi sotto).</p>
     <p><strong>Mappe e rilievo:</strong> per mostrare i percorsi l’app scarica le immagini della mappa da Apple Mappe e, nelle viste 3D, le quote del terreno della zona dal servizio pubblico Terrain Tiles (Amazon Web Services, AWS Open Data). Queste richieste indicano solo l’area di mappa da scaricare (riquadri di alcuni chilometri), non il tracciato GPS, i tempi o altri dati di Salute, e non sono collegate a te; come per qualsiasi sito web, il fornitore vede l’indirizzo IP della connessione. Le quote scaricate restano in cache sul tuo iPhone.</p>
@@ -695,7 +695,7 @@ PRIVACY = {
     <p>These summaries are processed by:</p>
     <ul>
       <li><strong>our server</strong> (Google Firebase, European Union region), which forwards the request and counts the analyses used: it does not keep the summaries or the generated texts;</li>
-      <li><strong>OpenAI</strong>, the AI model provider, which generates the text on our behalf. It receives only the summary text, without subscription or device identifiers. Under its API terms, OpenAI does not use this data to train its models and may keep it for a limited time (up to 30 days) only to prevent abuse.</li>
+      <li><strong>OpenAI</strong>, the AI model provider, which generates the text on our behalf. It receives only the summary text, without subscription or device identifiers. Under its API terms, OpenAI does not use this data to train its models and may keep it for a limited time (up to 30 days) only to prevent abuse. OpenAI acts as a data processor. Data may be processed outside the European Economic Area, including in the United States, on the basis of standard contractual clauses or an adequacy decision.</li>
     </ul>
     <p>Generated readings stay saved on your iPhone and, if iCloud is on, in your private iCloud (see below).</p>
     <p><strong>Maps and terrain:</strong> to show your routes the app downloads map imagery from Apple Maps and, in 3D views, terrain elevation for the area from the public Terrain Tiles service (Amazon Web Services, AWS Open Data). These requests only specify the map area to download (tiles a few kilometres wide), not your GPS track, times or any other Health data, and they are not linked to you; as with any website, the provider sees the IP address of the connection. Downloaded elevation data stays cached on your iPhone.</p>
@@ -759,7 +759,7 @@ PRIVACY = {
     <p>Ces résumés sont traités par :</p>
     <ul>
       <li><strong>notre serveur</strong> (Google Firebase, région Union européenne), qui transmet la demande et compte les analyses utilisées : il ne conserve ni les résumés ni les textes générés ;</li>
-      <li><strong>OpenAI</strong>, fournisseur du modèle d’intelligence artificielle, qui génère le texte pour notre compte. Il reçoit uniquement le texte des résumés, sans identifiant d’abonnement ni d’appareil. Selon les conditions de son service API, OpenAI n’utilise pas ces données pour entraîner ses modèles et peut les conserver pendant une durée limitée (jusqu’à 30 jours) uniquement pour prévenir les abus.</li>
+      <li><strong>OpenAI</strong>, fournisseur du modèle d’intelligence artificielle, qui génère le texte pour notre compte. Il reçoit uniquement le texte des résumés, sans identifiant d’abonnement ni d’appareil. Selon les conditions de son service API, OpenAI n’utilise pas ces données pour entraîner ses modèles et peut les conserver pendant une durée limitée (jusqu’à 30 jours) uniquement pour prévenir les abus. OpenAI agit en tant que sous-traitant. Les données peuvent être traitées en dehors de l’Espace économique européen, y compris aux États-Unis, sur la base de clauses contractuelles types ou d’une décision d’adéquation.</li>
     </ul>
     <p>Les lectures générées restent enregistrées sur votre iPhone et, si iCloud est activé, dans votre iCloud privé (voir ci-dessous).</p>
     <p><strong>Cartes et relief :</strong> pour afficher vos parcours, l’app télécharge les images de carte depuis Plans d’Apple et, dans les vues 3D, l’altitude du terrain de la zone depuis le service public Terrain Tiles (Amazon Web Services, AWS Open Data). Ces requêtes indiquent uniquement la zone de carte à télécharger (des tuiles de quelques kilomètres), pas votre tracé GPS, vos horaires ni d’autres données Santé, et ne sont pas liées à vous ; comme pour tout site web, le fournisseur voit l’adresse IP de la connexion. Les altitudes téléchargées restent en cache sur votre iPhone.</p>
@@ -823,7 +823,7 @@ PRIVACY = {
     <p>Diese Zusammenfassungen werden verarbeitet von:</p>
     <ul>
       <li><strong>unserem Server</strong> (Google Firebase, Region Europäische Union), der die Anfrage weiterleitet und die genutzten Analysen zählt: Er speichert weder die Zusammenfassungen noch die erzeugten Texte;</li>
-      <li><strong>OpenAI</strong>, dem Anbieter des KI-Modells, der den Text in unserem Auftrag erzeugt. OpenAI erhält nur den Text der Zusammenfassungen, ohne Abo- oder Gerätekennungen. Laut den Bedingungen seines API-Dienstes nutzt OpenAI diese Daten nicht zum Training seiner Modelle und kann sie für begrenzte Zeit (bis zu 30 Tage) ausschließlich zur Missbrauchsverhinderung aufbewahren.</li>
+      <li><strong>OpenAI</strong>, dem Anbieter des KI-Modells, der den Text in unserem Auftrag erzeugt. OpenAI erhält nur den Text der Zusammenfassungen, ohne Abo- oder Gerätekennungen. Laut den Bedingungen seines API-Dienstes nutzt OpenAI diese Daten nicht zum Training seiner Modelle und kann sie für begrenzte Zeit (bis zu 30 Tage) ausschließlich zur Missbrauchsverhinderung aufbewahren. OpenAI handelt als Auftragsverarbeiter. Die Daten können außerhalb des Europäischen Wirtschaftsraums verarbeitet werden, auch in den USA, auf Grundlage von Standardvertragsklauseln oder eines Angemessenheitsbeschlusses.</li>
     </ul>
     <p>Erzeugte Auswertungen bleiben auf deinem iPhone gespeichert und, wenn iCloud aktiv ist, in deiner privaten iCloud (siehe unten).</p>
     <p><strong>Karten und Gelände:</strong> Um deine Routen anzuzeigen, lädt die App Kartenbilder von Apple Karten und in den 3D-Ansichten Geländehöhen der Umgebung vom öffentlichen Dienst Terrain Tiles (Amazon Web Services, AWS Open Data). Diese Anfragen enthalten nur den zu ladenden Kartenbereich (Kacheln von einigen Kilometern), nicht deine GPS-Route, Zeiten oder andere Health-Daten, und sind nicht mit dir verknüpft; wie bei jeder Website sieht der Anbieter die IP-Adresse der Verbindung. Die geladenen Höhendaten bleiben im Cache auf deinem iPhone.</p>
