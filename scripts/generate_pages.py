@@ -466,9 +466,10 @@ FEEDBACK = {
         "nav": "Dicci la tua",
         "h2": "Come vorresti LifeNex?",
         "sub": "Leggiamo ogni risposta e decidiamo da qui cosa fare dopo. Scegli tutto quello che vale per te.",
-        "choices": [("recordWorkout", "Registrare gli allenamenti nell’app"), ("gymSets", "Esercizi, serie e pesi in palestra"),
-                    ("noWatch", "Funzionare anche senza orologio"), ("dataHelp", "Spiegare meglio come collegare i dati"),
-                    ("moreSports", "Più sport"), ("moreFree", "Più funzioni gratis")],
+        "q1": 'Con cosa registri i tuoi allenamenti?',
+        "devices": [('appleWatch', 'Apple Watch'), ('otherWatch', 'Garmin o un altro orologio'), ('iPhoneOnly', 'Solo l’iPhone'), ('noRecord', 'Non li registro')],
+        "q2": 'Cosa vorresti trovare in LifeNex?',
+        "choices": [('recordWorkout', 'Registrare gli allenamenti nell’app'), ('gymSets', 'Schede per la palestra con esercizi, serie e pesi'), ('nutrition', 'Calorie e alimentazione'), ('sleep', 'Sonno più dettagliato'), ('moreFree', 'Più funzioni gratis')],
         "text": "Altro? Scrivilo qui",
         "note": "Niente email né dati personali: salviamo solo le risposte.",
         "send": "Invia", "thanks": "Grazie! L’abbiamo ricevuta.", "error": "Non è partita, riprova tra poco.",
@@ -477,9 +478,10 @@ FEEDBACK = {
         "nav": "Tell us",
         "h2": "How would you like LifeNex to be?",
         "sub": "We read every answer and decide what to build next from here. Pick everything that applies.",
-        "choices": [("recordWorkout", "Record workouts in the app"), ("gymSets", "Gym exercises, sets and weights"),
-                    ("noWatch", "Work without a watch too"), ("dataHelp", "Explain better how to connect my data"),
-                    ("moreSports", "More sports"), ("moreFree", "More free features")],
+        "q1": 'What do you record your workouts with?',
+        "devices": [('appleWatch', 'Apple Watch'), ('otherWatch', 'Garmin or another watch'), ('iPhoneOnly', 'Just my iPhone'), ('noRecord', 'I don’t record them')],
+        "q2": 'What would you like to find in LifeNex?',
+        "choices": [('recordWorkout', 'Record workouts in the app'), ('gymSets', 'Gym plans with exercises, sets and weights'), ('nutrition', 'Calories and nutrition'), ('sleep', 'More detailed sleep'), ('moreFree', 'More free features')],
         "text": "Something else? Write it here",
         "note": "No email or personal data: we only save your answers.",
         "send": "Send", "thanks": "Thank you! We got it.", "error": "It didn’t go through, try again shortly.",
@@ -488,9 +490,10 @@ FEEDBACK = {
         "nav": "Donnez votre avis",
         "h2": "Comment aimeriez-vous LifeNex ?",
         "sub": "Nous lisons chaque réponse et décidons ici de la suite. Choisissez tout ce qui vous concerne.",
-        "choices": [("recordWorkout", "Enregistrer les séances dans l’app"), ("gymSets", "Exercices, séries et charges en salle"),
-                    ("noWatch", "Fonctionner aussi sans montre"), ("dataHelp", "Mieux expliquer comment relier mes données"),
-                    ("moreSports", "Plus de sports"), ("moreFree", "Plus de fonctions gratuites")],
+        "q1": 'Avec quoi enregistrez-vous vos séances ?',
+        "devices": [('appleWatch', 'Apple Watch'), ('otherWatch', 'Garmin ou une autre montre'), ('iPhoneOnly', 'Seulement l’iPhone'), ('noRecord', 'Je ne les enregistre pas')],
+        "q2": 'Qu’aimeriez-vous trouver dans LifeNex ?',
+        "choices": [('recordWorkout', 'Enregistrer les séances dans l’app'), ('gymSets', 'Programmes de salle avec exercices, séries et charges'), ('nutrition', 'Calories et alimentation'), ('sleep', 'Sommeil plus détaillé'), ('moreFree', 'Plus de fonctions gratuites')],
         "text": "Autre chose ? Écrivez-le ici",
         "note": "Pas d’e-mail ni de données personnelles : nous gardons seulement les réponses.",
         "send": "Envoyer", "thanks": "Merci ! Nous l’avons reçue.", "error": "L’envoi a échoué, réessayez dans un instant.",
@@ -499,9 +502,10 @@ FEEDBACK = {
         "nav": "Sag uns deine Meinung",
         "h2": "Wie wünschst du dir LifeNex?",
         "sub": "Wir lesen jede Antwort und entscheiden danach, was als Nächstes kommt. Wähle alles, was auf dich zutrifft.",
-        "choices": [("recordWorkout", "Workouts in der App aufzeichnen"), ("gymSets", "Übungen, Sätze und Gewichte im Gym"),
-                    ("noWatch", "Auch ohne Uhr funktionieren"), ("dataHelp", "Besser erklären, wie ich meine Daten verbinde"),
-                    ("moreSports", "Mehr Sportarten"), ("moreFree", "Mehr Gratis-Funktionen")],
+        "q1": 'Womit zeichnest du deine Workouts auf?',
+        "devices": [('appleWatch', 'Apple Watch'), ('otherWatch', 'Garmin oder eine andere Uhr'), ('iPhoneOnly', 'Nur das iPhone'), ('noRecord', 'Ich zeichne sie nicht auf')],
+        "q2": 'Was möchtest du in LifeNex finden?',
+        "choices": [('recordWorkout', 'Workouts in der App aufzeichnen'), ('gymSets', 'Gym-Pläne mit Übungen, Sätzen und Gewichten'), ('nutrition', 'Kalorien und Ernährung'), ('sleep', 'Detaillierterer Schlaf'), ('moreFree', 'Mehr Gratis-Funktionen')],
         "text": "Etwas anderes? Schreib es hier",
         "note": "Keine E-Mail, keine persönlichen Daten: Wir speichern nur die Antworten.",
         "send": "Senden", "thanks": "Danke! Wir haben sie erhalten.", "error": "Das hat nicht geklappt, versuch es gleich noch einmal.",
@@ -511,6 +515,10 @@ FEEDBACK = {
 
 def feedback_html(lang: str) -> str:
     f = FEEDBACK[lang]
+    devices = "".join(
+        f'<label class="fb-chip"><input type="radio" name="device" value="{k}"><span>{label}</span></label>'
+        for k, label in f["devices"]
+    )
     chips = "".join(
         f'<label class="fb-chip"><input type="checkbox" name="choice" value="{k}"><span>{label}</span></label>'
         for k, label in f["choices"]
@@ -520,6 +528,9 @@ def feedback_html(lang: str) -> str:
       <h2>{f['h2']}</h2>
       <p class="sub">{f['sub']}</p>
       <form class="fb-form" id="fb-form" novalidate>
+        <p class="fb-q">1 · {f['q1']}</p>
+        <div class="fb-chips">{devices}</div>
+        <p class="fb-q">2 · {f['q2']}</p>
         <div class="fb-chips">{chips}</div>
         <textarea name="text" maxlength="500" rows="3" placeholder="{f['text']}"></textarea>
         <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
@@ -539,14 +550,16 @@ def feedback_html(lang: str) -> str:
       e.preventDefault();
       const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
       const text = form.text.value.trim();
-      if (!choices.length && !text) return;
+      const picked = form.querySelector('input[name="device"]:checked');
+      const device = picked ? picked.value : "";
+      if (!choices.length && !text && !device) return;
       if (text) choices.push("other");
       const button = form.querySelector("button");
       button.disabled = true;
       try {{
         const r = await fetch("{FEEDBACK_URL}", {{
           method: "POST", headers: {{ "Content-Type": "application/json" }},
-          body: JSON.stringify({{ choices, text, lang: "{lang}", website: form.website.value }}),
+          body: JSON.stringify({{ choices, device, text, lang: "{lang}", website: form.website.value }}),
         }});
         if (!r.ok) throw new Error(String(r.status));
         form.reset();
@@ -588,7 +601,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=28">
+  <link rel="stylesheet" href="{CSS[lang]}?v=29">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>

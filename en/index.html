@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
   <meta name="apple-itunes-app" content="app-id=6804388724">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LifeNex">
@@ -94,7 +94,10 @@
       <h2>How would you like LifeNex to be?</h2>
       <p class="sub">We read every answer and decide what to build next from here. Pick everything that applies.</p>
       <form class="fb-form" id="fb-form" novalidate>
-        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Record workouts in the app</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Gym exercises, sets and weights</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="noWatch"><span>Work without a watch too</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="dataHelp"><span>Explain better how to connect my data</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreSports"><span>More sports</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreFree"><span>More free features</span></label></div>
+        <p class="fb-q">1 · What do you record your workouts with?</p>
+        <div class="fb-chips"><label class="fb-chip"><input type="radio" name="device" value="appleWatch"><span>Apple Watch</span></label><label class="fb-chip"><input type="radio" name="device" value="otherWatch"><span>Garmin or another watch</span></label><label class="fb-chip"><input type="radio" name="device" value="iPhoneOnly"><span>Just my iPhone</span></label><label class="fb-chip"><input type="radio" name="device" value="noRecord"><span>I don’t record them</span></label></div>
+        <p class="fb-q">2 · What would you like to find in LifeNex?</p>
+        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Record workouts in the app</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Gym plans with exercises, sets and weights</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="nutrition"><span>Calories and nutrition</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="sleep"><span>More detailed sleep</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreFree"><span>More free features</span></label></div>
         <textarea name="text" maxlength="500" rows="3" placeholder="Something else? Write it here"></textarea>
         <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
         <div class="fb-row">
@@ -113,14 +116,16 @@
       e.preventDefault();
       const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
       const text = form.text.value.trim();
-      if (!choices.length && !text) return;
+      const picked = form.querySelector('input[name="device"]:checked');
+      const device = picked ? picked.value : "";
+      if (!choices.length && !text && !device) return;
       if (text) choices.push("other");
       const button = form.querySelector("button");
       button.disabled = true;
       try {
         const r = await fetch("https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback", {
           method: "POST", headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ choices, text, lang: "en", website: form.website.value }),
+          body: JSON.stringify({ choices, device, text, lang: "en", website: form.website.value }),
         });
         if (!r.ok) throw new Error(String(r.status));
         form.reset();

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=28">
+  <link rel="stylesheet" href="../styles.css?v=29">
   <meta name="apple-itunes-app" content="app-id=6804388724">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LifeNex">
@@ -94,7 +94,10 @@
       <h2>Comment aimeriez-vous LifeNex ?</h2>
       <p class="sub">Nous lisons chaque réponse et décidons ici de la suite. Choisissez tout ce qui vous concerne.</p>
       <form class="fb-form" id="fb-form" novalidate>
-        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Enregistrer les séances dans l’app</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Exercices, séries et charges en salle</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="noWatch"><span>Fonctionner aussi sans montre</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="dataHelp"><span>Mieux expliquer comment relier mes données</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreSports"><span>Plus de sports</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreFree"><span>Plus de fonctions gratuites</span></label></div>
+        <p class="fb-q">1 · Avec quoi enregistrez-vous vos séances ?</p>
+        <div class="fb-chips"><label class="fb-chip"><input type="radio" name="device" value="appleWatch"><span>Apple Watch</span></label><label class="fb-chip"><input type="radio" name="device" value="otherWatch"><span>Garmin ou une autre montre</span></label><label class="fb-chip"><input type="radio" name="device" value="iPhoneOnly"><span>Seulement l’iPhone</span></label><label class="fb-chip"><input type="radio" name="device" value="noRecord"><span>Je ne les enregistre pas</span></label></div>
+        <p class="fb-q">2 · Qu’aimeriez-vous trouver dans LifeNex ?</p>
+        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Enregistrer les séances dans l’app</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Programmes de salle avec exercices, séries et charges</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="nutrition"><span>Calories et alimentation</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="sleep"><span>Sommeil plus détaillé</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreFree"><span>Plus de fonctions gratuites</span></label></div>
         <textarea name="text" maxlength="500" rows="3" placeholder="Autre chose ? Écrivez-le ici"></textarea>
         <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
         <div class="fb-row">
@@ -113,14 +116,16 @@
       e.preventDefault();
       const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
       const text = form.text.value.trim();
-      if (!choices.length && !text) return;
+      const picked = form.querySelector('input[name="device"]:checked');
+      const device = picked ? picked.value : "";
+      if (!choices.length && !text && !device) return;
       if (text) choices.push("other");
       const button = form.querySelector("button");
       button.disabled = true;
       try {
         const r = await fetch("https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback", {
           method: "POST", headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ choices, text, lang: "fr", website: form.website.value }),
+          body: JSON.stringify({ choices, device, text, lang: "fr", website: form.website.value }),
         });
         if (!r.ok) throw new Error(String(r.status));
         form.reset();

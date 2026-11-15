@@ -668,3 +668,4 @@ body.lightbox-open {
 .fb-status { margin: 0; font-weight: 600; min-height: 1.2em; }
 .fb-status.ok { color: #1f9d55; }
 .fb-status.err { color: #c0392b; }
+.fb-q { margin: 0.4rem 0 -0.3rem; font-weight: 700; }
