@@ -331,7 +331,7 @@ def lang_switch(active: str, base: str) -> str:
 
 SITE_URL = "https://lifenex.it"
 LANGS = ("it", "en", "fr", "de")
-PAGE_SUFFIX = {"home": "", "privacy": "privacy/", "terms": "terms/"}
+PAGE_SUFFIX = {"home": "", "privacy": "privacy/", "terms": "terms/", "feedback": "feedback/"}
 
 
 APP_STORE_ID = "6804388724"
@@ -468,8 +468,8 @@ FEEDBACK = {
         "sub": "Leggiamo ogni risposta e decidiamo da qui cosa fare dopo. Scegli tutto quello che vale per te.",
         "q1": 'Con cosa registri i tuoi allenamenti?',
         "devices": [('appleWatch', 'Apple Watch'), ('otherWatch', 'Un altro orologio'), ('iPhoneOnly', 'Solo l’iPhone'), ('noRecord', 'Non li registro')],
-        "q2": 'Cosa vorresti trovare in LifeNex?',
-        "choices": [('recordWorkout', 'Registrare gli allenamenti nell’app'), ('gymSets', 'Schede per la palestra con esercizi, serie e pesi'), ('nutrition', 'Calorie e alimentazione'), ('sleep', 'Sonno più dettagliato'), ('moreFree', 'Più funzioni gratis')],
+        "q2": 'Cosa ti manca in LifeNex?',
+        "choices": [('recordWorkout', 'Registrare gli allenamenti nell’app'), ('gymSets', 'Schede per la palestra con esercizi, serie e pesi'), ('nutrition', 'Calorie e alimentazione'), ('sleep', 'Sonno più dettagliato'), ('sportAnalysis', 'Più analisi per il mio sport')],
         "text": "Altro? Scrivilo qui",
         "note": "Niente email né dati personali: salviamo solo le risposte.",
         "send": "Invia", "thanks": "Grazie! L’abbiamo ricevuta.", "error": "Non è partita, riprova tra poco.",
@@ -480,8 +480,8 @@ FEEDBACK = {
         "sub": "We read every answer and decide what to build next from here. Pick everything that applies.",
         "q1": 'What do you record your workouts with?',
         "devices": [('appleWatch', 'Apple Watch'), ('otherWatch', 'Another watch'), ('iPhoneOnly', 'Just my iPhone'), ('noRecord', 'I don’t record them')],
-        "q2": 'What would you like to find in LifeNex?',
-        "choices": [('recordWorkout', 'Record workouts in the app'), ('gymSets', 'Gym plans with exercises, sets and weights'), ('nutrition', 'Calories and nutrition'), ('sleep', 'More detailed sleep'), ('moreFree', 'More free features')],
+        "q2": 'What’s missing in LifeNex?',
+        "choices": [('recordWorkout', 'Record workouts in the app'), ('gymSets', 'Gym plans with exercises, sets and weights'), ('nutrition', 'Calories and nutrition'), ('sleep', 'More detailed sleep'), ('sportAnalysis', 'More analysis for my sport')],
         "text": "Something else? Write it here",
         "note": "No email or personal data: we only save your answers.",
         "send": "Send", "thanks": "Thank you! We got it.", "error": "It didn’t go through, try again shortly.",
@@ -492,8 +492,8 @@ FEEDBACK = {
         "sub": "Nous lisons chaque réponse et décidons ici de la suite. Choisissez tout ce qui vous concerne.",
         "q1": 'Avec quoi enregistrez-vous vos séances ?',
         "devices": [('appleWatch', 'Apple Watch'), ('otherWatch', 'Une autre montre'), ('iPhoneOnly', 'Seulement l’iPhone'), ('noRecord', 'Je ne les enregistre pas')],
-        "q2": 'Qu’aimeriez-vous trouver dans LifeNex ?',
-        "choices": [('recordWorkout', 'Enregistrer les séances dans l’app'), ('gymSets', 'Programmes de salle avec exercices, séries et charges'), ('nutrition', 'Calories et alimentation'), ('sleep', 'Sommeil plus détaillé'), ('moreFree', 'Plus de fonctions gratuites')],
+        "q2": 'Qu’est-ce qui vous manque dans LifeNex ?',
+        "choices": [('recordWorkout', 'Enregistrer les séances dans l’app'), ('gymSets', 'Programmes de salle avec exercices, séries et charges'), ('nutrition', 'Calories et alimentation'), ('sleep', 'Sommeil plus détaillé'), ('sportAnalysis', 'Plus d’analyses pour mon sport')],
         "text": "Autre chose ? Écrivez-le ici",
         "note": "Pas d’e-mail ni de données personnelles : nous gardons seulement les réponses.",
         "send": "Envoyer", "thanks": "Merci ! Nous l’avons reçue.", "error": "L’envoi a échoué, réessayez dans un instant.",
@@ -504,8 +504,8 @@ FEEDBACK = {
         "sub": "Wir lesen jede Antwort und entscheiden danach, was als Nächstes kommt. Wähle alles, was auf dich zutrifft.",
         "q1": 'Womit zeichnest du deine Workouts auf?',
         "devices": [('appleWatch', 'Apple Watch'), ('otherWatch', 'Eine andere Uhr'), ('iPhoneOnly', 'Nur das iPhone'), ('noRecord', 'Ich zeichne sie nicht auf')],
-        "q2": 'Was möchtest du in LifeNex finden?',
-        "choices": [('recordWorkout', 'Workouts in der App aufzeichnen'), ('gymSets', 'Gym-Pläne mit Übungen, Sätzen und Gewichten'), ('nutrition', 'Kalorien und Ernährung'), ('sleep', 'Detaillierterer Schlaf'), ('moreFree', 'Mehr Gratis-Funktionen')],
+        "q2": 'Was fehlt dir in LifeNex?',
+        "choices": [('recordWorkout', 'Workouts in der App aufzeichnen'), ('gymSets', 'Gym-Pläne mit Übungen, Sätzen und Gewichten'), ('nutrition', 'Kalorien und Ernährung'), ('sleep', 'Detaillierterer Schlaf'), ('sportAnalysis', 'Mehr Analysen für meinen Sport')],
         "text": "Etwas anderes? Schreib es hier",
         "note": "Keine E-Mail, keine persönlichen Daten: Wir speichern nur die Antworten.",
         "send": "Senden", "thanks": "Danke! Wir haben sie erhalten.", "error": "Das hat nicht geklappt, versuch es gleich noch einmal.",
@@ -619,7 +619,7 @@ def home_html(lang: str) -> str:
           <a href="{PRIVACY_HREF[lang]}">{c['nav_privacy']}</a>
           <a href="terms/">{c['nav_terms']}</a>
           <a href="mailto:support@lifenex.it">{c['nav_contact']}</a>
-          <a class="nav-feedback" href="#feedback">{FEEDBACK[lang]['nav']}</a>
+          <a class="nav-feedback" href="feedback/">{FEEDBACK[lang]['nav']}</a>
         </nav>
         {switch}
       </div>
@@ -648,7 +648,6 @@ def home_html(lang: str) -> str:
     </div>
   </section>
 
-{feedback_html(lang)}
   <section class="section video-section" id="video">
     <div class="section-inner">
       <h2>{c['video_h2']}</h2>
@@ -1295,6 +1294,72 @@ def terms_html(lang: str) -> str:
 """
 
 
+def feedback_page_html(lang: str) -> str:
+    """Il questionario in una pagina sua (feedback/), non più sulla home."""
+    c = COPY[lang]
+    p = PRIVACY[lang]
+    codes = ("it", "en", "fr", "de")
+    if lang == "it":
+        asset = "../assets/"
+        css = "../styles.css"
+        hrefs = {code: "./" if code == "it" else f"../{code}/feedback/" for code in codes}
+    else:
+        asset = "../../assets/"
+        css = "../../styles.css"
+        hrefs = {code: "./" if code == lang else ("../../feedback/" if code == "it" else f"../../{code}/feedback/") for code in codes}
+    active = ' class="active"'
+    links = "\n".join(
+        f'          <a href="{hrefs[code]}"{active if code == lang else ""}>{code.upper()}</a>'
+        for code in codes
+    )
+    return f"""<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{FEEDBACK[lang]['sub']}">
+  <title>{FEEDBACK[lang]['h2']} — LifeNex</title>
+  <link rel="icon" href="{asset}app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="{asset}apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{css}?v=29">
+{lang_head(lang, "feedback")}
+</head>
+<body class="page-shell">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../">
+        <img src="{asset}app-icon.png" alt="" width="36" height="36">
+        LifeNex
+      </a>
+      <div class="header-right">
+        <nav class="nav-links" aria-label="Main">
+          <a href="../">{c['nav_home']}</a>
+          <a href="../privacy/">{p['nav']}</a>
+          <a href="../terms/">{c['nav_terms']}</a>
+          <a href="mailto:support@lifenex.it">{p['contact']}</a>
+          <a class="nav-feedback active" href="./">{FEEDBACK[lang]['nav']}</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language">
+{links}
+        </div>
+      </div>
+    </div>
+  </header>
+{feedback_html(lang)}
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 LifeNex</span>
+      <a href="../">{p['back']}</a>
+    </div>
+  </footer>
+</body>
+</html>
+"""
+
+
 def main():
     for lang in ("it", "en", "fr", "de"):
         if lang == "it":
@@ -1317,6 +1382,11 @@ def main():
         tpath.parent.mkdir(parents=True, exist_ok=True)
         tpath.write_text(terms_html(lang))
         print("wrote", tpath)
+
+        fpath = (ROOT if lang == "it" else ROOT / lang) / "feedback" / "index.html"
+        fpath.parent.mkdir(parents=True, exist_ok=True)
+        fpath.write_text(feedback_page_html(lang))
+        print("wrote", fpath)
 
 
 def write_seo_files():

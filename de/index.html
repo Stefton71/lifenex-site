@@ -60,7 +60,7 @@
           <a href="privacy/">Datenschutz</a>
           <a href="terms/">Nutzung</a>
           <a href="mailto:support@lifenex.it">Kontakt</a>
-          <a class="nav-feedback" href="#feedback">Sag uns deine Meinung</a>
+          <a class="nav-feedback" href="feedback/">Sag uns deine Meinung</a>
         </nav>
         <div class="lang-switch" aria-label="Language"><a href="../">IT</a><a href="../en/">EN</a><a href="../fr/">FR</a><a href="../de/" class="active">DE</a></div>
       </div>
@@ -88,58 +88,6 @@
       </div>
     </div>
   </section>
-
-  <section class="section feedback" id="feedback">
-    <div class="section-inner">
-      <h2>Wie wünschst du dir LifeNex?</h2>
-      <p class="sub">Wir lesen jede Antwort und entscheiden danach, was als Nächstes kommt. Wähle alles, was auf dich zutrifft.</p>
-      <form class="fb-form" id="fb-form" novalidate>
-        <p class="fb-q">1 · Womit zeichnest du deine Workouts auf?</p>
-        <div class="fb-chips"><label class="fb-chip"><input type="radio" name="device" value="appleWatch"><span>Apple Watch</span></label><label class="fb-chip"><input type="radio" name="device" value="otherWatch"><span>Eine andere Uhr</span></label><label class="fb-chip"><input type="radio" name="device" value="iPhoneOnly"><span>Nur das iPhone</span></label><label class="fb-chip"><input type="radio" name="device" value="noRecord"><span>Ich zeichne sie nicht auf</span></label></div>
-        <p class="fb-q">2 · Was möchtest du in LifeNex finden?</p>
-        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Workouts in der App aufzeichnen</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Gym-Pläne mit Übungen, Sätzen und Gewichten</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="nutrition"><span>Kalorien und Ernährung</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="sleep"><span>Detaillierterer Schlaf</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreFree"><span>Mehr Gratis-Funktionen</span></label></div>
-        <textarea name="text" maxlength="500" rows="3" placeholder="Etwas anderes? Schreib es hier"></textarea>
-        <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
-        <div class="fb-row">
-          <button type="submit" class="btn btn-primary">Senden</button>
-          <span class="fb-note">Keine E-Mail, keine persönlichen Daten: Wir speichern nur die Antworten.</span>
-        </div>
-        <p class="fb-status" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-  <script>
-  (() => {
-    const form = document.getElementById("fb-form");
-    const status = form.querySelector(".fb-status");
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
-      const text = form.text.value.trim();
-      const picked = form.querySelector('input[name="device"]:checked');
-      const device = picked ? picked.value : "";
-      if (!choices.length && !text && !device) return;
-      if (text) choices.push("other");
-      const button = form.querySelector("button");
-      button.disabled = true;
-      try {
-        const r = await fetch("https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback", {
-          method: "POST", headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ choices, device, text, lang: "de", website: form.website.value }),
-        });
-        if (!r.ok) throw new Error(String(r.status));
-        form.reset();
-        status.textContent = "Danke! Wir haben sie erhalten.";
-        status.className = "fb-status ok";
-      } catch (err) {
-        status.textContent = "Das hat nicht geklappt, versuch es gleich noch einmal.";
-        status.className = "fb-status err";
-      } finally {
-        button.disabled = false;
-      }
-    });
-  })();
-  </script>
 
   <section class="section video-section" id="video">
     <div class="section-inner">

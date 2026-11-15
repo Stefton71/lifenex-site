@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wir lesen jede Antwort und entscheiden danach, was als Nächstes kommt. Wähle alles, was auf dich zutrifft.">
+  <title>Wie wünschst du dir LifeNex? — LifeNex</title>
+  <link rel="icon" href="../../assets/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css?v=29">
+  <link rel="canonical" href="https://lifenex.it/de/feedback/">
+  <link rel="alternate" hreflang="it" href="https://lifenex.it/feedback/">
+  <link rel="alternate" hreflang="en" href="https://lifenex.it/en/feedback/">
+  <link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/feedback/">
+  <link rel="alternate" hreflang="de" href="https://lifenex.it/de/feedback/">
+  <link rel="alternate" hreflang="x-default" href="https://lifenex.it/feedback/">
+  <script>
+  (function () {
+    var K = "lifenex-lang", L = ["it", "en", "fr", "de"];
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest(".lang-switch a");
+      if (a) { try { localStorage.setItem(K, a.textContent.trim().toLowerCase()); } catch (x) {} }
+    });
+    return;
+  })();
+  </script>
+</head>
+<body class="page-shell">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../">
+        <img src="../../assets/app-icon.png" alt="" width="36" height="36">
+        LifeNex
+      </a>
+      <div class="header-right">
+        <nav class="nav-links" aria-label="Main">
+          <a href="../">Home</a>
+          <a href="../privacy/">Datenschutz</a>
+          <a href="../terms/">Nutzung</a>
+          <a href="mailto:support@lifenex.it">Kontakt</a>
+          <a class="nav-feedback active" href="./">Sag uns deine Meinung</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language">
+          <a href="../../feedback/">IT</a>
+          <a href="../../en/feedback/">EN</a>
+          <a href="../../fr/feedback/">FR</a>
+          <a href="./" class="active">DE</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section feedback" id="feedback">
+    <div class="section-inner">
+      <h2>Wie wünschst du dir LifeNex?</h2>
+      <p class="sub">Wir lesen jede Antwort und entscheiden danach, was als Nächstes kommt. Wähle alles, was auf dich zutrifft.</p>
+      <form class="fb-form" id="fb-form" novalidate>
+        <p class="fb-q">1 · Womit zeichnest du deine Workouts auf?</p>
+        <div class="fb-chips"><label class="fb-chip"><input type="radio" name="device" value="appleWatch"><span>Apple Watch</span></label><label class="fb-chip"><input type="radio" name="device" value="otherWatch"><span>Eine andere Uhr</span></label><label class="fb-chip"><input type="radio" name="device" value="iPhoneOnly"><span>Nur das iPhone</span></label><label class="fb-chip"><input type="radio" name="device" value="noRecord"><span>Ich zeichne sie nicht auf</span></label></div>
+        <p class="fb-q">2 · Was fehlt dir in LifeNex?</p>
+        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Workouts in der App aufzeichnen</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Gym-Pläne mit Übungen, Sätzen und Gewichten</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="nutrition"><span>Kalorien und Ernährung</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="sleep"><span>Detaillierterer Schlaf</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="sportAnalysis"><span>Mehr Analysen für meinen Sport</span></label></div>
+        <textarea name="text" maxlength="500" rows="3" placeholder="Etwas anderes? Schreib es hier"></textarea>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
+        <div class="fb-row">
+          <button type="submit" class="btn btn-primary">Senden</button>
+          <span class="fb-note">Keine E-Mail, keine persönlichen Daten: Wir speichern nur die Antworten.</span>
+        </div>
+        <p class="fb-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <script>
+  (() => {
+    const form = document.getElementById("fb-form");
+    const status = form.querySelector(".fb-status");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
+      const text = form.text.value.trim();
+      const picked = form.querySelector('input[name="device"]:checked');
+      const device = picked ? picked.value : "";
+      if (!choices.length && !text && !device) return;
+      if (text) choices.push("other");
+      const button = form.querySelector("button");
+      button.disabled = true;
+      try {
+        const r = await fetch("https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ choices, device, text, lang: "de", website: form.website.value }),
+        });
+        if (!r.ok) throw new Error(String(r.status));
+        form.reset();
+        status.textContent = "Danke! Wir haben sie erhalten.";
+        status.className = "fb-status ok";
+      } catch (err) {
+        status.textContent = "Das hat nicht geklappt, versuch es gleich noch einmal.";
+        status.className = "fb-status err";
+      } finally {
+        button.disabled = false;
+      }
+    });
+  })();
+  </script>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 LifeNex</span>
+      <a href="../">Zur Startseite</a>
+    </div>
+  </footer>
+</body>
+</html>

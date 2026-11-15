@@ -60,7 +60,7 @@
           <a href="privacy/">Privacy</a>
           <a href="terms/">Terms</a>
           <a href="mailto:support@lifenex.it">Contact</a>
-          <a class="nav-feedback" href="#feedback">Tell us</a>
+          <a class="nav-feedback" href="feedback/">Tell us</a>
         </nav>
         <div class="lang-switch" aria-label="Language"><a href="../">IT</a><a href="../en/" class="active">EN</a><a href="../fr/">FR</a><a href="../de/">DE</a></div>
       </div>
@@ -88,58 +88,6 @@
       </div>
     </div>
   </section>
-
-  <section class="section feedback" id="feedback">
-    <div class="section-inner">
-      <h2>How would you like LifeNex to be?</h2>
-      <p class="sub">We read every answer and decide what to build next from here. Pick everything that applies.</p>
-      <form class="fb-form" id="fb-form" novalidate>
-        <p class="fb-q">1 · What do you record your workouts with?</p>
-        <div class="fb-chips"><label class="fb-chip"><input type="radio" name="device" value="appleWatch"><span>Apple Watch</span></label><label class="fb-chip"><input type="radio" name="device" value="otherWatch"><span>Another watch</span></label><label class="fb-chip"><input type="radio" name="device" value="iPhoneOnly"><span>Just my iPhone</span></label><label class="fb-chip"><input type="radio" name="device" value="noRecord"><span>I don’t record them</span></label></div>
-        <p class="fb-q">2 · What would you like to find in LifeNex?</p>
-        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Record workouts in the app</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Gym plans with exercises, sets and weights</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="nutrition"><span>Calories and nutrition</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="sleep"><span>More detailed sleep</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreFree"><span>More free features</span></label></div>
-        <textarea name="text" maxlength="500" rows="3" placeholder="Something else? Write it here"></textarea>
-        <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
-        <div class="fb-row">
-          <button type="submit" class="btn btn-primary">Send</button>
-          <span class="fb-note">No email or personal data: we only save your answers.</span>
-        </div>
-        <p class="fb-status" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </section>
-  <script>
-  (() => {
-    const form = document.getElementById("fb-form");
-    const status = form.querySelector(".fb-status");
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
-      const text = form.text.value.trim();
-      const picked = form.querySelector('input[name="device"]:checked');
-      const device = picked ? picked.value : "";
-      if (!choices.length && !text && !device) return;
-      if (text) choices.push("other");
-      const button = form.querySelector("button");
-      button.disabled = true;
-      try {
-        const r = await fetch("https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback", {
-          method: "POST", headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ choices, device, text, lang: "en", website: form.website.value }),
-        });
-        if (!r.ok) throw new Error(String(r.status));
-        form.reset();
-        status.textContent = "Thank you! We got it.";
-        status.className = "fb-status ok";
-      } catch (err) {
-        status.textContent = "It didn’t go through, try again shortly.";
-        status.className = "fb-status err";
-      } finally {
-        button.disabled = false;
-      }
-    });
-  })();
-  </script>
 
   <section class="section video-section" id="video">
     <div class="section-inner">

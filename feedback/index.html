@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leggiamo ogni risposta e decidiamo da qui cosa fare dopo. Scegli tutto quello che vale per te.">
+  <title>Come vorresti LifeNex? — LifeNex</title>
+  <link rel="icon" href="../assets/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css?v=29">
+  <link rel="canonical" href="https://lifenex.it/feedback/">
+  <link rel="alternate" hreflang="it" href="https://lifenex.it/feedback/">
+  <link rel="alternate" hreflang="en" href="https://lifenex.it/en/feedback/">
+  <link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/feedback/">
+  <link rel="alternate" hreflang="de" href="https://lifenex.it/de/feedback/">
+  <link rel="alternate" hreflang="x-default" href="https://lifenex.it/feedback/">
+  <script>
+  (function () {
+    var K = "lifenex-lang", L = ["it", "en", "fr", "de"];
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest(".lang-switch a");
+      if (a) { try { localStorage.setItem(K, a.textContent.trim().toLowerCase()); } catch (x) {} }
+    });
+    var T = {en:"../en/feedback/",fr:"../fr/feedback/",de:"../de/feedback/"};
+    if (/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)) return;
+    var p = null;
+    try { p = localStorage.getItem(K); } catch (x) {}
+    if (L.indexOf(p) < 0) {
+      p = "en";
+      var ls = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+      for (var i = 0; i < ls.length; i++) {
+        var c = String(ls[i] || "").slice(0, 2).toLowerCase();
+        if (L.indexOf(c) >= 0) { p = c; break; }
+      }
+    }
+    if (T[p]) location.replace(T[p] + location.search + location.hash);
+  })();
+  </script>
+</head>
+<body class="page-shell">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../">
+        <img src="../assets/app-icon.png" alt="" width="36" height="36">
+        LifeNex
+      </a>
+      <div class="header-right">
+        <nav class="nav-links" aria-label="Main">
+          <a href="../">Home</a>
+          <a href="../privacy/">Privacy</a>
+          <a href="../terms/">Termini</a>
+          <a href="mailto:support@lifenex.it">Contatti</a>
+          <a class="nav-feedback active" href="./">Dicci la tua</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language">
+          <a href="./" class="active">IT</a>
+          <a href="../en/feedback/">EN</a>
+          <a href="../fr/feedback/">FR</a>
+          <a href="../de/feedback/">DE</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section feedback" id="feedback">
+    <div class="section-inner">
+      <h2>Come vorresti LifeNex?</h2>
+      <p class="sub">Leggiamo ogni risposta e decidiamo da qui cosa fare dopo. Scegli tutto quello che vale per te.</p>
+      <form class="fb-form" id="fb-form" novalidate>
+        <p class="fb-q">1 · Con cosa registri i tuoi allenamenti?</p>
+        <div class="fb-chips"><label class="fb-chip"><input type="radio" name="device" value="appleWatch"><span>Apple Watch</span></label><label class="fb-chip"><input type="radio" name="device" value="otherWatch"><span>Un altro orologio</span></label><label class="fb-chip"><input type="radio" name="device" value="iPhoneOnly"><span>Solo l’iPhone</span></label><label class="fb-chip"><input type="radio" name="device" value="noRecord"><span>Non li registro</span></label></div>
+        <p class="fb-q">2 · Cosa ti manca in LifeNex?</p>
+        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Registrare gli allenamenti nell’app</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Schede per la palestra con esercizi, serie e pesi</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="nutrition"><span>Calorie e alimentazione</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="sleep"><span>Sonno più dettagliato</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="sportAnalysis"><span>Più analisi per il mio sport</span></label></div>
+        <textarea name="text" maxlength="500" rows="3" placeholder="Altro? Scrivilo qui"></textarea>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
+        <div class="fb-row">
+          <button type="submit" class="btn btn-primary">Invia</button>
+          <span class="fb-note">Niente email né dati personali: salviamo solo le risposte.</span>
+        </div>
+        <p class="fb-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <script>
+  (() => {
+    const form = document.getElementById("fb-form");
+    const status = form.querySelector(".fb-status");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
+      const text = form.text.value.trim();
+      const picked = form.querySelector('input[name="device"]:checked');
+      const device = picked ? picked.value : "";
+      if (!choices.length && !text && !device) return;
+      if (text) choices.push("other");
+      const button = form.querySelector("button");
+      button.disabled = true;
+      try {
+        const r = await fetch("https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ choices, device, text, lang: "it", website: form.website.value }),
+        });
+        if (!r.ok) throw new Error(String(r.status));
+        form.reset();
+        status.textContent = "Grazie! L’abbiamo ricevuta.";
+        status.className = "fb-status ok";
+      } catch (err) {
+        status.textContent = "Non è partita, riprova tra poco.";
+        status.className = "fb-status err";
+      } finally {
+        button.disabled = false;
+      }
+    });
+  })();
+  </script>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 LifeNex</span>
+      <a href="../">Torna alla home</a>
+    </div>
+  </footer>
+</body>
+</html>
