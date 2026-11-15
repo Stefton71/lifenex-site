@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=27">
+  <link rel="stylesheet" href="../styles.css?v=28">
   <meta name="apple-itunes-app" content="app-id=6804388724">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LifeNex">
@@ -60,6 +60,7 @@
           <a href="privacy/">Datenschutz</a>
           <a href="terms/">Nutzung</a>
           <a href="mailto:support@lifenex.it">Kontakt</a>
+          <a class="nav-feedback" href="#feedback">Sag uns deine Meinung</a>
         </nav>
         <div class="lang-switch" aria-label="Language"><a href="../">IT</a><a href="../en/">EN</a><a href="../fr/">FR</a><a href="../de/" class="active">DE</a></div>
       </div>
@@ -87,6 +88,53 @@
       </div>
     </div>
   </section>
+
+  <section class="section feedback" id="feedback">
+    <div class="section-inner">
+      <h2>Wie wünschst du dir LifeNex?</h2>
+      <p class="sub">Wir lesen jede Antwort und entscheiden danach, was als Nächstes kommt. Wähle alles, was auf dich zutrifft.</p>
+      <form class="fb-form" id="fb-form" novalidate>
+        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Workouts in der App aufzeichnen</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Übungen, Sätze und Gewichte im Gym</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="noWatch"><span>Auch ohne Uhr funktionieren</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="dataHelp"><span>Besser erklären, wie ich meine Daten verbinde</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreSports"><span>Mehr Sportarten</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreFree"><span>Mehr Gratis-Funktionen</span></label></div>
+        <textarea name="text" maxlength="500" rows="3" placeholder="Etwas anderes? Schreib es hier"></textarea>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
+        <div class="fb-row">
+          <button type="submit" class="btn btn-primary">Senden</button>
+          <span class="fb-note">Keine E-Mail, keine persönlichen Daten: Wir speichern nur die Antworten.</span>
+        </div>
+        <p class="fb-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <script>
+  (() => {
+    const form = document.getElementById("fb-form");
+    const status = form.querySelector(".fb-status");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
+      const text = form.text.value.trim();
+      if (!choices.length && !text) return;
+      if (text) choices.push("other");
+      const button = form.querySelector("button");
+      button.disabled = true;
+      try {
+        const r = await fetch("https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ choices, text, lang: "de", website: form.website.value }),
+        });
+        if (!r.ok) throw new Error(String(r.status));
+        form.reset();
+        status.textContent = "Danke! Wir haben sie erhalten.";
+        status.className = "fb-status ok";
+      } catch (err) {
+        status.textContent = "Das hat nicht geklappt, versuch es gleich noch einmal.";
+        status.className = "fb-status err";
+      } finally {
+        button.disabled = false;
+      }
+    });
+  })();
+  </script>
 
   <section class="section video-section" id="video">
     <div class="section-inner">

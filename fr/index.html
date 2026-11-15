@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=27">
+  <link rel="stylesheet" href="../styles.css?v=28">
   <meta name="apple-itunes-app" content="app-id=6804388724">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LifeNex">
@@ -60,6 +60,7 @@
           <a href="privacy/">Confidentialité</a>
           <a href="terms/">Conditions</a>
           <a href="mailto:support@lifenex.it">Contact</a>
+          <a class="nav-feedback" href="#feedback">Donnez votre avis</a>
         </nav>
         <div class="lang-switch" aria-label="Language"><a href="../">IT</a><a href="../en/">EN</a><a href="../fr/" class="active">FR</a><a href="../de/">DE</a></div>
       </div>
@@ -87,6 +88,53 @@
       </div>
     </div>
   </section>
+
+  <section class="section feedback" id="feedback">
+    <div class="section-inner">
+      <h2>Comment aimeriez-vous LifeNex ?</h2>
+      <p class="sub">Nous lisons chaque réponse et décidons ici de la suite. Choisissez tout ce qui vous concerne.</p>
+      <form class="fb-form" id="fb-form" novalidate>
+        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Enregistrer les séances dans l’app</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Exercices, séries et charges en salle</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="noWatch"><span>Fonctionner aussi sans montre</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="dataHelp"><span>Mieux expliquer comment relier mes données</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreSports"><span>Plus de sports</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreFree"><span>Plus de fonctions gratuites</span></label></div>
+        <textarea name="text" maxlength="500" rows="3" placeholder="Autre chose ? Écrivez-le ici"></textarea>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
+        <div class="fb-row">
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+          <span class="fb-note">Pas d’e-mail ni de données personnelles : nous gardons seulement les réponses.</span>
+        </div>
+        <p class="fb-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <script>
+  (() => {
+    const form = document.getElementById("fb-form");
+    const status = form.querySelector(".fb-status");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
+      const text = form.text.value.trim();
+      if (!choices.length && !text) return;
+      if (text) choices.push("other");
+      const button = form.querySelector("button");
+      button.disabled = true;
+      try {
+        const r = await fetch("https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ choices, text, lang: "fr", website: form.website.value }),
+        });
+        if (!r.ok) throw new Error(String(r.status));
+        form.reset();
+        status.textContent = "Merci ! Nous l’avons reçue.";
+        status.className = "fb-status ok";
+      } catch (err) {
+        status.textContent = "L’envoi a échoué, réessayez dans un instant.";
+        status.className = "fb-status err";
+      } finally {
+        button.disabled = false;
+      }
+    });
+  })();
+  </script>
 
   <section class="section video-section" id="video">
     <div class="section-inner">

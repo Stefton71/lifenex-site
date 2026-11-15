@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=27">
+  <link rel="stylesheet" href="../styles.css?v=28">
   <meta name="apple-itunes-app" content="app-id=6804388724">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LifeNex">
@@ -60,6 +60,7 @@
           <a href="privacy/">Privacy</a>
           <a href="terms/">Terms</a>
           <a href="mailto:support@lifenex.it">Contact</a>
+          <a class="nav-feedback" href="#feedback">Tell us</a>
         </nav>
         <div class="lang-switch" aria-label="Language"><a href="../">IT</a><a href="../en/" class="active">EN</a><a href="../fr/">FR</a><a href="../de/">DE</a></div>
       </div>
@@ -87,6 +88,53 @@
       </div>
     </div>
   </section>
+
+  <section class="section feedback" id="feedback">
+    <div class="section-inner">
+      <h2>How would you like LifeNex to be?</h2>
+      <p class="sub">We read every answer and decide what to build next from here. Pick everything that applies.</p>
+      <form class="fb-form" id="fb-form" novalidate>
+        <div class="fb-chips"><label class="fb-chip"><input type="checkbox" name="choice" value="recordWorkout"><span>Record workouts in the app</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="gymSets"><span>Gym exercises, sets and weights</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="noWatch"><span>Work without a watch too</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="dataHelp"><span>Explain better how to connect my data</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreSports"><span>More sports</span></label><label class="fb-chip"><input type="checkbox" name="choice" value="moreFree"><span>More free features</span></label></div>
+        <textarea name="text" maxlength="500" rows="3" placeholder="Something else? Write it here"></textarea>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
+        <div class="fb-row">
+          <button type="submit" class="btn btn-primary">Send</button>
+          <span class="fb-note">No email or personal data: we only save your answers.</span>
+        </div>
+        <p class="fb-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <script>
+  (() => {
+    const form = document.getElementById("fb-form");
+    const status = form.querySelector(".fb-status");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
+      const text = form.text.value.trim();
+      if (!choices.length && !text) return;
+      if (text) choices.push("other");
+      const button = form.querySelector("button");
+      button.disabled = true;
+      try {
+        const r = await fetch("https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ choices, text, lang: "en", website: form.website.value }),
+        });
+        if (!r.ok) throw new Error(String(r.status));
+        form.reset();
+        status.textContent = "Thank you! We got it.";
+        status.className = "fb-status ok";
+      } catch (err) {
+        status.textContent = "It didn’t go through, try again shortly.";
+        status.className = "fb-status err";
+      } finally {
+        button.disabled = false;
+      }
+    });
+  })();
+  </script>
 
   <section class="section video-section" id="video">
     <div class="section-inner">

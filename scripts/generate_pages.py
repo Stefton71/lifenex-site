@@ -458,6 +458,112 @@ def features_html(lang: str) -> str:
     return "\n".join(blocks)
 
 
+FEEDBACK_URL = "https://europe-west1-lifenex-4be32.cloudfunctions.net/siteFeedback"
+
+# «Dicci come vorresti LifeNex»: in vista sotto la parte iniziale e nel menu. Nessun dato personale.
+FEEDBACK = {
+    "it": {
+        "nav": "Dicci la tua",
+        "h2": "Come vorresti LifeNex?",
+        "sub": "Leggiamo ogni risposta e decidiamo da qui cosa fare dopo. Scegli tutto quello che vale per te.",
+        "choices": [("recordWorkout", "Registrare gli allenamenti nell’app"), ("gymSets", "Esercizi, serie e pesi in palestra"),
+                    ("noWatch", "Funzionare anche senza orologio"), ("dataHelp", "Spiegare meglio come collegare i dati"),
+                    ("moreSports", "Più sport"), ("moreFree", "Più funzioni gratis")],
+        "text": "Altro? Scrivilo qui",
+        "note": "Niente email né dati personali: salviamo solo le risposte.",
+        "send": "Invia", "thanks": "Grazie! L’abbiamo ricevuta.", "error": "Non è partita, riprova tra poco.",
+    },
+    "en": {
+        "nav": "Tell us",
+        "h2": "How would you like LifeNex to be?",
+        "sub": "We read every answer and decide what to build next from here. Pick everything that applies.",
+        "choices": [("recordWorkout", "Record workouts in the app"), ("gymSets", "Gym exercises, sets and weights"),
+                    ("noWatch", "Work without a watch too"), ("dataHelp", "Explain better how to connect my data"),
+                    ("moreSports", "More sports"), ("moreFree", "More free features")],
+        "text": "Something else? Write it here",
+        "note": "No email or personal data: we only save your answers.",
+        "send": "Send", "thanks": "Thank you! We got it.", "error": "It didn’t go through, try again shortly.",
+    },
+    "fr": {
+        "nav": "Donnez votre avis",
+        "h2": "Comment aimeriez-vous LifeNex ?",
+        "sub": "Nous lisons chaque réponse et décidons ici de la suite. Choisissez tout ce qui vous concerne.",
+        "choices": [("recordWorkout", "Enregistrer les séances dans l’app"), ("gymSets", "Exercices, séries et charges en salle"),
+                    ("noWatch", "Fonctionner aussi sans montre"), ("dataHelp", "Mieux expliquer comment relier mes données"),
+                    ("moreSports", "Plus de sports"), ("moreFree", "Plus de fonctions gratuites")],
+        "text": "Autre chose ? Écrivez-le ici",
+        "note": "Pas d’e-mail ni de données personnelles : nous gardons seulement les réponses.",
+        "send": "Envoyer", "thanks": "Merci ! Nous l’avons reçue.", "error": "L’envoi a échoué, réessayez dans un instant.",
+    },
+    "de": {
+        "nav": "Sag uns deine Meinung",
+        "h2": "Wie wünschst du dir LifeNex?",
+        "sub": "Wir lesen jede Antwort und entscheiden danach, was als Nächstes kommt. Wähle alles, was auf dich zutrifft.",
+        "choices": [("recordWorkout", "Workouts in der App aufzeichnen"), ("gymSets", "Übungen, Sätze und Gewichte im Gym"),
+                    ("noWatch", "Auch ohne Uhr funktionieren"), ("dataHelp", "Besser erklären, wie ich meine Daten verbinde"),
+                    ("moreSports", "Mehr Sportarten"), ("moreFree", "Mehr Gratis-Funktionen")],
+        "text": "Etwas anderes? Schreib es hier",
+        "note": "Keine E-Mail, keine persönlichen Daten: Wir speichern nur die Antworten.",
+        "send": "Senden", "thanks": "Danke! Wir haben sie erhalten.", "error": "Das hat nicht geklappt, versuch es gleich noch einmal.",
+    },
+}
+
+
+def feedback_html(lang: str) -> str:
+    f = FEEDBACK[lang]
+    chips = "".join(
+        f'<label class="fb-chip"><input type="checkbox" name="choice" value="{k}"><span>{label}</span></label>'
+        for k, label in f["choices"]
+    )
+    return f"""  <section class="section feedback" id="feedback">
+    <div class="section-inner">
+      <h2>{f['h2']}</h2>
+      <p class="sub">{f['sub']}</p>
+      <form class="fb-form" id="fb-form" novalidate>
+        <div class="fb-chips">{chips}</div>
+        <textarea name="text" maxlength="500" rows="3" placeholder="{f['text']}"></textarea>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" class="fb-hp" aria-hidden="true">
+        <div class="fb-row">
+          <button type="submit" class="btn btn-primary">{f['send']}</button>
+          <span class="fb-note">{f['note']}</span>
+        </div>
+        <p class="fb-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+  <script>
+  (() => {{
+    const form = document.getElementById("fb-form");
+    const status = form.querySelector(".fb-status");
+    form.addEventListener("submit", async (e) => {{
+      e.preventDefault();
+      const choices = [...form.querySelectorAll('input[name="choice"]:checked')].map((i) => i.value);
+      const text = form.text.value.trim();
+      if (!choices.length && !text) return;
+      if (text) choices.push("other");
+      const button = form.querySelector("button");
+      button.disabled = true;
+      try {{
+        const r = await fetch("{FEEDBACK_URL}", {{
+          method: "POST", headers: {{ "Content-Type": "application/json" }},
+          body: JSON.stringify({{ choices, text, lang: "{lang}", website: form.website.value }}),
+        }});
+        if (!r.ok) throw new Error(String(r.status));
+        form.reset();
+        status.textContent = "{f['thanks']}";
+        status.className = "fb-status ok";
+      }} catch (err) {{
+        status.textContent = "{f['error']}";
+        status.className = "fb-status err";
+      }} finally {{
+        button.disabled = false;
+      }}
+    }});
+  }})();
+  </script>
+"""
+
+
 def home_html(lang: str) -> str:
     c = COPY[lang]
     base = PREFIX[lang] if lang != "it" else ""
@@ -482,7 +588,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=27">
+  <link rel="stylesheet" href="{CSS[lang]}?v=28">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -500,6 +606,7 @@ def home_html(lang: str) -> str:
           <a href="{PRIVACY_HREF[lang]}">{c['nav_privacy']}</a>
           <a href="terms/">{c['nav_terms']}</a>
           <a href="mailto:support@lifenex.it">{c['nav_contact']}</a>
+          <a class="nav-feedback" href="#feedback">{FEEDBACK[lang]['nav']}</a>
         </nav>
         {switch}
       </div>
@@ -528,6 +635,7 @@ def home_html(lang: str) -> str:
     </div>
   </section>
 
+{feedback_html(lang)}
   <section class="section video-section" id="video">
     <div class="section-inner">
       <h2>{c['video_h2']}</h2>
@@ -640,6 +748,7 @@ PRIVACY = {
     <ul><li>non vendiamo i tuoi dati</li><li>non usiamo i dati Salute per pubblicità o tracking tra app</li><li>non condividiamo dati sanitari con terze parti a scopo commerciale</li></ul>
     <h2>Conservazione e cancellazione</h2>
     <p>I dati restano sul dispositivo finché l’app è installata. Per cancellarli: elimina LifeNex e, in Impostazioni → Salute → Accesso app e dati, revoca l’accesso. La copia in iCloud si elimina da Impostazioni → [il tuo nome] → iCloud → Gestisci spazio → LifeNex.</p>
+    <p><strong>Modulo «Come vorresti LifeNex?» su questo sito:</strong> salviamo solo le risposte scelte, l’eventuale testo e la lingua della pagina, con la data. Niente email né indirizzo IP. Servono a decidere cosa sviluppare.</p>
     <p>Sul nostro server non ci sono <strong>dati di salute</strong>, a parte il numero totale di allenamenti importati da Salute, se da Salute arrivano misure (solo sì o no) e da quanti giorni hai dati e allenamenti in Salute (solo il numero di giorni), senza sport né valori. Restano solo:</p>
     <ul>
       <li>i contatori delle analisi AI, legati all’abbonamento Apple;</li>
@@ -705,6 +814,7 @@ PRIVACY = {
     <ul><li>we do not sell your data</li><li>we do not use Health data for advertising or cross-app tracking</li><li>we do not share health data with third parties for commercial purposes</li></ul>
     <h2>Retention and deletion</h2>
     <p>Data stays on the device while the app is installed. To delete it, remove LifeNex and revoke access in Settings → Health → Data Access &amp; Devices. The iCloud copy can be deleted in Settings → [your name] → iCloud → Manage Account Storage → LifeNex.</p>
+    <p><strong>«How would you like LifeNex to be?» form on this site:</strong> we only save the answers you pick, any text you write and the page language, with the date. No email or IP address. We use them to decide what to build.</p>
     <p>Our server holds no <strong>health data</strong>, apart from the total number of workouts imported from Health, whether any measurements arrive from Health (yes or no only) and for how many days you have had data and workouts in Health (the number of days only), with no sports or values. It keeps only:</p>
     <ul>
       <li>AI analysis counters, linked to the Apple subscription;</li>
@@ -770,6 +880,7 @@ PRIVACY = {
     <ul><li>nous ne vendons pas vos données</li><li>nous n’utilisons pas les données Santé pour la publicité ou le suivi entre apps</li><li>nous ne partageons pas de données de santé avec des tiers à des fins commerciales</li></ul>
     <h2>Conservation et suppression</h2>
     <p>Les données restent sur l’appareil tant que l’app est installée. Pour les supprimer, supprimez LifeNex et révoquez l’accès dans Réglages → Santé → Accès aux données et appareils. La copie iCloud se supprime dans Réglages → [votre nom] → iCloud → Gérer le stockage du compte → LifeNex.</p>
+    <p><strong>Formulaire « Comment aimeriez-vous LifeNex ? » sur ce site :</strong> nous enregistrons seulement les réponses choisies, l’éventuel texte et la langue de la page, avec la date. Pas d’e-mail ni d’adresse IP. Ils servent à décider quoi développer.</p>
     <p>Notre serveur ne contient aucune <strong>donnée de santé</strong>, à part le nombre total d’entraînements importés depuis Santé, le fait que des mesures arrivent de Santé (oui ou non seulement) et depuis combien de jours tu as des données et des séances dans Santé (le nombre de jours seulement), sans sports ni valeurs. Il conserve uniquement :</p>
     <ul>
       <li>les compteurs d’analyses IA, liés à l’abonnement Apple ;</li>
@@ -835,6 +946,7 @@ PRIVACY = {
     <ul><li>wir verkaufen deine Daten nicht</li><li>wir nutzen Health-Daten nicht für Werbung oder App-übergreifendes Tracking</li><li>wir geben Gesundheitsdaten nicht zu kommerziellen Zwecken an Dritte weiter</li></ul>
     <h2>Speicherung und Löschung</h2>
     <p>Die Daten bleiben auf dem Gerät, solange die App installiert ist. Zum Löschen entferne LifeNex und widerrufe den Zugriff unter Einstellungen → Health → Datenzugriff &amp; Geräte. Die iCloud-Kopie löschst du unter Einstellungen → [dein Name] → iCloud → Accountspeicher verwalten → LifeNex.</p>
+    <p><strong>Formular „Wie wünschst du dir LifeNex?“ auf dieser Website:</strong> Wir speichern nur die gewählten Antworten, einen eventuellen Text und die Sprache der Seite, mit Datum. Keine E-Mail, keine IP-Adresse. Sie helfen uns zu entscheiden, was wir entwickeln.</p>
     <p>Auf unserem Server liegen keine <strong>Gesundheitsdaten</strong>, abgesehen von der Gesamtzahl der aus Health importierten Trainings, davon, ob Messwerte aus Health ankommen (nur ja oder nein), und seit wie vielen Tagen du Daten und Trainings in Health hast (nur die Anzahl der Tage), ohne Sportart oder Werte. Gespeichert werden nur:</p>
     <ul>
       <li>die Zähler der KI-Analysen, verknüpft mit dem Apple-Abo;</li>
