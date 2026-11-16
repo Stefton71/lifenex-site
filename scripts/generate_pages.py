@@ -50,7 +50,7 @@ SHOTS = {
 COPY = {
     "it": {
         "lang": "it",
-        "title": "LifeNex — Energia e recupero per il tuo sport",
+        "title": "LifeNex: Allenamento e Salute — Energia per il tuo sport",
         "desc": "Scopri quanta energia hai, quanto recuperi e come si riprendono i muscoli ogni giorno. LifeNex legge i tuoi allenamenti da Apple Salute.",
         "nav_home": "Home",
         "nav_app": "App",
@@ -99,7 +99,7 @@ COPY = {
     },
     "en": {
         "lang": "en",
-        "title": "LifeNex — Energy and recovery for your sport",
+        "title": "LifeNex: Training & Health — Energy for your sport",
         "desc": "Find out how much energy you have, how well you recover and how your muscles are doing. LifeNex reads your workouts from Apple Health.",
         "nav_home": "Home",
         "nav_app": "App",
@@ -148,7 +148,7 @@ COPY = {
     },
     "fr": {
         "lang": "fr",
-        "title": "LifeNex — Énergie et récupération pour votre sport",
+        "title": "LifeNex : Entraînement & Santé — Énergie pour votre sport",
         "desc": "Découvrez votre énergie du moment, votre récupération et l’état de vos muscles chaque jour. LifeNex lit vos entraînements depuis Santé.",
         "nav_home": "Accueil",
         "nav_app": "App",
@@ -197,7 +197,7 @@ COPY = {
     },
     "de": {
         "lang": "de",
-        "title": "LifeNex — Energie und Erholung für deinen Sport",
+        "title": "LifeNex: Training & Gesundheit — Energie für deinen Sport",
         "desc": "Entdecke deine Energie, deine Erholung und den Zustand deiner Muskeln jeden Tag. LifeNex liest deine Trainings aus Apple Health.",
         "nav_home": "Home",
         "nav_app": "App",
