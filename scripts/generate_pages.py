@@ -761,12 +761,12 @@ PRIVACY = {
     <h2>Conservazione e cancellazione</h2>
     <p>I dati restano sul dispositivo finché l’app è installata. Per cancellarli: elimina LifeNex e, in Impostazioni → Salute → Accesso app e dati, revoca l’accesso. La copia in iCloud si elimina da Impostazioni → [il tuo nome] → iCloud → Gestisci spazio → LifeNex.</p>
     <p><strong>Modulo «Come vorresti LifeNex?» su questo sito:</strong> salviamo solo le risposte scelte, l’eventuale testo e la lingua della pagina, con la data. Niente email né indirizzo IP. Servono a decidere cosa sviluppare.</p>
-    <p>Sul nostro server non ci sono <strong>dati di salute</strong>, a parte il numero totale di allenamenti importati da Salute, se da Salute arrivano misure (solo sì o no) e da quanti giorni hai dati e allenamenti in Salute (solo il numero di giorni), senza sport né valori. Restano solo:</p>
+    <p>Sul nostro server non ci sono <strong>dati di salute</strong>, a parte il numero totale di allenamenti importati da Salute, se da Salute arrivano misure (solo sì o no) e da quanti giorni hai dati e allenamenti in Salute (solo il numero di giorni), senza valori. Restano solo:</p>
     <ul>
       <li>i contatori delle analisi AI, legati all’abbonamento Apple;</li>
       <li>un identificativo casuale del dispositivo, il suo token per le notifiche e un’impronta non reversibile del codice che Apple assegna al download;</li>
       <li>dati tecnici del dispositivo: modello, versione di iOS e dell’app, paese dello store, se è abbinato un Apple Watch;</li>
-      <li>date di apertura, quante volte usi pagine, funzioni e grafici, solo il numero e mai i valori, e quali messaggi dell’app hai visto;</li>
+      <li>date di apertura, quante volte usi pagine, funzioni e grafici, anche per tipo di sport, solo il numero e mai i valori, e quali messaggi dell’app hai visto;</li>
       <li>se rispondi alla domanda «Cosa vorresti in più da LifeNex?», le risposte che scegli e il testo che scrivi (fino a 140 caratteri). Ti chiediamo di non scriverci dati personali o di salute.</li>
     </ul>
     <p>Servono per l’assistenza e le statistiche d’uso, compreso sapere se l’app è ancora installata. Non contengono nome, email o Apple ID, non vengono condivisi con terzi né usati per il tracciamento. Li cancelliamo automaticamente dopo 24 mesi senza utilizzo. Per farli cancellare prima scrivi al contatto qui sotto.</p>
@@ -827,12 +827,12 @@ PRIVACY = {
     <h2>Retention and deletion</h2>
     <p>Data stays on the device while the app is installed. To delete it, remove LifeNex and revoke access in Settings → Health → Data Access &amp; Devices. The iCloud copy can be deleted in Settings → [your name] → iCloud → Manage Account Storage → LifeNex.</p>
     <p><strong>«How would you like LifeNex to be?» form on this site:</strong> we only save the answers you pick, any text you write and the page language, with the date. No email or IP address. We use them to decide what to build.</p>
-    <p>Our server holds no <strong>health data</strong>, apart from the total number of workouts imported from Health, whether any measurements arrive from Health (yes or no only) and for how many days you have had data and workouts in Health (the number of days only), with no sports or values. It keeps only:</p>
+    <p>Our server holds no <strong>health data</strong>, apart from the total number of workouts imported from Health, whether any measurements arrive from Health (yes or no only) and for how many days you have had data and workouts in Health (the number of days only), with no values. It keeps only:</p>
     <ul>
       <li>AI analysis counters, linked to the Apple subscription;</li>
       <li>a random device identifier, its notification token and an irreversible fingerprint of the code Apple assigns to the download;</li>
       <li>technical device data: model, iOS and app version, store country, whether an Apple Watch is paired;</li>
-      <li>opening dates, how many times you use pages, features and charts, the number only and never the values, and which app messages you saw;</li>
+      <li>opening dates, how many times you use pages, features and charts, also by type of sport, the number only and never the values, and which app messages you saw;</li>
       <li>if you answer the question “What would you like LifeNex to add?”, the answers you pick and the text you write (up to 140 characters). Please don’t include personal or health details.</li>
     </ul>
     <p>They are used for support and usage statistics, including knowing whether the app is still installed. They contain no name, email or Apple ID, and are not shared with third parties or used for tracking. We delete them automatically after 24 months without use. To have them deleted sooner, write to the contact below.</p>
@@ -893,12 +893,12 @@ PRIVACY = {
     <h2>Conservation et suppression</h2>
     <p>Les données restent sur l’appareil tant que l’app est installée. Pour les supprimer, supprimez LifeNex et révoquez l’accès dans Réglages → Santé → Accès aux données et appareils. La copie iCloud se supprime dans Réglages → [votre nom] → iCloud → Gérer le stockage du compte → LifeNex.</p>
     <p><strong>Formulaire « Comment aimeriez-vous LifeNex ? » sur ce site :</strong> nous enregistrons seulement les réponses choisies, l’éventuel texte et la langue de la page, avec la date. Pas d’e-mail ni d’adresse IP. Ils servent à décider quoi développer.</p>
-    <p>Notre serveur ne contient aucune <strong>donnée de santé</strong>, à part le nombre total d’entraînements importés depuis Santé, le fait que des mesures arrivent de Santé (oui ou non seulement) et depuis combien de jours tu as des données et des séances dans Santé (le nombre de jours seulement), sans sports ni valeurs. Il conserve uniquement :</p>
+    <p>Notre serveur ne contient aucune <strong>donnée de santé</strong>, à part le nombre total d’entraînements importés depuis Santé, le fait que des mesures arrivent de Santé (oui ou non seulement) et depuis combien de jours tu as des données et des séances dans Santé (le nombre de jours seulement), sans valeurs. Il conserve uniquement :</p>
     <ul>
       <li>les compteurs d’analyses IA, liés à l’abonnement Apple ;</li>
       <li>un identifiant aléatoire de l’appareil, son jeton de notifications et une empreinte irréversible du code qu’Apple attribue au téléchargement ;</li>
       <li>des données techniques de l’appareil : modèle, version d’iOS et de l’app, pays de l’App Store, présence d’une Apple Watch jumelée ;</li>
-      <li>les dates d’ouverture, le nombre d’utilisations des pages, fonctions et graphiques, uniquement le nombre et jamais les valeurs, et les messages de l’app que vous avez vus ;</li>
+      <li>les dates d’ouverture, le nombre d’utilisations des pages, fonctions et graphiques, y compris par type de sport, uniquement le nombre et jamais les valeurs, et les messages de l’app que vous avez vus ;</li>
       <li>si vous répondez à la question « Qu’aimerais-tu de plus dans LifeNex ? », les réponses choisies et le texte écrit (140 caractères au plus). Merci de ne pas y mettre de données personnelles ou de santé.</li>
     </ul>
     <p>Elles servent à l’assistance et aux statistiques d’utilisation, y compris pour savoir si l’app est toujours installée. Elles ne contiennent ni nom, ni e-mail, ni identifiant Apple, et ne sont ni partagées avec des tiers ni utilisées pour le suivi. Nous les supprimons automatiquement après 24 mois sans utilisation. Pour les faire supprimer plus tôt, écrivez au contact ci-dessous.</p>
@@ -959,12 +959,12 @@ PRIVACY = {
     <h2>Speicherung und Löschung</h2>
     <p>Die Daten bleiben auf dem Gerät, solange die App installiert ist. Zum Löschen entferne LifeNex und widerrufe den Zugriff unter Einstellungen → Health → Datenzugriff &amp; Geräte. Die iCloud-Kopie löschst du unter Einstellungen → [dein Name] → iCloud → Accountspeicher verwalten → LifeNex.</p>
     <p><strong>Formular „Wie wünschst du dir LifeNex?“ auf dieser Website:</strong> Wir speichern nur die gewählten Antworten, einen eventuellen Text und die Sprache der Seite, mit Datum. Keine E-Mail, keine IP-Adresse. Sie helfen uns zu entscheiden, was wir entwickeln.</p>
-    <p>Auf unserem Server liegen keine <strong>Gesundheitsdaten</strong>, abgesehen von der Gesamtzahl der aus Health importierten Trainings, davon, ob Messwerte aus Health ankommen (nur ja oder nein), und seit wie vielen Tagen du Daten und Trainings in Health hast (nur die Anzahl der Tage), ohne Sportart oder Werte. Gespeichert werden nur:</p>
+    <p>Auf unserem Server liegen keine <strong>Gesundheitsdaten</strong>, abgesehen von der Gesamtzahl der aus Health importierten Trainings, davon, ob Messwerte aus Health ankommen (nur ja oder nein), und seit wie vielen Tagen du Daten und Trainings in Health hast (nur die Anzahl der Tage), ohne Werte. Gespeichert werden nur:</p>
     <ul>
       <li>die Zähler der KI-Analysen, verknüpft mit dem Apple-Abo;</li>
       <li>eine zufällige Gerätekennung, sein Token für Mitteilungen und ein nicht umkehrbarer Fingerabdruck des Codes, den Apple dem Download zuweist;</li>
       <li>technische Gerätedaten: Modell, iOS- und App-Version, App-Store-Land, ob eine Apple Watch gekoppelt ist;</li>
-      <li>Öffnungsdaten, wie oft du Seiten, Funktionen und Diagramme nutzt, nur die Anzahl und nie die Werte, und welche App-Mitteilungen du gesehen hast;</li>
+      <li>Öffnungsdaten, wie oft du Seiten, Funktionen und Diagramme nutzt, auch nach Sportart, nur die Anzahl und nie die Werte, und welche App-Mitteilungen du gesehen hast;</li>
       <li>wenn du die Frage „Was wünschst du dir noch von LifeNex?“ beantwortest, die gewählten Antworten und den Text, den du schreibst (bis zu 140 Zeichen). Bitte keine persönlichen oder Gesundheitsdaten.</li>
     </ul>
     <p>Sie dienen dem Support und der Nutzungsstatistik, auch um zu wissen, ob die App noch installiert ist. Sie enthalten keinen Namen, keine E-Mail und keine Apple-ID und werden weder an Dritte weitergegeben noch zum Tracking verwendet. Wir löschen sie automatisch nach 24 Monaten ohne Nutzung. Um sie früher löschen zu lassen, schreibe an den Kontakt unten.</p>
