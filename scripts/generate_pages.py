@@ -728,7 +728,7 @@ PRIVACY = {
     "it": {
         "title": "Privacy — LifeNex",
         "h1": "Informativa sulla privacy",
-        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 11 novembre 2026',
+        "meta": 'Titolare: Stefano Toncelli · Contatto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Ultimo aggiornamento: 17 novembre 2026',
         "nav": "Privacy",
         "contact": "Contatti",
         "back": "Torna alla home",
@@ -741,7 +741,7 @@ PRIVACY = {
       <li>sessioni (allenamenti, percorso GPS se presente, sforzo, frequenza cardiaca di sessione)</li>
       <li>cardio (FC, FC a riposo, HRV, VO₂ max)</li>
       <li>corpo (peso, altezza, BMI, massa grassa e magra)</li>
-      <li>sonno e, se presenti in Salute, vitali come pressione e saturazione</li>
+      <li>sonno e, se presenti in Salute, vitali come pressione, saturazione e temperatura del polso durante il sonno</li>
       <li>dinamiche di corsa e cammino, se le scrive il tuo dispositivo</li>
     </ul>
     <p>LifeNex <strong>non scrive</strong> e <strong>non modifica</strong> i dati in Salute.</p>
@@ -754,6 +754,7 @@ PRIVACY = {
       <li><strong>OpenAI</strong>, fornitore del modello di intelligenza artificiale, che genera il testo per nostro conto. Riceve solo il testo dei riassunti, senza identificativi dell’abbonamento o del dispositivo. Secondo le condizioni del suo servizio API, OpenAI non usa questi dati per addestrare i propri modelli e può conservarli per un periodo limitato (fino a 30 giorni) solo per prevenire abusi. OpenAI opera come responsabile del trattamento. I dati possono essere trattati fuori dallo Spazio Economico Europeo, anche negli Stati Uniti, sulla base di clausole contrattuali standard o di una decisione di adeguatezza.</li>
     </ul>
     <p>Le letture generate restano salvate sul tuo iPhone e, se iCloud è attivo, nel tuo iCloud privato (vedi sotto).</p>
+    <p><strong>Meteo (opzionale):</strong> solo se accendi la card Meteo in Oggi e consenti la posizione, l’app usa la tua <strong>posizione approssimativa</strong>, solo mentre la usi, e la invia ad Apple (servizio Apple Meteo, WeatherKit) per avere il meteo della zona. Non la salviamo sul nostro server e non la colleghiamo a te; sul telefono resta solo l’ultimo meteo scaricato. Puoi spegnere la card o revocare la posizione in Impostazioni → Privacy → Localizzazione.</p>
     <p><strong>Mappe e rilievo:</strong> per mostrare i percorsi l’app scarica le immagini della mappa da Apple Mappe e, nelle viste 3D, le quote del terreno della zona dal servizio pubblico Terrain Tiles (Amazon Web Services, AWS Open Data). Queste richieste indicano solo l’area di mappa da scaricare (riquadri di alcuni chilometri), non il tracciato GPS, i tempi o altri dati di Salute, e non sono collegate a te; come per qualsiasi sito web, il fornitore vede l’indirizzo IP della connessione. Le quote scaricate restano in cache sul tuo iPhone.</p>
     <p><strong>iCloud (sincronizzazione tra i tuoi dispositivi):</strong> se iCloud è attivo, le letture AI salvate, i tuoi obiettivi, i valori che indichi sulla mappa dei muscoli (fatica, indolenzimento, infortunio) e alcune preferenze (zone cardiache, disposizione della dashboard, lingua, consenso alla lettura intelligente) vengono copiati nel <strong>tuo iCloud privato</strong>, così li ritrovi su iPhone e iPad con lo stesso Apple ID. Sono conservati da Apple nel tuo account: noi non possiamo leggerli. I dati di Salute non passano da qui: li sincronizza Apple Salute.</p>
     <h2>Cosa non facciamo</h2>
@@ -781,7 +782,7 @@ PRIVACY = {
     <p>Puoi chiedere l’accesso ai tuoi dati, la rettifica, la cancellazione, la limitazione e la portabilità, opporti al trattamento e revocare il consenso, scrivendo a <a href="mailto:support@lifenex.it">support@lifenex.it</a>. Puoi anche fare reclamo al Garante per la protezione dei dati personali o all’autorità del tuo paese.</p>
 
     <h2>Permessi</h2>
-    <p>Puoi rifiutare o revocare i permessi Salute in qualsiasi momento. Senza permessi l’app funziona in modo limitato.</p>
+    <p>Puoi rifiutare o revocare i permessi Salute in qualsiasi momento. Senza permessi l’app funziona in modo limitato. La posizione si chiede solo per la card Meteo: senza, la card non compare.</p>
     <h2>Minori</h2>
     <p>LifeNex non è destinata a bambini. Non raccogliamo consapevolmente dati di minori.</p>
     <h2>Abbonamenti</h2>
@@ -794,7 +795,7 @@ PRIVACY = {
     "en": {
         "title": "Privacy — LifeNex",
         "h1": "Privacy policy",
-        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 11 November 2026',
+        "meta": 'Controller: Stefano Toncelli · Contact: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Last updated: 17 November 2026',
         "nav": "Privacy",
         "contact": "Contact",
         "back": "Back to home",
@@ -807,7 +808,7 @@ PRIVACY = {
       <li>workouts (sessions, GPS route if present, effort, session heart rate)</li>
       <li>cardio (HR, resting HR, HRV, VO₂ max)</li>
       <li>body (weight, height, BMI, body fat and lean mass)</li>
-      <li>sleep and, if present in Health, vitals such as blood pressure and oxygen saturation</li>
+      <li>sleep and, if present in Health, vitals such as blood pressure, oxygen saturation and sleeping wrist temperature</li>
       <li>running and walking dynamics, if written by your device</li>
     </ul>
     <p>LifeNex does <strong>not write</strong> or <strong>modify</strong> Health data.</p>
@@ -820,6 +821,7 @@ PRIVACY = {
       <li><strong>OpenAI</strong>, the AI model provider, which generates the text on our behalf. It receives only the summary text, without subscription or device identifiers. Under its API terms, OpenAI does not use this data to train its models and may keep it for a limited time (up to 30 days) only to prevent abuse. OpenAI acts as a data processor. Data may be processed outside the European Economic Area, including in the United States, on the basis of standard contractual clauses or an adequacy decision.</li>
     </ul>
     <p>Generated readings stay saved on your iPhone and, if iCloud is on, in your private iCloud (see below).</p>
+    <p><strong>Weather (optional):</strong> only if you turn on the Weather card in Today and allow location, the app uses your <strong>approximate location</strong>, only while you use it, and sends it to Apple (Apple Weather service, WeatherKit) to get the weather for your area. We do not store it on our server or link it to you; the phone keeps only the last weather downloaded. You can turn the card off or revoke location in Settings → Privacy → Location Services.</p>
     <p><strong>Maps and terrain:</strong> to show your routes the app downloads map imagery from Apple Maps and, in 3D views, terrain elevation for the area from the public Terrain Tiles service (Amazon Web Services, AWS Open Data). These requests only specify the map area to download (tiles a few kilometres wide), not your GPS track, times or any other Health data, and they are not linked to you; as with any website, the provider sees the IP address of the connection. Downloaded elevation data stays cached on your iPhone.</p>
     <p><strong>iCloud (sync across your devices):</strong> if iCloud is on, saved AI readings, your goals, the values you report on the muscle map (fatigue, soreness, injury) and some preferences (heart rate zones, dashboard layout, language, smart reading consent) are copied to <strong>your private iCloud</strong>, so you find them on iPhone and iPad with the same Apple ID. They are stored by Apple in your account: we cannot read them. Health data does not go through here: Apple Health syncs it.</p>
     <h2>What we do not do</h2>
@@ -847,7 +849,7 @@ PRIVACY = {
     <p>You can request access to your data, rectification, erasure, restriction and portability, object to processing and withdraw consent, by writing to <a href="mailto:support@lifenex.it">support@lifenex.it</a>. You can also lodge a complaint with the Italian Data Protection Authority (Garante) or the authority in your country.</p>
 
     <h2>Permissions</h2>
-    <p>You can refuse or revoke Health permissions at any time. Without permissions the app works in a limited way.</p>
+    <p>You can refuse or revoke Health permissions at any time. Without permissions the app works in a limited way. Location is requested only for the Weather card: without it, the card is not shown.</p>
     <h2>Children</h2>
     <p>LifeNex is not intended for children. We do not knowingly collect data from minors.</p>
     <h2>Subscriptions</h2>
@@ -860,7 +862,7 @@ PRIVACY = {
     "fr": {
         "title": "Confidentialité — LifeNex",
         "h1": "Politique de confidentialité",
-        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 11 novembre 2026',
+        "meta": 'Responsable : Stefano Toncelli · Contact : <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Dernière mise à jour : 17 novembre 2026',
         "nav": "Confidentialité",
         "contact": "Contact",
         "back": "Retour à l’accueil",
@@ -873,7 +875,7 @@ PRIVACY = {
       <li>séances (entraînements, parcours GPS si présent, effort, FC de séance)</li>
       <li>cardio (FC, FC au repos, VFC, VO₂ max)</li>
       <li>corps (poids, taille, IMC, masse grasse et maigre)</li>
-      <li>sommeil et, si présents, des signes vitaux comme tension et saturation</li>
+      <li>sommeil et, si présents, des signes vitaux comme tension, saturation et température du poignet pendant le sommeil</li>
       <li>dynamiques de course et de marche, si votre appareil les écrit</li>
     </ul>
     <p>LifeNex <strong>n’écrit</strong> ni <strong>ne modifie</strong> les données Santé.</p>
@@ -886,6 +888,7 @@ PRIVACY = {
       <li><strong>OpenAI</strong>, fournisseur du modèle d’intelligence artificielle, qui génère le texte pour notre compte. Il reçoit uniquement le texte des résumés, sans identifiant d’abonnement ni d’appareil. Selon les conditions de son service API, OpenAI n’utilise pas ces données pour entraîner ses modèles et peut les conserver pendant une durée limitée (jusqu’à 30 jours) uniquement pour prévenir les abus. OpenAI agit en tant que sous-traitant. Les données peuvent être traitées en dehors de l’Espace économique européen, y compris aux États-Unis, sur la base de clauses contractuelles types ou d’une décision d’adéquation.</li>
     </ul>
     <p>Les lectures générées restent enregistrées sur votre iPhone et, si iCloud est activé, dans votre iCloud privé (voir ci-dessous).</p>
+    <p><strong>Météo (facultatif) :</strong> uniquement si vous activez la carte Météo dans Aujourd’hui et autorisez la localisation, l’app utilise votre <strong>position approximative</strong>, seulement pendant l’utilisation, et l’envoie à Apple (service Météo d’Apple, WeatherKit) pour obtenir la météo de votre zone. Nous ne la conservons pas sur notre serveur et ne la relions pas à vous ; le téléphone garde seulement la dernière météo téléchargée. Vous pouvez désactiver la carte ou retirer la localisation dans Réglages → Confidentialité → Service de localisation.</p>
     <p><strong>Cartes et relief :</strong> pour afficher vos parcours, l’app télécharge les images de carte depuis Plans d’Apple et, dans les vues 3D, l’altitude du terrain de la zone depuis le service public Terrain Tiles (Amazon Web Services, AWS Open Data). Ces requêtes indiquent uniquement la zone de carte à télécharger (des tuiles de quelques kilomètres), pas votre tracé GPS, vos horaires ni d’autres données Santé, et ne sont pas liées à vous ; comme pour tout site web, le fournisseur voit l’adresse IP de la connexion. Les altitudes téléchargées restent en cache sur votre iPhone.</p>
     <p><strong>iCloud (synchronisation entre vos appareils) :</strong> si iCloud est activé, les lectures IA enregistrées, vos objectifs, les valeurs indiquées sur la carte des muscles (fatigue, courbatures, blessure) et certaines préférences (zones cardiaques, disposition du tableau de bord, langue, consentement à la lecture intelligente) sont copiés dans <strong>votre iCloud privé</strong>, pour les retrouver sur iPhone et iPad avec le même identifiant Apple. Ils sont conservés par Apple dans votre compte : nous ne pouvons pas les lire. Les données Santé ne passent pas par ici : Apple Santé les synchronise.</p>
     <h2>Ce que nous ne faisons pas</h2>
@@ -913,7 +916,7 @@ PRIVACY = {
     <p>Vous pouvez demander l’accès à vos données, leur rectification, leur effacement, leur limitation et leur portabilité, vous opposer au traitement et retirer votre consentement, en écrivant à <a href="mailto:support@lifenex.it">support@lifenex.it</a>. Vous pouvez aussi introduire une réclamation auprès de l’autorité italienne de protection des données (Garante) ou de celle de votre pays.</p>
 
     <h2>Autorisations</h2>
-    <p>Vous pouvez refuser ou révoquer les autorisations Santé à tout moment. Sans autorisations, l’app fonctionne de façon limitée.</p>
+    <p>Vous pouvez refuser ou révoquer les autorisations Santé à tout moment. Sans autorisations, l’app fonctionne de façon limitée. La localisation n’est demandée que pour la carte Météo : sans elle, la carte ne s’affiche pas.</p>
     <h2>Mineurs</h2>
     <p>LifeNex n’est pas destinée aux enfants. Nous ne collectons pas sciemment de données de mineurs.</p>
     <h2>Abonnements</h2>
@@ -926,7 +929,7 @@ PRIVACY = {
     "de": {
         "title": "Datenschutz — LifeNex",
         "h1": "Datenschutzerklärung",
-        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 11. November 2026',
+        "meta": 'Verantwortlich: Stefano Toncelli · Kontakt: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Stand: 17. November 2026',
         "nav": "Datenschutz",
         "contact": "Kontakt",
         "back": "Zur Startseite",
@@ -939,7 +942,7 @@ PRIVACY = {
       <li>Einheiten (Workouts, GPS-Route falls vorhanden, Aufwand, Einheiten-Herzfrequenz)</li>
       <li>Cardio (HF, Ruhepuls, HRV, VO₂ max)</li>
       <li>Körper (Gewicht, Größe, BMI, Fett- und Magermasse)</li>
-      <li>Schlaf und, falls vorhanden, Werte wie Blutdruck und Sättigung</li>
+      <li>Schlaf und, falls vorhanden, Werte wie Blutdruck, Sättigung und Handgelenkstemperatur im Schlaf</li>
       <li>Lauf- und Geh-Dynamik, falls dein Gerät sie schreibt</li>
     </ul>
     <p>LifeNex <strong>schreibt</strong> und <strong>ändert</strong> keine Gesundheitsdaten.</p>
@@ -952,6 +955,7 @@ PRIVACY = {
       <li><strong>OpenAI</strong>, dem Anbieter des KI-Modells, der den Text in unserem Auftrag erzeugt. OpenAI erhält nur den Text der Zusammenfassungen, ohne Abo- oder Gerätekennungen. Laut den Bedingungen seines API-Dienstes nutzt OpenAI diese Daten nicht zum Training seiner Modelle und kann sie für begrenzte Zeit (bis zu 30 Tage) ausschließlich zur Missbrauchsverhinderung aufbewahren. OpenAI handelt als Auftragsverarbeiter. Die Daten können außerhalb des Europäischen Wirtschaftsraums verarbeitet werden, auch in den USA, auf Grundlage von Standardvertragsklauseln oder eines Angemessenheitsbeschlusses.</li>
     </ul>
     <p>Erzeugte Auswertungen bleiben auf deinem iPhone gespeichert und, wenn iCloud aktiv ist, in deiner privaten iCloud (siehe unten).</p>
+    <p><strong>Wetter (optional):</strong> Nur wenn du die Wetter-Karte in Heute einschaltest und den Standort erlaubst, verwendet die App deinen <strong>ungefähren Standort</strong>, nur während der Nutzung, und sendet ihn an Apple (Apple Wetter, WeatherKit), um das Wetter deiner Umgebung zu erhalten. Wir speichern ihn nicht auf unserem Server und verknüpfen ihn nicht mit dir; auf dem Telefon bleibt nur das zuletzt geladene Wetter. Du kannst die Karte ausschalten oder den Standort unter Einstellungen → Datenschutz → Ortungsdienste widerrufen.</p>
     <p><strong>Karten und Gelände:</strong> Um deine Routen anzuzeigen, lädt die App Kartenbilder von Apple Karten und in den 3D-Ansichten Geländehöhen der Umgebung vom öffentlichen Dienst Terrain Tiles (Amazon Web Services, AWS Open Data). Diese Anfragen enthalten nur den zu ladenden Kartenbereich (Kacheln von einigen Kilometern), nicht deine GPS-Route, Zeiten oder andere Health-Daten, und sind nicht mit dir verknüpft; wie bei jeder Website sieht der Anbieter die IP-Adresse der Verbindung. Die geladenen Höhendaten bleiben im Cache auf deinem iPhone.</p>
     <p><strong>iCloud (Synchronisierung zwischen deinen Geräten):</strong> Wenn iCloud aktiv ist, werden gespeicherte KI-Auswertungen, deine Ziele, die auf der Muskelkarte angegebenen Werte (Ermüdung, Muskelkater, Verletzung) und einige Einstellungen (Herzfrequenzzonen, Dashboard-Anordnung, Sprache, Einwilligung zur intelligenten Lesung) in <strong>deine private iCloud</strong> kopiert, damit du sie auf iPhone und iPad mit derselben Apple-ID wiederfindest. Apple speichert sie in deinem Konto: Wir können sie nicht lesen. Health-Daten laufen nicht darüber: Die synchronisiert Apple Health.</p>
     <h2>Was wir nicht tun</h2>
@@ -979,7 +983,7 @@ PRIVACY = {
     <p>Du kannst Auskunft über deine Daten, Berichtigung, Löschung, Einschränkung und Übertragbarkeit verlangen, der Verarbeitung widersprechen und deine Einwilligung widerrufen, indem du an <a href="mailto:support@lifenex.it">support@lifenex.it</a> schreibst. Du kannst dich auch bei der italienischen Datenschutzbehörde (Garante) oder der Behörde deines Landes beschweren.</p>
 
     <h2>Berechtigungen</h2>
-    <p>Du kannst Health-Berechtigungen jederzeit verweigern oder widerrufen. Ohne Berechtigungen funktioniert die App nur eingeschränkt.</p>
+    <p>Du kannst Health-Berechtigungen jederzeit verweigern oder widerrufen. Ohne Berechtigungen funktioniert die App nur eingeschränkt. Der Standort wird nur für die Wetter-Karte abgefragt: Ohne ihn erscheint die Karte nicht.</p>
     <h2>Kinder</h2>
     <p>LifeNex ist nicht für Kinder bestimmt. Wir erheben nicht wissentlich Daten von Minderjährigen.</p>
     <h2>Abonnements</h2>
