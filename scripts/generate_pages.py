@@ -710,7 +710,7 @@ def home_html(lang: str) -> str:
         <p class="lead">{c['lead']}</p>
         <div class="cta-row">
           <a class="store-badge" href="https://apps.apple.com/it/app/lifenex-salute-e-fitness/id6804388724" rel="noopener noreferrer">
-            <img src="{a}badges/app-store-{lang}.svg" alt="{c['cta_store']}" height="40" width="120">
+            <img src="{a}badges/app-store-{lang}.svg?v=2" alt="{c['cta_store']}" height="40" width="120">
           </a>
           <a class="btn btn-ghost" href="#app">{c['cta_see']}</a>
         </div>
@@ -762,7 +762,7 @@ def home_html(lang: str) -> str:
       </ul>
       <div class="cta-band-get">
         <a class="store-badge" href="https://apps.apple.com/it/app/lifenex-salute-e-fitness/id6804388724" rel="noopener noreferrer">
-          <img src="{a}badges/app-store-{lang}.svg" alt="{c['band_cta']}" height="56" width="168">
+          <img src="{a}badges/app-store-{lang}.svg?v=2" alt="{c['band_cta']}" height="56" width="168">
         </a>
         <figure class="cta-band-qr">
           <img src="{a}app-store-qr.svg" alt="" width="92" height="92">
