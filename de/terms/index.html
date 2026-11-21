@@ -15,10 +15,11 @@
   <link rel="alternate" hreflang="en" href="https://lifenex.it/en/terms/">
   <link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/terms/">
   <link rel="alternate" hreflang="de" href="https://lifenex.it/de/terms/">
+  <link rel="alternate" hreflang="es" href="https://lifenex.it/es/terms/">
   <link rel="alternate" hreflang="x-default" href="https://lifenex.it/terms/">
   <script>
   (function () {
-    var K = "lifenex-lang", L = ["it", "en", "fr", "de"];
+    var K = "lifenex-lang", L = ["it", "en", "fr", "de", "es"];
     document.addEventListener("click", function (e) {
       var a = e.target.closest && e.target.closest(".lang-switch a");
       if (a) { try { localStorage.setItem(K, a.textContent.trim().toLowerCase()); } catch (x) {} }
@@ -46,6 +47,7 @@
           <a href="../../en/terms/">EN</a>
           <a href="../../fr/terms/">FR</a>
           <a href="./" class="active">DE</a>
+          <a href="../../es/terms/">ES</a>
         </div>
       </div>
     </div>

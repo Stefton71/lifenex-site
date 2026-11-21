@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidad — LifeNex</title>
+  <link rel="icon" href="../../assets/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="canonical" href="https://lifenex.it/es/privacy/">
+  <link rel="alternate" hreflang="it" href="https://lifenex.it/privacy/">
+  <link rel="alternate" hreflang="en" href="https://lifenex.it/en/privacy/">
+  <link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/privacy/">
+  <link rel="alternate" hreflang="de" href="https://lifenex.it/de/privacy/">
+  <link rel="alternate" hreflang="es" href="https://lifenex.it/es/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://lifenex.it/privacy/">
+  <script>
+  (function () {
+    var K = "lifenex-lang", L = ["it", "en", "fr", "de", "es"];
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest(".lang-switch a");
+      if (a) { try { localStorage.setItem(K, a.textContent.trim().toLowerCase()); } catch (x) {} }
+    });
+    return;
+  })();
+  </script>
+</head>
+<body class="page-shell">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="../">
+        <img src="../../assets/app-icon.png" alt="" width="36" height="36">
+        LifeNex
+      </a>
+      <div class="header-right">
+        <nav class="nav-links" aria-label="Main">
+          <a href="../">Inicio</a>
+          <a class="active" href="./">Privacidad</a>
+          <a href="../terms/">Términos</a>
+          <a href="mailto:support@lifenex.it">Contacto</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language">
+          <a href="../../privacy/">IT</a>
+          <a href="../../en/privacy/">EN</a>
+          <a href="../../fr/privacy/">FR</a>
+          <a href="../../de/privacy/">DE</a>
+          <a href="../../es/privacy/" class="active">ES</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <article class="legal-page">
+    <h1>Política de privacidad</h1>
+    <p class="legal-meta">Responsable: Stefano Toncelli · Contacto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Última actualización: 17 de noviembre de 2026</p>
+    
+    <p>LifeNex es una app para iOS que te ayuda a ver cómo evolucionan los datos que ya están en Apple Salud y a mantener la motivación hacia los objetivos que tú eliges. No es un dispositivo médico, no diagnostica y no prescribe intensidades ni terapias.</p>
+    <h2>Datos que lee la app</h2>
+    <p>Con tu consentimiento, LifeNex <strong>lee</strong> de Salud (HealthKit), solo en lectura:</p>
+    <ul>
+      <li>actividad (pasos, energía, minutos de ejercicio, distancia)</li>
+      <li>entrenamientos (sesiones, ruta GPS si existe, esfuerzo, frecuencia cardiaca de la sesión)</li>
+      <li>cardio (FC, FC en reposo, VFC, VO₂ máx.)</li>
+      <li>cuerpo (peso, altura, IMC, masa grasa y magra)</li>
+      <li>sueño y, si están en Salud, constantes como presión arterial, saturación de oxígeno y temperatura de la muñeca durante el sueño</li>
+      <li>dinámicas de carrera y marcha, si las escribe tu dispositivo</li>
+    </ul>
+    <p>LifeNex <strong>no escribe</strong> ni <strong>modifica</strong> los datos de Salud.</p>
+    <h2>Dónde se tratan los datos</h2>
+    <p>Los datos de Salud se quedan <strong>en tu iPhone</strong> (almacenamiento local). No hace falta una cuenta de LifeNex.</p>
+    <p><strong>Análisis con IA (opcional):</strong> solo si activas el consentimiento «Lectura inteligente» en Preferencias y pides tú una lectura (Generar / Actualizar), LifeNex envía <strong>resúmenes numéricos ya calculados en la app</strong> (medias, recuentos, comparaciones, tipos de entrenamiento) y, si lo has indicado, el estado de tus músculos en el mapa (fatiga, agujetas, lesión) para preparar el texto. Nunca se envían rutas GPS, fotos ni el historial en bruto de Salud. Puedes retirar el consentimiento en cualquier momento.</p>
+    <p>Estos resúmenes los tratan:</p>
+    <ul>
+      <li><strong>nuestro servidor</strong> (Google Firebase, región de la Unión Europea), que reenvía la petición y cuenta los análisis usados: no guarda los resúmenes ni los textos generados;</li>
+      <li><strong>OpenAI</strong>, proveedor del modelo de inteligencia artificial, que genera el texto por cuenta nuestra. Recibe solo el texto de los resúmenes, sin identificadores de la suscripción ni del dispositivo. Según las condiciones de su servicio API, OpenAI no usa estos datos para entrenar sus modelos y puede conservarlos durante un tiempo limitado (hasta 30 días) solo para prevenir abusos. OpenAI actúa como encargado del tratamiento. Los datos pueden tratarse fuera del Espacio Económico Europeo, también en Estados Unidos, sobre la base de cláusulas contractuales tipo o de una decisión de adecuación.</li>
+    </ul>
+    <p>Las lecturas generadas se quedan guardadas en tu iPhone y, si iCloud está activado, en tu iCloud privado (ver más abajo).</p>
+    <p><strong>Tiempo (opcional):</strong> solo si activas la tarjeta Tiempo en Hoy y permites la ubicación, la app usa tu <strong>ubicación</strong>, solo mientras la usas, para mostrarte el nombre del lugar donde estás, y envía a Apple (servicio Tiempo de Apple, WeatherKit) una versión redondeada a 1 km aproximadamente para obtener el tiempo de tu zona. No la guardamos en nuestro servidor ni la vinculamos contigo; en el teléfono queda solo el último tiempo descargado. Puedes desactivar la tarjeta o retirar la ubicación en Ajustes → Privacidad → Localización.</p>
+    <p><strong>Mapas y relieve:</strong> para mostrar tus rutas, la app descarga las imágenes del mapa de Apple Mapas y, en las vistas 3D, la altitud del terreno de la zona del servicio público Terrain Tiles (Amazon Web Services, AWS Open Data). Estas peticiones indican solo la zona del mapa que se descarga (cuadros de unos kilómetros), no tu ruta GPS, tus horarios ni otros datos de Salud, y no están vinculadas contigo; como en cualquier web, el proveedor ve la dirección IP de la conexión. Las altitudes descargadas quedan en caché en tu iPhone.</p>
+    <p><strong>iCloud (sincronización entre tus dispositivos):</strong> si iCloud está activado, las lecturas de IA guardadas, tus objetivos, los valores que indicas en el mapa de los músculos (fatiga, agujetas, lesión) y algunas preferencias (zonas de frecuencia cardiaca, disposición del panel, idioma, consentimiento a la lectura inteligente) se copian en <strong>tu iCloud privado</strong>, para que los encuentres en iPhone y iPad con el mismo Apple ID. Apple los guarda en tu cuenta: nosotros no podemos leerlos. Los datos de Salud no pasan por aquí: los sincroniza Apple Salud.</p>
+    <h2>Lo que no hacemos</h2>
+    <ul><li>no vendemos tus datos</li><li>no usamos los datos de Salud para publicidad ni para seguimiento entre apps</li><li>no compartimos datos de salud con terceros con fines comerciales</li></ul>
+    <h2>Conservación y eliminación</h2>
+    <p>Los datos se quedan en el dispositivo mientras la app esté instalada. Para borrarlos, elimina LifeNex y retira el acceso en Ajustes → Salud → Acceso a datos y dispositivos. La copia de iCloud se borra en Ajustes → [tu nombre] → iCloud → Gestionar almacenamiento → LifeNex.</p>
+    <p><strong>Formulario «¿Cómo te gustaría LifeNex?» de esta web:</strong> guardamos solo las respuestas elegidas, el texto que escribas y el idioma de la página, con la fecha. Sin email ni dirección IP. Sirven para decidir qué desarrollar.</p>
+    <p>En nuestro servidor no hay <strong>datos de salud</strong>, salvo el número total de entrenamientos importados de Salud, si llegan mediciones de Salud (solo sí o no) y desde cuántos días tienes datos y entrenamientos en Salud (solo el número de días), sin valores. Solo se guardan:</p>
+    <ul>
+      <li>los contadores de análisis de IA, vinculados a la suscripción de Apple;</li>
+      <li>un identificador aleatorio del dispositivo, su token de notificaciones y una huella no reversible del código que Apple asigna a la descarga;</li>
+      <li>datos técnicos del dispositivo: modelo, versión de iOS y de la app, país de la tienda, si hay un Apple Watch enlazado;</li>
+      <li>fechas de apertura, cuántas veces usas páginas, funciones y gráficos, también por tipo de deporte, solo el número y nunca los valores, y qué mensajes de la app has visto;</li>
+      <li>si respondes a la pregunta «¿Qué te gustaría que añadiera LifeNex?», las respuestas que eliges y el texto que escribes (hasta 140 caracteres). Te pedimos que no incluyas datos personales ni de salud.</li>
+    </ul>
+    <p>Sirven para la asistencia y las estadísticas de uso, también para saber si la app sigue instalada. No contienen nombre, email ni Apple ID, y no se comparten con terceros ni se usan para seguimiento. Los borramos automáticamente tras 24 meses sin uso. Para que los borremos antes, escribe al contacto de abajo.</p>
+    <h2>Bases legales</h2>
+    <ul>
+      <li><strong>Funciones y suscripción:</strong> el contrato contigo.</li>
+      <li><strong>Asistencia y estadísticas de uso:</strong> nuestro interés legítimo en hacer funcionar y mejorar la app; puedes oponerte.</li>
+      <li><strong>Análisis inteligente con IA:</strong> tu consentimiento explícito, también para los datos de salud, que puedes retirar en Preferencias.</li>
+    </ul>
+
+    <h2>Tus derechos</h2>
+    <p>Puedes pedir el acceso a tus datos, su rectificación, supresión, limitación y portabilidad, oponerte al tratamiento y retirar el consentimiento escribiendo a <a href="mailto:support@lifenex.it">support@lifenex.it</a>. También puedes presentar una reclamación ante la autoridad italiana de protección de datos (Garante) o ante la de tu país, como la Agencia Española de Protección de Datos.</p>
+
+    <h2>Permisos</h2>
+    <p>Puedes rechazar o retirar los permisos de Salud en cualquier momento. Sin permisos, la app funciona de forma limitada. La ubicación se pide solo para la tarjeta Tiempo: sin ella, la tarjeta no aparece.</p>
+    <h2>Menores</h2>
+    <p>LifeNex no está pensada para niños. No recogemos a sabiendas datos de menores.</p>
+    <h2>Suscripciones</h2>
+    <p>Las suscripciones Plus y Max las gestiona Apple a través del App Store. LifeNex lee el estado de la suscripción para desbloquear funciones y cuotas de análisis inteligente, y envía a nuestro servidor la prueba de compra firmada por Apple (identificador de la transacción, producto, fechas) para verificar la suscripción y contar los análisis. LifeNex no recibe ni guarda datos de pago.</p>
+    <h2>Cambios</h2>
+    <p>Si cambia la forma en que tratamos los datos, actualizaremos esta página <strong>antes</strong> de que el cambio llegue a la app.</p>
+    <p>Preguntas: <a href="mailto:support@lifenex.it">support@lifenex.it</a></p>
+
+  </article>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>© 2026 LifeNex</span>
+      <a href="../">Volver al inicio</a>
+    </div>
+  </footer>
+</body>
+</html>

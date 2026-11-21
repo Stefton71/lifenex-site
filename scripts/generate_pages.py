@@ -50,8 +50,8 @@ SHOTS = {
 COPY = {
     "it": {
         "lang": "it",
-        "title": "LifeNex: Allenamento e Salute — Energia per il tuo sport",
-        "desc": "Scopri quanta energia hai, quanto recuperi e come si riprendono i muscoli ogni giorno. LifeNex legge i tuoi allenamenti da Apple Salute.",
+        "title": "LifeNex Allenamento e Recupero — Energia, sonno e stress",
+        "desc": "Scopri ogni giorno quanta energia hai, come hai dormito, il tuo stress e come si riprendono i muscoli. LifeNex legge i tuoi allenamenti da Apple Salute.",
         "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Privacy",
@@ -59,7 +59,7 @@ COPY = {
         "nav_contact": "Contatti",
         "eyebrow": "iOS · Apple Salute · HealthKit",
         "h1": "La tua energia e il tuo recupero.",
-        "lead": "Ogni mattina scopri quanta energia hai, quanto recuperi e come si riprendono i muscoli. Corsa, palestra, bici, nuoto: LifeNex legge i tuoi allenamenti da Apple Salute. Il compagno ideale per Apple Watch.",
+        "lead": "Ogni mattina scopri quanta energia hai, come hai dormito, il tuo stress e come si riprendono i muscoli. Corsa, palestra, bici, nuoto: LifeNex legge i tuoi allenamenti da Apple Salute. Il compagno ideale per Apple Watch.",
         "cta_store": "Scarica su App Store",
         "cta_see": "Esplora l’app",
         "video_id": "hcJJeJJv1AY",
@@ -73,8 +73,8 @@ COPY = {
         "what_sub": "Non è solo un diario degli allenamenti. È lo strumento per osservare nel tempo come cambiano prestazioni, corpo e indicatori principali.",
         "features": [
             ("Oggi, a colpo d’occhio", "Ogni mattina l’energia del momento, la previsione per stasera e cosa potresti fare oggi, con l’energia per ciascuno dei tuoi sport."),
-            ("Analizza ogni allenamento", "Durata, distanza, passo, velocità, calorie, dislivello, frequenza cardiaca, zone di intensità e mappa GPS: capisci come hai svolto ogni sessione."),
-            ("Confronta le tue prestazioni", "Metti a confronto due allenamenti e verifica cosa è cambiato: durata, distanza, passo, FC, energia, dislivello e carico."),
+            ("Analizza ogni allenamento", "Durata, distanza, passo, velocità, calorie, dislivello, frequenza cardiaca, zone di intensità e mappa GPS. E metti a confronto due sessioni sullo stesso percorso."),
+            ("Stress, sonno e diario", "Il tuo stress durante la giornata, da battito e HRV; la notte appena passata con le sue fasi; un diario degli ultimi giorni che mette insieme sonno, stress e sport."),
             ("Una visione completa", "FC, FC a riposo, HRV, VO₂ max, pressione, ossigenazione, sonno, peso, BMI, massa grassa e magra, passi e attività — organizzati in un unico spazio."),
             ("Carico e corpo", "Monitora durata, intensità, volume e carico nel tempo. Segui peso, massa grassa e magra sullo storico."),
             ("Obiettivi e analisi intelligente", "Imposta obiettivi e segui i progressi. L’analisi mette in relazione gli ultimi 30 giorni di allenamento, carico, corpo, cuore, movimento e recupero."),
@@ -99,8 +99,8 @@ COPY = {
     },
     "en": {
         "lang": "en",
-        "title": "LifeNex: Training & Health — Energy for your sport",
-        "desc": "Find out how much energy you have, how well you recover and how your muscles are doing. LifeNex reads your workouts from Apple Health.",
+        "title": "LifeNex: Training & Recovery — Energy, sleep and stress",
+        "desc": "Every day, see how much energy you have, how you slept, your stress and how your muscles are recovering. LifeNex reads your workouts from Apple Health.",
         "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Privacy",
@@ -108,7 +108,7 @@ COPY = {
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Health · HealthKit",
         "h1": "Your energy and your recovery.",
-        "lead": "Every morning, see how much energy you have, how well you're recovering and how your muscles are doing. Running, gym, cycling, swimming: LifeNex reads your workouts from Apple Health. The ideal companion for Apple Watch.",
+        "lead": "Every morning, see how much energy you have, how you slept, your stress and how your muscles are doing. Running, gym, cycling, swimming: LifeNex reads your workouts from Apple Health. The ideal companion for Apple Watch.",
         "cta_store": "Download on the App Store",
         "cta_see": "Explore the app",
         "video_id": "UGWl_lvVl6E",
@@ -122,8 +122,8 @@ COPY = {
         "what_sub": "Not just a workout diary. A tool to watch how your performance, body and key indicators change over time.",
         "features": [
             ("Today, at a glance", "Every morning your energy right now, tonight's forecast and what you could do today, with energy for each of your sports."),
-            ("Analyze every workout", "Duration, distance, pace, speed, calories, elevation, heart rate, intensity zones and GPS map — understand how you did each session."),
-            ("Compare your performance", "Put two workouts side by side and see what changed: duration, distance, pace, HR, energy, elevation and load."),
+            ("Analyze every workout", "Duration, distance, pace, speed, calories, elevation, heart rate, intensity zones and GPS map. And compare two sessions on the same route."),
+            ("Stress, sleep and diary", "Your stress through the day, from heart rate and HRV; last night's sleep with its stages; a diary of the last days bringing sleep, stress and sports together."),
             ("A complete health view", "HR, resting HR, HRV, VO₂ max, blood pressure, oxygen, sleep, weight, BMI, fat and lean mass, steps and activity — organized in one place."),
             ("Load and body", "Track duration, intensity, volume and load over time. Follow weight, fat and lean mass on your history."),
             ("Goals and smart analysis", "Set goals and follow progress. Analysis connects the last 30 days of training, load, body, heart, movement and recovery."),
@@ -148,8 +148,8 @@ COPY = {
     },
     "fr": {
         "lang": "fr",
-        "title": "LifeNex : Entraînement & Santé — Énergie pour votre sport",
-        "desc": "Découvrez votre énergie du moment, votre récupération et l’état de vos muscles chaque jour. LifeNex lit vos entraînements depuis Santé.",
+        "title": "LifeNex : Entraînement & Récup — Énergie, sommeil et stress",
+        "desc": "Chaque jour, votre énergie, votre sommeil, votre stress et l’état de vos muscles. LifeNex lit vos entraînements depuis Santé.",
         "nav_home": "Accueil",
         "nav_app": "App",
         "nav_privacy": "Confidentialité",
@@ -157,7 +157,7 @@ COPY = {
         "nav_contact": "Contact",
         "eyebrow": "iOS · Apple Santé · HealthKit",
         "h1": "Votre énergie et votre récupération.",
-        "lead": "Chaque matin, découvrez votre énergie du moment, votre récupération et l’état de vos muscles. Course, muscu, vélo, natation : LifeNex lit vos entraînements depuis Santé. Le compagnon idéal de l’Apple Watch.",
+        "lead": "Chaque matin, découvrez votre énergie du moment, votre nuit, votre stress et l’état de vos muscles. Course, muscu, vélo, natation : LifeNex lit vos entraînements depuis Santé. Le compagnon idéal de l’Apple Watch.",
         "cta_store": "Télécharger sur l’App Store",
         "cta_see": "Explorer l’app",
         "video_id": "eXtY8h0h61E",
@@ -171,8 +171,8 @@ COPY = {
         "what_sub": "Pas seulement un journal d’entraînement. Un outil pour observer comment évoluent vos performances, votre corps et vos indicateurs clés.",
         "features": [
             ("Aujourd’hui, en un coup d’œil", "Chaque matin votre énergie du moment, la prévision pour ce soir et ce que vous pourriez faire, avec l’énergie pour chacun de vos sports."),
-            ("Analysez chaque séance", "Durée, distance, allure, vitesse, calories, dénivelé, fréquence cardiaque, zones d’intensité et carte GPS : comprenez chaque sortie."),
-            ("Comparez vos performances", "Mettez deux séances face à face et voyez ce qui a changé : durée, distance, allure, FC, énergie, dénivelé et charge."),
+            ("Analysez chaque séance", "Durée, distance, allure, vitesse, calories, dénivelé, fréquence cardiaque, zones d’intensité et carte GPS. Et comparez deux séances sur le même parcours."),
+            ("Stress, sommeil et journal", "Votre stress au fil de la journée, d’après le pouls et la VFC ; la nuit passée avec ses phases ; un journal des derniers jours qui réunit sommeil, stress et sports."),
             ("Une vision santé complète", "FC, FC au repos, VFC, VO₂ max, tension, oxygénation, sommeil, poids, IMC, masse grasse et maigre, pas et activité — organisés au même endroit."),
             ("Charge et corps", "Suivez durée, intensité, volume et charge dans le temps. Contrôlez poids, masse grasse et maigre sur l’historique."),
             ("Objectifs et analyse intelligente", "Fixez vos objectifs et suivez les progrès. L’analyse relie les 30 derniers jours d’entraînement, charge, corps, cœur, mouvement et récupération."),
@@ -197,8 +197,8 @@ COPY = {
     },
     "de": {
         "lang": "de",
-        "title": "LifeNex: Training & Gesundheit — Energie für deinen Sport",
-        "desc": "Entdecke deine Energie, deine Erholung und den Zustand deiner Muskeln jeden Tag. LifeNex liest deine Trainings aus Apple Health.",
+        "title": "LifeNex: Training & Erholung — Energie, Schlaf und Stress",
+        "desc": "Jeden Tag deine Energie, dein Schlaf, dein Stress und der Zustand deiner Muskeln. LifeNex liest deine Trainings aus Apple Health.",
         "nav_home": "Home",
         "nav_app": "App",
         "nav_privacy": "Datenschutz",
@@ -206,7 +206,7 @@ COPY = {
         "nav_contact": "Kontakt",
         "eyebrow": "iOS · Apple Gesundheit · HealthKit",
         "h1": "Deine Energie und deine Erholung.",
-        "lead": "Jeden Morgen siehst du deine Energie, deine Erholung und den Zustand deiner Muskeln. Laufen, Fitnessstudio, Radfahren, Schwimmen: LifeNex liest deine Trainings aus Health. Der ideale Begleiter für die Apple Watch.",
+        "lead": "Jeden Morgen siehst du deine Energie, wie du geschlafen hast, deinen Stress und den Zustand deiner Muskeln. Laufen, Fitnessstudio, Radfahren, Schwimmen: LifeNex liest deine Trainings aus Health. Der ideale Begleiter für die Apple Watch.",
         "cta_store": "Im App Store laden",
         "cta_see": "App entdecken",
         "video_id": "BMpx37XDeQU",
@@ -220,8 +220,8 @@ COPY = {
         "what_sub": "Nicht nur ein Trainingstagebuch. Ein Werkzeug, um zu sehen, wie sich Leistung, Körper und zentrale Indikatoren verändern.",
         "features": [
             ("Heute auf einen Blick", "Jeden Morgen deine Energie im Moment, die Prognose für heute Abend und was du heute tun könntest, mit Energie für jede deiner Sportarten."),
-            ("Jede Einheit analysieren", "Dauer, Distanz, Tempo, Geschwindigkeit, Kalorien, Höhenmeter, Herzfrequenz, Intensitätszonen und GPS-Karte — verstehe jede Einheit."),
-            ("Leistungen vergleichen", "Zwei Einheiten nebeneinander: Dauer, Distanz, Tempo, HF, Energie, Höhenmeter und Last — sieh, was sich geändert hat."),
+            ("Jede Einheit analysieren", "Dauer, Distanz, Tempo, Geschwindigkeit, Kalorien, Höhenmeter, Herzfrequenz, Intensitätszonen und GPS-Karte. Und vergleiche zwei Einheiten auf derselben Strecke."),
+            ("Stress, Schlaf und Tagebuch", "Dein Stress im Lauf des Tages, aus Puls und HRV; die letzte Nacht mit ihren Phasen; ein Tagebuch der letzten Tage, das Schlaf, Stress und Sport zusammenbringt."),
             ("Ein vollständiger Gesundheitsblick", "HF, Ruhepuls, HRV, VO₂ max, Blutdruck, Sauerstoff, Schlaf, Gewicht, BMI, Fett- und Magermasse, Schritte und Aktivität — an einem Ort."),
             ("Last und Körper", "Verfolge Dauer, Intensität, Volumen und Last über die Zeit. Behalte Gewicht, Fett- und Magermasse im Blick."),
             ("Ziele und intelligente Analyse", "Setze Ziele und folge dem Fortschritt. Die Analyse verbindet die letzten 30 Tage aus Training, Last, Körper, Herz, Bewegung und Erholung."),
@@ -244,68 +244,130 @@ COPY = {
             "3D-Satellitenflug",
         ],
     },
+    "es": {
+        "lang": "es",
+        "title": "LifeNex Entreno y Recuperación — Energía, sueño y estrés",
+        "desc": "Cada día, cuánta energía tienes, cómo dormiste, tu estrés y cómo se recuperan tus músculos. LifeNex lee tus entrenamientos de Apple Salud.",
+        "nav_home": "Inicio",
+        "nav_app": "App",
+        "nav_privacy": "Privacidad",
+        "nav_terms": "Términos",
+        "nav_contact": "Contacto",
+        "eyebrow": "iOS · Apple Salud · HealthKit",
+        "h1": "Tu energía y tu recuperación.",
+        "lead": "Cada mañana descubre cuánta energía tienes, cómo dormiste, tu estrés y cómo se recuperan tus músculos. Correr, gimnasio, bici, natación: LifeNex lee tus entrenamientos de Apple Salud. El compañero ideal para Apple Watch.",
+        "cta_store": "Descargar en el App Store",
+        "cta_see": "Explora la app",
+        "video_id": "UGWl_lvVl6E",
+        "v3d_h2": "Revive cada ruta en 3D",
+        "v3d_p": "Crea el vídeo 3D de tu sesión y compártelo: el vuelo por toda la ruta o los mejores momentos, con subidas, bajadas y los puntos más espectaculares.",
+        "v3d_note": "Guárdalo en Fotos o compártelo con un toque.",
+        "video_h2": "Mira LifeNex en acción",
+        "video_sub": "Toda la app en tres minutos, en inglés: en iPhone, Apple Watch Ultra y iPhone Duo.",
+        "video_title": "LifeNex – Energy and recovery with Apple Watch",
+        "what_h2": "Del dato a su significado",
+        "what_sub": "No es solo un diario de entrenamientos. Es la herramienta para ver cómo cambian con el tiempo tu rendimiento, tu cuerpo y tus indicadores principales.",
+        "features": [
+            ("Hoy, de un vistazo", "Cada mañana tu energía del momento, la previsión para esta noche y lo que podrías hacer hoy, con la energía para cada uno de tus deportes."),
+            ("Analiza cada entrenamiento", "Duración, distancia, ritmo, velocidad, calorías, desnivel, frecuencia cardiaca, zonas de intensidad y mapa GPS. Y compara dos sesiones en la misma ruta."),
+            ("Estrés, sueño y diario", "Tu estrés a lo largo del día, a partir del pulso y la VFC; la noche anterior con sus fases; un diario de los últimos días que reúne sueño, estrés y deporte."),
+            ("Una visión completa", "FC, FC en reposo, VFC, VO₂ máx., presión arterial, oxígeno, sueño, peso, IMC, masa grasa y magra, pasos y actividad, en un solo lugar."),
+            ("Carga y cuerpo", "Sigue duración, intensidad, volumen y carga en el tiempo. Controla peso, masa grasa y magra en tu historial."),
+            ("Objetivos y análisis inteligente", "Fija objetivos y sigue tu progreso. El análisis relaciona los últimos 30 días de entrenamiento, carga, cuerpo, corazón, movimiento y recuperación."),
+        ],
+        "show_h2": "Todo en una sola app",
+        "show_sub": "Hoy, Métricas, Sesiones, Carga, Objetivos y Tendencias: pensada para pasar del dato a lo que significa.",
+        "band_h2": "Mira los datos. Compáralos. Analízalos. Sigue tu evolución.",
+        "band_p": "LifeNex reúne lo que recoge Apple Salud y te ayuda a leerlo.",
+        "band_cta": "Ir al App Store",
+        "band_points": ["Descarga gratuita", "Funciona con el dispositivo que prefieras", "Tus datos siguen seguros en Salud"],
+        "band_qr": "Escanea con tu iPhone",
+        "alt": [
+            "Pantalla Métricas de LifeNex",
+            "Pantalla Sesiones",
+            "Comparar dos sesiones",
+            "Pantalla Carga",
+            "Pantalla Tendencias con IA",
+            "Mezcla semanal de sesiones",
+            "Comparación de sesiones en directo",
+            "Vuelo Satélite 3D",
+        ],
+    },
 }
 
-# Immagini App Store (pubblicazione/Marketing/build.py, ordine galleria): titolo, sottotitolo.
+# Immagini App Store 1.1.19 (pubblicazione/Marketing/build_v2.py, ordine galleria: l'Energia sempre per prima).
 STORE_SHOTS = {
     "it": [
-        ("La tua energia, a colpo d'occhio", "Quanto hai recuperato e cosa potresti fare, ogni mattina."),
-        ("Allenati quando sei pronto", "Ogni muscolo e il sistema nervoso, con i tempi per tornare in forma."),
-        ("Ti stai muovendo abbastanza?", "Il movimento di oggi e i progressi dell'ultimo mese."),
-        ("Tutta la tua salute, in un posto", "Anni di dati Salute trasformati in segnali chiari, ogni giorno."),
-        ("Sfida il te stesso di ieri", "Confronta due sessioni sullo stesso percorso."),
-        ("Rivivi ogni percorso in 3D", "Il tuo allenamento, sul paesaggio dove l'hai fatto."),
-        ("Allenati con equilibrio", "Il carico di ogni settimana, confrontato con il tuo ritmo."),
-        ("Obiettivi che ti motivano", "Scegli il risultato, LifeNex ti mostra i progressi."),
-        ("Capisci cosa sta cambiando", "Trend chiari su allenamento, cuore e corpo."),
-        ("La tua evoluzione, spiegata", "L'analisi AI legge i tuoi dati e racconta i tuoi progressi."),
+        ('La tua energia dall’Apple Watch', 'Quanta energia hai oggi, per ogni sport.'),
+        ('Stress e sonno dal tuo Apple Watch', 'Ogni mattina vedi come hai dormito e come stai.'),
+        ('Scopri quali muscoli sono pronti', 'Il recupero di ogni muscolo, dopo ogni allenamento.'),
+        ('Rivivi ogni percorso in 3D', 'Il tuo allenamento sul paesaggio vero, anche in video. Con Plus.'),
+        ('Sfida il te stesso di ieri', 'Due sessioni sullo stesso percorso, fianco a fianco.'),
+        ('Allenati con equilibrio', 'Il carico di ogni settimana, confrontato con il tuo ritmo.'),
+        ('Tutta la tua salute, in un posto', "Cuore, VO₂ max, sonno, peso e altro, con l'andamento nel tempo."),
+        ('I tuoi trend, in parole semplici', "Con l'analisi AI di Plus e Max, anche gli ultimi 30 giorni spiegati."),
+        ('I tuoi dati restano tuoi', 'LifeNex legge Salute direttamente sul tuo iPhone.'),
+        ('Sincronizzato con iCloud', 'Letture AI, obiettivi e preferenze su iPhone, iPhone Duo e iPad.'),
     ],
     "en": [
-        ("Your energy, at a glance", "How recovered you are and what you could do, every morning."),
-        ("Train when you're ready", "Every muscle and your nervous system, with the time to get back in shape."),
-        ("Are you moving enough?", "Today's movement and your progress over the last month."),
-        ("All your health, in one place", "Years of Health data turned into clear signals, every day."),
-        ("Beat yesterday's you", "Compare two sessions on the same route."),
-        ("Relive every route in 3D", "Your workout, on the landscape where it happened."),
-        ("Train with balance", "Every week's load, compared with your usual rhythm."),
-        ("Goals that keep you going", "Pick the result, LifeNex shows your progress."),
-        ("See what's changing", "Clear trends on training, heart and body."),
-        ("Your progress, explained", "AI reads your data and tells your story."),
+        ('Your energy from Apple Watch', 'How much energy you have today, for every sport.'),
+        ('Stress and sleep from your Apple Watch', 'Every morning, see how you slept and how you feel.'),
+        ('See which muscles are ready', 'Recovery for every muscle, after every workout.'),
+        ('Relive every route in 3D', 'Your workout on the real landscape, also as a video. With Plus.'),
+        ('Race your past self', 'Two sessions on the same route, side by side.'),
+        ('Train in balance', 'Your load every week, compared with your usual rhythm.'),
+        ('All your health, in one place', 'Heart, VO₂ max, sleep, weight and more, with trends over time.'),
+        ('Your trends, in plain words', 'With Plus and Max AI analysis, your last 30 days explained too.'),
+        ('Your data stays yours', 'LifeNex reads Health right on your iPhone.'),
+        ('Synced with iCloud', 'AI readings, goals and preferences on iPhone, iPhone Duo and iPad.'),
     ],
     "fr": [
-        ("Votre énergie, en un coup d'œil", "Votre récupération et ce que vous pourriez faire, chaque matin."),
-        ("Entraînez-vous au bon moment", "Chaque muscle et le système nerveux, avec le temps pour retrouver la forme."),
-        ("Bougez-vous assez ?", "Le mouvement du jour et vos progrès du dernier mois."),
-        ("Toute votre santé, au même endroit", "Des années de données Santé en signaux clairs, chaque jour."),
-        ("Défiez celui que vous étiez hier", "Comparez deux séances sur le même parcours."),
-        ("Revivez chaque parcours en 3D", "Votre entraînement, sur le paysage où vous l'avez fait."),
-        ("Entraînez-vous avec équilibre", "La charge de chaque semaine, comparée à votre rythme."),
-        ("Des objectifs qui motivent", "Choisissez le résultat, LifeNex montre vos progrès."),
-        ("Comprenez ce qui change", "Des tendances claires sur l'entraînement, le cœur et le corps."),
-        ("Votre évolution, expliquée", "L'IA lit vos données et raconte vos progrès."),
+        ('Votre énergie depuis l’Apple Watch', 'Votre énergie du jour, pour chaque sport.'),
+        ('Stress et sommeil depuis votre Apple Watch', 'Chaque matin, voyez votre sommeil et comment vous allez.'),
+        ('Voyez quels muscles sont prêts', 'La récupération de chaque muscle, après chaque entraînement.'),
+        ('Revivez chaque parcours en 3D', 'Votre entraînement sur le vrai paysage, aussi en vidéo. Avec Plus.'),
+        ('Défiez la personne que vous étiez hier', 'Deux séances sur le même parcours, côte à côte.'),
+        ('Entraînez-vous avec équilibre', 'La charge de chaque semaine, comparée à votre rythme habituel.'),
+        ('Toute votre santé, au même endroit', 'Cœur, VO₂ max, sommeil, poids et plus, avec leur évolution dans le temps.'),
+        ('Vos tendances, en mots simples', "Avec l'analyse IA de Plus et Max, vos 30 derniers jours expliqués."),
+        ('Vos données restent à vous', 'LifeNex lit Santé directement sur votre iPhone.'),
+        ('Synchronisé avec iCloud', 'Analyses IA, objectifs et préférences sur iPhone, iPhone Duo et iPad.'),
     ],
     "de": [
-        ("Deine Energie auf einen Blick", "Wie erholt du bist und was du tun könntest, jeden Morgen."),
-        ("Trainiere, wenn du bereit bist", "Jeder Muskel und dein Nervensystem, mit der Zeit bis zur Topform."),
-        ("Bewegst du dich genug?", "Deine Bewegung heute und dein Fortschritt im letzten Monat."),
-        ("Deine ganze Gesundheit an einem Ort", "Jahre an Health-Daten, jeden Tag klar erklärt."),
-        ("Fordere dein Ich von gestern", "Vergleiche zwei Einheiten auf derselben Strecke."),
-        ("Erlebe jede Strecke in 3D", "Dein Training auf der Landschaft, in der es stattfand."),
-        ("Trainiere ausgewogen", "Die Belastung jeder Woche, verglichen mit deinem Rhythmus."),
-        ("Ziele, die motivieren", "Wähle dein Ziel, LifeNex zeigt deinen Fortschritt."),
-        ("Verstehe, was sich ändert", "Klare Trends zu Training, Herz und Körper."),
-        ("Deine Entwicklung, erklärt", "Die KI liest deine Daten und erzählt deine Fortschritte."),
+        ('Deine Energie von der Apple Watch', 'Wie viel Energie du heute hast, für jeden Sport.'),
+        ('Stress und Schlaf von deiner Apple Watch', 'Jeden Morgen siehst du, wie du geschlafen hast und wie es dir geht.'),
+        ('Sieh, welche Muskeln bereit sind', 'Die Erholung jedes Muskels, nach jedem Training.'),
+        ('Erlebe jede Strecke in 3D', 'Dein Training in der echten Landschaft, auch als Video. Mit Plus.'),
+        ('Fordere dein gestriges Ich heraus', 'Zwei Einheiten auf derselben Strecke, Seite an Seite.'),
+        ('Trainiere im Gleichgewicht', 'Deine Belastung jeder Woche, verglichen mit deinem Rhythmus.'),
+        ('Deine ganze Gesundheit an einem Ort', 'Herz, VO₂max, Schlaf, Gewicht und mehr, mit dem Verlauf über die Zeit.'),
+        ('Deine Trends, in einfachen Worten', 'Mit der KI-Analyse von Plus und Max auch die letzten 30 Tage erklärt.'),
+        ('Deine Daten bleiben deine', 'LifeNex liest Health direkt auf deinem iPhone.'),
+        ('Synchron mit iCloud', 'KI-Analysen, Ziele und Einstellungen auf iPhone, iPhone Duo und iPad.'),
+    ],
+    "es": [
+        ('Tu energía desde el Apple Watch', 'Cuánta energía tienes hoy, para cada deporte.'),
+        ('Estrés y sueño desde tu Apple Watch', 'Cada mañana ves cómo dormiste y cómo estás.'),
+        ('Qué músculos están listos', 'La recuperación de cada músculo, después de cada entrenamiento.'),
+        ('Revive cada ruta en 3D', 'Tu entrenamiento sobre el paisaje real, también en vídeo. Con Plus.'),
+        ('Supera a tu yo de ayer', 'Dos sesiones en la misma ruta, una al lado de la otra.'),
+        ('Entrena con equilibrio', 'La carga de cada semana, comparada con tu ritmo habitual.'),
+        ('Toda tu salud, en un solo lugar', 'Corazón, VO₂ máx., sueño, peso y más, con su evolución en el tiempo.'),
+        ('Tus tendencias, en palabras sencillas', 'Con el análisis IA de Plus y Max, también tus últimos 30 días explicados.'),
+        ('Tus datos son tuyos', 'LifeNex lee Salud directamente en tu iPhone.'),
+        ('Sincronizado con iCloud', 'Análisis IA, objetivos y preferencias en iPhone, iPhone Duo y iPad.'),
     ],
 }
 
-HOME_PATH = {"it": ".", "en": "en", "fr": "fr", "de": "de"}
-PREFIX = {"it": "", "en": "../", "fr": "../", "de": "../"}
-SHOT_PREFIX = {"it": "it", "en": "en", "fr": "fr", "de": "de"}
-ASSET = {"it": "assets/", "en": "../assets/", "fr": "../assets/", "de": "../assets/"}
-CSS = {"it": "styles.css", "en": "../styles.css", "fr": "../styles.css", "de": "../styles.css"}
-HOME_HREF = {"it": "./", "en": "./", "fr": "./", "de": "./"}
-PRIVACY_HREF = {"it": "privacy/", "en": "privacy/", "fr": "privacy/", "de": "privacy/"}
-ROOT_HOME = {"it": "./", "en": "../", "fr": "../", "de": "../"}
+
+HOME_PATH = {"it": ".", "en": "en", "fr": "fr", "de": "de", "es": "es"}
+PREFIX = {"it": "", "en": "../", "fr": "../", "de": "../", "es": "../"}
+SHOT_PREFIX = {"it": "it", "en": "en", "fr": "fr", "de": "de", "es": "es"}
+ASSET = {"it": "assets/", "en": "../assets/", "fr": "../assets/", "de": "../assets/", "es": "../assets/"}
+CSS = {"it": "styles.css", "en": "../styles.css", "fr": "../styles.css", "de": "../styles.css", "es": "../styles.css"}
+HOME_HREF = {"it": "./", "en": "./", "fr": "./", "de": "./", "es": "./"}
+PRIVACY_HREF = {"it": "privacy/", "en": "privacy/", "fr": "privacy/", "de": "privacy/", "es": "privacy/"}
+ROOT_HOME = {"it": "./", "en": "../", "fr": "../", "de": "../", "es": "../"}
 
 
 def lang_switch(active: str, base: str) -> str:
@@ -318,6 +380,7 @@ def lang_switch(active: str, base: str) -> str:
         ("en", f"{base}en/", "EN"),
         ("fr", f"{base}fr/", "FR"),
         ("de", f"{base}de/", "DE"),
+        ("es", f"{base}es/", "ES"),
     ]
     # From non-IT home, IT should be ../
     if base == "../":
@@ -330,13 +393,13 @@ def lang_switch(active: str, base: str) -> str:
 
 
 SITE_URL = "https://lifenex.it"
-LANGS = ("it", "en", "fr", "de")
+LANGS = ("it", "en", "fr", "de", "es")
 PAGE_SUFFIX = {"home": "", "privacy": "privacy/", "terms": "terms/", "feedback": "feedback/"}
 
 
 APP_STORE_ID = "6804388724"
 APP_STORE_URL = "https://apps.apple.com/app/id6804388724"
-OG_LOCALE = {"it": "it_IT", "en": "en_US", "fr": "fr_FR", "de": "de_DE"}
+OG_LOCALE = {"it": "it_IT", "en": "en_US", "fr": "fr_FR", "de": "de_DE", "es": "es_ES"}
 
 
 def page_url(lang: str, page: str) -> str:
@@ -389,8 +452,8 @@ def lang_head(lang: str, page: str) -> str:
 
     Only the Italian pages (site root) redirect: a visitor whose browser is
     in English, French or German is sent to that version; any other browser
-    language gets English. A choice made with the IT/EN/FR/DE switch is
-    remembered and wins over the browser language. The /en/, /fr/ and /de/
+    language gets English. A choice made with the IT/EN/FR/DE/ES switch is
+    remembered and wins over the browser language. The /en/, /fr/, /de/ and /es/
     pages never redirect, so links to them always open as shared.
     """
     suffix = PAGE_SUFFIX[page]
@@ -405,7 +468,7 @@ def lang_head(lang: str, page: str) -> str:
     script = (
         "  <script>\n"
         "  (function () {\n"
-        '    var K = "lifenex-lang", L = ["it", "en", "fr", "de"];\n'
+        '    var K = "lifenex-lang", L = [' + ", ".join(f'"{code}"' for code in LANGS) + '];\n'
         '    document.addEventListener("click", function (e) {\n'
         '      var a = e.target.closest && e.target.closest(".lang-switch a");\n'
         "      if (a) { try { localStorage.setItem(K, a.textContent.trim().toLowerCase()); } catch (x) {} }\n"
@@ -435,7 +498,7 @@ def shots_html(lang: str) -> str:
     prefix = SHOT_PREFIX[lang]
     blocks = []
     for i, (title, body) in enumerate(STORE_SHOTS[lang], start=1):
-        src = f"{a}store/{prefix}-{i}.jpg?v=3"
+        src = f"{a}store/{prefix}-{i}.jpg?v=4"
         blocks.append(
             f"""        <figure class="shot">
           <a class="shot-frame" href="{src}"><img src="{src}" alt="{title}" loading="lazy"></a>
@@ -509,6 +572,18 @@ FEEDBACK = {
         "text": "Etwas anderes? Schreib es hier",
         "note": "Keine E-Mail, keine persönlichen Daten: Wir speichern nur die Antworten.",
         "send": "Senden", "thanks": "Danke! Wir haben sie erhalten.", "error": "Das hat nicht geklappt, versuch es gleich noch einmal.",
+    },
+    "es": {
+        "nav": "Danos tu opinión",
+        "h2": "¿Cómo te gustaría LifeNex?",
+        "sub": "Leemos cada respuesta y decidimos aquí qué hacer después. Elige todo lo que vaya contigo.",
+        "q1": '¿Con qué registras tus entrenamientos?',
+        "devices": [('appleWatch', 'Apple Watch'), ('otherWatch', 'Otro reloj'), ('iPhoneOnly', 'Solo el iPhone'), ('noRecord', 'No los registro')],
+        "q2": '¿Qué te falta en LifeNex?',
+        "choices": [('recordWorkout', 'Registrar entrenamientos en la app'), ('gymSets', 'Rutinas de gimnasio con ejercicios, series y pesos'), ('nutrition', 'Calorías y alimentación'), ('sleep', 'Sueño más detallado'), ('sportAnalysis', 'Más análisis para mi deporte')],
+        "text": "¿Algo más? Escríbelo aquí",
+        "note": "Sin email ni datos personales: solo guardamos las respuestas.",
+        "send": "Enviar", "thanks": "¡Gracias! La hemos recibido.", "error": "No se ha enviado, inténtalo de nuevo en un momento.",
     },
 }
 
@@ -588,7 +663,7 @@ def home_html(lang: str) -> str:
         switch = lang_switch(lang, "../")
     a = ASSET[lang]
     lightbox_js = "lightbox.js" if lang == "it" else "../lightbox.js"
-    close_label = {"it": "Chiudi", "en": "Close", "fr": "Fermer", "de": "Schließen"}[lang]
+    close_label = {"it": "Chiudi", "en": "Close", "fr": "Fermer", "de": "Schließen", "es": "Cerrar"}[lang]
     return f"""<!DOCTYPE html>
 <html lang="{c['lang']}">
 <head>
@@ -601,7 +676,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=29">
+  <link rel="stylesheet" href="{CSS[lang]}?v=30">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -993,6 +1068,73 @@ PRIVACY = {
     <p>Fragen: <a href="mailto:support@lifenex.it">support@lifenex.it</a></p>
 """,
     },
+    "es": {
+        "title": "Privacidad — LifeNex",
+        "h1": "Política de privacidad",
+        "meta": 'Responsable: Stefano Toncelli · Contacto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Última actualización: 17 de noviembre de 2026',
+        "nav": "Privacidad",
+        "contact": "Contacto",
+        "back": "Volver al inicio",
+        "body": """
+    <p>LifeNex es una app para iOS que te ayuda a ver cómo evolucionan los datos que ya están en Apple Salud y a mantener la motivación hacia los objetivos que tú eliges. No es un dispositivo médico, no diagnostica y no prescribe intensidades ni terapias.</p>
+    <h2>Datos que lee la app</h2>
+    <p>Con tu consentimiento, LifeNex <strong>lee</strong> de Salud (HealthKit), solo en lectura:</p>
+    <ul>
+      <li>actividad (pasos, energía, minutos de ejercicio, distancia)</li>
+      <li>entrenamientos (sesiones, ruta GPS si existe, esfuerzo, frecuencia cardiaca de la sesión)</li>
+      <li>cardio (FC, FC en reposo, VFC, VO₂ máx.)</li>
+      <li>cuerpo (peso, altura, IMC, masa grasa y magra)</li>
+      <li>sueño y, si están en Salud, constantes como presión arterial, saturación de oxígeno y temperatura de la muñeca durante el sueño</li>
+      <li>dinámicas de carrera y marcha, si las escribe tu dispositivo</li>
+    </ul>
+    <p>LifeNex <strong>no escribe</strong> ni <strong>modifica</strong> los datos de Salud.</p>
+    <h2>Dónde se tratan los datos</h2>
+    <p>Los datos de Salud se quedan <strong>en tu iPhone</strong> (almacenamiento local). No hace falta una cuenta de LifeNex.</p>
+    <p><strong>Análisis con IA (opcional):</strong> solo si activas el consentimiento «Lectura inteligente» en Preferencias y pides tú una lectura (Generar / Actualizar), LifeNex envía <strong>resúmenes numéricos ya calculados en la app</strong> (medias, recuentos, comparaciones, tipos de entrenamiento) y, si lo has indicado, el estado de tus músculos en el mapa (fatiga, agujetas, lesión) para preparar el texto. Nunca se envían rutas GPS, fotos ni el historial en bruto de Salud. Puedes retirar el consentimiento en cualquier momento.</p>
+    <p>Estos resúmenes los tratan:</p>
+    <ul>
+      <li><strong>nuestro servidor</strong> (Google Firebase, región de la Unión Europea), que reenvía la petición y cuenta los análisis usados: no guarda los resúmenes ni los textos generados;</li>
+      <li><strong>OpenAI</strong>, proveedor del modelo de inteligencia artificial, que genera el texto por cuenta nuestra. Recibe solo el texto de los resúmenes, sin identificadores de la suscripción ni del dispositivo. Según las condiciones de su servicio API, OpenAI no usa estos datos para entrenar sus modelos y puede conservarlos durante un tiempo limitado (hasta 30 días) solo para prevenir abusos. OpenAI actúa como encargado del tratamiento. Los datos pueden tratarse fuera del Espacio Económico Europeo, también en Estados Unidos, sobre la base de cláusulas contractuales tipo o de una decisión de adecuación.</li>
+    </ul>
+    <p>Las lecturas generadas se quedan guardadas en tu iPhone y, si iCloud está activado, en tu iCloud privado (ver más abajo).</p>
+    <p><strong>Tiempo (opcional):</strong> solo si activas la tarjeta Tiempo en Hoy y permites la ubicación, la app usa tu <strong>ubicación</strong>, solo mientras la usas, para mostrarte el nombre del lugar donde estás, y envía a Apple (servicio Tiempo de Apple, WeatherKit) una versión redondeada a 1 km aproximadamente para obtener el tiempo de tu zona. No la guardamos en nuestro servidor ni la vinculamos contigo; en el teléfono queda solo el último tiempo descargado. Puedes desactivar la tarjeta o retirar la ubicación en Ajustes → Privacidad → Localización.</p>
+    <p><strong>Mapas y relieve:</strong> para mostrar tus rutas, la app descarga las imágenes del mapa de Apple Mapas y, en las vistas 3D, la altitud del terreno de la zona del servicio público Terrain Tiles (Amazon Web Services, AWS Open Data). Estas peticiones indican solo la zona del mapa que se descarga (cuadros de unos kilómetros), no tu ruta GPS, tus horarios ni otros datos de Salud, y no están vinculadas contigo; como en cualquier web, el proveedor ve la dirección IP de la conexión. Las altitudes descargadas quedan en caché en tu iPhone.</p>
+    <p><strong>iCloud (sincronización entre tus dispositivos):</strong> si iCloud está activado, las lecturas de IA guardadas, tus objetivos, los valores que indicas en el mapa de los músculos (fatiga, agujetas, lesión) y algunas preferencias (zonas de frecuencia cardiaca, disposición del panel, idioma, consentimiento a la lectura inteligente) se copian en <strong>tu iCloud privado</strong>, para que los encuentres en iPhone y iPad con el mismo Apple ID. Apple los guarda en tu cuenta: nosotros no podemos leerlos. Los datos de Salud no pasan por aquí: los sincroniza Apple Salud.</p>
+    <h2>Lo que no hacemos</h2>
+    <ul><li>no vendemos tus datos</li><li>no usamos los datos de Salud para publicidad ni para seguimiento entre apps</li><li>no compartimos datos de salud con terceros con fines comerciales</li></ul>
+    <h2>Conservación y eliminación</h2>
+    <p>Los datos se quedan en el dispositivo mientras la app esté instalada. Para borrarlos, elimina LifeNex y retira el acceso en Ajustes → Salud → Acceso a datos y dispositivos. La copia de iCloud se borra en Ajustes → [tu nombre] → iCloud → Gestionar almacenamiento → LifeNex.</p>
+    <p><strong>Formulario «¿Cómo te gustaría LifeNex?» de esta web:</strong> guardamos solo las respuestas elegidas, el texto que escribas y el idioma de la página, con la fecha. Sin email ni dirección IP. Sirven para decidir qué desarrollar.</p>
+    <p>En nuestro servidor no hay <strong>datos de salud</strong>, salvo el número total de entrenamientos importados de Salud, si llegan mediciones de Salud (solo sí o no) y desde cuántos días tienes datos y entrenamientos en Salud (solo el número de días), sin valores. Solo se guardan:</p>
+    <ul>
+      <li>los contadores de análisis de IA, vinculados a la suscripción de Apple;</li>
+      <li>un identificador aleatorio del dispositivo, su token de notificaciones y una huella no reversible del código que Apple asigna a la descarga;</li>
+      <li>datos técnicos del dispositivo: modelo, versión de iOS y de la app, país de la tienda, si hay un Apple Watch enlazado;</li>
+      <li>fechas de apertura, cuántas veces usas páginas, funciones y gráficos, también por tipo de deporte, solo el número y nunca los valores, y qué mensajes de la app has visto;</li>
+      <li>si respondes a la pregunta «¿Qué te gustaría que añadiera LifeNex?», las respuestas que eliges y el texto que escribes (hasta 140 caracteres). Te pedimos que no incluyas datos personales ni de salud.</li>
+    </ul>
+    <p>Sirven para la asistencia y las estadísticas de uso, también para saber si la app sigue instalada. No contienen nombre, email ni Apple ID, y no se comparten con terceros ni se usan para seguimiento. Los borramos automáticamente tras 24 meses sin uso. Para que los borremos antes, escribe al contacto de abajo.</p>
+    <h2>Bases legales</h2>
+    <ul>
+      <li><strong>Funciones y suscripción:</strong> el contrato contigo.</li>
+      <li><strong>Asistencia y estadísticas de uso:</strong> nuestro interés legítimo en hacer funcionar y mejorar la app; puedes oponerte.</li>
+      <li><strong>Análisis inteligente con IA:</strong> tu consentimiento explícito, también para los datos de salud, que puedes retirar en Preferencias.</li>
+    </ul>
+
+    <h2>Tus derechos</h2>
+    <p>Puedes pedir el acceso a tus datos, su rectificación, supresión, limitación y portabilidad, oponerte al tratamiento y retirar el consentimiento escribiendo a <a href="mailto:support@lifenex.it">support@lifenex.it</a>. También puedes presentar una reclamación ante la autoridad italiana de protección de datos (Garante) o ante la de tu país, como la Agencia Española de Protección de Datos.</p>
+
+    <h2>Permisos</h2>
+    <p>Puedes rechazar o retirar los permisos de Salud en cualquier momento. Sin permisos, la app funciona de forma limitada. La ubicación se pide solo para la tarjeta Tiempo: sin ella, la tarjeta no aparece.</p>
+    <h2>Menores</h2>
+    <p>LifeNex no está pensada para niños. No recogemos a sabiendas datos de menores.</p>
+    <h2>Suscripciones</h2>
+    <p>Las suscripciones Plus y Max las gestiona Apple a través del App Store. LifeNex lee el estado de la suscripción para desbloquear funciones y cuotas de análisis inteligente, y envía a nuestro servidor la prueba de compra firmada por Apple (identificador de la transacción, producto, fechas) para verificar la suscripción y contar los análisis. LifeNex no recibe ni guarda datos de pago.</p>
+    <h2>Cambios</h2>
+    <p>Si cambia la forma en que tratamos los datos, actualizaremos esta página <strong>antes</strong> de que el cambio llegue a la app.</p>
+    <p>Preguntas: <a href="mailto:support@lifenex.it">support@lifenex.it</a></p>
+""",
+    },
 }
 
 
@@ -1013,6 +1155,7 @@ def privacy_html(lang: str) -> str:
           <a href="../en/privacy/">EN</a>
           <a href="../fr/privacy/">FR</a>
           <a href="../de/privacy/">DE</a>
+          <a href="../es/privacy/">ES</a>
         </div>'''
     else:
         asset = "../../assets/"
@@ -1023,6 +1166,7 @@ def privacy_html(lang: str) -> str:
           <a href="../../en/privacy/"{' class="active"' if lang=='en' else ''}>EN</a>
           <a href="../../fr/privacy/"{' class="active"' if lang=='fr' else ''}>FR</a>
           <a href="../../de/privacy/"{' class="active"' if lang=='de' else ''}>DE</a>
+          <a href="../../es/privacy/"{' class="active"' if lang=='es' else ''}>ES</a>
         </div>'''
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
@@ -1229,13 +1373,54 @@ TERMS = {
     <p>Fragen: <a href="mailto:support@lifenex.it">support@lifenex.it</a> · <a href="../privacy/">Datenschutz</a></p>
 """,
     },
+    "es": {
+        "title": "Términos de uso — LifeNex",
+        "h1": "Términos de uso",
+        "meta": 'Responsable: Stefano Toncelli · Contacto: <a href="mailto:support@lifenex.it">support@lifenex.it</a><br>Última actualización: 6 de noviembre de 2026',
+        "body": """
+    <p>Al usar LifeNex aceptas estos términos. Si no estás de acuerdo, no uses la app.</p>
+
+    <h2>Qué es LifeNex</h2>
+    <p>LifeNex es una app para iOS de bienestar y fitness que <strong>observa</strong> los datos que ya están en Apple Salud y puede <strong>motivarte</strong> hacia los objetivos que tú eliges. <strong>No es un dispositivo médico</strong>: no diagnostica, no cura y no prescribe terapias, medicamentos, intensidades de entrenamiento ni planes clínicos.</p>
+
+    <h2>Licencia de uso</h2>
+    <p>Te concedemos una licencia personal, no exclusiva e intransferible para usar LifeNex en tu dispositivo Apple. No puedes copiar, modificar, distribuir ni aplicar ingeniería inversa a la app más allá de lo que permita la ley.</p>
+
+    <h2>Apple Salud (HealthKit)</h2>
+    <p>La app lee los datos de Salud solo con tu consentimiento. Los datos se quedan en el dispositivo, salvo las funciones opcionales que necesitan una autorización adicional (ver la <a href="../privacy/">Política de privacidad</a>).</p>
+
+    <h2>Análisis inteligente (opcional)</h2>
+    <p>Si activas el consentimiento en Preferencias y pides una lectura, LifeNex puede enviar resúmenes numéricos ya calculados en la app y el estado de los músculos que has indicado a una pasarela para producir un texto. El servicio tiene un límite de lecturas por periodo de suscripción. No sustituye la opinión de un profesional.</p>
+
+    <h2>Suscripciones Plus y Max</h2>
+    <ul>
+      <li>Las compras y renovaciones las gestiona Apple a través del App Store.</li>
+      <li>Los precios y las pruebas gratuitas, si las hay, son los que muestra el App Store en el momento de la compra.</li>
+      <li>Puedes gestionar o cancelar la suscripción en Ajustes del iPhone → Apple ID → Suscripciones.</li>
+      <li>Los reembolsos siguen las reglas de Apple.</li>
+      <li>Plus y Max (mensual o anual) desbloquean funciones y cuotas de análisis inteligente como se describe en la app.</li>
+    </ul>
+    <p>A las suscripciones de renovación automática se aplica también el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">Contrato de licencia de usuario final estándar (EULA) de Apple</a>, además de estos términos.</p>
+
+    <h2>Responsabilidad</h2>
+    <p>No hace falta una cuenta de LifeNex. Eres responsable del uso de la app y de las decisiones que tomes. LifeNex no se hace responsable de daños derivados de un uso no conforme o de datos de Salud incompletos o erróneos.</p>
+
+    <h2>Limitación de garantía</h2>
+    <p>La app se ofrece «tal cual», en la medida en que lo permita la ley. No garantizamos que funcione sin interrupciones ni errores, ni resultados de fitness o de salud.</p>
+
+    <h2>Cambios</h2>
+    <p>Podemos actualizar estos términos. La fecha de arriba indica la última revisión.</p>
+
+    <p>Preguntas: <a href="mailto:support@lifenex.it">support@lifenex.it</a> · <a href="../privacy/">Privacidad</a></p>
+""",
+    },
 }
 
 
 def terms_html(lang: str) -> str:
     t = TERMS[lang]
     p = PRIVACY[lang]
-    codes = ("it", "en", "fr", "de")
+    codes = LANGS
     if lang == "it":
         asset = "../assets/"
         css = "../styles.css"
@@ -1302,7 +1487,7 @@ def feedback_page_html(lang: str) -> str:
     """Il questionario in una pagina sua (feedback/), non più sulla home."""
     c = COPY[lang]
     p = PRIVACY[lang]
-    codes = ("it", "en", "fr", "de")
+    codes = LANGS
     if lang == "it":
         asset = "../assets/"
         css = "../styles.css"
@@ -1328,7 +1513,7 @@ def feedback_page_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{css}?v=29">
+  <link rel="stylesheet" href="{css}?v=30">
 {lang_head(lang, "feedback")}
 </head>
 <body class="page-shell">
@@ -1365,7 +1550,7 @@ def feedback_page_html(lang: str) -> str:
 
 
 def main():
-    for lang in ("it", "en", "fr", "de"):
+    for lang in LANGS:
         if lang == "it":
             path = ROOT / "index.html"
         else:
@@ -1416,7 +1601,7 @@ def write_seo_files():
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
     (ROOT / "llms.txt").write_text(f"""# LifeNex
 
-> LifeNex is an iOS app for health and fitness. Record your workouts with the device you prefer (best with Apple Watch): everything flows into Apple Health, and LifeNex turns it into goals, session comparisons and AI analysis of your progress. Available in Italian, English, French and German.
+> LifeNex is an iOS app for health and fitness. Record your workouts with the device you prefer (best with Apple Watch): everything flows into Apple Health, and LifeNex turns it into goals, session comparisons and AI analysis of your progress. Available in Italian, English, French, German and Spanish.
 
 - App Store: {APP_STORE_URL}
 - Price: free to download; Plus and Max subscriptions unlock 3D maps and videos, goals and AI analysis.
@@ -1430,6 +1615,7 @@ def write_seo_files():
 - Compare two sessions on the same route, side by side on a 3D map.
 - Relive any route in Satellite 3D and create a shareable 3D video (route flight or highlights).
 - Training load over time compared with your usual rhythm; recovery, HRV (including Recovery HRV on Apple Watch Series 12 and Ultra 4), resting heart rate, VO2 max, sleep, weight and body composition.
+- Stress through the day (from heart rate and HRV), last night's sleep with its stages, and a diary of the last days bringing sleep, stress and sports together.
 - Goals and AI analysis of the last 30 days, written in plain words, with suggestions (not medical advice).
 
 ## Pages
@@ -1438,6 +1624,7 @@ def write_seo_files():
 - [Home (English)]({page_url("en", "home")})
 - [Accueil (français)]({page_url("fr", "home")})
 - [Startseite (Deutsch)]({page_url("de", "home")})
+- [Inicio (español)]({page_url("es", "home")})
 - [Privacy policy]({page_url("en", "privacy")})
 - [Terms of use]({page_url("en", "terms")})
 """)

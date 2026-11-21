@@ -385,7 +385,7 @@ a:hover { text-decoration: underline; }
 }
 .lang-switch {
   flex-wrap: wrap;
-  max-width: 11rem;
+  max-width: 14rem;
   justify-content: flex-end;
 }
 

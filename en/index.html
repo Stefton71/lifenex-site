@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Find out how much energy you have, how well you recover and how your muscles are doing. LifeNex reads your workouts from Apple Health.">
-  <title>LifeNex: Training & Health — Energy for your sport</title>
+  <meta name="description" content="Every day, see how much energy you have, how you slept, your stress and how your muscles are recovering. LifeNex reads your workouts from Apple Health.">
+  <title>LifeNex: Training & Recovery — Energy, sleep and stress</title>
   <link rel="icon" href="../assets/app-icon.png" type="image/png">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css?v=29">
+  <link rel="stylesheet" href="../styles.css?v=30">
   <meta name="apple-itunes-app" content="app-id=6804388724">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="LifeNex">
   <meta property="og:url" content="https://lifenex.it/en/">
-  <meta property="og:title" content="LifeNex: Training & Health — Energy for your sport">
-  <meta property="og:description" content="Find out how much energy you have, how well you recover and how your muscles are doing. LifeNex reads your workouts from Apple Health.">
+  <meta property="og:title" content="LifeNex: Training & Recovery — Energy, sleep and stress">
+  <meta property="og:description" content="Every day, see how much energy you have, how you slept, your stress and how your muscles are recovering. LifeNex reads your workouts from Apple Health.">
   <meta property="og:image" content="https://lifenex.it/assets/og/lifenex-en.jpg?v=2">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -24,20 +24,22 @@
   <meta property="og:locale:alternate" content="it_IT">
   <meta property="og:locale:alternate" content="fr_FR">
   <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="es_ES">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="LifeNex: Training & Health — Energy for your sport">
-  <meta name="twitter:description" content="Find out how much energy you have, how well you recover and how your muscles are doing. LifeNex reads your workouts from Apple Health.">
+  <meta name="twitter:title" content="LifeNex: Training & Recovery — Energy, sleep and stress">
+  <meta name="twitter:description" content="Every day, see how much energy you have, how you slept, your stress and how your muscles are recovering. LifeNex reads your workouts from Apple Health.">
   <meta name="twitter:image" content="https://lifenex.it/assets/og/lifenex-en.jpg?v=2">
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "LifeNex", "url": "https://lifenex.it/en/", "description": "Find out how much energy you have, how well you recover and how your muscles are doing. LifeNex reads your workouts from Apple Health.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "image": "https://lifenex.it/assets/og/lifenex-en.jpg?v=2", "installUrl": "https://apps.apple.com/app/id6804388724", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "author": {"@type": "Person", "name": "Stefano Toncelli"}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "MobileApplication", "name": "LifeNex", "url": "https://lifenex.it/en/", "description": "Every day, see how much energy you have, how you slept, your stress and how your muscles are recovering. LifeNex reads your workouts from Apple Health.", "inLanguage": "en", "operatingSystem": "iOS", "applicationCategory": "HealthApplication", "image": "https://lifenex.it/assets/og/lifenex-en.jpg?v=2", "installUrl": "https://apps.apple.com/app/id6804388724", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "author": {"@type": "Person", "name": "Stefano Toncelli"}}</script>
   <link rel="canonical" href="https://lifenex.it/en/">
   <link rel="alternate" hreflang="it" href="https://lifenex.it/">
   <link rel="alternate" hreflang="en" href="https://lifenex.it/en/">
   <link rel="alternate" hreflang="fr" href="https://lifenex.it/fr/">
   <link rel="alternate" hreflang="de" href="https://lifenex.it/de/">
+  <link rel="alternate" hreflang="es" href="https://lifenex.it/es/">
   <link rel="alternate" hreflang="x-default" href="https://lifenex.it/">
   <script>
   (function () {
-    var K = "lifenex-lang", L = ["it", "en", "fr", "de"];
+    var K = "lifenex-lang", L = ["it", "en", "fr", "de", "es"];
     document.addEventListener("click", function (e) {
       var a = e.target.closest && e.target.closest(".lang-switch a");
       if (a) { try { localStorage.setItem(K, a.textContent.trim().toLowerCase()); } catch (x) {} }
@@ -62,7 +64,7 @@
           <a href="mailto:support@lifenex.it">Contact</a>
           <a class="nav-feedback" href="feedback/">Tell us</a>
         </nav>
-        <div class="lang-switch" aria-label="Language"><a href="../">IT</a><a href="../en/" class="active">EN</a><a href="../fr/">FR</a><a href="../de/">DE</a></div>
+        <div class="lang-switch" aria-label="Language"><a href="../">IT</a><a href="../en/" class="active">EN</a><a href="../fr/">FR</a><a href="../de/">DE</a><a href="../es/">ES</a></div>
       </div>
     </div>
   </header>
@@ -73,7 +75,7 @@
         <p class="eyebrow">iOS · Apple Health · HealthKit</p>
         <p class="brand-hero">LifeNex</p>
         <h1>Your energy and your recovery.</h1>
-        <p class="lead">Every morning, see how much energy you have, how well you're recovering and how your muscles are doing. Running, gym, cycling, swimming: LifeNex reads your workouts from Apple Health. The ideal companion for Apple Watch.</p>
+        <p class="lead">Every morning, see how much energy you have, how you slept, your stress and how your muscles are doing. Running, gym, cycling, swimming: LifeNex reads your workouts from Apple Health. The ideal companion for Apple Watch.</p>
         <div class="cta-row">
           <a class="store-badge" href="https://apps.apple.com/it/app/lifenex-salute-e-fitness/id6804388724" rel="noopener noreferrer">
             <img src="../assets/badges/app-store-en.svg" alt="Download on the App Store" height="40" width="120">
@@ -110,11 +112,11 @@
         </article>
         <article class="card">
           <h3>Analyze every workout</h3>
-          <p>Duration, distance, pace, speed, calories, elevation, heart rate, intensity zones and GPS map — understand how you did each session.</p>
+          <p>Duration, distance, pace, speed, calories, elevation, heart rate, intensity zones and GPS map. And compare two sessions on the same route.</p>
         </article>
         <article class="card">
-          <h3>Compare your performance</h3>
-          <p>Put two workouts side by side and see what changed: duration, distance, pace, HR, energy, elevation and load.</p>
+          <h3>Stress, sleep and diary</h3>
+          <p>Your stress through the day, from heart rate and HRV; last night's sleep with its stages; a diary of the last days bringing sleep, stress and sports together.</p>
         </article>
         <article class="card">
           <h3>A complete health view</h3>
@@ -138,44 +140,44 @@
       <p class="sub">Today, Metrics, Sessions, Load, Goals and Trends — designed to move from the number to what it means.</p>
       <div class="shot-grid">
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-1.jpg?v=3"><img src="../assets/store/en-1.jpg?v=3" alt="Your energy, at a glance" loading="lazy"></a>
-          <figcaption><strong>Your energy, at a glance</strong><span>How recovered you are and what you could do, every morning.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-1.jpg?v=4"><img src="../assets/store/en-1.jpg?v=4" alt="Your energy from Apple Watch" loading="lazy"></a>
+          <figcaption><strong>Your energy from Apple Watch</strong><span>How much energy you have today, for every sport.</span></figcaption>
         </figure>
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-2.jpg?v=3"><img src="../assets/store/en-2.jpg?v=3" alt="Train when you're ready" loading="lazy"></a>
-          <figcaption><strong>Train when you're ready</strong><span>Every muscle and your nervous system, with the time to get back in shape.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-2.jpg?v=4"><img src="../assets/store/en-2.jpg?v=4" alt="Stress and sleep from your Apple Watch" loading="lazy"></a>
+          <figcaption><strong>Stress and sleep from your Apple Watch</strong><span>Every morning, see how you slept and how you feel.</span></figcaption>
         </figure>
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-3.jpg?v=3"><img src="../assets/store/en-3.jpg?v=3" alt="Are you moving enough?" loading="lazy"></a>
-          <figcaption><strong>Are you moving enough?</strong><span>Today's movement and your progress over the last month.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-3.jpg?v=4"><img src="../assets/store/en-3.jpg?v=4" alt="See which muscles are ready" loading="lazy"></a>
+          <figcaption><strong>See which muscles are ready</strong><span>Recovery for every muscle, after every workout.</span></figcaption>
         </figure>
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-4.jpg?v=3"><img src="../assets/store/en-4.jpg?v=3" alt="All your health, in one place" loading="lazy"></a>
-          <figcaption><strong>All your health, in one place</strong><span>Years of Health data turned into clear signals, every day.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-4.jpg?v=4"><img src="../assets/store/en-4.jpg?v=4" alt="Relive every route in 3D" loading="lazy"></a>
+          <figcaption><strong>Relive every route in 3D</strong><span>Your workout on the real landscape, also as a video. With Plus.</span></figcaption>
         </figure>
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-5.jpg?v=3"><img src="../assets/store/en-5.jpg?v=3" alt="Beat yesterday's you" loading="lazy"></a>
-          <figcaption><strong>Beat yesterday's you</strong><span>Compare two sessions on the same route.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-5.jpg?v=4"><img src="../assets/store/en-5.jpg?v=4" alt="Race your past self" loading="lazy"></a>
+          <figcaption><strong>Race your past self</strong><span>Two sessions on the same route, side by side.</span></figcaption>
         </figure>
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-6.jpg?v=3"><img src="../assets/store/en-6.jpg?v=3" alt="Relive every route in 3D" loading="lazy"></a>
-          <figcaption><strong>Relive every route in 3D</strong><span>Your workout, on the landscape where it happened.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-6.jpg?v=4"><img src="../assets/store/en-6.jpg?v=4" alt="Train in balance" loading="lazy"></a>
+          <figcaption><strong>Train in balance</strong><span>Your load every week, compared with your usual rhythm.</span></figcaption>
         </figure>
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-7.jpg?v=3"><img src="../assets/store/en-7.jpg?v=3" alt="Train with balance" loading="lazy"></a>
-          <figcaption><strong>Train with balance</strong><span>Every week's load, compared with your usual rhythm.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-7.jpg?v=4"><img src="../assets/store/en-7.jpg?v=4" alt="All your health, in one place" loading="lazy"></a>
+          <figcaption><strong>All your health, in one place</strong><span>Heart, VO₂ max, sleep, weight and more, with trends over time.</span></figcaption>
         </figure>
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-8.jpg?v=3"><img src="../assets/store/en-8.jpg?v=3" alt="Goals that keep you going" loading="lazy"></a>
-          <figcaption><strong>Goals that keep you going</strong><span>Pick the result, LifeNex shows your progress.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-8.jpg?v=4"><img src="../assets/store/en-8.jpg?v=4" alt="Your trends, in plain words" loading="lazy"></a>
+          <figcaption><strong>Your trends, in plain words</strong><span>With Plus and Max AI analysis, your last 30 days explained too.</span></figcaption>
         </figure>
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-9.jpg?v=3"><img src="../assets/store/en-9.jpg?v=3" alt="See what's changing" loading="lazy"></a>
-          <figcaption><strong>See what's changing</strong><span>Clear trends on training, heart and body.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-9.jpg?v=4"><img src="../assets/store/en-9.jpg?v=4" alt="Your data stays yours" loading="lazy"></a>
+          <figcaption><strong>Your data stays yours</strong><span>LifeNex reads Health right on your iPhone.</span></figcaption>
         </figure>
         <figure class="shot">
-          <a class="shot-frame" href="../assets/store/en-10.jpg?v=3"><img src="../assets/store/en-10.jpg?v=3" alt="Your progress, explained" loading="lazy"></a>
-          <figcaption><strong>Your progress, explained</strong><span>AI reads your data and tells your story.</span></figcaption>
+          <a class="shot-frame" href="../assets/store/en-10.jpg?v=4"><img src="../assets/store/en-10.jpg?v=4" alt="Synced with iCloud" loading="lazy"></a>
+          <figcaption><strong>Synced with iCloud</strong><span>AI readings, goals and preferences on iPhone, iPhone Duo and iPad.</span></figcaption>
         </figure>
       </div>
     </div>
