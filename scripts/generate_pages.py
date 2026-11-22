@@ -84,6 +84,7 @@ COPY = {
         "band_h2": "Vedi i dati. Confrontali. Analizzali. Segui la tua evoluzione.",
         "band_p": "LifeNex riunisce ciò che Apple Salute raccoglie — e te lo fa leggere.",
         "band_cta": "Vai su App Store",
+        "app_langs": "Disponibile in 10 lingue",
         "band_points": ["Gratis da scaricare", "Funziona con il dispositivo che preferisci", "I tuoi dati restano al sicuro in Salute"],
         "band_qr": "Inquadra con l’iPhone",
         "alt": [
@@ -133,6 +134,7 @@ COPY = {
         "band_h2": "See the data. Compare it. Analyze it. Follow your evolution.",
         "band_p": "LifeNex brings together what Apple Health collects — and helps you read it.",
         "band_cta": "Go to the App Store",
+        "app_langs": "Available in 10 languages",
         "band_points": ["Free to download", "Works with the device you prefer", "Your data stays safe in Apple Health"],
         "band_qr": "Scan with your iPhone",
         "alt": [
@@ -182,6 +184,7 @@ COPY = {
         "band_h2": "Voyez les données. Comparez-les. Analysez-les. Suivez votre évolution.",
         "band_p": "LifeNex rassemble ce qu’Apple Santé collecte — et vous aide à le lire.",
         "band_cta": "Aller sur l’App Store",
+        "app_langs": "Disponible en 10 langues",
         "band_points": ["Téléchargement gratuit", "Fonctionne avec l’appareil de votre choix", "Vos données restent en sécurité dans Santé"],
         "band_qr": "Scannez avec votre iPhone",
         "alt": [
@@ -231,6 +234,7 @@ COPY = {
         "band_h2": "Sieh die Daten. Vergleiche sie. Analysiere sie. Folge deiner Entwicklung.",
         "band_p": "LifeNex bündelt, was Apple Gesundheit sammelt — und hilft dir, es zu lesen.",
         "band_cta": "Zum App Store",
+        "app_langs": "In 10 Sprachen verfügbar",
         "band_points": ["Kostenlos laden", "Funktioniert mit dem Gerät deiner Wahl", "Deine Daten bleiben sicher in Apple Health"],
         "band_qr": "Mit dem iPhone scannen",
         "alt": [
@@ -280,6 +284,7 @@ COPY = {
         "band_h2": "Mira los datos. Compáralos. Analízalos. Sigue tu evolución.",
         "band_p": "LifeNex reúne lo que recoge Apple Salud y te ayuda a leerlo.",
         "band_cta": "Ir al App Store",
+        "app_langs": "Disponible en 10 idiomas",
         "band_points": ["Descarga gratuita", "Funciona con el dispositivo que prefieras", "Tus datos siguen seguros en Salud"],
         "band_qr": "Escanea con tu iPhone",
         "alt": [
@@ -363,6 +368,8 @@ STORE_SHOTS = {
 HOME_PATH = {"it": ".", "en": "en", "fr": "fr", "de": "de", "es": "es"}
 PREFIX = {"it": "", "en": "../", "fr": "../", "de": "../", "es": "../"}
 SHOT_PREFIX = {"it": "it", "en": "en", "fr": "fr", "de": "de", "es": "es"}
+APP_LANGUAGES = "Italiano · English · Français · Deutsch · Español · Português · Nederlands · 日本語 · 한국어 · 繁體中文"
+
 ASSET = {"it": "assets/", "en": "../assets/", "fr": "../assets/", "de": "../assets/", "es": "../assets/"}
 CSS = {"it": "styles.css", "en": "../styles.css", "fr": "../styles.css", "de": "../styles.css", "es": "../styles.css"}
 HOME_HREF = {"it": "./", "en": "./", "fr": "./", "de": "./", "es": "./"}
@@ -676,7 +683,7 @@ def home_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{CSS[lang]}?v=30">
+  <link rel="stylesheet" href="{CSS[lang]}?v=31">
 {seo_home_head(lang, c)}
 {lang_head(lang, "home")}
 </head>
@@ -714,6 +721,7 @@ def home_html(lang: str) -> str:
           </a>
           <a class="btn btn-ghost" href="#app">{c['cta_see']}</a>
         </div>
+        <p class="app-langs"><strong>{c['app_langs']}</strong> <span lang="mul">{APP_LANGUAGES}</span></p>
       </div>
       <div class="hero-phones" aria-hidden="true">
         <div class="phone phone-left"><img src="{a}screenshots/{SHOT_PREFIX[lang]}-movimento.png?v=2" alt=""></div>
@@ -1513,7 +1521,7 @@ def feedback_page_html(lang: str) -> str:
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{css}?v=30">
+  <link rel="stylesheet" href="{css}?v=31">
 {lang_head(lang, "feedback")}
 </head>
 <body class="page-shell">
@@ -1601,7 +1609,7 @@ def write_seo_files():
     (ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
     (ROOT / "llms.txt").write_text(f"""# LifeNex
 
-> LifeNex is an iOS app for health and fitness. Record your workouts with the device you prefer (best with Apple Watch): everything flows into Apple Health, and LifeNex turns it into goals, session comparisons and AI analysis of your progress. Available in Italian, English, French, German and Spanish.
+> LifeNex is an iOS app for health and fitness. Record your workouts with the device you prefer (best with Apple Watch): everything flows into Apple Health, and LifeNex turns it into goals, session comparisons and AI analysis of your progress. Available in Italian, English, French, German, Spanish, Portuguese, Dutch, Japanese, Korean and Traditional Chinese.
 
 - App Store: {APP_STORE_URL}
 - Price: free to download; Plus and Max subscriptions unlock 3D maps and videos, goals and AI analysis.
